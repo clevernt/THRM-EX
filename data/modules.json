@@ -1086,5 +1086,104 @@
         "stage_2_talent_upgrade": "Attacks have 25% chance to Bind the enemy for 3.5 seconds",
         "stage_3_talent_upgrade": "Attacks have 28% chance to Bind the enemy for 3.5 seconds",
         "total_stat_buffs": "HP +300, ATK +60"
+    },
+    {
+        "operator": "Dusk",
+        "module_branch": "SPC-Y",
+        "stage_1_trait_upgrade": "Reduces Deployment Cost (-8 DP Cost)",
+        "base_talent": "TBA",
+        "stage_2_talent_upgrade": "TBA",
+        "stage_3_talent_upgrade": "TBA",
+        "total_stat_buffs": "TBA"
+    },
+    {
+        "operator": "Angelina",
+        "module_branch": "DEC-X",
+        "stage_1_trait_upgrade": "When an enemy is in Attack Range, SP generation is increased by +0.2/s",
+        "base_talent": "TBA",
+        "stage_2_talent_upgrade": "TBA",
+        "stage_3_talent_upgrade": "TBA",
+        "total_stat_buffs": "TBA"
+    },
+    {
+        "operator": "Kal'tsit",
+        "module_branch": "MEC-X",
+        "stage_1_trait_upgrade": "Healing effectiveness on allies below 50% HP increased to 115%",
+        "base_talent": "TBA",
+        "stage_2_talent_upgrade": "TBA",
+        "stage_3_talent_upgrade": "TBA",
+        "total_stat_buffs": "TBA"
+    },
+    {
+        "operator": "Shining",
+        "module_branch": "MEC-Y",
+        "stage_1_trait_upgrade": "Healing effectiveness on ground allies increased to 115%",
+        "base_talent": "TBA",
+        "stage_2_talent_upgrade": "TBA",
+        "stage_3_talent_upgrade": "TBA",
+        "total_stat_buffs": "TBA"
+    },
+    {
+        "operator": "Folinic",
+        "module_branch": "MEC-Y",
+        "stage_1_trait_upgrade": "Healing effectiveness on ground allies increased to 115%",
+        "base_talent": "TBA",
+        "stage_2_talent_upgrade": "TBA",
+        "stage_3_talent_upgrade": "TBA",
+        "total_stat_buffs": "TBA"
+    },
+    {
+        "operator": "Silence",
+        "module_branch": "MEC-Y",
+        "stage_1_trait_upgrade": "Healing effectiveness on ground allies increased to 115%",
+        "base_talent": "TBA",
+        "stage_2_talent_upgrade": "TBA",
+        "stage_3_talent_upgrade": "TBA",
+        "total_stat_buffs": "TBA"
+    },
+    {
+        "operator": "Tuye",
+        "module_branch": "MEC-X",
+        "stage_1_trait_upgrade": "Healing effectiveness on allies below 50% HP increased to 115%",
+        "base_talent": "TBA",
+        "stage_2_talent_upgrade": "TBA",
+        "stage_3_talent_upgrade": "TBA",
+        "total_stat_buffs": "TBA"
+    },
+    {
+        "operator": "Warfarin",
+        "module_branch": "MEC-X",
+        "stage_1_trait_upgrade": "Healing effectiveness on allies below 50% HP increased to 115%",
+        "base_talent": "TBA",
+        "stage_2_talent_upgrade": "TBA",
+        "stage_3_talent_upgrade": "TBA",
+        "total_stat_buffs": "TBA"
+    },
+    {
+        "operator": "Gavial",
+        "module_branch": "MEC-Y",
+        "stage_1_trait_upgrade": "Healing effectiveness on ground allies increased to 115%",
+        "base_talent": "TBA",
+        "stage_2_talent_upgrade": "TBA",
+        "stage_3_talent_upgrade": "TBA",
+        "total_stat_buffs": "TBA"
+    },
+    {
+        "operator": "Myrrh",
+        "module_branch": "MEC-X",
+        "stage_1_trait_upgrade": "Healing effectiveness on allies below 50% HP increased to 115%",
+        "base_talent": "TBA",
+        "stage_2_talent_upgrade": "TBA",
+        "stage_3_talent_upgrade": "TBA",
+        "total_stat_buffs": "TBA"
+    },
+    {
+        "operator": "Sussurro",
+        "module_branch": "MEC-X",
+        "stage_1_trait_upgrade": "Healing effectiveness on allies below 50% HP increased to 115%",
+        "base_talent": "TBA",
+        "stage_2_talent_upgrade": "TBA",
+        "stage_3_talent_upgrade": "TBA",
+        "total_stat_buffs": "TBA"
     }
 ]

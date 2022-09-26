@@ -1,5 +1,6 @@
 from difflib import get_close_matches
 from typing import Sequence, Union
+from lightbulb.utils.pag import EmbedPaginator
 import lightbulb
 import hikari
 import json
@@ -11,6 +12,7 @@ plugin = lightbulb.Plugin('modules')
 @lightbulb.command('module', "Get details about an operator's module")
 @lightbulb.implements(lightbulb.SlashCommand)
 async def module(ctx):
+    await ctx.respond(hikari.ResponseType.DEFERRED_MESSAGE_CREATE)
     operator = ctx.options.operator.strip()
     with open("./data/modules.json", "r") as f:
         ops_with_modules = []
