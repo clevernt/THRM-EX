@@ -5,3 +5,4 @@ a.py
 extensions/__pycache__
 nppBackup/
 main.py
+.env
