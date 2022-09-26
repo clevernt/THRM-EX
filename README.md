@@ -1,5 +1,0 @@
-"# thrm-ex" 
-"# thrm-ex" 
-"# thrm-ex" 
-"# thrm-ex" 
-"# THRM-EX" 
