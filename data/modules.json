@@ -1,0 +1,1090 @@
+[
+    {
+        "operator": "Pallas",
+        "module_branch": "INS-X",
+        "stage_1_trait_upgrade": "Attack Increased to 120% > **130%** when attacking enemies not blocked by self",
+        "base_talent": "When deployed, all [Minos] operators gain Vigor effect of +25% ATK when HP is higher than 80%",
+        "stage_2_talent_upgrade": "When deployed, all [Minos] operators gain Vigor effect of +27% ATK when HP is higher than 50%",
+        "stage_3_talent_upgrade": "When deployed, all [Minos] operators gain Vigor effect of +30% ATK when HP is higher than 50%",
+        "total_stat_buffs": "HP: 210, ATK: 83"
+    },
+    {
+        "operator": "Pallas",
+        "module_branch": "INS-Y",
+        "stage_1_trait_upgrade": "Can also be deployed on Ranged Tiles",
+        "base_talent": "Every hit against an enemy recovers 45 (+5) HP to self and the operator in the tile ahead of self. All [Minos] operators recover an additional 25 HP",
+        "stage_2_talent_upgrade": "Every hit against an enemy recovers 50 HP to self and the operator in the tile ahead of self. All [Minos] operators recover an additional 25 HP",
+        "stage_3_talent_upgrade": "Every hit against an enemy recovers 60 HP to self and the operator in the tile ahead of self. All [Minos] operators recover an additional 40 HP",
+        "total_stat_buffs": "ASPD: 5, ATK: 60"
+    },
+    {
+        "operator": "Swire",
+        "module_branch": "INS-X",
+        "stage_1_trait_upgrade": "Attack Increased to 120% > **130%** when attacking enemies not blocked by self",
+        "base_talent": "N/A",
+        "stage_2_talent_upgrade": "When there are ally melees in the surrounding 8 tiles, gain 1 SP every 4 seconds",
+        "stage_3_talent_upgrade": "When there are ally melees in the surrounding 8 tiles, gain 1 SP every 3 seconds",
+        "total_stat_buffs": "HP: 170, ATK: 75"
+    },
+    {
+        "operator": "Whislash",
+        "module_branch": "INS-X",
+        "stage_1_trait_upgrade": "Attack Increased to 120% > **130%** when attacking enemies not blocked by self",
+        "base_talent": "N/A",
+        "stage_2_talent_upgrade": "When deployed, ally melee units with 3 or more Block Count gain 1 layer of Physical Shield",
+        "stage_3_talent_upgrade": "When deployed, ally melee units with 3 or more Block Count gain 1 layer of Physical Shield; [Kazimierz] operators gain 1 extra layer",
+        "total_stat_buffs": "DEF: 52, ATK: 52"
+    },
+    {
+        "operator": "Dobermann",
+        "module_branch": "INS-Y",
+        "stage_1_trait_upgrade": "Can also be deployed on Ranged Tiles",
+        "base_talent": "N/A",
+        "stage_2_talent_upgrade": "When there are 3* operators deployed, self Attack Speed +10",
+        "stage_3_talent_upgrade": "When there are 3* operators deployed, self Attack Speed +15",
+        "total_stat_buffs": "HP: 80, ATK +53, ASPD +5"
+    },
+    {
+        "operator": "Ch'en",
+        "module_branch": "SWO-X",
+        "stage_1_trait_upgrade": "Skill damage increased by 10%",
+        "base_talent": "When deployed, grant 1 [Offensive/Defensive-Recovery SP] to all allies every 4 seconds",
+        "stage_2_talent_upgrade": "When deployed, grant 1 [Offensive/Defensive-Recovery SP] to all allies every 3 seconds",
+        "stage_3_talent_upgrade": "When deployed, grant 1 [Offensive/Defensive-Recovery SP] to all allies every 3 seconds. Ch'en gains 1 additional SP",
+        "total_stat_buffs": "ATK +80, ASPD +7"
+    },
+    {
+        "operator": "Irene",
+        "module_branch": "SWO-Y",
+        "stage_1_trait_upgrade": "Attacks ignore 70 DEF",
+        "base_talent": "Attack Speed +21 (+3), Effect is doubled when there are [Sea Monster] enemies present",
+        "stage_2_talent_upgrade": "Attack Speed +18, ATK +3%. Effect is doubled when there are [Sea Monster] enemies present",
+        "stage_3_talent_upgrade": "Attack Speed +18, ATK +5%. Effect is doubled when there are [Sea Monster] enemies present",
+        "total_stat_buffs": "ATK +65, DEF +50"
+    },
+    {
+        "operator": "Bibeak",
+        "module_branch": "SWO-X",
+        "stage_1_trait_upgrade": "Skill damage increased by 10%",
+        "base_talent": "Increase Attack Speed by +6 for every enemy killed, stacks up to 6 (+1) layers",
+        "stage_2_talent_upgrade": "Increase Attack Speed by +6 and ATK +1% for every enemy killed, stacks up to 6 layers",
+        "stage_3_talent_upgrade": "Increase Attack Speed by +6 and ATK +2% for every enemy killed, stacks up to 6 layers",
+        "total_stat_buffs": "ATK +65, ASPD +5"
+    },
+    {
+        "operator": "Tachanka",
+        "module_branch": "SWO-X",
+        "stage_1_trait_upgrade": "Skill damage increased by 10%",
+        "base_talent": "Attack Range +2 tiles, DEF +15% (+5%), Redeployment Time +20 seconds",
+        "stage_2_talent_upgrade": "Attack Range +2 tiles, DEF +20%, Redeployment Time +20 seconds",
+        "stage_3_talent_upgrade": "Attack Range +2 tiles, DEF +23%, Redeployment Time +20 seconds",
+        "total_stat_buffs": "ATK +55, DEF +55"
+    },
+    {
+        "operator": "Cutter",
+        "module_branch": "SWO-Y",
+        "stage_1_trait_upgrade": "Attacks ignore 70 DEF",
+        "base_talent": "When dealing damage, 23% (+3%) chance to recover 1 additional SP",
+        "stage_2_talent_upgrade": "When dealing damage, 30% chance to recover 1 additional SP",
+        "stage_3_talent_upgrade": "When dealing damage, 33% chance to recover 1 additional SP",
+        "total_stat_buffs": "HP +150, ATK +65"
+    },
+    {
+        "operator": "Nearl the Radiant Knight",
+        "module_branch": "DRE-X",
+        "stage_1_trait_upgrade": "When attacking blocked enemies, ATK increased to 115%",
+        "base_talent": "Attacks ignore 23% (+3%) DEF",
+        "stage_2_talent_upgrade": "Attacks ignore 25% DEF",
+        "stage_3_talent_upgrade": "Attacks ignore 28% DEF",
+        "total_stat_buffs": "HP +330, ATK +105"
+    },
+    {
+        "operator": "Skadi",
+        "module_branch": "DRE-X",
+        "stage_1_trait_upgrade": "When attacking blocked enemies, ATK increased to 115%",
+        "base_talent": "Self redeployment time -10 seconds",
+        "stage_2_talent_upgrade": "Self redeployment time -20 seconds",
+        "stage_3_talent_upgrade": "Self redeployment time -30 seconds",
+        "total_stat_buffs": "HP +320, ATK +105"
+    },
+    {
+        "operator": "Skadi",
+        "module_branch": "DRE-Y",
+        "stage_1_trait_upgrade": "When defeated, do not retreat. HP restores to full, Max HP -60% and then gain +30 ASPD (Once per deployment)",
+        "base_talent": " When in team, all [Abyssal Hunters] operators gain ATK +16% (+2%)",
+        "stage_2_talent_upgrade": "When in the team, all [Abyssal Hunters] operators gain ATK +18% and Max HP +10%",
+        "stage_3_talent_upgrade": "When in the team, all [Abyssal Hunters] operators gain ATK +22% and Max HP +20%",
+        "total_stat_buffs": "HP +450, ATK +85"
+    },
+    {
+        "operator": "Franka",
+        "module_branch": "DRE-X",
+        "stage_1_trait_upgrade": "When attacking blocked enemies, ATK increased to 115%",
+        "base_talent": "When attacking, 20% chance to ignore the target's DEF",
+        "stage_2_talent_upgrade": "When attacking, 25% chance to ignore the target's DEF",
+        "stage_3_talent_upgrade": "When attacking, 28% chance to ignore the target's DEF",
+        "total_stat_buffs": "HP +220, ATK +95"
+    },
+    {
+        "operator": "Flamebringer",
+        "module_branch": "DRE-Y",
+        "stage_1_trait_upgrade": "When defeated, do not retreat. HP restores to full, Max HP -60% and then gain +30 ASPD (Once per deployment)",
+        "base_talent": " Increase Max HP by 50 (+10) for every enemy killed, stacks up to 30 layers",
+        "stage_2_talent_upgrade": "Increases Max HP by 60 for every enemy defeated in the 4 surrounding tiles, stacks up to 30 layers",
+        "stage_3_talent_upgrade": "Increases Max HP by 70 for every enemy defeated in the 4 surrounding tiles, stacks up to 30 layers",
+        "total_stat_buffs": "HP +430, ASPD +5"
+    },
+    {
+        "operator": "Conviction",
+        "module_branch": "DRE-X",
+        "stage_1_trait_upgrade": "When attacking blocked enemies, ATK increased to 115%",
+        "base_talent": "DP Cost -4, Redeployment time -15 seconds, however Stun self for 10 seconds after deployment",
+        "stage_2_talent_upgrade": "DP Cost -6, Redeployment Time -25 seconds. however Stun self for 10 seconds upon deployment.",
+        "stage_3_talent_upgrade": "DP Cost -8, Redeployment Time -30 seconds. however Stun self for 10 seconds upon deployment.",
+        "total_stat_buffs": "ATK +80, ASPD +4"
+    },
+    {
+        "operator": "Matoimaru",
+        "module_branch": "DRE-Y",
+        "stage_1_trait_upgrade": "When defeated, do not retreat. HP restores to full, Max HP -60% and then gain +30 ASPD (Once per deployment)",
+        "base_talent": " DEF -20%, however Max HP +23% (+3%)",
+        "stage_2_talent_upgrade": "DEF -20%, however Max HP +30%",
+        "stage_3_talent_upgrade": "DEF -20%, however Max HP +35%",
+        "total_stat_buffs": "HP +390, ATK +55"
+    },
+    {
+        "operator": "Bagpipe",
+        "module_branch": "CHG-X",
+        "stage_1_trait_upgrade": "Obtain 2 DP after this unit defeats an enemy. Refunds full current DP Cost when retreated",
+        "base_talent": " When in team, all [Vanguard] operators gain initial SP +8 (+2)",
+        "stage_2_talent_upgrade": "When in team, all [Vanguard] operators gain initial SP +6. When deployed, Bagpipe gains 2 additional SP",
+        "stage_3_talent_upgrade": "When in team, all [Vanguard] operators gain initial SP +6. When deployed, Bagpipe gains 4 additional SP",
+        "total_stat_buffs": "HP +180, ATK +73"
+    },
+    {
+        "operator": "Grani",
+        "module_branch": "CHG-X",
+        "stage_1_trait_upgrade": "Obtain 2 DP after this unit defeats an enemy. Refunds full current DP Cost when retreated",
+        "stage_2_talent_upgrade": "Mounted Police: When deployed, all [Vanguard] operators gains 25% Physical Evasion",
+        "stage_3_talent_upgrade": "Mounted Police: When deployed, all [Vanguard] operators gains 30% Physical Evasion",
+        "total_stat_buffs": "HP +200, ATK +67"
+    },
+    {
+        "operator": "Wild Mane",
+        "module_branch": "CHG-X",
+        "stage_1_trait_upgrade": "Obtain 2 DP after this unit defeats an enemy. Refunds full current DP Cost when retreated",
+        "base_talent": " After deployment, deployment cost of all undeployed [Guard] operators -1 (each operator can have a maximum of -5 deployment cost before each deployment)",
+        "stage_2_talent_upgrade": "Self redeployment time -10 seconds. After deployment, deployment cost of all undeployed [Guard] operators -1 (each operator can have a maximum of -5 deployment cost before each deployment)",
+        "stage_3_talent_upgrade": "Self redeployment time -15 seconds. After deployment, deployment cost of all undeployed [Guard] operators -1 (each operator can have a maximum of -5 deployment cost before each deployment)",
+        "total_stat_buffs": "ATK +60, ASPD +4"
+    },
+    {
+        "operator": "Reed",
+        "module_branch": "CHG-Y",
+        "stage_1_trait_upgrade": "When attacking an enemy with health below 40%, increase Attack to 115%",
+        "base_talent": " RES +20",
+        "stage_2_talent_upgrade": "RES +20. After receiving Arts damage, Attack Speed +15 for 3 seconds (does not stack)",
+        "stage_3_talent_upgrade": "RES +20. After receiving Arts damage, Attack Speed +25 for 3 seconds (does not stack)",
+        "total_stat_buffs": "HP +180, ATK +65"
+    },
+    {
+        "operator": "Vigna",
+        "module_branch": "CHG-Y",
+        "stage_1_trait_upgrade": "When attacking an enemy with health below 40%, increase Attack to 115%",
+        "base_talent": " When attacking, 10% chance to increase ATK by +110% (+10%). Chance is increased to 30% while skill is active",
+        "stage_2_talent_upgrade": "When attacking, 15% chance to increase ATK by +100%. Chance is increased to 35% while skill is active",
+        "stage_3_talent_upgrade": "When attacking, 20% chance to increase ATK by +100%. Chance is increased to 40% while skill is active",
+        "total_stat_buffs": "HP +110, ATK +65"
+    },
+    {
+        "operator": "Eunectes",
+        "module_branch": "HES-X",
+        "stage_1_trait_upgrade": "SP recovery speed is reduced (reduced to 20%). While blocking, SP recovery speed returns to normal. (Can gain SP from external sources without blocking)",
+        "base_talent": "When blocking enemies, SP recovery speed +0.2 SP/sec",
+        "stage_2_talent_upgrade": "When blocking enemies, SP recovery speed +0.4 SP/sec",
+        "stage_3_talent_upgrade": "When blocking enemies, SP recovery speed +0.55 SP/sec",
+        "total_stat_buffs": "ATK +105, DEF +85"
+    },
+    {
+        "operator": "Eunectes",
+        "module_branch": "HES-Y",
+        "stage_1_trait_upgrade": "Only restores SP when blocking enemies. (reduced to 0.1%). While blocking, ATK and DEF +15% (Can gain SP from external sources without blocking)",
+        "base_talent": "When HP is higher than 50%, attacks deal 117% (+2%) damage; When HP is lower than 50%, gain 22% (+2%) Shelter effect",
+        "stage_2_talent_upgrade": "When HP is higher than 50%, attacks deal 120% damage; When HP is lower than 50%, gain 25% Shelter effect",
+        "stage_3_talent_upgrade": "When HP is higher than 50%, attacks deal 123% damage; When HP is lower than 50%, gain 28% Shelter effect",
+        "total_stat_buffs": "ATK +85, DEF +110"
+    },
+    {
+        "operator": "Aurora",
+        "module_branch": "HES-X",
+        "stage_1_trait_upgrade": "SP recovery speed is reduced (reduced to 20%). While blocking, SP recovery speed returns to normal. (Can gain SP from external sources without blocking)",
+        "base_talent": "When skill is not active and SP is less than or equal to half the maximum, stop attacking and recover 3.5% (+0.5%) Max HP every second",
+        "stage_2_talent_upgrade": "When skill is not active and SP is less than or equal to half the maximum, stop attacking and recover 3.5% Max HP every second",
+        "stage_3_talent_upgrade": "When skill is not active and SP is less than or equal to half the maximum, stop attacking and recover 4% Max HP every second",
+        "total_stat_buffs": "HP +380, ATK +90"
+    },
+    {
+        "operator": "Saria",
+        "module_branch": "GUA-X",
+        "stage_1_trait_upgrade": "When healing targets with less than 50% HP, the healing is increased by 15%",
+        "base_talent": "When healing an ally, grant 1 SP to the target",
+        "stage_2_talent_upgrade": "When healing an ally, grant 2 SP to the target",
+        "stage_3_talent_upgrade": "When healing an ally, grant 2 SP to the target. [Rhine Labs] operators gain 3 SP instead",
+        "total_stat_buffs": "HP +350, ATK +70"
+    },
+    {
+        "operator": "Blemishine",
+        "module_branch": "GUA-Y",
+        "stage_1_trait_upgrade": "Damage taken is reduced by 15%",
+        "base_talent": " When deployed, all operators with [Defensive Recovery] SP recovery also gain 1 SP when attacking",
+        "stage_2_talent_upgrade": "When deployed, all operators with [Defensive Recovery] SP recovery also gain 1 SP when attacking. When other [Kazimierz] operators are deployed. Blemishine gains 2 SP",
+        "stage_3_talent_upgrade": "When deployed, all operators with [Defensive Recovery] SP recovery also gain 1 SP when attacking. When other [Kazimierz] operators are deployed. Blemishine gains 3 SP",
+        "total_stat_buffs": "HP +270, ATK +50, DEF +50"
+    },
+    {
+        "operator": "Nearl",
+        "module_branch": "GUA-X",
+        "stage_1_trait_upgrade": "When healing targets with less than 50% HP, the healing is increased by 15%",
+        "base_talent": "When deployed, all allies' healing effectiveness +12% (+2%)",
+        "stage_2_talent_upgrade": "When deployed, all allies' healing effectiveness +13%",
+        "stage_3_talent_upgrade": "When deployed, all allies' healing effectiveness +15%",
+        "total_stat_buffs": "HP +300, ATK +60"
+    },
+    {
+        "operator": "Hung",
+        "module_branch": "GUA-Y",
+        "stage_1_trait_upgrade": "Damage taken is reduced by 15%",
+        "base_talent": "DEF +8% (+2%). If the tile behind is a high tile, healing effectiveness to that operator +85% (+10%)",
+        "stage_2_talent_upgrade": "DEF +10%. if the tile behind is a high tile, healing effectiveness to that operator +75%",
+        "stage_3_talent_upgrade": "DEF +13%. if the tile behind is a high tile, healing effectiveness to that operator +75%",
+        "total_stat_buffs": "HP +330, DEF +45"
+    },
+    {
+        "operator": "Gummy",
+        "module_branch": "GUA-X",
+        "stage_1_trait_upgrade": "When healing targets with less than 50% HP, the healing is increased by 15%",
+        "base_talent": "When attacking, 18% (+3%) chance to deal 200% damage and Stun the enemy for 1 second",
+        "stage_2_talent_upgrade": "When attacking, 20% chance to deal 200% damage and Stun the enemy for 1.5 seconds",
+        "stage_3_talent_upgrade": "When attacking, 23% chance to deal 200% damage and Stun the enemy for 1.5 seconds",
+        "total_stat_buffs": "HP +250, ATK +55"
+    },
+    {
+        "operator": "Nian",
+        "module_branch": "PRO-X",
+        "stage_1_trait_upgrade": "+20% DEF when blocking enemies",
+        "base_talent": "Immediately gain 3 Shields after deployment",
+        "stage_2_talent_upgrade": "Immediately gain 3 Shields after deployment. Gain ATK and DEF +5% and recover 2 SP every time a layer of Shield breaks",
+        "stage_3_talent_upgrade": "Immediately gain 3 Shields after deployment. Gain ATK and DEF +7% and recover 3 SP every time a layer of Shield breaks",
+        "total_stat_buffs": "HP +375, ATK +50, DEF +80"
+    },
+    {
+        "operator": "Hoshiguma",
+        "module_branch": "PRO-Y",
+        "stage_1_trait_upgrade": "Blocks 4 enemies",
+        "base_talent": "28% (+3%) chance to resist damage",
+        "stage_2_talent_upgrade": "30% chance to resist damage. After successfully resisting damage, ATK +20% for 3 seconds (does not stack)",
+        "stage_3_talent_upgrade": "32% chance to resist damage. After successfully resisting damage, ATK +35% for 5 seconds (does not stack)",
+        "total_stat_buffs": "ATK +70, DEF +100"
+    },
+    {
+        "operator": "Bison",
+        "module_branch": "PRO-X",
+        "stage_1_trait_upgrade": "+20% DEF when blocking enemies",
+        "base_talent": "When deployed, DEF +70 (+20); if a Vanguard or Guard is deployed behind Bison, that Vanguard or Guard gains the same effect",
+        "stage_2_talent_upgrade": "When deployed, DEF +60; if a Vanguard or Guard is deployed behind Bison, that Vanguard or Guard gains the same effect",
+        "stage_3_talent_upgrade": "When deployed, DEF +80; if any operator is deployed behind Bison, that operator gains the same effect",
+        "total_stat_buffs": "HP +250, DEF +85"
+    },
+    {
+        "operator": "Heavyrain",
+        "module_branch": "PRO-Y",
+        "stage_1_trait_upgrade": "Blocks 4 enemies",
+        "base_talent": "Self and allies on high ground tiles within the 8 surrounding tiles gain 23% (+3%) Physical Evasion",
+        "stage_2_talent_upgrade": "Self and allies on high ground tiles within the 8 surrounding tiles gain 23% Physical Dodge",
+        "stage_3_talent_upgrade": "Self and allies on high ground tiles within the 8 surrounding tiles gain 25% Physical Dodge",
+        "total_stat_buffs": "HP +375, DEF +65"
+    },
+    {
+        "operator": "Croissant",
+        "module_branch": "PRO-Y",
+        "stage_1_trait_upgrade": "Blocks 4 enemies",
+        "base_talent": "Has a 23% (+3%) chance to evade Physical and Arts damage. The allies in the four surrounding tiles obtain half of the effect",
+        "stage_2_talent_upgrade": "Has a 24% chance to evade Physical and Arts damage. The allies in the four surrounding tiles obtain half of the effect",
+        "stage_3_talent_upgrade": "Has a 27% chance to evade Physical and Arts damage. The allies in the four surrounding tiles obtain half of the effect",
+        "total_stat_buffs": "HP +350, DEF +68"
+    },
+    {
+        "operator": "Bubble",
+        "module_branch": "PRO-X",
+        "stage_1_trait_upgrade": "+20% DEF when blocking enemies",
+        "base_talent": "When attacked, reduce the attacker's ATK by 8% for 5 seconds",
+        "stage_2_talent_upgrade": "When attacked, reduce the attacker's ATK by 10% for 5 seconds",
+        "stage_3_talent_upgrade": "When attacked, reduce the attacker's ATK by 12% for 5 seconds",
+        "total_stat_buffs": "HP +250, DEF +65"
+    }, 
+    {
+        "operator": "Cuora",
+        "module_branch": "PRO-X",
+        "stage_1_trait_upgrade": "+20% DEF when blocking enemies",
+        "base_talent": "DEF +12%", 
+        "stage_2_talent_upgrade": "DEF +15%",
+        "stage_3_talent_upgrade": "DEF +18%",
+        "total_stat_buffs": "HP +170, DEF +80"
+    }, 
+    {
+        "operator": "Matterhorn",
+        "module_branch": "PRO-Y",
+        "stage_1_trait_upgrade": "Blocks 4 enemies",
+        "base_talent": "RES +15",
+        "stage_2_talent_upgrade": "RES +18",
+        "stage_3_talent_upgrade": "RES +20",
+        "total_stat_buffs": "HP +380, DEF +50"
+    },
+    {
+        "operator": "Fartooth",
+        "module_branch": "DEA-X",
+        "stage_1_trait_upgrade": "The further away the enemy, the higher the damage dealt (up to an increase of 15%)",
+        "base_talent": "When no damage is taken within 10 seconds, ATK +18% (+3%)",
+        "stage_2_talent_upgrade": "When no damage is taken within 8 seconds, ATK +20%",
+        "stage_3_talent_upgrade": "When no damage is taken within 6 seconds, ATK +22%",
+        "total_stat_buffs": "ATK +100, ASPD +7"
+    },
+    {
+        "operator": "Fartooth",
+        "module_branch": "DEA-Y",
+        "stage_1_trait_upgrade": "if the attacked enemy remains alive, gain 1 additional SP",
+        "base_talent": "When no damage is taken within 10 seconds, ATK +18% (+3%)",
+        "stage_2_talent_upgrade": "When no damage is taken within 5 seconds, ATK +15% and Attack Speed +4",
+        "stage_3_talent_upgrade": "When no damage is taken within 3 seconds, ATK +15% and Attack Speed +7",
+        "total_stat_buffs": "HP +120, ATK +120"
+    },
+    {
+        "operator": "Andreana",
+        "module_branch": "DEA-X",
+        "stage_1_trait_upgrade": "The further away the enemy, the higher the damage dealt (up to an increase of 15%)",
+        "base_talent": "When in team, all [Abyssal Hunters] operators gain Attack Speed +14 (+2)",
+        "stage_2_talent_upgrade": "When in team, all [Abyssal Hunters] operators gain Attack Speed +17",
+        "stage_3_talent_upgrade": "When in team, all [Abyssal Hunters] operators gain Attack Speed +20",
+        "total_stat_buffs": "HP +121, ATK +91"
+    },
+    {
+        "operator": "Firewatch",
+        "module_branch": "DEA-Y",
+        "stage_1_trait_upgrade": "if the attacked enemy remains alive, gain 1 additional SP",
+        "base_talent": "When attacking enemies wielding ranged weapons, increase ATK to 145% (+5%)",
+        "stage_2_talent_upgrade": "When attacking enemies wielding ranged weapons or enemies that do not attack, increase ATK to 145%",
+        "stage_3_talent_upgrade": "When attacking enemies wielding ranged weapons or enemies that do not attack, increase ATK to 150%",
+        "total_stat_buffs": "HP +130, ATK +87"
+    },
+    {
+        "operator": "Ambriel",
+        "module_branch": "DEA-X",
+        "stage_1_trait_upgrade": "The further away the enemy, the higher the damage dealt (up to an increase of 15%)",
+        "base_talent": "When attacking targets outside of the default Attack Range, there is 28% (+3%) chance to Stun the target for 2 seconds",
+        "stage_2_talent_upgrade": "When attacking targets outside of the default Attack Range, there is 33% chance to Stun the target for 2.5 seconds",
+        "stage_3_talent_upgrade": "When attacking targets outside of the default Attack Range, there is 33% chance to Stun the target for 3 seconds",
+        "total_stat_buffs": "HP +95, ATK +81"
+    },
+    {
+        "operator": "W",
+        "module_branch": "ART-X",
+        "stage_1_trait_upgrade": "ATK increased to 110% when attacking blocked enemies",
+        "base_talent": "Stunned enemies within Attack Range receive +21% (+3%) Physical damage taken",
+        "stage_2_talent_upgrade": "Stunned enemies in within Attack Range receive +21% Physical damage taken. Gain 1 SP upon defeating an enemy.",
+        "stage_3_talent_upgrade": "Stunned enemies in within Attack Range receive +24% Physical damage taken. Gain 1 SP upon defeating an enemy.",
+        "total_stat_buffs": "HP +210, ATK +78"
+    },
+    {
+        "operator": "Fiammetta",
+        "module_branch": "ART-Y",
+        "stage_1_trait_upgrade": "Attacks ignore 100 DEF",
+        "base_talent": "When skill is not active, Attack Speed +30 (+3)",
+        "stage_2_talent_upgrade": "When skill is not active, Attack Speed +27. While skill is active, Attack Speed +5",
+        "stage_3_talent_upgrade": "When skill is not active, Attack Speed +30. While skill is active, Attack Speed +10",
+        "total_stat_buffs": "ATK +70, DEF +43"
+    },
+    {
+        "operator": "Sesa",
+        "module_branch": "ART-X",
+        "stage_1_trait_upgrade": "ATK increased to 110% when attacking blocked enemies",
+        "base_talent": "When deployed, all blocked enemies receive +16% (+2%) Physical damage taken",
+        "stage_2_talent_upgrade": "When deployed, all blocked enemies receive +18% Physical damage taken",
+        "stage_3_talent_upgrade": "When deployed, all blocked enemies receive +22% Physical damage taken",
+        "total_stat_buffs": "ATK +60, DEF +43"
+    },
+    {
+        "operator": "Meteorite",
+        "module_branch": "ART-Y",
+        "stage_1_trait_upgrade": "Attacks ignore 100 DEF",
+        "base_talent": "When attacking or using skills, 30% chance to increase ATK by +60%",
+        "stage_2_talent_upgrade": "When attacking or using skills, 40% chance to increase ATK by +60%",
+        "stage_3_talent_upgrade": "When attacking or using skills, 50% chance to increase ATK by +60%",
+        "total_stat_buffs": "HP +180, ATK +65"
+    },
+    {
+        "operator": "Shirayuki",
+        "module_branch": "ART-Y",
+        "stage_1_trait_upgrade": "Attacks ignore 100 DEF",
+        "base_talent": "N/A",
+        "stage_2_talent_upgrade": "After defeating an enemy, SP recovery speed +0.2 SP/sec for 10 seconds",
+        "stage_3_talent_upgrade": "After defeating an enemy, SP recovery speed +0.3 SP/sec for 10 seconds",
+        "total_stat_buffs": "HP +160, ATK +30, ASPD +5"
+    },
+    {
+        "operator": "Schwarz",
+        "module_branch": "ARC-X",
+        "stage_1_trait_upgrade": "Redeployment Time -25 seconds",
+        "base_talent": "When Schwarz and at least one other [Sniper] operator are deployed, all [Sniper] operators gain ATK +10% (+2%)",
+        "stage_2_talent_upgrade": "When Schwarz and at least one other [Sniper] operator are in team, all [Sniper] operators gain ATK +11%",
+        "stage_3_talent_upgrade": "When Schwarz and at least one other [Sniper] operator are in team, all [Sniper] operators gain ATK +13%",
+        "total_stat_buffs": "HP +170, ATK +75"
+    },
+    {
+        "operator": "Pozyomka",
+        "module_branch": "ARC-Y",
+        "stage_1_trait_upgrade": "When attacking an enemy directly ahead, ATK increases to 105% and ignores the target's Physical Evasion",
+        "base_talent": "Can use a 'Typewriter' that lasts for 25 seconds. The Typewriter has the same skills as Pozyomka and has an independent Redeployment Time",
+        "stage_2_talent_upgrade": "Can use a 'Typewriter' with higher stats that lasts for 25 seconds. The 'Typewriter' has the same skills as Pozyomka and an independent Redeployment Time \n'Typewriter': ATK +50",
+        "stage_3_talent_upgrade": "Can use a 'Typewriter' with even higher stats that lasts for a certain duration. The 'Typewriter' has the same skill as Pozyomka and an independent Redeployment Time \n'Typewriter': ATK +20 (Total: ATK +70)",
+        "total_stat_buffs": "HP +170, ATK +75"
+    },
+    {
+        "operator": "Provence",
+        "module_branch": "ARC-X",
+        "stage_1_trait_upgrade": "Redeployment Time -25 seconds",
+        "base_talent": "When attacking, 20% chance to deal 190% (+10%) damage. If the enemy is in the tile ahead of Provence, the chance increases to 50%",
+        "stage_2_talent_upgrade": "When attacking, 20% chance to deal 185% damage. if the enemy is in the 2 tiles in front of Provence, the chance increases to 55%",
+        "stage_3_talent_upgrade": "When attacking, 20% chance to deal 190% damage. if the enemy is in the 2 tiles in front of Provence, the chance increases to 60%",
+        "total_stat_buffs": "ATK +55, DEF +45"
+    },
+    {
+        "operator": "Aciddrop",
+        "module_branch": "ARC-X",
+        "stage_1_trait_upgrade": "Redeployment Time -25 seconds",
+        "base_talent": "Every attack will deal damage equal to at least 25% ATK (increased to 40% ATK if the enemy is in the 2 tiles ahead of self)",
+        "stage_2_talent_upgrade": "Every attack will deal damage equal to at least 30% ATK (increased to 45% ATK if the enemy is in the 2 tiles ahead of self)",
+        "stage_3_talent_upgrade": "Every attack will deal damage equal to at least 35% ATK (increased to 50% ATK if the enemy is in the 2 tiles ahead of self)",
+        "total_stat_buffs": "DEF +50, ASPD +5"
+    },
+    {
+        "operator": "Exusiai",
+        "module_branch": "MAR-X",
+        "stage_1_trait_upgrade": "When attacking aerial units, increase ATK to 110%",
+        "base_talent": "ATK +8% (+2%), Max HP +13% (+3%). When deployed, grant the same effect to a random ally",
+        "stage_2_talent_upgrade": "ATK +6%, Max HP +10%. When deployed, grant the same effect to two random allies",
+        "stage_3_talent_upgrade": "ATK +8%, Max HP +14%. When deployed, grant the same effect to two random allies",
+        "total_stat_buffs": "HP +190, ATK +41"
+    },
+    {
+        "operator": "Archetto",
+        "module_branch": "MAR-Y",
+        "stage_1_trait_upgrade": "ASPD +8 when there is a ground enemy within range",
+        "base_talent": "Immediately gain 1 Shield after deployment. Recover 9 (+2) SP after the Shield breaks",
+        "stage_2_talent_upgrade": "Immediately gain 5 SP and 1 Shield after deployment. Recover 7 SP after the Shield breaks",
+        "stage_3_talent_upgrade": "Immediately gain 9 SP and 1 Shield after deployment. Recover 7 SP after the Shield breaks",
+        "total_stat_buffs": "ATK +24, DEF +24, ASPD +4"
+    },
+    {
+        "operator": "Ash",
+        "module_branch": "MAR-Y",
+        "stage_1_trait_upgrade": "ASPD +8 when there is a ground enemy within range",
+        "base_talent": "The first deployment has -3 DP cost and Ash immediately gains 20 (+3) SP after deployment",
+        "stage_2_talent_upgrade": "The first deployment has -4 DP Cost and Ash immediately gains 17 SP after deployment",
+        "stage_3_talent_upgrade": "The first deployment has -5 DP Cost and Ash immediately gains 17 SP after deployment",
+        "total_stat_buffs": "HP +200, ATK +40"
+    },
+    {
+        "operator": "Kroos the Keen Glint",
+        "module_branch": "MAR-X",
+        "stage_1_trait_upgrade": "When attacking aerial units, increase ATK to 110%",
+        "base_talent": "When attacking, 20% chance to deal 160% (+10%) damage and Stun the target for 0.2 seconds",
+        "stage_2_talent_upgrade": "When attacking, 20% chance to deal 160% damage and Stun the target for 0.2 seconds",
+        "stage_3_talent_upgrade": "When attacking, 20% chance to deal 165% damage and Stun the target for 0.2 seconds",
+        "total_stat_buffs": "HP +190, ATK +31"
+    },
+    {
+        "operator": "Platinum",
+        "module_branch": "MAR-X",
+        "stage_1_trait_upgrade": "When attacking aerial units, increase ATK to 110%",
+        "base_talent": "The longer the interval since the last attack, the higher the damage of the next attack (Maximum 2.5 seconds, 190% (+10%) attack scaling)",
+        "stage_2_talent_upgrade": "The longer the interval since the last attack, the higher the damage of the next attack (Maximum 2.5 seconds, 190% attack scaling)",
+        "stage_3_talent_upgrade": "The longer the interval since the last attack, the higher the damage of the next attack (Maximum 2.5 seconds, 200% attack scaling)",
+        "total_stat_buffs": "HP +170, ATK +40"
+    },
+    {
+        "operator": "April",
+        "module_branch": "MAR-Y",
+        "stage_1_trait_upgrade": "ASPD +8 when there is a ground enemy within range",
+        "base_talent": "Self redeployment time -20 seconds, deployment cost -1",
+        "stage_2_talent_upgrade": "Experienced Hunter: Self redeployment time -25 seconds, deployment cost -2",
+        "stage_3_talent_upgrade": "Experienced Hunter: Self redeployment time -28 seconds, deployment cost -2",
+        "total_stat_buffs": "HP +190, ATK +32"
+    },
+    {
+        "operator": "Greythroat",
+        "module_branch": "MAR-Y",
+        "stage_1_trait_upgrade": "ASPD +8 when there is a ground enemy within range",
+        "base_talent": "ASPD +6. When attacking, 15% chance to deal 150% damage",
+        "stage_2_talent_upgrade": "ASPD +6. When attacking, 18% chance to deal 150% damage",
+        "stage_3_talent_upgrade": "ASPD +6. When attacking, 21% chance to deal 150% damage",
+        "total_stat_buffs": "HP +180, ATK +33"
+    },
+    {
+        "operator": "Blue Poison",
+        "module_branch": "MAR-Y",
+        "stage_1_trait_upgrade": "ASPD +8 when there is a ground enemy within range",
+        "base_talent": "Attacks poison the target, dealing 85 (+10) Arts damage every second for 3 seconds",
+        "stage_2_talent_upgrade": "Attacks poison the target, dealing 85 Arts damage every second for 3 seconds",
+        "stage_3_talent_upgrade": "Attacks poison the target, dealing 95 Arts damage every second for 3 seconds",
+        "total_stat_buffs": "ATK +30, ASPD +4"
+    },
+    {
+        "operator": "May",
+        "module_branch": "MAR-X",
+        "stage_1_trait_upgrade": "When attacking aerial units, increase ATK to 110%",
+        "base_talent": "ATK +8% (+1%), Attack Speed +8 (+1)",
+        "stage_2_talent_upgrade": "Victorian Agent: ATK +10%, Attack Speed +7",
+        "stage_3_talent_upgrade": "Victorian Agent: ATK +12%, Attack Speed +7",
+        "total_stat_buffs": "ATK +27, ASPD +3"
+    },
+    {
+        "operator": "Meteor",
+        "module_branch": "MAR-X",
+        "stage_1_trait_upgrade": "When attacking aerial units, increase ATK to 110%",
+        "base_talent": "When attacking aerial targets, deal 140% (+5%) damage",
+        "stage_2_talent_upgrade": "When attacking aerial targets, deal 140% damage",
+        "stage_3_talent_upgrade": "When attacking aerial targets, deal 150% damage",
+        "total_stat_buffs": "HP +180, ATK +30"
+    },
+    {
+        "operator": "Vermeil",
+        "module_branch": "MAR-X",
+        "stage_1_trait_upgrade": "When attacking aerial units, increase ATK to 110%",
+        "base_talent": "Self SP recovery speed +0.3 SP/sec",
+        "stage_2_talent_upgrade": "Self SP recovery speed +0.35 SP/sec",
+        "stage_3_talent_upgrade": "Self SP recovery speed +0.4 SP/sec",
+        "total_stat_buffs": "HP +170, ATK +31"
+    },
+    {
+        "operator": "Jessica",
+        "module_branch": "MAR-Y",
+        "stage_1_trait_upgrade": "ASPD +8 when there is a ground enemy within range",
+        "base_talent": "Attack Speed +12",
+        "stage_2_talent_upgrade": "Attack Speed +14, ATK +3%",
+        "stage_3_talent_upgrade": "Attack Speed +16, ATK +6%",
+        "total_stat_buffs": "ATK +30, DEF +30"
+    },
+    {
+        "operator": "Passenger",
+        "module_branch": "CHA-X",
+        "stage_1_trait_upgrade": "Attacks deal Arts damage and inflicts Slow for 0.8s\nDamage reduced by 10% per jump",
+        "base_talent": "When there are no enemies in the 4 adjacent tiles, ATK +10% (+2%)",
+        "stage_2_talent_upgrade": "When there are no enemies in the 4 adjacent tiles, ATK +8%, increase SP recovery rate by 0.15 SP/sec",
+        "stage_3_talent_upgrade": "When there are no enemies in the 4 adjacent tiles, ATK +8%, increase SP recovery rate by 0.25 SP/sec",
+        "total_stat_buffs": "ATK +90, ASPD +5"
+    },
+    {
+        "operator": "Passenger",
+        "module_branch": "CHA-Y",
+        "stage_1_trait_upgrade": "Each jump no longer deals less damage",
+        "base_talent": "When attacking enemies with 80% or more HP, increase Passenger's damage dealt to them by 25% (+5%) for 3 seconds",
+        "stage_2_talent_upgrade": "When attacking enemies with 80% or more HP, increases Passenger's damage dealt to them by 25% for 4 seconds",
+        "stage_3_talent_upgrade": "When attacking enemies with 70% or more HP, increases Passenger's damage dealt to them by 28% for 4 seconds",
+        "total_stat_buffs": "HP +60, ATK +100"
+    },
+    {
+        "operator": "Leizi",
+        "module_branch": "CHA-X",
+        "stage_1_trait_upgrade": "Attacks deal Arts damage and inflicts Slow for 0.8s\nDamage reduced by 10% per jump",
+        "base_talent": "When attacking unblocked enemies, deal 123% (+3%) damage",
+        "stage_2_talent_upgrade": "When attacking unblocked enemies, deal 123% damage and gain 1 SP",
+        "stage_3_talent_upgrade": "When attacking unblocked enemies, deal 126% damage and gain 1 SP",
+        "total_stat_buffs": "HP +105, ATK +75"
+    },
+    {
+        "operator": "Astgenne",
+        "module_branch": "CHA-Y",
+        "stage_1_trait_upgrade": "Each jump no longer deals less damage",
+        "base_talent": "When deployed, gain Attack Speed +4 every 15 seconds, stacks up to 5 layers",
+        "stage_2_talent_upgrade": "When deployed, gain Attack Speed +4 every 10 seconds, stacks up to 6 layers",
+        "stage_3_talent_upgrade": "When deployed, gain Attack Speed +4 every 15 seconds, stacks up to 7 layers",
+        "total_stat_buffs": "HP +120, ATK +74"
+    },
+    {
+        "operator": "Pudding",
+        "module_branch": "CHA-Y",
+        "stage_1_trait_upgrade": "Each jump no longer deals less damage",
+        "base_talent": "ATK +10%",
+        "stage_2_talent_upgrade": "ATK +13%",
+        "stage_3_talent_upgrade": "ATK +16%",
+        "total_stat_buffs": "HP +130, ASPD +5"
+    },
+    {
+        "operator": "Dusk",
+        "module_branch": "SPC-X",
+        "stage_1_trait_upgrade": "Attack Range Expands",
+        "base_talent": "Increase ATK by 2% for every enemy killed by Dusk or Little Instinct, stacks up to 18 (+3) layers",
+        "stage_2_talent_upgrade": "Increase ATK by 2% for every enemy killed by Dusk or Little Instinct, stacks up to 20 layers",
+        "stage_3_talent_upgrade": "Increase ATK by 2% for every enemy killed by Dusk or Little Instinct, stacks up to 21 layers",
+        "total_stat_buffs": "HP +190, ATK +80"
+    },
+    {
+        "operator": "Mostima",
+        "module_branch": "SPC-Y",
+        "stage_1_trait_upgrade": "Reduces Deployment Cost (-8 DP Cost)",
+        "base_talent": "Movement Speed of enemies within Attack Range -18% (+3%)",
+        "stage_2_talent_upgrade": "Movement Speed of enemies within Attack Range -25%; Movement Speed of enemies outside Attack Range -10% (unaffected by skill)",
+        "stage_3_talent_upgrade": "Movement Speed of enemies within Attack Range -30%; Movement Speed of enemies outside Attack Range -18% (unaffected by skill)",
+        "total_stat_buffs": "ATK +82, ASPD +7"
+    },
+    {
+        "operator": "Leonhardt",
+        "module_branch": "SPC-X",
+        "stage_1_trait_upgrade": "Attack Range Expands",
+        "base_talent": "For every enemy within Attack Range, ATK +4% (stacks up to 6 (+1) layers)",
+        "stage_2_talent_upgrade": "For every enemy within Attack Range, ATK +5% (stacks up to 6 layers)",
+        "stage_3_talent_upgrade": "For every enemy within Attack Range, ATK +5% (stacks up to 7 layers)",
+        "total_stat_buffs": "HP +155, ATK +70"
+    },
+    {
+        "operator": "Lava the Purgatory",
+        "module_branch": "SPC-X",
+        "stage_1_trait_upgrade": "Attack Range Expands",
+        "base_talent": "After the first deployment, immediately gain 35 (+5) SP. On every deployment, all other [Caster] operators gain SP +5 (+1). When deployed, all other [Caster] operators gain initial SP +5 (+1)",
+        "stage_2_talent_upgrade": "After the first deployment, immediately gain 33 SP. On every deployment, all other [Caster] operators gain SP +4. When deployed, all other [Caster] operators gain initial SP +4",
+        "stage_3_talent_upgrade": "After the first deployment, immediately gain 35 SP. On every deployment, all other [Caster] operators gain SP +4. When deployed, all other [Caster] operators gain initial SP +4",
+        "total_stat_buffs": "HP +165, ATK +62"
+    },
+    {
+        "operator": "Skyfire",
+        "module_branch": "SPC-Y",
+        "stage_1_trait_upgrade": "Reduces Deployment Cost (-8 DP Cost)",
+        "base_talent": "When deployed, all blocked enemies receive +18% (+3%) Arts damage taken",
+        "stage_2_talent_upgrade": "When deployed, all blocked enemies receive +20% Arts damage taken",
+        "stage_3_talent_upgrade": "When deployed, all blocked enemies receive +23% Arts damage taken",
+        "total_stat_buffs": "ATK +70, ASPD +5"
+    },
+    {
+        "operator": "Gitano",
+        "module_branch": "SPC-X",
+        "stage_1_trait_upgrade": "Attack Range Expands",
+        "base_talent": "After deployment, randomly gain one of the following effects for the rest of the battle: ATK +15% (+2%); Attack Speed +15 (+2); Max HP +22% (+2%)",
+        "stage_2_talent_upgrade": "After deployment, randomly gain one of the following effects for the rest of the battle: ATK +17%; Attack Speed +17; Max HP +25%",
+        "stage_3_talent_upgrade": "After deployment, randomly gain one of the following effects for the rest of the battle: ATK +18%; Attack Speed +18; Max HP +28%",
+        "total_stat_buffs": "HP +150, ATK +57"
+    },
+    {
+        "operator": "Greyy",
+        "module_branch": "SPC-Y",
+        "stage_1_trait_upgrade": "Reduces Deployment Cost (-8 DP Cost)",
+        "base_talent": "Attacks inflict 0.6 seconds of Slow",
+        "stage_2_talent_upgrade": "Attacks inflict 0.8 seconds of Slow",
+        "stage_3_talent_upgrade": "Attacks inflict 1 second of Slow",
+        "total_stat_buffs": "HP +170, ASPD +5"
+    },
+    {
+        "operator": "Ebenholz",
+        "module_branch": "MSC-X",
+        "stage_1_trait_upgrade": "When there's no targets within range, can store the attack energy (up to 3 > **4** times) and fire it off in a burst",
+        "base_talent": "Stored attack energy deals 135% damage. Can store one additional charge of attack energy that is only expended when attacking elite or boss enemies",
+        "stage_2_talent_upgrade": "Stored attack energy deals 140% damage. Can store one additional charge of attack energy that is only expended when attacking elite or boss enemies",
+        "stage_3_talent_upgrade": "Stored attack energy deals 143% damage. Can store one additional charge of attack energy that is only expended when attacking elite or boss enemies",
+        "total_stat_buffs": "ATK +90, ASPD +5"
+    },
+    {
+        "operator": "Ebenholz",
+        "module_branch": "MSC-Y",
+        "stage_1_trait_upgrade": "When holding a charge of stored energy, Attack Speed +30",
+        "base_talent": "If there are no enemies near the target, attacks deal additional Arts damage equal to 17% (+2%) ATK",
+        "stage_2_talent_upgrade": "If there are no enemies near the target, attacks deal additional Arts damage equal to 18% ATK; Otherwise, deal Arts Damage to other enemies near the target equal to 25% ATK",
+        "stage_3_talent_upgrade": "If there are no enemies near the target, attacks deal additional Arts damage equal to 20% ATK; Otherwise, deal Arts Damage to other enemies near the target equal to 36% ATK",
+        "total_stat_buffs": "HP +175, ATK +135"
+    },
+    {
+        "operator": "Iris",
+        "module_branch": "MSC-X",
+        "stage_1_trait_upgrade": "When there's no targets within range, can store the attack energy (up to 3 > 4 times) and fire it off in a burst",
+        "base_talent": "Stored attack energy deals 134% (+4%) damage",
+        "stage_2_talent_upgrade": "Stored attack energy deals 135% damage",
+        "stage_3_talent_upgrade": "Stored attack energy deals 138% damage",
+        "total_stat_buffs": "ATK +82, RES +4"
+    },
+    {
+        "operator": "Indigo",
+        "module_branch": "MSC-X",
+        "stage_1_trait_upgrade": "When there's no targets within range, can store the attack energy (up to 3 > 4 times) and fire it off in a burst",
+        "base_talent": "When attacking, 20% (+2%) chance to Bind the target for 4 seconds. Will not target Bound enemies",
+        "stage_2_talent_upgrade": "When attacking, 23% chance to Bind the target for 4 seconds. Will not target Bound enemies",
+        "stage_3_talent_upgrade": "When attacking, 25% chance to Bind the target for 4 seconds. Will not target Bound enemies",
+        "total_stat_buffs": "ATK +70, ASPD +4"
+    },
+    {
+        "operator": "Nightingale",
+        "module_branch": "RIN-X",
+        "stage_1_trait_upgrade": "Attack Range Expands",
+        "base_talent": "Allies within Attack Range gain RES +17 (+2)",
+        "stage_2_talent_upgrade": "Allies within Attack Range gain RES +15 and healing effectiveness +3%",
+        "stage_3_talent_upgrade": "Allies within Attack Range gain RES +15 and healing effectiveness +5%",
+        "total_stat_buffs": "ATK +65, RES +5"
+    },
+    {
+        "operator": "Breeze",
+        "module_branch": "RIN-X",
+        "stage_1_trait_upgrade": "Attack Range Expands",
+        "base_talent": "When skill is active, grant Resist to all [Medic] and [Supporter] operators",
+        "stage_2_talent_upgrade": "When skill is active, grant Max HP +10% and Resist to all [Medic] and [Supporter] operators",
+        "stage_3_talent_upgrade": "When skill is active, grant Max HP +15% Resist to all [Medic] and [Supporter] operators",
+        "total_stat_buffs": "HP +100, ATK +47"
+    },
+    {
+        "operator": "Ptilopsis",
+        "module_branch": "RIN-X",
+        "stage_1_trait_upgrade": "Attack Range Expands",
+        "base_talent": "When deployed, SP recovery speed of all allies +0.3 SP/sec (does not stack with similar effects)",
+        "stage_2_talent_upgrade": "When deployed, SP recovery speed of all allies +0.3 SP/sec; Allies within Attack Range gain +0.33 SP/sec instead (does not stack with similar effects)",
+        "stage_3_talent_upgrade": "When deployed, SP recovery speed of all allies +0.3 SP/sec; Allies within Attack Range gain +0.35 SP/sec instead (does not stack with similar effects)",
+        "total_stat_buffs": "HP +100, ATK +47"
+    },
+    {
+        "operator": "Perfumer",
+        "module_branch": "RIN-Y",
+        "stage_1_trait_upgrade": "Restores the HP of 4 allies simultaneously",
+        "base_talent": "When deployed, heal all allies for 5.5% (+0.5%) of Perfumer's ATK every second",
+        "stage_2_talent_upgrade": "When deployed, heal all allies for 6% of Perfumer's ATK every second",
+        "stage_3_talent_upgrade": "When deployed, heal all allies for 6.5% of Perfumer's ATK every second",
+        "total_stat_buffs": "HP +90, ATK +40"
+    },
+    {
+        "operator": "Lumen",
+        "module_branch": "WAH-X",
+        "stage_1_trait_upgrade": "Less likely to be targeted\nGrants [Resist] to self",
+        "base_talent": "After healing the target, grant Resist to them for 4 seconds. If the target's HP is above 75%, grant Resist for 6 seconds instead",
+        "stage_2_talent_upgrade": "After healing the target, grant Resist to them for 5 seconds. If the target's HP is above 75%, grant Resist for 7 seconds instead",
+        "stage_3_talent_upgrade": "After healing the target, grant Resist to them for 4 seconds. If the target's HP is above 75%, grant Resist for 8 seconds instead",
+        "total_stat_buffs": "HP +160, ATK +45"
+    },
+    {
+        "operator": "Ceylon",
+        "module_branch": "WAH-X",
+        "stage_1_trait_upgrade": "Less likely to be targeted\nGrants [Resist] to self",
+        "base_talent": "ATK +6% (+1%). If the stage has water tiles, ATK +24% (+6%) instead",
+        "stage_2_talent_upgrade": "ATK +8%. If the stage has water tiles, ATK +30% instead",
+        "stage_3_talent_upgrade": "ATK +11%. If the stage has water tiles, ATK +42% instead",
+        "total_stat_buffs": "ATK +45, RES +5"
+    },
+    {
+        "operator": "Whisperain",
+        "module_branch": "WAH-X",
+        "stage_1_trait_upgrade": "Less likely to be targeted\nGrants [Resist] to self",
+        "base_talent": "Allied units within range with Resist recover HP equal to 7% (+1%) of Whisperain's ATK every second (unaffected by trait)",
+        "stage_2_talent_upgrade": "Allied units within range with Resist recover HP equal to 8% of Whisperain's ATK every second (unaffected by trait)",
+        "stage_3_talent_upgrade": "Allied units within range with Resist recover HP equal to 9% of Whisperain's ATK every second (unaffected by trait)",
+        "total_stat_buffs": "HP +140, ATK +40"
+    },
+    {
+        "operator": "Purestream",
+        "module_branch": "WAH-Y",
+        "stage_1_trait_upgrade": "Remove the healing reduction on farther targets",
+        "base_talent": "N/A",
+        "stage_2_talent_upgrade": "Increase healing effect of skills by 10%",
+        "stage_3_talent_upgrade": "Increase healing effect of skills by 20%",
+        "total_stat_buffs": "ATK +32, DEF +32"
+    },
+    {
+        "operator": "Magallan",
+        "module_branch": "SUM-X",
+        "stage_1_trait_upgrade": "First summon deploy will not use deployment slots (Does not refund deployment slot when last summon retreats or is knocked down)",
+        "base_talent": "Drones gain Stealth for 22 (+2) seconds after deployment (will not be targeted by ranged attacks)",
+        "stage_2_talent_upgrade": "Drones gain Stealth for 23 seconds after deployment (will not be targeted by ranged attacks). if Magallan is within the 4 adjacent tiles, she gains the same effect",
+        "stage_3_talent_upgrade": "Drones gain Stealth for 26 seconds after deployment (will not be targeted by ranged attacks). if Magallan is within the 4 adjacent tiles, she gains the same effect",
+        "total_stat_buffs": "HP +150, ATK +50"
+    },
+    {
+        "operator": "Magallan",
+        "module_branch": "SUM-Y",
+        "stage_1_trait_upgrade": "Maximum summon limit +3\nSummon deploy cost reduced\nS1: DP Cost -1\nS2: DP Cost -3\nS3: DP Cost -3",
+        "base_talent": "Can summon 5 drones with 0 Block Count (can only deploy 3 together). Drone functionality changes depending on selected skill",
+        "stage_2_talent_upgrade": "Can summon 5 drones with 0 Block Count (can only deploy 4 together). Drone functionality changes depending on selected skill",
+        "stage_3_talent_upgrade": "Can summon 5 drones with higher stats and 0 Block Count (can only deploy 4 together). Drone functionality changes depending on selected skill\nS1: HP +100, DEF +50\nS2: ATK +40, ASPD +3\nS3: ATK +50, ASPD +3",
+        "total_stat_buffs": "ATK +40, DEF +40"
+    },
+    {
+        "operator": "Ling",
+        "module_branch": "SUM-Y",
+        "stage_1_trait_upgrade": "Maximum summon limit +3\nSummon deploy cost reduced\nS1: DP Cost -3\nS2: DP Cost -3\nS3: DP Cost -5",
+        "base_talent": "Can use 5 summons (can only deploy 3 together). Summon functionality changes depending on selected skill",
+        "stage_2_talent_upgrade": "Can use 5 summons (can only deploy 4 together). Summon functionality changes depending on selected skill",
+        "stage_3_talent_upgrade": "Can use 5 summons with higher stats (can only deploy 4 together). Summon functionality changes depending on selected skill\nS1: HP +150, ATK +42\nS2: HP +100, ATK +35\nS3: HP +250, ATK +60",
+        "total_stat_buffs": "HP +150, ATK +50"
+    },
+    {
+        "operator": "Scene",
+        "module_branch": "SUM-X",
+        "stage_1_trait_upgrade": "First summon deploy will not use deployment slots (Does not refund deployment slot when last summon retreats or is knocked down)",
+        "base_talent": "Can summon 5 mobile camera drones. Enemies within the 8 surrounding tiles of a camera drone lose Stealth",
+        "stage_2_talent_upgrade": "Can summon 5 mobile camera drones. Enemies within the 8 surrounding tiles of a camera drone lose Stealth and have -5% Movement Speed",
+        "stage_3_talent_upgrade": "Can summon 5 mobile camera drones. Enemies within the 8 surrounding tiles of a camera drone lose Stealth and have -8% Movement Speed",
+        "total_stat_buffs": "ATK +36, DEF +30"
+    },
+    {
+        "operator": "Mayer",
+        "module_branch": "SUM-X",
+        "stage_1_trait_upgrade": "First summon deploy will not use deployment slots (Does not refund deployment slot when last summon retreats or is knocked down)",
+        "base_talent": "Can summon 5 mechanical otters. Inflict Attack Speed -25 to enemies attacking the otters",
+        "stage_2_talent_upgrade": "Can summon 5 mechanical otters. Inflict Attack Speed -28 to enemies attacking the otters",
+        "stage_3_talent_upgrade": "Can summon 5 mechanical otters. Inflict Attack Speed -30 to enemies attacking the otters",
+        "total_stat_buffs": "HP +120, ATK +40"
+    },
+    {
+        "operator": "Deepcolor",
+        "module_branch": "SUM-Y",
+        "stage_1_trait_upgrade": "Maximum summon limit +3\nSummon deploy cost reduced\nS1: DP Cost -2\nS2: DP Cost -2",
+        "base_talent": "Can summon 4 tentacles to assist in battle",
+        "stage_2_talent_upgrade": "Can summon 4 tentacles to assist in battle, Tentacle Max HP +10%",
+        "stage_3_talent_upgrade": "Can summon 4 tentacles to assist in battle, Tentacle Max HP +15%",
+        "total_stat_buffs": "HP +115, ATK +35"
+    },
+    {
+        "operator": "Suzuran",
+        "module_branch": "DEC-X",
+        "stage_1_trait_upgrade": "When an enemy is in Attack Range, SP generation is increased by +0.2/s",
+        "base_talent": "When deployed, all ally [Supporter] operators' SP recovery speed +0.4 SP/sec (does not stack with similar effects)",
+        "stage_2_talent_upgrade": "When deployed, all ally [Supporter] operators' SP recovery speed +0.4 SP/sec (does not stack with similar effects) and ATK +6%",
+        "stage_3_talent_upgrade": "When deployed, all ally [Supporter] operators' SP recovery speed +0.4 SP/sec (does not stack with similar effects) and ATK +9%",
+        "total_stat_buffs": "HP +180, ASPD +6"
+    },
+    {
+        "operator": "Angelina",
+        "module_branch": "DEC-Y",
+        "stage_1_trait_upgrade": "Attack deals Arts damage and inflicts Slow for 0.8s > **1.2s**",
+        "base_talent": "While skill is not active, all allies recover 25 (+5) HP every second",
+        "stage_2_talent_upgrade": "While skill is not active, all allies recover 30 HP every second",
+        "stage_3_talent_upgrade": "While skill is not active, all allies recover 35 HP every second",
+        "total_stat_buffs": "HP +120, ATK +50"
+    },
+    {
+        "operator": "Glaucus",
+        "module_branch": "DEC-X",
+        "stage_1_trait_upgrade": "When an enemy is in Attack Range, SP generation is increased by +0.2/s",
+        "base_talent": "Prioritize attacking [Drones]. Deal 155% (+5%) damage when attacking [Drones]",
+        "stage_2_talent_upgrade": "Prioritize attacking [Drones]. Deal 165% damage when attacking [Drones]",
+        "stage_3_talent_upgrade": "Prioritize attacking [Drones]. Deal 175% damage when attacking [Drones]",
+        "total_stat_buffs": "HP +120, ATK +45"
+    },
+    {
+        "operator": "Proviso",
+        "module_branch": "DEC-X",
+        "stage_1_trait_upgrade": "When an enemy is in Attack Range, SP generation is increased by +0.2/s",
+        "base_talent": "Attack Speed +12 (+2). When deployed, grant the same effect to a random [Kazimierz] ally",
+        "stage_2_talent_upgrade": "Attack Speed +10, ATK +5%. When deployed, grant the same effect to a random [Kazimierz] ally",
+        "stage_3_talent_upgrade": "Attack Speed +10, ATK +8%. When deployed, grant the same effect to a random [Kazimierz] ally",
+        "total_stat_buffs": "HP +120, ATK +45"
+    },
+    {
+        "operator": "Istina",
+        "module_branch": "DEC-Y",
+        "stage_1_trait_upgrade": "Attack deals Arts damage and inflicts Slow for 0.8s > **1.2s**",
+        "base_talent": "DEF -35%, however Attack Speed +21 (+3)",
+        "stage_2_talent_upgrade": "DEF -35%, however Attack Speed +21. When skill is active, gain an additional 5 Attack Speed",
+        "stage_3_talent_upgrade": "DEF -35%, however Attack Speed +18. When skill is active, gain an additional 10 Attack Speed",
+        "total_stat_buffs": "HP +120, ASPD +5"
+    },
+    {
+        "operator": "Podenco",
+        "module_branch": "DEC-X",
+        "stage_1_trait_upgrade": "When an enemy is in Attack Range, SP generation is increased by +0.2/s",
+        "base_talent": "When deployed, all [Supporter] operators gain ATK +11% (+2%)",
+        "stage_2_talent_upgrade": "When deployed, all [Supporter] operators gain ATK +9% and Attack Speed +3",
+        "stage_3_talent_upgrade": "When deployed, all [Supporter] operators gain ATK +9% and Attack Speed +5",
+        "total_stat_buffs": "HP +110, ATK +40"
+    },
+    {
+        "operator": "Earthspirit",
+        "module_branch": "DEC-Y",
+        "stage_1_trait_upgrade": "Attack deals Arts damage and inflicts Slow for 0.8s > **1.2s**",
+        "base_talent": "Increases the duration of Slow effect by +0.13 (+0.03) seconds",
+        "stage_2_talent_upgrade": "Increases the duration of Slow effect by 0.2 seconds",
+        "stage_3_talent_upgrade": "Increases the duration of Slow effect by 0.3 seconds",
+        "total_stat_buffs": "HP +130, DEF +38"
+    },
+    {
+        "operator": "Phantom",
+        "module_branch": "EXE-X",
+        "stage_1_trait_upgrade": "Refund 80% of current operator deploy cost on retreat",
+        "base_talent": "Redeployment time of the clone -10 seconds",
+        "stage_2_talent_upgrade": "Redeployment time of the clone -14 seconds",
+        "stage_3_talent_upgrade": "Redeployment time of the clone -16 seconds",
+        "total_stat_buffs": "HP +140, ATK +73"
+    },
+    {
+        "operator": "Waai Fu",
+        "module_branch": "EXE-X",
+        "stage_1_trait_upgrade": "Refund 80% of current operator deploy cost on retreat",
+        "base_talent": "N/A",
+        "stage_2_talent_upgrade": "Increase Physical damage dealt to [Infected Lifeforms] by 7%",
+        "stage_3_talent_upgrade": "Increase Physical damage dealt to [Infected Lifeforms] by 14%",
+        "total_stat_buffs": "HP +95, ATK +65"
+    },
+    {
+        "operator": "Kafka",
+        "module_branch": "EXE-Y",
+        "stage_1_trait_upgrade": "When there are no allied units in the four adjacent tiles, ATK +10%",
+        "base_talent": "When skill is active, ATK +18% (+3%), reduce Block Count to 0 and gain Camouflage",
+        "stage_2_talent_upgrade": "When skill is active, ATK +22%, reduce Block Count to 0 and gain Camouflage",
+        "stage_3_talent_upgrade": "When skill is active, ATK +25%, reduce Block Count to 0 and gain Camouflage",
+        "total_stat_buffs": "HP +120, ATK +60"
+    },
+    {
+        "operator": "Projekt Red",
+        "module_branch": "EXE-Y",
+        "stage_1_trait_upgrade": "When there are no allied units in the four adjacent tiles, ATK +10%",
+        "base_talent": "Every attack will deal damage equal to at least 33% (+3%) ATK",
+        "stage_2_talent_upgrade": "Every attack will deal damage equal to at least 30% ATK",
+        "stage_3_talent_upgrade": "When skill is active, ATK +25%, reduce Block Count to 0 and gain Camouflage",
+        "total_stat_buffs": "HP +120, ATK +60"
+    },
+    {
+        "operator": "Gravel",
+        "module_branch": "EXE-X",
+        "stage_1_trait_upgrade": "Refund 80% of current operator deploy cost on retreat",
+        "base_talent": "N/A",
+        "stage_2_talent_upgrade": "When deployed, reduces the deployment time of all [Kazimierz] Operators currently on cooldown by 3 seconds",
+        "stage_3_talent_upgrade": "When deployed, reduces the deployment time of all [Kazimierz] Operators currently on cooldown by 5 seconds",
+        "total_stat_buffs": "HP +135, DEF +60"
+    },
+    {
+        "operator": "Lee",
+        "module_branch": "MER-X",
+        "stage_1_trait_upgrade": "While deployed, 3 > 2 DP are consumed every 3 seconds (automatically retreats without sufficient DP)",
+        "base_talent": "When DP is consumed by Trait effect, if there is sufficient DP, consume 5 DP instead to block the next Stun/Freeze inflicted on Lee and Stun the attacker for 3 seconds",
+        "stage_2_talent_upgrade": "When DP is consumed by Trait effect, if there is sufficient DP, consume 5 DP instead to block the next Stun/Freeze inflicted on Lee and Stun the attacker for 4 seconds",
+        "stage_3_talent_upgrade": "When DP is consumed by Trait effect, if there is sufficient DP, consume 4 DP instead to block the next Stun/Freeze inflicted on Lee and Stun the attacker for 4 seconds",
+        "total_stat_buffs": "HP +300, ATK +74"
+    },
+    {
+        "operator": "Mr. Nothing",
+        "module_branch": "MER-X",
+        "stage_1_trait_upgrade": "While deployed, 3 > 2 DP are consumed every 3 seconds (automatically retreats without sufficient DP)",
+        "base_talent": "After not attacking for 4 seconds, the next attack will deal 155% (+5%) damage and Stun the target for 4 seconds",
+        "stage_2_talent_upgrade": "After not attacking for 4 seconds, the next attack will deal 165% damage and Stun the target for 5 seconds",
+        "stage_3_talent_upgrade": "After not attacking for 3 seconds, the next attack will deal 175% damage and Stun the target for 5 seconds",
+        "total_stat_buffs": "HP +240, ATK +65"
+    },
+    {
+        "operator": "Jaye",
+        "module_branch": "MER-X",
+        "stage_1_trait_upgrade": "While deployed, 3 > 2 DP are consumed every 3 seconds (automatically retreats without sufficient DP)",
+        "base_talent": "When attacking [Infected Lifeforms], deal 150% (+5%) damage",
+        "stage_2_talent_upgrade": "When attacking [Infected Lifeforms], deal 150% damage",
+        "stage_3_talent_upgrade": "When attacking [Infected Lifeforms], deal 155% damage",
+        "total_stat_buffs": "ATK +50, DEF +50"
+    },
+    {
+        "operator": "Specter the Unchained",
+        "module_branch": "PUM-X",
+        "stage_1_trait_upgrade": "Substitute gains +15% ATK",
+        "base_talent": "<Substitute> inflicts -40% movement speed to nearby enemies and deals 40% Arts damage to them every second",
+        "stage_2_talent_upgrade": "<Substitute> inflicts -50% movement speed to nearby enemies and deals 60% Arts damage to them every second. When swapping back, gain 8 SP",
+        "stage_3_talent_upgrade": "<Substitute> inflicts -60% movement speed to nearby enemies and deals 80% Arts damage to them every second. When swapping back, gain 15 SP",
+        "total_stat_buffs": "HP +250, ATK +83, DEF +30"
+    },
+    {
+        "operator": "Specter the Unchained",
+        "module_branch": "PUM-Y",
+        "stage_1_trait_upgrade": "Substitute gains +20% HP",
+        "base_talent": "When in team, all [Abyssal Hunters] operators gain Max HP +23% (+3%)",
+        "stage_2_talent_upgrade": "When in team, all [Abyssal Hunters] operators gain Max HP +25% and SP recovery speed +0.3 SP/sec (does not stack with similar effects)",
+        "stage_3_talent_upgrade": "When in team, all [Abyssal Hunters] operators gain Max HP +30% and SP recovery speed +0.5 SP/sec (does not stack with similar effects)",
+        "total_stat_buffs": "HP +250, ATK +40, DEF +55"
+    },
+    {
+        "operator": "Kazemaru",
+        "module_branch": "PUM-Y",
+        "stage_1_trait_upgrade": "Substitute gains +20% HP",
+        "base_talent": "Upon appearing, <Substitute> deals 275% (+5%) Arts damage to all enemies within the 8 surrounding tiles",
+        "stage_2_talent_upgrade": "Upon appearing, <Substitute> deals 280% Arts damage to all enemies within the 8 surrounding tiles",
+        "stage_3_talent_upgrade": "Upon appearing, <Substitute> deals 285% Arts damage to all enemies within the 8 surrounding tiles",
+        "total_stat_buffs": "ATK +65, DEF +40"
+    },
+    {
+        "operator": "Bena",
+        "module_branch": "PUM-Y",
+        "stage_1_trait_upgrade": "Substitute gains +20% HP",
+        "base_talent": "<Substitute> deals Arts damage and receives 43% (+3%) reduced Physical and Arts damage",
+        "stage_2_talent_upgrade": "<Substitute> deals Arts damage and receives 43% reduced Physical and Arts damage",
+        "stage_3_talent_upgrade": "<Substitute> deals Arts damage and receives 45% reduced Physical and Arts damage",
+        "total_stat_buffs": "HP +280, ATK +55"
+    },
+    {
+        "operator": "Gladiia",
+        "module_branch": "HOK-X",
+        "stage_1_trait_upgrade": "When shifting enemies, the targets receive Arts Damage proportional to distance moved (800 Arts Damage per tile shifted)",
+        "base_talent": "When deployed, all [Abyssal Hunters] operators recover 2.5% Max HP every second and receive 25% less Physical and Arts damage from [Sea Monster] enemies",
+        "stage_2_talent_upgrade": "When deployed, all [Abyssal Hunters] operators recover 3% Max HP every second and receive 28% less Physical and Arts damage",
+        "stage_3_talent_upgrade": "When deployed, all [Abyssal Hunters] operators recover 3.5% Max HP every second and receive 30% less Physical and Arts damage",
+        "total_stat_buffs": "HP +210, ATK +70"
+    },
+    {
+        "operator": "Cliffheart",
+        "module_branch": "HOK-X",
+        "stage_1_trait_upgrade": "When shifting enemies, the targets receive Arts Damage proportional to distance moved (800 Arts Damage per tile shifted)",
+        "base_talent": "When not blocking any enemies, ATK and DEF +14% (+2%)",
+        "stage_2_talent_upgrade": "When not blocking any enemies, ATK and DEF +18",
+        "stage_3_talent_upgrade": "When not blocking any enemies, ATK and DEF +22%",
+        "total_stat_buffs": "ATK +40, DEF +31"
+    },
+    {
+        "operator": "Snowsant",
+        "module_branch": "HOK-X",
+        "stage_1_trait_upgrade": "When shifting enemies, the targets receive Arts Damage proportional to distance moved (800 Arts Damage per tile shifted)",
+        "base_talent": "When pulling [Infected Lifeforms], increase force by 1 stage and Silence them for 8 (+4) seconds",
+        "stage_2_talent_upgrade": "When pulling [Infected Lifeforms], increase force by 1 stage and Silence them for 10 seconds",
+        "stage_3_talent_upgrade": "When pulling [Infected Lifeforms], increase force by 1 stage and Silence them for 12 seconds",
+        "total_stat_buffs": "HP +210, DEF +31"
+    },
+    {
+        "operator": "Rope",
+        "module_branch": "HOK-X",
+        "stage_1_trait_upgrade": "When shifting enemies, the targets receive Arts Damage proportional to distance moved (800 Arts Damage per tile shifted)",
+        "base_talent": "Gain 34% (+4%) Physical Evasion",
+        "stage_2_talent_upgrade": "Gain 39% Physical Evasion",
+        "stage_3_talent_upgrade": "Gain 44% Physical Evasion",
+        "total_stat_buffs": "HP +200, ATK +31"
+    },
+    {
+        "operator": "Mizuki",
+        "module_branch": "AMB-X",
+        "stage_1_trait_upgrade": "Movement Speed of enemies in Attack Range is reduced by 20%",
+        "base_talent": "When attacking, deal additional Arts damage equal to 50% Attack to the target with the lowest HP",
+        "stage_2_talent_upgrade": "When attacking, deal additional Arts damage equal to 55% Attack to the 2 targets with the lowest HP",
+        "stage_3_talent_upgrade": "When attacking, deal additional Arts damage equal to 60% Attack to the 2 targets with the lowest HP",
+        "total_stat_buffs": "HP +220, ATK +90"
+    },
+    {
+        "operator": "Kirara",
+        "module_branch": "AMB-X",
+        "stage_1_trait_upgrade": "Movement Speed of enemies in Attack Range is reduced by 20%",
+        "base_talent": "Recover 2% Max HP every second. If there are no allies within the 8 surrounding tiles, recover 4% (+0.5%) Max HP every second instead",
+        "stage_2_talent_upgrade": "Recover 2.5% Max HP every second. If there are no allies within the 8 surrounding tiles, recover 3.5% Max HP every second instead",
+        "stage_3_talent_upgrade": "Recover 2.5% Max HP every second. If there are no allies within the 8 surrounding tiles, recover 4% Max HP every second instead",
+        "total_stat_buffs": "HP +330, DEF +60"
+    },
+    {
+        "operator": "Manticore",
+        "module_branch": "AMB-X",
+        "stage_1_trait_upgrade": "Movement Speed of enemies in Attack Range is reduced by 20%",
+        "base_talent": "Gains Stealth when idle. Attacking will remove Stealth and grant +54% (+4%) ATK to the current attack. Regain Stealth after not attacking for 5 seconds",
+        "stage_2_talent_upgrade": "Gains Stealth when idle. Attacking will remove Stealth and grant +59% ATK to the current attack. Regain Stealth after not attacking for 5 seconds",
+        "stage_3_talent_upgrade": "Gains Stealth when idle. Attacking will remove Stealth and grant +64% ATK to the current attack. Regain Stealth after not attacking for 5 seconds",
+        "total_stat_buffs": "ATK +85, DEF +31"
+    },
+    {
+        "operator": "Ethan",
+        "module_branch": "AMB-X",
+        "stage_1_trait_upgrade": "Movement Speed of enemies in Attack Range is reduced by 20%",
+        "base_talent": "Attacks have 25% chance to Bind the enemy for 3 seconds",
+        "stage_2_talent_upgrade": "Attacks have 25% chance to Bind the enemy for 3.5 seconds",
+        "stage_3_talent_upgrade": "Attacks have 28% chance to Bind the enemy for 3.5 seconds",
+        "total_stat_buffs": "HP +300, ATK +60"
+    }
+]
