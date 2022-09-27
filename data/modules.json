@@ -1092,98 +1092,98 @@
         "module_branch": "SPC-Y",
         "stage_1_trait_upgrade": "Reduces Deployment Cost (-8 DP Cost)",
         "base_talent": "The first attack after deployment will summon a 'Little Instinct' at the target's location (only on deployable ground tiles) that lasts for 25 seconds",
-        "stage_2_talent_upgrade": "The first attack after deployment will summon 2 'Little Instincts' at the target's location and the surrounding 4 tiles (only on deployable ground tiles) that lasts for 25 seconds, All 'Little Instincts' have increased attributes and restore x SP for Dusk every x seconds",
-        "stage_3_talent_upgrade": "The first attack after deployment will summon 2 'Little Instincts' at the target's location and the surrounding 4 tiles (only on deployable ground tiles) that lasts for 25 seconds, All 'Little Instincts' have increased attributes and restore x SP for Dusk every x seconds",
-        "total_stat_buffs": "ATK +, ASPD +"
+        "stage_2_talent_upgrade": "The first attack after deployment will summon 2 'Little Instincts' at the target's location and the surrounding 4 tiles (only on deployable ground tiles) that lasts for 25 seconds, All 'Little Instincts' have increased attributes and restore 1 SP for Dusk every 2.5 seconds\n'Little Instincts': Max HP +250, ATK +15, DEF +15",
+        "stage_3_talent_upgrade": "The first attack after deployment will summon 2 'Little Instincts' at the target's location and the surrounding 4 tiles (only on deployable ground tiles) that lasts for 25 seconds, All 'Little Instincts' have more increased attributes and restore 1 SP for Dusk every 1.5 seconds\n'Little Instincts': Max HP +400, ATK +25, DEF +25",
+        "total_stat_buffs": "ATK +82, ASPD +7"
     },
     {
         "operator": "Angelina",
         "module_branch": "DEC-X",
         "stage_1_trait_upgrade": "When an enemy is in Attack Range, SP generation is increased by +0.2/s",
         "base_talent": "All allies' Attack Speed +8 (+1)",
-        "stage_2_talent_upgrade": "All allies' Attack Speed +7. Allies in range gain x additional Attack Speed",
-        "stage_3_talent_upgrade": "All allies' Attack Speed +7. Allies in range gain x additional Attack Speed",
-        "total_stat_buffs": "HP +, ATK +, ASPD +"
+        "stage_2_talent_upgrade": "All allies' Attack Speed +7. Allies in range gain 3 additional Attack Speed",
+        "stage_3_talent_upgrade": "All allies' Attack Speed +7. Allies in range gain 5 additional Attack Speed",
+        "total_stat_buffs": "HP +100, ATK +20, ASPD +6"
     },
     {
         "operator": "Kal'tsit",
         "module_branch": "MEC-X",
         "stage_1_trait_upgrade": "When healing units with less than 50% HP, healing effectiveness is increased by 15%",
         "base_talent": "When Mon3tr is defeated (excludes retreat), Stun all enemies within the 8 surrounding tiles for 3.5 (+0.5) seconds and deal 1400 (+200) True damage to them",
-        "stage_2_talent_upgrade": "When Mon3tr's HP is below x% for the first time and when it is defeated (excludes retreat), Stun all enemies within the 8 surrounding tiles for 3 seconds and deal 1200 True damage to them",
-        "stage_3_talent_upgrade": "When Mon3tr's HP is below x% for the first time and when it is defeated (excludes retreat), Stun all enemies within the 8 surrounding tiles for +seconds and deal +True damage to them",
-        "total_stat_buffs": "ATK +, DEF +"
+        "stage_2_talent_upgrade": "When Mon3tr's HP is below 50% for the first time and when it is defeated (excludes retreat), Stun all enemies within the 8 surrounding tiles for 3 seconds and deal 1200 True damage to them",
+        "stage_3_talent_upgrade": "When Mon3tr's HP is below 50% for the first time and when it is defeated (excludes retreat), Stun all enemies within the 8 surrounding tiles for 3.5 seconds and deal 1500 True damage to them",
+        "total_stat_buffs": "ATK +60, DEF +25"
     },
     {
         "operator": "Shining",
         "module_branch": "MEC-Y",
         "stage_1_trait_upgrade": "When healing melee units, healing effectiveness is increased by 15%",
         "base_talent": "Allies within Attack Range gain DEF +65 (+5)",
-        "stage_2_talent_upgrade": "Allies within Attack Range gain DEF+, melee units in range gain additional +x DEF",
-        "stage_3_talent_upgrade": "Allies within Attack Range gain DEF++, melee units in range gain additional ++x DEF",
-        "total_stat_buffs": "ATK +, ASPD +"
+        "stage_2_talent_upgrade": "Allies within Attack Range gain 80 DEF, melee units in range gain additional 30 DEF",
+        "stage_3_talent_upgrade": "Allies within Attack Range gain 100 DEF, melee units in range gain additional 40 DEF",
+        "total_stat_buffs": "ATK 65, ASPD +7"
     },
     {
         "operator": "Folinic",
         "module_branch": "MEC-Y",
         "stage_1_trait_upgrade": "When healing melee units, healing effectiveness is increased by 15%",
         "base_talent": "Gain Resist. Additionally, damage taken from the natural environment -50% (+10%)",
-        "stage_2_talent_upgrade": "Gain Resist. Additionally, damage taken from the natural environment -40%, allies in range have -x% damage taken from environmental effects",
-        "stage_3_talent_upgrade": "Gain Resist. Additionally, damage taken from the natural environment -40%, allies in range have -x% damage taken from environmental effects",
-        "total_stat_buffs": "HP +, ASPD +"
+        "stage_2_talent_upgrade": "Gain Resist. Additionally, damage taken from the natural environment -40%, allies in range have -15% damage taken from environmental effects",
+        "stage_3_talent_upgrade": "Gain Resist. Additionally, damage taken from the natural environment -40%, allies in range have -25% damage taken from environmental effects",
+        "total_stat_buffs": "HP +120, ASPD +6"
     },
     {
         "operator": "Silence",
         "module_branch": "MEC-Y",
         "stage_1_trait_upgrade": "When healing melee units, healing effectiveness is increased by 15%",
         "base_talent": "When deployed, all ally [Medic] operators gain Attack Speed +14 (+2)",
-        "stage_2_talent_upgrade": "When deployed, all ally [Medic] operators gain Attack Speed +x",
-        "stage_3_talent_upgrade": "When deployed, all ally [Medic] operators gain Attack Speed +x",
-        "total_stat_buffs": "HP +, ASPD +"
+        "stage_2_talent_upgrade": "When deployed, all ally [Medic] operators gain Attack Speed +15",
+        "stage_3_talent_upgrade": "When deployed, all ally [Medic] operators gain Attack Speed +17",
+        "total_stat_buffs": "HP +120, ASPD +6"
     },
     {
         "operator": "Tuye",
         "module_branch": "MEC-X",
         "stage_1_trait_upgrade": "When healing units with less than 50% HP, healing effectiveness is increased by 15%",
         "base_talent": "After not healing for 4 seconds, increase the heal amount of the next heal to 155% (+5%)",
-        "stage_2_talent_upgrade": "After not healing for 4 seconds, increase the heal amount of the next heal to +x%",
-        "stage_3_talent_upgrade": "After not healing for 4 seconds, increase the heal amount of the next heal to +x%",
-        "total_stat_buffs": "HP +, ATK +"
+        "stage_2_talent_upgrade": "After not healing for 4 seconds, increase the heal amount of the next heal to 170%",
+        "stage_3_talent_upgrade": "After not healing for 4 seconds, increase the heal amount of the next heal to 180%",
+        "total_stat_buffs": "HP +80, ATK +47"
     },
     {
         "operator": "Warfarin",
         "module_branch": "MEC-X",
         "stage_1_trait_upgrade": "When healing units with less than 50% HP, healing effectiveness is increased by 15%",
         "base_talent": "When an enemy dies within Attack Range, recover 2 SP to self and one random ally within Attack Range",
-        "stage_2_talent_upgrade": "When an enemy dies within Attack Range, recover 2 SP to self and one random ally within Attack Range. If the enemy is an Elite or Leader, SP restored +x",
-        "stage_3_talent_upgrade": "When an enemy dies within Attack Range, recover 2 SP to self and one random ally within Attack Range. If the enemy is an Elite or Leader, SP restored +x",
-        "total_stat_buffs": "HP +, ATK +"
+        "stage_2_talent_upgrade": "When an enemy dies within Attack Range, recover 2 SP to self and one random ally within Attack Range. If the enemy is an Elite or Leader, SP restored +1",
+        "stage_3_talent_upgrade": "When an enemy dies within Attack Range, recover 2 SP to self and one random ally within Attack Range. If the enemy is an Elite or Leader, SP restored +2",
+        "total_stat_buffs": "HP +80, ATK +47"
     },
     {
         "operator": "Gavial",
         "module_branch": "MEC-Y",
         "stage_1_trait_upgrade": "When healing melee units, healing effectiveness is increased by 15%",
         "base_talent": "After deployment, all ally [Medic] operators gain ATK +12% (+2%), DEF +120 (+20) for 17 (+2) seconds",
-        "stage_2_talent_upgrade": "After deployment, all ally [Medic] operators gain ATK +10%, DEF +100 for x seconds",
-        "stage_3_talent_upgrade": "After deployment, all ally [Medic] operators gain ATK +10%, DEF +100 for x seconds",
-        "total_stat_buffs": "HP +, ATK +"
+        "stage_2_talent_upgrade": "After deployment, all ally [Medic] operators gain ATK +10%, DEF +100 for 20 seconds",
+        "stage_3_talent_upgrade": "After deployment, all ally [Medic] operators gain ATK +10%, DEF +100 for 25 seconds",
+        "total_stat_buffs": "HP +70, ATK +35"
     },
     {
         "operator": "Myrrh",
         "module_branch": "MEC-X",
         "stage_1_trait_upgrade": "When healing units with less than 50% HP, healing effectiveness is increased by 15%",
         "base_talent": "After deployment, immediately heal all allies for 160% (+10%) of Myrrh's ATK",
-        "stage_2_talent_upgrade": "After deployment, immediately heal all allies for x% of Myrrh's ATK",
-        "stage_3_talent_upgrade": "After deployment, immediately heal all allies for x% of Myrrh's ATK",
-        "total_stat_buffs": "HP +, ASPD +"
+        "stage_2_talent_upgrade": "After deployment, immediately heal all allies for 170% of Myrrh's ATK",
+        "stage_3_talent_upgrade": "After deployment, immediately heal all allies for 180% of Myrrh's ATK",
+        "total_stat_buffs": "HP 100, ASPD +5"
     },
     {
         "operator": "Sussurro",
         "module_branch": "MEC-X",
         "stage_1_trait_upgrade": "When healing units with less than 50% HP, healing effectiveness is increased by 15%",
         "base_talent": "When in team, all operators with 10 or less initial cost receive 23% (+3%) more healing",
-        "stage_2_talent_upgrade": "When in team, all operators with 10 or less initial cost receive x% more healing",
-        "stage_3_talent_upgrade": "When in team, all operators with 10 or less initial cost receive x% more healing",
-        "total_stat_buffs": "HP +, ASPD +"
+        "stage_2_talent_upgrade": "When in team, all operators with 10 or less initial cost receive 23% more healing",
+        "stage_3_talent_upgrade": "When in team, all operators with 10 or less initial cost receive 25% more healing",
+        "total_stat_buffs": "HP +100, ASPD +5"
     }
 ]
