@@ -9,10 +9,9 @@ plugin = lightbulb.Plugin('modules')
 
 @plugin.command
 @lightbulb.option('operator', 'Operator', required=True, autocomplete=True)
-@lightbulb.command('module', "Get details about an operator's module")
+@lightbulb.command('module', "Get details about an operator's module", auto_defer=True)
 @lightbulb.implements(lightbulb.SlashCommand)
 async def module(ctx):
-    await ctx.respond(hikari.ResponseType.DEFERRED_MESSAGE_CREATE)
     operator = ctx.options.operator.strip()
     with open("./data/modules.json", "r") as f:
         ops_with_modules = []
@@ -24,7 +23,7 @@ async def module(ctx):
     with open("./data/operator_name_to_id.json", "r") as c:
         ops_id_data = json.load(c)
         for key, _ in ops_id_data.items():
-            operators_list.append(key)
+            operators_list.append(key.lower())
         if operator.lower() not in ops_with_modules:
             if operator.lower() in operators_list:
                 await ctx.respond(hikari.Embed(title=f"{operator.title()} doesn't have a module"))

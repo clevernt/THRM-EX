@@ -4,10 +4,9 @@ import hikari
 plugin = lightbulb.Plugin('help')
 
 @plugin.command
-@lightbulb.command('help', 'commands list')
+@lightbulb.command('help', 'commands list', auto_defer=True)
 @lightbulb.implements(lightbulb.SlashCommand)
 async def help(ctx):
-    await ctx.respond(hikari.ResponseType.DEFERRED_MESSAGE_CREATE)
     embed = hikari.Embed(title='Commands List')
     embed.add_field('🎮 Arknights', "`arkrec`, `module`")
     await ctx.respond(embed)

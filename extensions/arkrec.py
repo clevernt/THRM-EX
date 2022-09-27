@@ -11,10 +11,9 @@ plugin = lightbulb.Plugin('arkrec')
 @plugin.command
 @lightbulb.option('category', 'Category', required=True, autocomplete=True)
 @lightbulb.option('stage', 'Stage Name', required=True)
-@lightbulb.command('arkrec', 'finds clears from arkrec')
+@lightbulb.command('arkrec', 'finds clears from arkrec', auto_defer=True)
 @lightbulb.implements(lightbulb.SlashCommand)
 async def arkrec(ctx):
-    await ctx.respond(hikari.ResponseType.DEFERRED_MESSAGE_CREATE)
     url = "https://arkrec.com/api/records"
     stage = ctx.options.stage.strip()
     categoryy = ctx.options.category.strip()
