@@ -73,12 +73,12 @@ async def arkrec(ctx):
             sep = ", "
             """await ctx.respond(f"Stage: {stage}, Category(s): {sep.join(map(str, categories_en))}, Lowest ops: {ops_count}, Squad: {sep.join(map(str, ops_en_ver))} Link: {clear_link}")"""
             embed = hikari.Embed(title="Clear Found")
-            embed.add_field("Stage", stage)
-            embed.add_field("Player", raider)
-            embed.add_field("Category(s)", sep.join(map(str, categories_en)))
-            embed.add_field("OP Count", ops_count)
-            embed.add_field("Squad", sep.join(map(str, ops_en_ver)))
-            embed.add_field("Link", clear_link)
+            embed.add_field("Stage", stage, inline=True)
+            embed.add_field("Player", raider, inline=True)
+            embed.add_field("Category(s)", sep.join(map(str, categories_en)), inline=True)
+            embed.add_field("OP Count", ops_count, inline=True)
+            embed.add_field("Squad", sep.join(map(str, ops_en_ver)), inline=True)
+            embed.add_field("Link", clear_link, inline=True)
             embed.set_thumbnail(raider_image)
             await ctx.respond(embed)
             break

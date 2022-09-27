@@ -16,20 +16,26 @@ async def module(ctx):
     operator = ctx.options.operator.strip()
     with open("./data/modules.json", "r") as f:
         ops_with_modules = []
+        operators_list = []
         data = json.load(f)
         for i in data:
             op_name = i["operator"]
             ops_with_modules.append(op_name.lower())
+    with open("./data/operator_name_to_id.json", "r") as c:
+        ops_id_data = json.load(c)
+        for key, _ in ops_id_data.items():
+            operators_list.append(key)
         if operator.lower() not in ops_with_modules:
-            await ctx.respond(hikari.Embed(title="Operator doesn't have a module"))
+            if operator.lower() in operators_list:
+                await ctx.respond(hikari.Embed(title=f"{operator.title()} doesn't have a module"))
+            else:
+                await ctx.respond(hikari.Embed(title=f"That is not an operator"))                
         for i in data:
             name = i["operator"]
-            with open("./data/operator_name_to_id.json", "r") as c:
-                    data = json.load(c)
-                    for key, value in data.items():
-                        if key == name:
-                            operator_code = value 
-                            operator_icon = f"https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avatars/{operator_code}.png"
+            for key, value in ops_id_data.items():
+                if key == name:
+                    operator_code = value 
+                    operator_icon = f"https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avatars/{operator_code}.png"
             if name.lower() == operator.lower():       
                 module_branch = i["module_branch"]
                 stage_1_trait_upgrade = i["stage_1_trait_upgrade"]
