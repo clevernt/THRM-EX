@@ -999,8 +999,8 @@
     },
     {
         "operator": "Kazemaru",
-        "module_branch": "PUM-Y",
-        "stage_1_trait_upgrade": "Substitute gains +20% HP",
+        "module_branch": "PUM-X",
+        "stage_1_trait_upgrade": "Substitute gains +15% ATK",
         "base_talent": "Upon appearing, <Substitute> deals 275% (+5%) Arts damage to all enemies within the 8 surrounding tiles",
         "stage_2_talent_upgrade": "Upon appearing, <Substitute> deals 280% Arts damage to all enemies within the 8 surrounding tiles",
         "stage_3_talent_upgrade": "Upon appearing, <Substitute> deals 285% Arts damage to all enemies within the 8 surrounding tiles",
