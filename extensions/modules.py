@@ -1,6 +1,5 @@
 from difflib import get_close_matches
 from typing import Sequence, Union
-from lightbulb.utils.pag import EmbedPaginator
 import lightbulb
 import hikari
 import json
