@@ -5,7 +5,10 @@ import hikari
 import requests
 import json
 from difflib import get_close_matches
+from requests_html import HTMLSession
+import re
 
+session = HTMLSession()
 plugin = lightbulb.Plugin('arkrec')
 
 @plugin.command
@@ -23,6 +26,15 @@ async def arkrec(ctx):
         for i in stages.items():
             if i[1]["code"].lower() == stage.lower():
                 stage_name = i[1]["name"]
+    url = f"https://prts.wiki/w/文件:{stage.upper()}_{stage_name}_地图.png"
+    resp = session.get(url)
+    urls = resp.html.absolute_links
+    for url in urls:
+        if re.match(r'(?:([^:/?#]+):)?(?://([^/?#]*))?([^?#]*\.(?:jpg|gif|png))(?:\?([^#]*))?(?:#(.*))?', url):
+            if "800px" in url:
+                stage_thumbnail_url = url
+        else:
+            pass
     try:
         payload = {
             "operation": stage.upper(),
@@ -79,6 +91,7 @@ async def arkrec(ctx):
             embed.add_field("Squad", sep.join(map(str, ops_en_ver)), inline=True)
             embed.add_field("Link", clear_link, inline=True)
             embed.set_thumbnail(raider_image)
+            embed.set_image(stage_thumbnail_url)
             await ctx.respond(embed)
             break
         else:
