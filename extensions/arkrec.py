@@ -71,7 +71,6 @@ async def arkrec(ctx):
             clear_link = i["url"]
             ops_count = len(i["team"])
             ops = i["team"]
-            raider_image = i["raiderImage"]
             raider = i["raider"]
             ops_en_ver = []
             for i in ops:
@@ -90,7 +89,6 @@ async def arkrec(ctx):
             embed.add_field("OP Count", ops_count, inline=True)
             embed.add_field("Squad", sep.join(map(str, ops_en_ver)), inline=True)
             embed.add_field("Link", clear_link, inline=True)
-            embed.set_thumbnail(raider_image)
             embed.set_image(stage_thumbnail_url)
             await ctx.respond(embed)
             break
