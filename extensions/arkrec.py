@@ -17,7 +17,7 @@ plugin = lightbulb.Plugin('arkrec')
 @lightbulb.command('arkrec', 'finds clears from arkrec', auto_defer=True)
 @lightbulb.implements(lightbulb.SlashCommand)
 async def arkrec(ctx):
-    url = "https://arkrec.com/api/records"
+    arkrec_url = "https://arkrec.com/api/records"
     stage = ctx.options.stage.strip()
     categoryy = ctx.options.category.strip()
     with open("./data/stage_table.json", encoding="utf-8") as f:
@@ -46,7 +46,7 @@ async def arkrec(ctx):
         "Content-Type": "application/json",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0"
     }
-    response = requests.request("POST", url, json=payload, headers=headers)
+    response = requests.request("POST", arkrec_url, json=payload, headers=headers)
     data = response.json()
     with open("./data/ops_names.json", encoding="utf-8") as c:
         opsdata = json.load(c)
