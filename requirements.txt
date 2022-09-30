@@ -2,4 +2,4 @@ hikari-lightbulb==2.2.4
 hikari==2.0.0.dev109
 requests==2.23.0
 python-dotenv==0.21.0
-
+requests-html==0.10.0
