@@ -26,8 +26,8 @@ async def arkrec(ctx):
         for i in stages.items():
             if i[1]["code"].lower() == stage.lower():
                 stage_name = i[1]["name"]
-    url = f"https://prts.wiki/w/文件:{stage.upper()}_{stage_name}_地图.png"
-    resp = session.get(url)
+    stage_url = f"https://prts.wiki/w/文件:{stage.upper()}_{stage_name}_地图.png"
+    resp = session.get(stage_url)
     urls = resp.html.absolute_links
     for url in urls:
         if re.match(r'(?:([^:/?#]+):)?(?://([^/?#]*))?([^?#]*\.(?:jpg|gif|png))(?:\?([^#]*))?(?:#(.*))?', url):
