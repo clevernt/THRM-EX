@@ -3,6 +3,8 @@ from typing import Sequence, Union
 import lightbulb
 import hikari
 import json
+import miru
+from miru.ext import nav
 
 plugin = lightbulb.Plugin('modules')
 
@@ -12,6 +14,7 @@ plugin = lightbulb.Plugin('modules')
 @lightbulb.implements(lightbulb.SlashCommand)
 async def module(ctx):
     operator = ctx.options.operator.strip()
+    pages = []
     with open("./data/modules.json", "r") as f:
         ops_with_modules = []
         operators_list = []
@@ -61,7 +64,9 @@ async def module(ctx):
                 if module_branch == "RIN-X": 
                     embed.add_field("Increased Attack Range:", "See below")
                     embed.set_image("https://i.imgur.com/x8bMsT8.png")
-                await ctx.respond(embed)
+                pages.append(embed)
+                navigator = nav.NavigatorView(pages=pages)
+                await navigator.send(ctx.interaction)
                
 @module.autocomplete("operator")
 async def module_autocomplete(
