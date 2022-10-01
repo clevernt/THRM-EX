@@ -15,6 +15,7 @@ plugin = lightbulb.Plugin('modules')
 async def module(ctx):
     operator = ctx.options.operator.strip()
     pages = []
+    buttons = [nav.FirstButton(), nav.PrevButton(), nav.StopButton(), nav.NextButton(), nav.LastButton()]
     with open("./data/modules.json", "r") as f:
         ops_with_modules = []
         operators_list = []
@@ -65,8 +66,8 @@ async def module(ctx):
                     embed.add_field("Increased Attack Range:", "See below")
                     embed.set_image("https://i.imgur.com/x8bMsT8.png")
                 pages.append(embed)
-                navigator = nav.NavigatorView(pages=pages)
-                await navigator.send(ctx.interaction)
+                navigator = nav.NavigatorView(pages=pages, buttons=buttons)
+                await navigator.send(ctx.interaction, responded=True)
                
 @module.autocomplete("operator")
 async def module_autocomplete(
