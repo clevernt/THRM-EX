@@ -3,6 +3,7 @@ from typing import Sequence
 import lightbulb
 import hikari
 import requests
+import requests.exceptions
 import json
 from difflib import get_close_matches
 from requests_html import HTMLSession
@@ -37,9 +38,11 @@ async def arkrec(ctx):
         "Content-Type": "application/json",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0"
     }
-    response = requests.request("POST", arkrec_url, json=payload, headers=headers)
-    if response.status_code != 200:
-        await ctx.respond("Error; most likely arkrec is down.")
+    try:
+        response = requests.request("POST", arkrec_url, json=payload, headers=headers)
+        response.raise_for_status()
+    except (requests.exceptions.ConnectionError, requests.exceptions.Timeout):
+        await ctx.respond("Error; arkrec API is down.")
     data = response.json()
     stage_url = f"https://prts.wiki/w/文件:{stage.upper()}_{stage_name}_地图.png"
     resp = session.get(stage_url)
