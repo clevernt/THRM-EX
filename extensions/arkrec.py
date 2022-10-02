@@ -26,22 +26,22 @@ async def arkrec(ctx):
         for i in stages.items():
             if i[1]["code"].lower() == stage.lower():
                 stage_name = i[1]["name"]
-    stage_url = f"https://prts.wiki/w/文件:{stage.upper()}_{stage_name}_地图.png"
-    resp = session.get(stage_url)
-    urls = resp.html.absolute_links
-    for url in urls:
-        if re.match(r'(?:([^:/?#]+):)?(?://([^/?#]*))?([^?#]*\.(?:jpg|gif|png))(?:\?([^#]*))?(?:#(.*))?', url):
-            if "800px" in url:
-                stage_thumbnail_url = url
-        else:
-            pass
     try:
+        stage_url = f"https://prts.wiki/w/文件:{stage.upper()}_{stage_name}_地图.png"
+        resp = session.get(stage_url)
+        urls = resp.html.absolute_links
+        for url in urls:
+            if re.match(r'(?:([^:/?#]+):)?(?://([^/?#]*))?([^?#]*\.(?:jpg|gif|png))(?:\?([^#]*))?(?:#(.*))?', url):
+                if "800px" in url:
+                    stage_thumbnail_url = url
+            else:
+                pass
         payload = {
             "operation": stage.upper(),
             "cn_name": stage_name
         }
     except UnboundLocalError:
-        await ctx.respond(hikari.Embed(title="Stage not found"))
+        await ctx.respond("❌ Stage not found")
     headers = {
         "Content-Type": "application/json",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0"
@@ -95,7 +95,7 @@ async def arkrec(ctx):
         else:
             clear_found.append(False)
     if True not in clear_found:
-        await ctx.respond(hikari.Embed(title="Clear not found"))
+        await ctx.respond("😔 Couldn't find a clear")
 
 @arkrec.autocomplete("category")
 async def arkrec_autocomplete(

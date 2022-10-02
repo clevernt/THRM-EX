@@ -25,9 +25,9 @@ async def module(ctx):
             operators_list.append(key.lower())
         if operator.lower() not in ops_with_modules:
             if operator.lower() in operators_list:
-                await ctx.respond(hikari.Embed(title=f"{operator.title()} doesn't have a module"))
+                await ctx.respond(f"{operator.title()} does not have a module *yet*")
             else:
-                await ctx.respond(hikari.Embed(title=f"That is not an operator"))                
+                await ctx.respond(f"{operator.title()} is not an operator")             
         for i in data:
             name = i["operator"]
             for key, value in ops_id_data.items():
