@@ -32,7 +32,7 @@ async def arkrec(ctx):
             "cn_name": stage_name
         }
     except UnboundLocalError:
-        await ctx.respond("❌ Stage not found")
+        await ctx.respond(f"{ctx.author.mention} Are you sure that's a stage?")
     headers = {
         "Content-Type": "application/json",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0"
@@ -95,7 +95,7 @@ async def arkrec(ctx):
         else:
             clear_found.append(False)
     if True not in clear_found:
-        await ctx.respond("😔 Couldn't find a clear")
+        await ctx.respond(f"{ctx.author.mention} Couldn't find a clear")
 
 @arkrec.autocomplete("category")
 async def arkrec_autocomplete(
