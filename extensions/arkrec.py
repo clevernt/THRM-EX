@@ -12,7 +12,6 @@ session = HTMLSession()
 plugin = lightbulb.Plugin('arkrec')
 
 @plugin.command
-@lightbulb.option('challenge_mode', 'Challenge Mode', choices="True, False", required=True)
 @lightbulb.option('category', 'Category', required=True, autocomplete=True)
 @lightbulb.option('stage', 'Stage Name', required=True)
 @lightbulb.command('arkrec', 'finds clears from arkrec', auto_defer=True)
@@ -21,7 +20,6 @@ async def arkrec(ctx):
     arkrec_url = "https://arkrec.com/api/records"
     stage = ctx.options.stage.strip()
     categoryy = ctx.options.category.strip()
-    challenge_mode = ctx.options.challenge_mode
     with open("./data/stage_table.json", encoding="utf-8") as f:
         stagesdata = json.load(f)
         stages = stagesdata["stages"]
@@ -34,7 +32,7 @@ async def arkrec(ctx):
             "cn_name": stage_name
         }
     except UnboundLocalError:
-        await ctx.respond(f"{ctx.author.mention} Are you sure that is a stage?")
+        await ctx.respond("❌ Stage not found")
     headers = {
         "Content-Type": "application/json",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0"
@@ -59,7 +57,7 @@ async def arkrec(ctx):
         Categories = categoriesdata["Categories"]
 
     clear_found = []
-    for i in data: 
+    for i in data:
         category = i["category"]
         categories_en = []
         for x in category:
@@ -68,6 +66,7 @@ async def arkrec(ctx):
                     en_name = value
                     categories_en.append(en_name)
         if categoryy.title() in categories_en:
+            clear_found.append(True)
             stage = i["operation"]
             clear_link = i["url"]
             ops_count = len(i["team"])
@@ -82,7 +81,7 @@ async def arkrec(ctx):
                         en_name = key
                         ops_en_ver.append(f"{en_name} S{skill}")
             sep = ", "
-            # await ctx.respond(f"Stage: {stage}, Category(s): {sep.join(map(str, categories_en))}, Lowest ops: {ops_count}, Squad: {sep.join(map(str, ops_en_ver))} Link: {clear_link}")
+            """await ctx.respond(f"Stage: {stage}, Category(s): {sep.join(map(str, categories_en))}, Lowest ops: {ops_count}, Squad: {sep.join(map(str, ops_en_ver))} Link: {clear_link}")"""
             embed = hikari.Embed(title="Clear Found")
             embed.add_field("Stage", stage, inline=True)
             embed.add_field("Player", raider, inline=True)
@@ -91,27 +90,12 @@ async def arkrec(ctx):
             embed.add_field("Squad", sep.join(map(str, ops_en_ver)), inline=True)
             embed.add_field("Link", clear_link, inline=True)
             embed.set_image(stage_thumbnail_url)
-            if challenge_mode != None:
-                try: 
-                    operationType = i["operationType"]
-                except KeyError:
-                    await ctx.respond("This stage does not have challenge mode.")
-                else:
-                    if challenge_mode == "True" and operationType == "challenge":
-                        embed.add_field("Challenge Mode?", "✔", inline=True)
-                        await ctx.respond(embed)
-                        break
-                    elif challenge_mode == "False" and operationType == "normal":
-                        embed.add_field("Challenge Mode?", "❌", inline=True)                        
-                        await ctx.respond(embed)
-                        break
-            else:
-                await ctx.respond(embed)
-                break
+            await ctx.respond(embed)
+            break
         else:
             clear_found.append(False)
     if True not in clear_found:
-        await ctx.respond(f"{ctx.author.mention} Couldn't find a clear.")
+        await ctx.respond("😔 Couldn't find a clear")
 
 @arkrec.autocomplete("category")
 async def arkrec_autocomplete(
