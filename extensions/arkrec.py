@@ -27,15 +27,6 @@ async def arkrec(ctx):
             if i[1]["code"].lower() == stage.lower():
                 stage_name = i[1]["name"]
     try:
-        stage_url = f"https://prts.wiki/w/文件:{stage.upper()}_{stage_name}_地图.png"
-        resp = session.get(stage_url)
-        urls = resp.html.absolute_links
-        for url in urls:
-            if re.match(r'(?:([^:/?#]+):)?(?://([^/?#]*))?([^?#]*\.(?:jpg|gif|png))(?:\?([^#]*))?(?:#(.*))?', url):
-                if "800px" in url:
-                    stage_thumbnail_url = url
-            else:
-                pass
         payload = {
             "operation": stage.upper(),
             "cn_name": stage_name
@@ -47,7 +38,18 @@ async def arkrec(ctx):
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0"
     }
     response = requests.request("POST", arkrec_url, json=payload, headers=headers)
+    if response.status_code != 200:
+        await ctx.respond("Error; most likely arkrec is down.")
     data = response.json()
+    stage_url = f"https://prts.wiki/w/文件:{stage.upper()}_{stage_name}_地图.png"
+    resp = session.get(stage_url)
+    urls = resp.html.absolute_links
+    for url in urls:
+        if re.match(r'(?:([^:/?#]+):)?(?://([^/?#]*))?([^?#]*\.(?:jpg|gif|png))(?:\?([^#]*))?(?:#(.*))?', url):
+            if "800px" in url:
+                stage_thumbnail_url = url
+        else:
+            pass
     with open("./data/ops_names.json", encoding="utf-8") as c:
         opsdata = json.load(c)
         Ops = opsdata["Operators"]
