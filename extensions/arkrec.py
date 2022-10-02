@@ -12,7 +12,7 @@ session = HTMLSession()
 plugin = lightbulb.Plugin('arkrec')
 
 @plugin.command
-@lightbulb.option('challenge_mode', 'Challenge Mode', choices="True, False", required=False)
+@lightbulb.option('challenge_mode', 'Challenge Mode', choices="True, False", required=True)
 @lightbulb.option('category', 'Category', required=True, autocomplete=True)
 @lightbulb.option('stage', 'Stage Name', required=True)
 @lightbulb.command('arkrec', 'finds clears from arkrec', auto_defer=True)
