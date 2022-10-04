@@ -89,9 +89,9 @@ async def arkrec(ctx):
             embed = hikari.Embed(title="Clear Found")
             embed.add_field("Stage", stage, inline=True)
             if operationType == "challenge":
-                embed.add_field("CM", "✔")
+                embed.add_field("CM", "✅", inline=True)
             elif operationType == "normal":
-                embed.add_field("CM", "❌")
+                embed.add_field("CM", "❎", inline=True)
             else:
                 pass
             embed.add_field("Player", raider, inline=True)
