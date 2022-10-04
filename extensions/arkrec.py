@@ -91,7 +91,7 @@ async def arkrec(ctx):
             if operationType == "challenge":
                 embed.add_field("CM", "✅", inline=True)
             elif operationType == "normal":
-                embed.add_field("CM", "❎", inline=True)
+                embed.add_field("CM", "❌", inline=True)
             else:
                 pass
             embed.add_field("Player", raider, inline=True)
