@@ -67,6 +67,10 @@ async def arkrec(ctx):
                     categories_en.append(en_name)
         if categoryy.title() in categories_en:
             clear_found.append(True)
+            try:
+                operationType = i["operationType"]
+            except KeyError:
+                pass
             stage = i["operation"]
             clear_link = i["url"]
             ops_count = len(i["team"])
@@ -84,6 +88,12 @@ async def arkrec(ctx):
             """await ctx.respond(f"Stage: {stage}, Category(s): {sep.join(map(str, categories_en))}, Lowest ops: {ops_count}, Squad: {sep.join(map(str, ops_en_ver))} Link: {clear_link}")"""
             embed = hikari.Embed(title="Clear Found")
             embed.add_field("Stage", stage, inline=True)
+            if operationType == "challenge":
+                embed.add_field("CM", "✔")
+            elif operationType == "normal":
+                embed.add_field("CM", "❌")
+            else:
+                pass
             embed.add_field("Player", raider, inline=True)
             embed.add_field("Category(s)", sep.join(map(str, categories_en)), inline=True)
             embed.add_field("OP Count", ops_count, inline=True)
