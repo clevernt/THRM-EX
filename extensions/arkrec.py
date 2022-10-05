@@ -13,6 +13,7 @@ plugin = lightbulb.Plugin('arkrec')
 
 @plugin.command
 @lightbulb.option('category', 'Category', required=True, autocomplete=True)
+@lightbulb.option('mode', 'Mode', choices=["Normal Mode", "Challenge Mode"], required=False, description="Leave empty if doesn't matter")
 @lightbulb.option('stage', 'Stage Name', required=True)
 @lightbulb.command('arkrec', 'finds clears from arkrec', auto_defer=True)
 @lightbulb.implements(lightbulb.SlashCommand)
@@ -20,6 +21,13 @@ async def arkrec(ctx):
     arkrec_url = "https://arkrec.com/api/records"
     stage = ctx.options.stage.strip()
     categoryy = ctx.options.category.strip()
+    mode = ctx.options.mode.strip()
+    if mode == "Normal Mode":
+        mode = "normal"
+    elif mode == "Challenge Mode":
+        mode = "challenge"
+    else:
+        mode = None
     with open("./data/stage_table.json", encoding="utf-8") as f:
         stagesdata = json.load(f)
         stages = stagesdata["stages"]
@@ -58,6 +66,15 @@ async def arkrec(ctx):
 
     clear_found = []
     for i in data:
+        if mode != None:
+            try:
+                operationType = i["operationType"]
+            except KeyError:
+                if mode == "challenge":
+                    await ctx.respond(f"{ctx.author.mention} This stage does not have CM.")
+                    break
+            else:
+                continue
         category = i["category"]
         categories_en = []
         for x in category:
@@ -65,12 +82,8 @@ async def arkrec(ctx):
                 if key == x:
                     en_name = value
                     categories_en.append(en_name)
-        if categoryy.title() in categories_en:
+        if categoryy.title() in categories_en and operationType == mode or mode == None:
             clear_found.append(True)
-            try:
-                operationType = i["operationType"]
-            except KeyError:
-                pass
             stage = i["operation"]
             clear_link = i["url"]
             ops_count = len(i["team"])
@@ -85,7 +98,7 @@ async def arkrec(ctx):
                         en_name = key
                         ops_en_ver.append(f"{en_name} S{skill}")
             sep = ", "
-            """await ctx.respond(f"Stage: {stage}, Category(s): {sep.join(map(str, categories_en))}, Lowest ops: {ops_count}, Squad: {sep.join(map(str, ops_en_ver))} Link: {clear_link}")"""
+            #await ctx.respond(f"Stage: {stage}, Category(s): {sep.join(map(str, categories_en))}, Lowest ops: {ops_count}, Squad: {sep.join(map(str, ops_en_ver))} Link: {clear_link}")
             embed = hikari.Embed(title="Clear Found")
             embed.add_field("Stage", stage, inline=True)
             if operationType == "challenge":
