@@ -13,7 +13,7 @@ plugin = lightbulb.Plugin('arkrec')
 
 @plugin.command
 @lightbulb.option('category', 'Category', required=True, autocomplete=True)
-@lightbulb.option('mode', 'Mode', choices=["Normal Mode", "Challenge Mode"], required=False, description="Leave empty if doesn't matter")
+@lightbulb.option('mode', "Mode. Leave empty if it doesn't matter.", choices=["Normal Mode", "Challenge Mode"], required=False)
 @lightbulb.option('stage', 'Stage Name', required=True)
 @lightbulb.command('arkrec', 'finds clears from arkrec', auto_defer=True)
 @lightbulb.implements(lightbulb.SlashCommand)
