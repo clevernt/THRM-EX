@@ -22,14 +22,12 @@ async def arkrec(ctx):
     stage = ctx.options.stage.strip()
     categoryy = ctx.options.category.strip()
     mode = ctx.options.mode.strip()
-    print(mode)
     if mode == "Normal Mode":
         mode = "normal"
     elif mode == "Challenge Mode":
         mode = "challenge"
     else:
         mode = None
-    print(mode)
     with open("./data/stage_table.json", encoding="utf-8") as f:
         stagesdata = json.load(f)
         stages = stagesdata["stages"]
@@ -79,7 +77,6 @@ async def arkrec(ctx):
                 pass
         else:
             pass
-        print(operationType)
         category = i["category"]
         categories_en = []
         for x in category:
