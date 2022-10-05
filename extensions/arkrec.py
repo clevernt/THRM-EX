@@ -13,7 +13,7 @@ plugin = lightbulb.Plugin('arkrec')
 
 @plugin.command
 @lightbulb.option('category', 'Category', required=True, autocomplete=True)
-@lightbulb.option('mode', "Mode", choices=["Normal Mode", "Challenge Mode"], required=False)
+@lightbulb.option('mode', "Mode", choices=["Normal Mode", "Challenge Mode"], required=False, default=None)
 @lightbulb.option('stage', 'Stage Name', required=True)
 @lightbulb.command('arkrec', 'finds clears from arkrec', auto_defer=True)
 @lightbulb.implements(lightbulb.SlashCommand)
@@ -22,12 +22,14 @@ async def arkrec(ctx):
     stage = ctx.options.stage.strip()
     categoryy = ctx.options.category.strip()
     mode = ctx.options.mode.strip()
+    print(mode)
     if mode == "Normal Mode":
         mode = "normal"
     elif mode == "Challenge Mode":
         mode = "challenge"
     else:
         mode = None
+    print(mode)
     with open("./data/stage_table.json", encoding="utf-8") as f:
         stagesdata = json.load(f)
         stages = stagesdata["stages"]
@@ -75,6 +77,7 @@ async def arkrec(ctx):
                     break
             else:
                 continue
+        print(operationType)
         category = i["category"]
         categories_en = []
         for x in category:
