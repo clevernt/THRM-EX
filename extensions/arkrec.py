@@ -66,7 +66,7 @@ async def arkrec(ctx):
 
     clear_found = []
     for i in data:
-        if mode != None:
+        if not mode == None:
             try:
                 operationType = i["operationType"]
             except KeyError:
@@ -82,7 +82,7 @@ async def arkrec(ctx):
                 if key == x:
                     en_name = value
                     categories_en.append(en_name)
-        if categoryy.title() in categories_en and operationType == mode or mode == None:
+        if (categoryy.title() in categories_en) and (operationType == mode or mode == None):
             clear_found.append(True)
             stage = i["operation"]
             clear_link = i["url"]
