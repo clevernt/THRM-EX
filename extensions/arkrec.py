@@ -69,17 +69,15 @@ async def arkrec(ctx):
 
     clear_found = []
     for i in data:
-        if mode != None:
-            try:
-                operationType = i["operationType"]
-            except KeyError:
-                if mode == "challenge":
-                    await ctx.respond(f"{ctx.author.mention} This stage does not have CM.")
-                    break
-            else:
-                pass
-        else:
+        try:
+            operationType = i["operationType"]
+        except KeyError:
             operationType = None
+            if mode == "challenge":
+                await ctx.respond(f"{ctx.author.mention} This stage does not have CM.")
+                break
+        else:
+            pass
         category = i["category"]
         categories_en = []
         for x in category:
