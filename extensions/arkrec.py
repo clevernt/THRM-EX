@@ -79,7 +79,7 @@ async def arkrec(ctx):
             else:
                 pass
         else:
-            pass
+            operationType = None
         category = i["category"]
         categories_en = []
         for x in category:
