@@ -23,10 +23,12 @@ async def arkrec(ctx):
     categoryy = ctx.options.category.strip()
     if ctx.options.mode:
         mode = ctx.options.mode.strip()
-    if mode == "Normal Mode":
-        mode = "normal"
-    elif mode == "Challenge Mode":
-        mode = "challenge"
+        if mode == "Normal Mode":
+            mode = "normal"
+        elif mode == "Challenge Mode":
+            mode = "challenge"
+        else:
+            mode = None
     else:
         mode = None
     with open("./data/stage_table.json", encoding="utf-8") as f:
