@@ -21,7 +21,8 @@ async def arkrec(ctx):
     arkrec_url = "https://arkrec.com/api/records"
     stage = ctx.options.stage.strip()
     categoryy = ctx.options.category.strip()
-    mode = ctx.options.mode.strip()
+    if ctx.options.mode:
+        mode = ctx.options.mode.strip()
     if mode == "Normal Mode":
         mode = "normal"
     elif mode == "Challenge Mode":
