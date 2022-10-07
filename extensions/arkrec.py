@@ -94,12 +94,22 @@ async def arkrec(ctx):
             raider = i["raider"]
             ops_en_ver = []
             for i in ops:
-                skill = i[-1]
-                cn_name = i.rstrip(i[-1])
-                for key, value in Ops.items():
-                    if value == cn_name:
-                        en_name = key
-                        ops_en_ver.append(f"{en_name} S{skill}")
+                if i in ["黑角", "夜刀", "巡林者", "杜林"]:
+                    for key, value in Ops.items():
+                        if value == cn_name:
+                            en_name = key
+                            ops_en_ver.append(f"{en_name}")
+                elif i in ["Lancet-2", "Castle-3", "THRM-EX"]:
+                    ops_en_ver.append(i)
+                elif i == "正义骑士号":
+                    ops_en_ver.append("Justice Knight")
+                else:
+                    skill = i[-1]
+                    cn_name = i.rstrip(i[-1])
+                    for key, value in Ops.items():
+                        if value == cn_name:
+                            en_name = key
+                            ops_en_ver.append(f"{en_name} S{skill}")
             sep = ", "
             #await ctx.respond(f"Stage: {stage}, Category(s): {sep.join(map(str, categories_en))}, Lowest ops: {ops_count}, Squad: {sep.join(map(str, ops_en_ver))} Link: {clear_link}")
             embed = hikari.Embed(title="Clear Found")
