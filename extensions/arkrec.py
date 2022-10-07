@@ -96,7 +96,7 @@ async def arkrec(ctx):
             for i in ops:
                 if i in ["黑角", "夜刀", "巡林者", "杜林"]:
                     for key, value in Ops.items():
-                        if value == cn_name:
+                        if value == i:
                             en_name = key
                             ops_en_ver.append(f"{en_name}")
                 elif i in ["Lancet-2", "Castle-3", "THRM-EX"]:
