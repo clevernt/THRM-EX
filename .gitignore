@@ -6,4 +6,4 @@ extensions/__pycache__
 nppBackup/
 main.py
 .env
-data/categories2.json
+data/aliases.json
