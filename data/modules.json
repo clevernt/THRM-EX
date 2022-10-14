@@ -760,7 +760,7 @@
         "stage_1_trait_upgrade": "Less likely to be targeted\nGrants [Resist] to self",
         "base_talent": "After healing the target, grant Resist to them for 4 seconds. If the target's HP is above 75%, grant Resist for 6 seconds instead",
         "stage_2_talent_upgrade": "After healing the target, grant Resist to them for 5 seconds. If the target's HP is above 75%, grant Resist for 7 seconds instead",
-        "stage_3_talent_upgrade": "After healing the target, grant Resist to them for 4 seconds. If the target's HP is above 75%, grant Resist for 8 seconds instead",
+        "stage_3_talent_upgrade": "After healing the target, grant Resist to them for 5 seconds. If the target's HP is above 75%, grant Resist for 8 seconds instead",
         "total_stat_buffs": "HP +160, ATK +45"
     },
     {
