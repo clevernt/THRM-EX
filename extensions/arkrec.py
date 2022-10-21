@@ -50,7 +50,7 @@ async def arkrec(ctx):
     }
     response = requests.request("POST", arkrec_url, json=payload, headers=headers)
     data = response.json()
-    if stage_name[:3] in ["H10", "H11", "10-", "11-"]:
+    if stage.upper()[:3] in ["H10", "H11", "10-", "11-"]:
         if mode == "challenge":
             stage_url = f"https://prts.wiki/w/文件:磨难{stage.upper()}_{stage_name}_地图.png"
         else:
