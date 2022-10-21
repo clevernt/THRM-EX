@@ -50,7 +50,13 @@ async def arkrec(ctx):
     }
     response = requests.request("POST", arkrec_url, json=payload, headers=headers)
     data = response.json()
-    stage_url = f"https://prts.wiki/w/文件:{stage.upper()}_{stage_name}_地图.png"
+    if stage_name[:3] in ["H10", "H11", "10-", "11-"]:
+        if mode == "challenge":
+            stage_url = f"https://prts.wiki/w/文件:磨难{stage.upper()}_{stage_name}_地图.png"
+        else:
+            stage_url = f"https://prts.wiki/w/文件:{stage.upper()}_{stage_name}_地图.png"
+    else:
+        stage_url = f"https://prts.wiki/w/文件:{stage.upper()}_{stage_name}_地图.png"
     resp = session.get(stage_url)
     urls = resp.html.absolute_links
     for url in urls:
