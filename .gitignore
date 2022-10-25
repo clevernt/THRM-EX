@@ -7,3 +7,4 @@ nppBackup/
 main.py
 .env
 data/aliases.json
+data/modules_backup.json

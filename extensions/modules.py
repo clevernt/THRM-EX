@@ -45,15 +45,15 @@ async def module(ctx):
                 embed.add_field("Module Branch", module_branch)
                 embed.add_field("Stage 1 | Trait Upgrade", stage_1_trait_upgrade)
                 if base_talent != "N/A":
-                    embed.add_field("Base Talent (Talent Upgrade Pot included if applicable)", base_talent)
-                    embed.add_field("Stage 2 | Talent Upgrade (Talent Upgrade Pot not included)", stage_2_talent_upgrade)
-                    embed.add_field("Stage 3 | Talent Upgrade (Talent Upgrade Pot not included)", stage_3_talent_upgrade)
+                    embed.add_field("Base Talent", base_talent)
+                    embed.add_field("Stage 2 | Talent Upgrade", stage_2_talent_upgrade)
+                    embed.add_field("Stage 3 | Talent Upgrade", stage_3_talent_upgrade)
                 elif base_talent == "N/A":
                     embed.add_field("Stage 2 | New Talent", stage_2_talent_upgrade)
                     embed.add_field("Stage 3 | Talent Upgrade", stage_3_talent_upgrade)
                 embed.add_field("Total Stat Buffs", total_stat_buffs)
                 embed.add_field("Modules Sheet", "https://bit.ly/AKModules")
-                embed.set_footer("Copypasting from Modules Sheet by CleverShadow#5250")
+                embed.set_footer("DM CleverShadow#5250 for any errors.")
                 embed.set_thumbnail(operator_icon)
                 if module_branch == "SPC-X":
                     embed.add_field("Increased Attack Range:", "See below")
