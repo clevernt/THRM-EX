@@ -8,7 +8,8 @@ plugin = lightbulb.Plugin('help')
 @lightbulb.implements(lightbulb.SlashCommand)
 async def help(ctx):
     embed = hikari.Embed(title='Commands List')
-    embed.add_field('🎮 Arknights', "`arkrec`, `module`")
+    embed.add_field('Arknights', "`arkrec`, `module`")
+    embed.add_field('Misc', "`ping`")
     await ctx.respond(embed)
 
 def load(bot):
