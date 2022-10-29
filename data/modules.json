@@ -1186,5 +1186,113 @@
         "stage_2_talent_upgrade": "When in team, all operators with 10 or less initial cost receive 23% (26%) more healing",
         "stage_3_talent_upgrade": "When in team, all operators with 10 or less initial cost receive 25% (28%) more healing",
         "total_stat_buffs": "HP +100, ASPD +5"
+    },
+    {
+        "operator": "Texas the Omertosa",
+        "module_branch": "EXE-Y",
+        "stage_1_trait_upgrade": "ATK +10% when there is no ally in the surrounding 4 tiles",
+        "base_talent": "During passive skill duration, ATK +?%; First time defeating enemy will heal her to full and re-release the passive skill",
+        "stage_2_talent_upgrade": "During passive skill duration, ATK +?%; First time defeating enemy will heal her to full and re-release the passive skill",
+        "stage_3_talent_upgrade": "During passive skill duration, ATK +?%; First time defeating enemy will heal her to full and re-release the passive skill",
+        "total_stat_buffs": "HP +?, ATK +?"
+    },
+    {
+        "operator": "Lunacub",
+        "module_branch": "DEA-Y",
+        "stage_1_trait_upgrade": "if the attacked enemy remains alive, gain 1 additional SP",
+        "base_talent": "When the skill is not active, gain Camouflage. When the skill is active, Attack Interval -?",
+        "stage_2_talent_upgrade": "When the skill is not active, gain Camouflage. When the skill is active, Attack Interval -?",
+        "stage_3_talent_upgrade": "When the skill is not active, gain Camouflage. When the skill is active, Attack Interval -?",
+        "total_stat_buffs": "HP +?, ATK +?"
+    },
+    {
+        "operator": "Hsohiguma",
+        "module_branch": "PRO-X",
+        "stage_1_trait_upgrade": "+20% DEF when blocking enemies",
+        "base_talent": "When deployed, all ally [Defender] operators gain DEF +6% (8%)",
+        "stage_2_talent_upgrade": "When deployed, all ally [Defender] operators gain DEF +?%, Hoshiguma additionally gains +?% DEF",
+        "stage_3_talent_upgrade": "When deployed, all ally [Defender] operators gain DEF +?%, Hoshiguma additionally gains +?% DEF",
+        "total_stat_buffs": "HP +?, DEF +?"
+    },
+    {
+        "operator": "Schwarz",
+        "module_branch": "ARC-Y",
+        "stage_1_trait_upgrade": "When attacking an enemy directly ahead, ATK increases to 105% and ignores the target's Physical Evasion",
+        "base_talent": "When attacking, 20% chance to deal 160% damage and decrease the target's DEF by 20% for 5 seconds",
+        "stage_2_talent_upgrade": "When attacking, 20% chance to deal ?% damage and decrease the target's DEF by ?% for 5 seconds",
+        "stage_3_talent_upgrade": "When attacking, 20% chance to deal ?% damage and decrease the target's DEF by ?% for 5 seconds",
+        "total_stat_buffs": "ATK +?, DEF +?"
+    },
+    {
+        "operator": "Siege",
+        "module_branch": "TBA",
+        "stage_1_trait_upgrade": "ATK and DEF +8% when blocking enemies",
+        "base_talent": "When deployed, all [Vanguard] operators gain ATK and DEF +8% (10%)",
+        "stage_2_talent_upgrade": "When deployed, all [Vanguard] operators gain ATK and DEF +8% (10%), Siege's ATK and DEF +?%",
+        "stage_3_talent_upgrade": "When deployed, all [Vanguard] operators gain ATK and DEF +8% (10%), Siege's ATK and DEF +?%",
+        "total_stat_buffs": "ATK +?, DEF +?"
+    },
+    {
+        "operator": "Flametail",
+        "module_branch": "TBA",
+        "stage_1_trait_upgrade": "-4 DP cost for first deployment",
+        "base_talent": "After evading, the next attack hits twice and attacks multiple enemies equal to Block count",
+        "stage_2_talent_upgrade": "After evading, the next attack's ATK +?%, hits twice and attacks multiple enemies equal to Block count",
+        "stage_3_talent_upgrade": "After evading, the next attack's ATK +?%, hits twice and attacks multiple enemies equal to Block count",
+        "total_stat_buffs": "HP +?, ATK +?"
+    },
+    {
+        "operator": "Saga",
+        "module_branch": "TBA",
+        "stage_1_trait_upgrade": "-4 DP cost for first deployment",
+        "base_talent": "When HP falls below 40%, gain 70% Physical Evasion and recover 5% (6%) Max HP every second for 15 (17) seconds. Can only activate once",
+        "stage_2_talent_upgrade": "When HP falls below 40%, gain 70% Physical Evasion and recover ?% (?%) Max HP every second for ? (?) seconds. Can only activate once",
+        "stage_3_talent_upgrade": "When HP falls below 40%, gain 70% Physical Evasion and recover ?% (?%) Max HP every second for ? (?) seconds. Can only activate once",
+        "total_stat_buffs": "HP +?, ATK +?, DEF +?"
+    },
+    {
+        "operator": "Texas",
+        "module_branch": "TBA",
+        "stage_1_trait_upgrade": "-4 DP cost for first deployment",
+        "base_talent": "Obtain additional 2 initial DP on battle start",
+        "stage_2_talent_upgrade": "Obtain additional 2 initial DP on battle start, Skill DMG increased by ?%",
+        "stage_3_talent_upgrade": "Obtain additional 2 initial DP on battle start, Skill DMG increased by ?%",
+        "total_stat_buffs": "HP +?, ATK +?, DEF +?"
+    },
+    {
+        "operator": "Chiave",
+        "module_branch": "TBA",
+        "stage_1_trait_upgrade": "-4 DP cost for first deployment",
+        "base_talent": "When deployed, all 1* operators' redeployment time -75%. Additionally, for every 1* operator deployed, self ATK and DEF +11% (13%)",
+        "stage_2_talent_upgrade": "When deployed, all 1* operators' redeployment time -?%. Additionally, for every 1* operator deployed, self ATK and DEF +?% (?%)",
+        "stage_3_talent_upgrade": "When deployed, all 1* operators' redeployment time -?%. Additionally, for every 1* operator deployed, self ATK and DEF +?% (?%)",
+        "total_stat_buffs": "ATK +?, DEF +?"
+    },
+    {
+        "operator": "Zima",
+        "module_branch": "TBA",
+        "stage_1_trait_upgrade": "ATK and DEF +8% when blocking enemies",
+        "base_talent": "Deployment cost of all [Vanguard] operators in the same team -1",
+        "stage_2_talent_upgrade": "Deployment cost of all [Vanguard] operators in the same team -1, Zima's Deployment cost -?",
+        "stage_3_talent_upgrade": "Deployment cost of all [Vanguard] operators in the same team -1, Zima's Deployment cost -?",
+        "total_stat_buffs": "HP +?, DEF +?"
+    },
+    {
+        "operator": "Courier",
+        "module_branch": "TBA",
+        "stage_1_trait_upgrade": "ATK and DEF +8% when blocking enemies",
+        "base_talent": "When blocking 2 or more enemies, DEF +16% (19%)",
+        "stage_2_talent_upgrade": "When blocking 2 or more enemies, DEF +?% (?%)",
+        "stage_3_talent_upgrade": "When blocking 2 or more enemies, DEF +?% (?%)",
+        "total_stat_buffs": "HP +?, DEF +?"
+    },
+    {
+        "operator": "Scavenger",
+        "module_branch": "TBA",
+        "stage_1_trait_upgrade": "ATK and DEF +8% when blocking enemies",
+        "base_talent": "While there are no allies in the 4 adjacent tiles, ATK and DEF +11% (13%)",
+        "stage_2_talent_upgrade": "While there are no allies in the 4 adjacent tiles, ATK and DEF +?% (?%)",
+        "stage_3_talent_upgrade": "While there are no allies in the 4 adjacent tiles, ATK and DEF +?% (?%)",
+        "total_stat_buffs": "ATK +?, DEF +?"
     }
 ]
