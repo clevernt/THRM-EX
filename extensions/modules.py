@@ -68,7 +68,7 @@ async def module(ctx):
                 pages.append(embed)
             buttons = [nav.PrevButton(), nav.NextButton()]
 
-            navigator = nav.NavigatorView(pages=pages, buttons=buttons)
+            navigator = nav.NavigatorView(pages=pages, buttons=buttons, autodefer=True)
             await navigator.send(ctx.interaction)
                
 @module.autocomplete("operator")
