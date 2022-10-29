@@ -69,7 +69,7 @@ async def module(ctx):
             buttons = [nav.PrevButton(), nav.NextButton()]
 
             navigator = nav.NavigatorView(pages=pages, buttons=buttons)
-            await navigator.send(ctx.interaction, responded=True)
+            await navigator.send(ctx.interaction)
                
 @module.autocomplete("operator")
 async def module_autocomplete(
