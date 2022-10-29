@@ -1,7 +1,5 @@
 from difflib import get_close_matches
 from typing import Sequence, Union
-from miru.ext.nav import NavigatorView
-from miru.ext import nav
 
 import lightbulb
 import hikari
@@ -30,8 +28,7 @@ async def module(ctx):
             if operator.lower() in operators_list:
                 await ctx.respond(f"{operator.title()} does not have a module *yet*")
             else:
-                await ctx.respond(f"{operator.title()} is not an operator")  
-        pages = []           
+                await ctx.respond(f"{operator.title()} is not an operator")            
         for i in data:
             name = i["operator"]
             for key, value in ops_id_data.items():
@@ -65,11 +62,7 @@ async def module(ctx):
                 if module_branch == "RIN-X": 
                     embed.add_field("Increased Attack Range:", "See below")
                     embed.set_image("https://i.imgur.com/x8bMsT8.png")
-                pages.append(embed)
-            buttons = [nav.PrevButton(), nav.NextButton()]
-
-            navigator = nav.NavigatorView(pages=pages, buttons=buttons, autodefer=True)
-            await navigator.send(ctx.interaction)
+                await ctx.respond(embed)
                
 @module.autocomplete("operator")
 async def module_autocomplete(
