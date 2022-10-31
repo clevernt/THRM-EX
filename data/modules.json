@@ -1191,9 +1191,9 @@
         "operator": "Texas the Omertosa",
         "module_branch": "EXE-Y",
         "stage_1_trait_upgrade": "ATK +10% when there is no ally in the surrounding 4 tiles",
-        "base_talent": "During passive skill duration, ATK +?%; First time defeating enemy will heal her to full and re-release the passive skill",
-        "stage_2_talent_upgrade": "During passive skill duration, ATK +?%; First time defeating enemy will heal her to full and re-release the passive skill",
-        "stage_3_talent_upgrade": "During passive skill duration, ATK +?%; First time defeating enemy will heal her to full and re-release the passive skill",
+        "base_talent": "During passive skill duration, ATK +?%; recovers all HP and recasts skill when defeating an enemy for the first time",
+        "stage_2_talent_upgrade": "During passive skill duration, ATK +?%; recovers all HP and recasts skill when defeating an enemy for the first time",
+        "stage_3_talent_upgrade": "During passive skill duration, ATK +?%; recovers all HP and recasts skill when defeating an enemy for the first time",
         "total_stat_buffs": "HP +?, ATK +?"
     },
     {
@@ -1235,7 +1235,7 @@
     {
         "operator": "Flametail",
         "module_branch": "TBA",
-        "stage_1_trait_upgrade": "-4 DP cost for first deployment",
+        "stage_1_trait_upgrade": "Initial Deployment Cost -4",
         "base_talent": "After evading, the next attack hits twice and attacks multiple enemies equal to Block count",
         "stage_2_talent_upgrade": "After evading, the next attack's ATK +?%, hits twice and attacks multiple enemies equal to Block count",
         "stage_3_talent_upgrade": "After evading, the next attack's ATK +?%, hits twice and attacks multiple enemies equal to Block count",
@@ -1244,7 +1244,7 @@
     {
         "operator": "Saga",
         "module_branch": "TBA",
-        "stage_1_trait_upgrade": "-4 DP cost for first deployment",
+        "stage_1_trait_upgrade": "Initial Deployment Cost -4",
         "base_talent": "When HP falls below 40%, gain 70% Physical Evasion and recover 5% (6%) Max HP every second for 15 (17) seconds. Can only activate once",
         "stage_2_talent_upgrade": "When HP falls below 40%, gain 70% Physical Evasion and recover ?% (?%) Max HP every second for ? (?) seconds. Can only activate once",
         "stage_3_talent_upgrade": "When HP falls below 40%, gain 70% Physical Evasion and recover ?% (?%) Max HP every second for ? (?) seconds. Can only activate once",
@@ -1253,16 +1253,16 @@
     {
         "operator": "Texas",
         "module_branch": "TBA",
-        "stage_1_trait_upgrade": "-4 DP cost for first deployment",
+        "stage_1_trait_upgrade": "Initial Deployment Cost -4",
         "base_talent": "Obtain additional 2 initial DP on battle start",
-        "stage_2_talent_upgrade": "Obtain additional 2 initial DP on battle start, Skill DMG increased by ?%",
-        "stage_3_talent_upgrade": "Obtain additional 2 initial DP on battle start, Skill DMG increased by ?%",
+        "stage_2_talent_upgrade": "Obtain additional 2 initial DP on battle start, Skills DMG increased by ?%",
+        "stage_3_talent_upgrade": "Obtain additional 2 initial DP on battle start, Skills DMG increased by ?%",
         "total_stat_buffs": "HP +?, ATK +?, DEF +?"
     },
     {
         "operator": "Chiave",
         "module_branch": "TBA",
-        "stage_1_trait_upgrade": "-4 DP cost for first deployment",
+        "stage_1_trait_upgrade": "Initial Deployment Cost -4",
         "base_talent": "When deployed, all 1* operators' redeployment time -75%. Additionally, for every 1* operator deployed, self ATK and DEF +11% (13%)",
         "stage_2_talent_upgrade": "When deployed, all 1* operators' redeployment time -?%. Additionally, for every 1* operator deployed, self ATK and DEF +?% (?%)",
         "stage_3_talent_upgrade": "When deployed, all 1* operators' redeployment time -?%. Additionally, for every 1* operator deployed, self ATK and DEF +?% (?%)",
@@ -1273,8 +1273,8 @@
         "module_branch": "TBA",
         "stage_1_trait_upgrade": "ATK and DEF +8% when blocking enemies",
         "base_talent": "Deployment cost of all [Vanguard] operators in the same team -1",
-        "stage_2_talent_upgrade": "Deployment cost of all [Vanguard] operators in the same team -1, Zima's Deployment cost -?",
-        "stage_3_talent_upgrade": "Deployment cost of all [Vanguard] operators in the same team -1, Zima's Deployment cost -?",
+        "stage_2_talent_upgrade": "Deployment cost of all [Vanguard] operators in the same team -1, Zima's Deployment Cost -?",
+        "stage_3_talent_upgrade": "Deployment cost of all [Vanguard] operators in the same team -1, and all [Pioneer] operators' Deployment Cost -?",
         "total_stat_buffs": "HP +?, DEF +?"
     },
     {
