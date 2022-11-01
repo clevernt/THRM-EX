@@ -28,7 +28,8 @@ async def module(ctx):
             if operator.lower() in operators_list:
                 await ctx.respond(f"{operator.title()} does not have a module *yet*")
             else:
-                await ctx.respond(f"{operator.title()} is not an operator")            
+                await ctx.respond(f"{operator.title()} is not an operator") 
+        embeds = []           
         for i in data:
             name = i["operator"]
             for key, value in ops_id_data.items():
@@ -62,7 +63,8 @@ async def module(ctx):
                 if module_branch == "RIN-X": 
                     embed.add_field("Increased Attack Range:", "See below")
                     embed.set_image("https://i.imgur.com/x8bMsT8.png")
-                await ctx.respond(embed)
+                embeds.append(embed)
+        await ctx.respond(embeds=embeds)
                
 @module.autocomplete("operator")
 async def module_autocomplete(
