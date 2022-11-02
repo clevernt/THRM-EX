@@ -1200,9 +1200,9 @@
         "operator": "Lunacub",
         "module_branch": "DEA-Y",
         "stage_1_trait_upgrade": "if the attacked enemy remains alive, gain 1 additional SP",
-        "base_talent": "When the skill is not active, gain Camouflage. When the skill is active, Attack Interval -0.15",
-        "stage_2_talent_upgrade": "When the skill is not active, gain Camouflage. When the skill is active, Attack Interval -0.2",
-        "stage_3_talent_upgrade": "When the skill is not active, gain Camouflage. When the skill is active, Attack Interval -0.25",
+        "base_talent": "When the skill is not active, gain Camouflage. When the skill is active, Attack Interval is slightly shortened (-15%)",
+        "stage_2_talent_upgrade": "When the skill is not active, gain Camouflage. When the skill is active, Attack Interval is slightly shortened (-20%)",
+        "stage_3_talent_upgrade": "When the skill is not active, gain Camouflage. When the skill is active, Attack Interval is slightly shortened (-25%)",
         "total_stat_buffs": "HP +160, ATK +68"
     },
     {
