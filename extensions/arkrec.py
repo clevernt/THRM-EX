@@ -128,7 +128,7 @@ async def arkrec(ctx):
                 pass
             embed.add_field("Player", raider, inline=True)
             embed.add_field("Category(s)", sep.join(map(str, categories_en)), inline=True)
-            embed.add_field("OP Count", ops_count, inline=True)
+            embed.add_field("Operator Count", ops_count, inline=True)
             embed.add_field("Squad", sep.join(map(str, ops_en_ver)), inline=True)
             embed.add_field("Link", clear_link, inline=True)
             embed.set_image(stage_thumbnail_url)

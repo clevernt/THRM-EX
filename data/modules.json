@@ -138,7 +138,7 @@
         "operator": "Conviction",
         "module_branch": "DRE-X",
         "stage_1_trait_upgrade": "When attacking blocked enemies, ATK increased to 115%",
-        "base_talent": "DP Cost -4, Redeployment time -15 seconds, however Stun self for 10 seconds after deployment",
+        "base_talent": "DP Cost -4, Redeployment time -15 seconds, however Stun self for 10 seconds upon deployment",
         "stage_2_talent_upgrade": "DP Cost -6, Redeployment Time -25 seconds. however Stun self for 10 seconds upon deployment.",
         "stage_3_talent_upgrade": "DP Cost -8, Redeployment Time -30 seconds. however Stun self for 10 seconds upon deployment.",
         "total_stat_buffs": "ATK +80, ASPD +4"
