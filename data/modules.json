@@ -903,7 +903,7 @@
         "operator": "Earthspirit",
         "module_branch": "DEC-Y",
         "stage_1_trait_upgrade": "Attack deals Arts damage and inflicts Slow for 0.8s > **1.2s**",
-        "base_talent": "Increases the duration of Slow effect by +0.1 (0.13) seconds",
+        "base_talent": "Increases the duration of Slow effect by 0.1 (0.13) seconds",
         "stage_2_talent_upgrade": "Increases the duration of Slow effect by 0.2 (0.23) seconds",
         "stage_3_talent_upgrade": "Increases the duration of Slow effect by 0.3 (0.33) seconds",
         "total_stat_buffs": "HP +130, DEF +38"
