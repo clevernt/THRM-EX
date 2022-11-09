@@ -4,7 +4,7 @@ from lightbulb.utils.pag import StringPaginator
 plugin = lightbulb.Plugin('guilds')
 
 @plugin.command()
-@lightbulb.command('guilds', 'List of Guilds the bot is in.')
+@lightbulb.command('guilds', 'List of Guilds the bot is in.', auto_defer=True)
 @lightbulb.implements(lightbulb.SlashCommand)
 async def guilds(ctx):
     guilds = await plugin.rest.fetch_my_guilds()
