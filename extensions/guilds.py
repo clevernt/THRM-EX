@@ -13,3 +13,7 @@ async def guilds(ctx):
         pag.add_line(f"**{n}.** {guild.name}")
     for page in pag.build_pages():
         await ctx.respond(page)
+
+    
+def load(bot):
+    bot.add_plugin(plugin)
