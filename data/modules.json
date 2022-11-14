@@ -553,7 +553,7 @@
         "module_branch": "MAR-X",
         "stage_1_trait_upgrade": "When attacking aerial units, increase ATK to 110%",
         "base_talent": "When attacking aerial targets, deal 135% (140%) damage",
-        "stage_2_talent_upgrade": "When attacking aerial targets, deal 140% (145%)damage",
+        "stage_2_talent_upgrade": "When attacking aerial targets, deal 140% (145%) damage",
         "stage_3_talent_upgrade": "When attacking aerial targets, deal 150% (155%) damage",
         "total_stat_buffs": "HP +180, ATK +30"
     },
