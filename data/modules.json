@@ -608,7 +608,7 @@
         "stage_1_trait_upgrade": "Each jump no longer deals less damage",
         "base_talent": "When deployed, gain Attack Speed +4 every 15 seconds, stacks up to 5 layers",
         "stage_2_talent_upgrade": "When deployed, gain Attack Speed +4 every 10 seconds, stacks up to 6 layers",
-        "stage_3_talent_upgrade": "When deployed, gain Attack Speed +4 every 15 seconds, stacks up to 7 layers",
+        "stage_3_talent_upgrade": "When deployed, gain Attack Speed +4 every 10 seconds, stacks up to 7 layers",
         "total_stat_buffs": "HP +120, ATK +74"
     },
     {
