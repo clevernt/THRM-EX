@@ -1369,8 +1369,8 @@
     },
     {
         "operator": "Archetto",
-        "module_branch": "MAR-Y",
-        "stage_1_trait_upgrade": "ASPD +8 when there is a ground enemy within range",
+        "module_branch": "MAR-X",
+        "stage_1_trait_upgrade": "When attacking aerial units, increase ATK to 110%",
         "base_talent": "When deployed, recover 1 [Offensive Recovery] SP to all [Sniper] operators every 2.5 seconds",
         "stage_2_talent_upgrade": "When deployed, recover 1 [Offensive Recovery] SP to all [Sniper] operators every ? seconds, if there is at least one other [Sniper] deployed; Archetto gains 1 SP every ? seconds",
         "stage_3_talent_upgrade": "When deployed, recover 1 [Offensive Recovery] SP to all [Sniper] operators every ? seconds, if there is at least one other [Sniper] deployed; Archetto gains 1 SP every ? seconds",
