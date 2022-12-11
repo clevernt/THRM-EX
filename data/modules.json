@@ -1360,7 +1360,7 @@
     },
     {
         "operator": "Harmonie",
-        "module_branch": "TBA",
+        "module_branch": "MSC-X",
         "stage_1_trait_upgrade": "When there's no targets within range, can store the attack energy (up to 3 > **4** times) and fire it off in a burst",
         "base_talent": "Damage dealt to Blocked enemies +?%",
         "stage_2_talent_upgrade": "Damage dealt to Blocked enemies +?%",
@@ -1369,7 +1369,7 @@
     },
     {
         "operator": "Archetto",
-        "module_branch": "TBA",
+        "module_branch": "MAR-Y",
         "stage_1_trait_upgrade": "ASPD +8 when there is a ground enemy within range",
         "base_talent": "When deployed, recover 1 [Offensive Recovery] SP to all [Sniper] operators every 2.5 seconds",
         "stage_2_talent_upgrade": "When deployed, recover 1 [Offensive Recovery] SP to all [Sniper] operators every ? seconds, if there is at least one other [Sniper] deployed; Archetto gains 1 SP every ? seconds",
@@ -1378,7 +1378,7 @@
     },
     {
         "operator": "Mizuki",
-        "module_branch": "TBA",
+        "module_branch": "AMB-Y",
         "stage_1_trait_upgrade": "Attack all enemies within range, 50% > **65%** Physical & Arts Evasion, Lower priority to be attacked by enemies",
         "base_talent": "When there is an enemy with less than 50% HP within Attack Range, ATK +10% (12%)",
         "stage_2_talent_upgrade": "When there is an enemy with less than 50% HP within Attack Range, ATK +?% (?%), restores ?% of Max HP upon defeating an enemy",
