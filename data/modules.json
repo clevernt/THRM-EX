@@ -1298,91 +1298,91 @@
     {
         "operator": "Rosa",
         "module_branch": "TBA",
-        "stage_1_trait_upgrade": "When attacking heavy enemies (weight >= 3, ATK is increased to 115%",
+        "stage_1_trait_upgrade": "When attacking heavy enemies (weight >= 3), ATK is increased to 115%",
         "base_talent": "When attacking heavy enemies (weight >=3), ignore 60% DEF",
-        "stage_2_talent_upgrade": "When attacking heavy enemies (weight >=3), ignore 60% DEF and deals additional Physical Damage",
-        "stage_3_talent_upgrade": "When attacking heavy enemies (weight >=3), ignore 60% DEF and deals additional+ Physical Damage",
-        "total_stat_buffs": "ATK +, DEF +"
+        "stage_2_talent_upgrade": "When attacking heavy enemies (weight >=3), ignore 60% DEF and deals additional 40% Physical Damage",
+        "stage_3_talent_upgrade": "When attacking heavy enemies (weight >=3), ignore 60% DEF and deals additional 60% Physical Damage",
+        "total_stat_buffs": "ATK +90, DEF +45"
     },
     {
         "operator": "Toddifons",
         "module_branch": "TBA",
-        "stage_1_trait_upgrade": "When attacking heavy enemies (weight >= 3, ATK is increased to 115%",
+        "stage_1_trait_upgrade": "When attacking heavy enemies (weight >= 3), ATK is increased to 115%",
         "base_talent": "When attacking [Sarkaz] enemies, deal 145% (150%) damage",
-        "stage_2_talent_upgrade": "When attacking [Sarkaz] enemies, deal ?% (?%) damage",
-        "stage_3_talent_upgrade": "When attacking [Sarkaz] enemies, deal ?% (?%) damage",
-        "total_stat_buffs": "ATK +, DEF +"
+        "stage_2_talent_upgrade": "When attacking [Sarkaz] enemies, deal 155% (160%) damage",
+        "stage_3_talent_upgrade": "When attacking [Sarkaz] enemies, deal 165% (170%) damage",
+        "total_stat_buffs": "ATK +75, DEF +35"
     },
     {
         "operator": "Erato",
         "module_branch": "TBA",
-        "stage_1_trait_upgrade": "When attacking heavy enemies (weight >= 3, ATK is increased to 115%",
+        "stage_1_trait_upgrade": "When attacking heavy enemies (weight >= 3), ATK is increased to 115%",
         "base_talent": "Can attack Slumbering enemies. When attacking Slumbering enemies, ignore 50% DEF",
-        "stage_2_talent_upgrade": "Can attack Slumbering enemies. When attacking Slumbering enemies, ignore ?% DEF",
-        "stage_3_talent_upgrade": "Can attack Slumbering enemies. When attacking Slumbering enemies, ignore ?% DEF",
-        "total_stat_buffs": "HP +, ATK +"
+        "stage_2_talent_upgrade": "Can attack Slumbering enemies. When attacking Slumbering enemies, ignore 55% DEF",
+        "stage_3_talent_upgrade": "Can attack Slumbering enemies. When attacking Slumbering enemies, ignore 60% DEF",
+        "total_stat_buffs": "HP +130, ATK +70"
     },
     {
         "operator": "Totter",
         "module_branch": "TBA",
-        "stage_1_trait_upgrade": "When attacking heavy enemies (weight >= 3, ATK is increased to 115%",
+        "stage_1_trait_upgrade": "When attacking heavy enemies (weight >= 3), ATK is increased to 115%",
         "base_talent": "Can attack enemies in Stealth. When there are enemies in Stealth within Attack Range, ATK +17% (20%)",
-        "stage_2_talent_upgrade": "Can attack enemies in Stealth. When there are enemies in Stealth within Attack Range, ATK +?% (?%)",
-        "stage_3_talent_upgrade": "Can attack enemies in Stealth. When there are enemies in Stealth within Attack Range, ATK +?% (?%)",
-        "total_stat_buffs": "ATK +, DEF +"
+        "stage_2_talent_upgrade": "Can attack enemies in Stealth. When there are enemies in Stealth within Attack Range, ATK +22% (25%)",
+        "stage_3_talent_upgrade": "Can attack enemies in Stealth. When there are enemies in Stealth within Attack Range, ATK +27% (30%)",
+        "total_stat_buffs": "ATK +55, DEF +30"
     },
     {
         "operator": "Hellagur",
         "module_branch": "TBA",
         "stage_1_trait_upgrade": "When HP is below 50%, gains 25% Shelter",
         "base_talent": "Increase Attack Speed based on HP lost (up to +100 Attack Speed when 70% HP is lost)",
-        "stage_2_talent_upgrade": "Increase Attack Speed based on HP lost (up to +? Attack Speed when ?% HP is lost)",
-        "stage_3_talent_upgrade": "Increase Attack Speed based on HP lost (up to +? Attack Speed when ?% HP is lost)",
-        "total_stat_buffs": "HP +, ATK +"
+        "stage_2_talent_upgrade": "Increase Attack Speed based on HP lost (up to +120 Attack Speed when 60% HP is lost)",
+        "stage_3_talent_upgrade": "Increase Attack Speed based on HP lost (up to +130 Attack Speed when 50% HP is lost)",
+        "total_stat_buffs": "HP +350, ATK +90"
     },
     {
         "operator": "Akafuyu",
         "module_branch": "TBA",
         "stage_1_trait_upgrade": "When HP is below 50%, gains 25% Shelter",
         "base_talent": "N/A",
-        "stage_2_talent_upgrade": "DEF +?% when blocking enemies",
-        "stage_3_talent_upgrade": "DEF +?% when blocking enemies",
-        "total_stat_buffs": "HP +, ATK +"
+        "stage_2_talent_upgrade": "DEF +8% when blocking enemies",
+        "stage_3_talent_upgrade": "DEF +12% when blocking enemies",
+        "total_stat_buffs": "ATK +70, DEF +50"
     },
     {
         "operator": "Utage",
         "module_branch": "TBA",
         "stage_1_trait_upgrade": "When HP is below 50%, gains 25% Shelter",
         "base_talent": "N/A",
-        "stage_2_talent_upgrade": "When HP is below 50%, gains ?% ATK and DEF",
-        "stage_3_talent_upgrade": "When HP is below 50%, gains ?% ATK and DEF",
-        "total_stat_buffs": "HP +, ATK +"
+        "stage_2_talent_upgrade": "When HP is below 50%, gains 3% ATK and DEF",
+        "stage_3_talent_upgrade": "When HP is below 50%, gains 4% ATK and DEF",
+        "total_stat_buffs": "HP +240, ATK +60"
     },
     {
         "operator": "Harmonie",
         "module_branch": "MSC-X",
         "stage_1_trait_upgrade": "When there's no targets within range, can store the attack energy (up to 3 > **4** times) and fire it off in a burst",
-        "base_talent": "Damage dealt to Blocked enemies +?%",
-        "stage_2_talent_upgrade": "Damage dealt to Blocked enemies +?%",
-        "stage_3_talent_upgrade": "Damage dealt to Blocked enemies +?%",
-        "total_stat_buffs": "ATK +, RES +"
+        "base_talent": "Damage dealt to Blocked enemies +17% (20%)",
+        "stage_2_talent_upgrade": "Damage dealt to Blocked enemies +20% (23%)",
+        "stage_3_talent_upgrade": "Damage dealt to Blocked enemies +22% (25%)",
+        "total_stat_buffs": "ATK +82, RES +4"
     },
     {
         "operator": "Archetto",
         "module_branch": "MAR-X",
         "stage_1_trait_upgrade": "When attacking aerial units, increase ATK to 110%",
         "base_talent": "When deployed, recover 1 [Offensive Recovery] SP to all [Sniper] operators every 2.5 seconds",
-        "stage_2_talent_upgrade": "When deployed, recover 1 [Offensive Recovery] SP to all [Sniper] operators every ? seconds, if there is at least one other [Sniper] deployed; Archetto gains 1 SP every ? seconds",
-        "stage_3_talent_upgrade": "When deployed, recover 1 [Offensive Recovery] SP to all [Sniper] operators every ? seconds, if there is at least one other [Sniper] deployed; Archetto gains 1 SP every ? seconds",
-        "total_stat_buffs": "HP +, ATK +"
+        "stage_2_talent_upgrade": "When deployed, recover 1 [Offensive Recovery] SP to all [Sniper] operators every 2.3 seconds, if there is at least one other [Sniper] deployed, Archetto gains 1 SP every 2 seconds",
+        "stage_3_talent_upgrade": "When deployed, recover 1 [Offensive Recovery] SP to all [Sniper] operators every 2.2 seconds, if there is at least one other [Sniper] deployed; Archetto gains 1 SP every 1.8 seconds",
+        "total_stat_buffs": "HP +160, ATK +48"
     },
     {
         "operator": "Mizuki",
         "module_branch": "AMB-Y",
         "stage_1_trait_upgrade": "Attack all enemies within range, 50% > **65%** Physical & Arts Evasion, Lower priority to be attacked by enemies",
         "base_talent": "When there is an enemy with less than 50% HP within Attack Range, ATK +10% (12%)",
-        "stage_2_talent_upgrade": "When there is an enemy with less than 50% HP within Attack Range, ATK +?% (?%), restores ?% of Max HP upon defeating an enemy",
-        "stage_3_talent_upgrade": "When there is an enemy with less than 50% HP within Attack Range, ATK +?% (?%), restores ?% Max HP upon defeating an enemy",
-        "total_stat_buffs": "ATK +, ASPD +"
+        "stage_2_talent_upgrade": "When there is an enemy with less than 50% HP within Attack Range, ATK +15% (17%), restores 5% of Max HP upon defeating an enemy",
+        "stage_3_talent_upgrade": "When there is an enemy with less than 50% HP within Attack Range, ATK +20% (22%), restores 10% Max HP upon defeating an enemy",
+        "total_stat_buffs": "ATK +70, ASPD +7"
     }
 ]
