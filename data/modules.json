@@ -1297,7 +1297,7 @@
     },
     {
         "operator": "Rosa",
-        "module_branch": "TBA",
+        "module_branch": "SIE-X",
         "stage_1_trait_upgrade": "When attacking heavy enemies (weight >= 3), ATK is increased to 115%",
         "base_talent": "When attacking heavy enemies (weight >=3), ignore 60% DEF",
         "stage_2_talent_upgrade": "When attacking heavy enemies (weight >=3), ignore 60% DEF and deals additional 40% Physical Damage",
@@ -1306,7 +1306,7 @@
     },
     {
         "operator": "Toddifons",
-        "module_branch": "TBA",
+        "module_branch": "SIE-X",
         "stage_1_trait_upgrade": "When attacking heavy enemies (weight >= 3), ATK is increased to 115%",
         "base_talent": "When attacking [Sarkaz] enemies, deal 145% (150%) damage",
         "stage_2_talent_upgrade": "When attacking [Sarkaz] enemies, deal 155% (160%) damage",
@@ -1315,7 +1315,7 @@
     },
     {
         "operator": "Erato",
-        "module_branch": "TBA",
+        "module_branch": "SIE-X",
         "stage_1_trait_upgrade": "When attacking heavy enemies (weight >= 3), ATK is increased to 115%",
         "base_talent": "Can attack Slumbering enemies. When attacking Slumbering enemies, ignore 50% DEF",
         "stage_2_talent_upgrade": "Can attack Slumbering enemies. When attacking Slumbering enemies, ignore 55% DEF",
@@ -1324,7 +1324,7 @@
     },
     {
         "operator": "Totter",
-        "module_branch": "TBA",
+        "module_branch": "SIE-X",
         "stage_1_trait_upgrade": "When attacking heavy enemies (weight >= 3), ATK is increased to 115%",
         "base_talent": "Can attack enemies in Stealth. When there are enemies in Stealth within Attack Range, ATK +17% (20%)",
         "stage_2_talent_upgrade": "Can attack enemies in Stealth. When there are enemies in Stealth within Attack Range, ATK +22% (25%)",
@@ -1333,7 +1333,7 @@
     },
     {
         "operator": "Hellagur",
-        "module_branch": "TBA",
+        "module_branch": "MUS-X",
         "stage_1_trait_upgrade": "When HP is below 50%, gains 25% Shelter",
         "base_talent": "Increase Attack Speed based on HP lost (up to +100 Attack Speed when 70% HP is lost)",
         "stage_2_talent_upgrade": "Increase Attack Speed based on HP lost (up to +120 Attack Speed when 60% HP is lost)",
@@ -1342,7 +1342,7 @@
     },
     {
         "operator": "Akafuyu",
-        "module_branch": "TBA",
+        "module_branch": "MUS-X",
         "stage_1_trait_upgrade": "When HP is below 50%, gains 25% Shelter",
         "base_talent": "N/A",
         "stage_2_talent_upgrade": "DEF +8% when blocking enemies",
@@ -1351,7 +1351,7 @@
     },
     {
         "operator": "Utage",
-        "module_branch": "TBA",
+        "module_branch": "MUS-X",
         "stage_1_trait_upgrade": "When HP is below 50%, gains 25% Shelter",
         "base_talent": "N/A",
         "stage_2_talent_upgrade": "When HP is below 50%, gains 3% ATK and DEF",
