@@ -1384,5 +1384,104 @@
         "stage_2_talent_upgrade": "When there is an enemy with less than 50% HP within Attack Range, ATK +15% (17%), restores 5% of Max HP upon defeating an enemy",
         "stage_3_talent_upgrade": "When there is an enemy with less than 50% HP within Attack Range, ATK +20% (22%), restores 10% Max HP upon defeating an enemy",
         "total_stat_buffs": "ATK +70, ASPD +7"
+    },
+    {
+        "operator": "Eyjafjalla",
+        "module_branch": "CCR-X",
+        "stage_1_trait_upgrade": "Ignores 10 RES",
+        "base_talent": "When deployed, all ally [Caster] operators gain ATK +14% (16%)",
+        "stage_2_talent_upgrade": "When in squad, all ally [Caster] operators gain ATK +18% (20%)",
+        "stage_3_talent_upgrade": "When in squad, all ally [Caster] operators gain ATK +22% (24%)",
+        "total_stat_buffs": "HP +180, ATK +65"
+    },
+    {
+        "operator": "Ceobe",
+        "module_branch": "CCR-X",
+        "stage_1_trait_upgrade": "Ignores 10 RES",
+        "base_talent": "When attacking, deal additional Arts damage equal to 40% (44%) of the target's DEF",
+        "stage_2_talent_upgrade": "When attacking, deal additional Arts damage equal to 45% (49%) of the target's DEF. When attacking the same target continuously, the ratio increases gradually, up to 70% (74%)",
+        "stage_3_talent_upgrade": "When attacking, deal additional Arts damage equal to 50% (54%) of the target's DEF. When attacking the same target continuously, the ratio increases gradually, up to 75% (79%)",
+        "total_stat_buffs": "HP +180, ATK +65"
+    },
+    {
+        "operator": "Absinthe",
+        "module_branch": "CCR-X",
+        "stage_1_trait_upgrade": "Ignores 10 RES",
+        "base_talent": "When attacking enemies with less than 40% HP, increase damage dealt by 24% (30%)",
+        "stage_2_talent_upgrade": "When attacking enemies with less than 50% HP, increase damage dealt by 29% (35%)",
+        "stage_3_talent_upgrade": "When attacking enemies with less than 50% HP, increase damage dealt by 32% (38%)",
+        "total_stat_buffs": "HP +150, ATK +50"
+    },
+    {
+        "operator": "Haze",
+        "module_branch": "CCR-X",
+        "stage_1_trait_upgrade": "Ignores 10 RES",
+        "base_talent": "Attacks inflict RES -20% (-23%) for 1 second",
+        "stage_2_talent_upgrade": "Attacks inflict RES -24% (-27%) for 1 second",
+        "stage_3_talent_upgrade": "Attacks inflict RES -27% (-30%) for 1 second",
+        "total_stat_buffs": "ATK +40, DEF +25"
+    },
+    {
+        "operator": "Qanipalaat",
+        "module_branch": "CCR-Y",
+        "stage_1_trait_upgrade": "Gain 1 SP when normal attacks hits an [Elite] or [Leader] enemy",
+        "base_talent": "Apply 20% (22%) Arts Fragility effect to all aerial enemies within Attack Range",
+        "stage_2_talent_upgrade": "Apply 25% (27%) Arts Fragility effect to all aerial enemies within Attack Range",
+        "stage_3_talent_upgrade": "Apply 28% (30%) Arts Fragility effect to all aerial enemies within Attack Range",
+        "total_stat_buffs": "HP +150, ATK +50"
+    },
+    {
+        "operator": "Nightmare",
+        "module_branch": "CCR-Y",
+        "stage_1_trait_upgrade": "Gain 1 SP when normal attacks hits an [Elite] or [Leader] enemy",
+        "base_talent": "When equipping Skill 1, obtain 40% (45%) Physical and Arts Evasion. When equipping Skill 2, ATK +15% (18%)",
+        "stage_2_talent_upgrade": "When equipping Skill 1, obtain 45% (50%) Physical and Arts Evasion. When equipping Skill 2, ATK +18% (21%)",
+        "stage_3_talent_upgrade": "When equipping Skill 1, obtain 50% (55%) Physical and Arts Evasion. When equipping Skill 2, ATK +20% (23%)",
+        "total_stat_buffs": "ATK +50, ASPD +5"
+    },
+    {
+        "operator": "Amiya",
+        "module_branch": "CCR-Y",
+        "stage_1_trait_upgrade": "Gain 1 SP when normal attacks hits an [Elite] or [Leader] enemy",
+        "base_talent": "Recover an additional 2 (3) SP when attacking enemies. Gain 8 (10) SP after killing an enemy",
+        "stage_2_talent_upgrade": "Recover an additional 3 (4) SP when attacking enemies. Gain 8 (10) SP after killing an enemy",
+        "stage_3_talent_upgrade": "Recover an additional 3 (4) SP when attacking enemies. Gain 10 (12) SP after killing an enemy",
+        "total_stat_buffs": "HP +150, ATK +50"
+    },
+    {
+        "operator": "Tomimi",
+        "module_branch": "CCR-Y",
+        "stage_1_trait_upgrade": "Gain 1 SP when normal attacks hits an [Elite] or [Leader] enemy",
+        "base_talent": "When skill is active, reduce Attack Range, attacks change to Physical Damage (only attack ground enemies) and ATK +100% (120%)",
+        "stage_2_talent_upgrade": "When skill is active, slightly reduce Attack Range, attacks change to Physical Damage (only attack ground enemies) and ATK +105% (125%)",
+        "stage_3_talent_upgrade": "When skill is active, slightly reduce Attack Range, attacks change to Physical Damage (only attack ground enemies) and ATK +110% (130%%)",
+        "total_stat_buffs": "ATK +50, DEF +25"
+    },
+    {
+        "operator": "Lumen",
+        "module_branch": "WAH-Y",
+        "stage_1_trait_upgrade": "Remove the healing reduction on farther targets",
+        "base_talent": "When allies in range are afflicted with an abnormal status, immediately heal the ally for 80% of Lumen's ATK. This effect has a cooldown of 12 (10) seconds",
+        "stage_2_talent_upgrade": "When allies in range are afflicted with an abnormal status, immediately heal the ally for 90% of Lumen's ATK. This effect has a cooldown of 11 (9) seconds",
+        "stage_3_talent_upgrade": "When allies in range are afflicted with an abnormal status, immediately heal the ally for 100% of Lumen's ATK. This effect has a cooldown of 10 (8) seconds",
+        "total_stat_buffs": "ATK +45, DEF +28"
+    },
+    {
+        "operator": "Saria",
+        "module_branch": "GUA-Y",
+        "stage_1_trait_upgrade": "Damage taken is reduced by 15%",
+        "base_talent": "Every 20 seconds after deployment, ATK +5% (6%), DEF +4% (5%), stacks up to 5 layers",
+        "stage_2_talent_upgrade": "Every 18 seconds after deployment, ATK +6% (7%), DEF +5% (6%), stacks up to 5 layers",
+        "stage_3_talent_upgrade": "Every 18 seconds after deployment, ATK +7% (8%), DEF +6% (7%), stacks up to 5 layers",
+        "total_stat_buffs": "HP +270, ATK +50, DEF +50"
+    },
+    {
+        "operator": "Jie Yun",
+        "module_branch": "ART-Y",
+        "stage_1_trait_upgrade": "Attacks ignore 100 DEF",
+        "base_talent": "When deployed for the first time, ATK +13% (15%), DP Cost -3",
+        "stage_2_talent_upgrade": "When deployed for the first time, ATK +16% (18%), DP Cost -3",
+        "stage_3_talent_upgrade": "When deployed for the first time, ATK +18% (20%), DP Cost -3",
+        "total_stat_buffs": "HP +180, ATK +65"
     }
 ]
