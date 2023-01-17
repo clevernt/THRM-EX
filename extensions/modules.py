@@ -63,6 +63,9 @@ async def module(ctx):
                 if module_branch == "RIN-X": 
                     embed.add_field("Increased Attack Range:", "See below")
                     embed.set_image("https://i.imgur.com/x8bMsT8.png")
+                if name == "Tomimi":
+                    embed.add_Field("Slightly Reduced Attack Range:", "See below")
+                    embed.set_image("https://i.imgur.com/dx7Qy8b.png")
                 embeds.append(embed)
         await ctx.respond(embeds=embeds)
                
