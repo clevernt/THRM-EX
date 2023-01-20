@@ -1191,9 +1191,9 @@
         "operator": "Texas the Omertosa",
         "module_branch": "EXE-Y",
         "stage_1_trait_upgrade": "ATK +10% when there is no ally in the surrounding 4 tiles",
-        "base_talent": "ATK +20% for the duration of passive skills; when Texas defeats an enemy for the first time, restores all health and re-casts the passive skill",
-        "stage_2_talent_upgrade": "ATK +25% for the duration of passive skills; when Texas defeats an enemy for the first time, restores all health and re-casts the passive skill",
-        "stage_3_talent_upgrade": "ATK +28% for the duration of passive skills; when Texas defeats an enemy for the first time, restores all health and re-casts the passive skill",
+        "base_talent": "When skill is active, ATK +20%; After defeating an enemy for the first time, recover all HP and reactivate the passive skill",
+        "stage_2_talent_upgrade": "When skill is active, ATK +25%; After defeating an enemy for the first time, recover all HP and reactivate the passive skill",
+        "stage_3_talent_upgrade": "When skill is active, ATK +28%; After defeating an enemy for the first time, recover all HP and reactivate the passive skill",
         "total_stat_buffs": "HP +180, ATK +65"
     },
     {
