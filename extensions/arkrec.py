@@ -55,8 +55,6 @@ async def arkrec(ctx):
             stage_url = f"https://prts.wiki/w/文件:磨难{stage.upper()}_{stage_name}_地图.png"
         else:
             stage_url = f"https://prts.wiki/w/文件:{stage.upper()}_{stage_name}_地图.png"
-    elif stage[:2] == "TN":
-        stage_url = f"https://en.arkrec.com/images/maps/{stage.upper()}_{stage_name}.png"
     else:
         stage_url = f"https://prts.wiki/w/文件:{stage.upper()}_{stage_name}_地图.png"
     resp = session.get(stage_url)
