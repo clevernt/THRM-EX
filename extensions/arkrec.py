@@ -17,6 +17,7 @@ plugin = lightbulb.Plugin('arkrec')
 @lightbulb.option('stage', 'Stage Name', required=True)
 @lightbulb.command('arkrec', 'finds clears from arkrec', auto_defer=True)
 @lightbulb.implements(lightbulb.SlashCommand)
+@lightbulb.implements(lightbulb.PrefixCommand)
 async def arkrec(ctx):
     arkrec_url = "https://arkrec.com/api/records"
     stage = ctx.options.stage.strip()
@@ -157,9 +158,10 @@ async def arkrec_autocomplete(
 @plugin.command
 @lightbulb.command('categories', 'Lists all arkrec categories')
 @lightbulb.implements(lightbulb.SlashCommand)
+@lightbulb.implements(lightbulb.PrefixCommand)
 async def categories(ctx):
     embed = hikari.Embed()
-    embed.add_field("Categories:", "Regular Squad\n No Ling S3\n E2 Lv1\n E1 Max Lv\n E1 Lv1\n E0 Max Level\n E0 Lv1\n Five Star Only\n E2 Lv1 Five Star Only\n Four Star Only\n E1 Max Level Four Star Only\n E1 Lv1 Four Star Only\n Three Star Only\n Two Star Only\n Vanguard Only\n Guard Only\n Sniper Only\n Defender Only\n Medic Only\n Supporter Only\n Caster Only\n Specialist Only\n Low Step\n 1P Relay\n 1 Tile Only\n Welfare Only\n No Normal Attack Operators\n Abyssal Hunters Only\n Liberi Only\n Vulpo Only\n Enmity Only\n Karlan Commercial Only\n Male Only\n Supporters Without Summoners\n Knights Only\n Feline Only\n Bears Only")
+    embed.add_field("Categories:", "Regular Squad\n No Ling S3\n E2 Lv1\n E1 Max Lv\n E1 Lv1\n E0 Max Level\n E0 Lv1\n Five Star Only\n E2 Lv1 Five Star Only\n Four Star Only\n E1 Max Level Four Star Only\n E1 Lv1 Four Star Only\n Three Star Only\n Two Star Only\n Vanguard Only\n Guard Only\n Sniper Only\n Defender Only\n Medic Only\n Supporter Only\n Caster Only\n Specialist Only\n Low Step\n 1P Relay\n 1 Tile Only\n Welfare Only\n No Normal Attack Operators\n Abyssal Hunters Only\n Liberi Only\n Vulpo Only\n Enmity Only\n Karlan Commercial Only\n Male Only\n Supporters Without Summoners\n Knights Only\n Feline Only\n Bears Only\n Fast-Redeploy Only\n Iberia Only\n Lupo Only\n Caprinae Only", flags=hikari.MessageFlag.EPHEMERAL)
     await ctx.respond(embed)
 
 

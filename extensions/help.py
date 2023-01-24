@@ -6,6 +6,7 @@ plugin = lightbulb.Plugin('help')
 @plugin.command
 @lightbulb.command('help', 'commands list', auto_defer=True)
 @lightbulb.implements(lightbulb.SlashCommand)
+@lightbulb.implements(lightbulb.PrefixCommand)
 async def help(ctx):
     embed = hikari.Embed(title='Commands List')
     embed.add_field('Arknights', "`arkrec`, `module`")
