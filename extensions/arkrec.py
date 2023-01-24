@@ -137,7 +137,7 @@ async def arkrec(ctx):
         else:
             clear_found.append(False)
     if True not in clear_found:
-        await ctx.respond(f"{ctx.author.mention} Couldn't find a clear")
+        await ctx.respond(f"{ctx.author.mention} Couldn't find a clear", flags=hikari.MessageFlag.EPHEMERAL)
 
 @arkrec.autocomplete("category")
 async def arkrec_autocomplete(
