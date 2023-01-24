@@ -10,8 +10,7 @@ plugin = lightbulb.Plugin('modules')
 @plugin.command
 @lightbulb.option('operator', 'Operator', required=True, autocomplete=True)
 @lightbulb.command('module', "Get details about an operator's module", auto_defer=True)
-@lightbulb.implements(lightbulb.SlashCommand)
-@lightbulb.implements(lightbulb.PrefixCommand)
+@lightbulb.implements(lightbulb.SlashCommand, lightbulb.PrefixCommand)
 async def module(ctx):
     operator = ctx.options.operator.strip()
     with open("./data/modules.json", "r") as f:
