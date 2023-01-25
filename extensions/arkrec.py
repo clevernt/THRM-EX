@@ -16,7 +16,7 @@ plugin = lightbulb.Plugin('arkrec')
 @lightbulb.option('mode', "Mode", choices=["Normal Mode", "Challenge Mode"], required=False, default=None)
 @lightbulb.option('stage', 'Stage Name', required=True)
 @lightbulb.command('arkrec', 'finds clears from arkrec', auto_defer=True)
-@lightbulb.implements(lightbulb.SlashCommand, lightbulb.PrefixCommand)
+@lightbulb.implements(lightbulb.SlashCommand)
 async def arkrec(ctx):
     arkrec_url = "https://arkrec.com/api/records"
     stage = ctx.options.stage.strip()
@@ -43,7 +43,7 @@ async def arkrec(ctx):
             "cn_name": stage_name
         }
     except UnboundLocalError:
-        await ctx.respond(f"{ctx.author.mention} Are you sure that's a stage?")
+        await ctx.respond(f"{ctx.author.mention} Are you sure that's a stage?",)
     headers = {
         "Content-Type": "application/json",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0"
@@ -159,8 +159,8 @@ async def arkrec_autocomplete(
 @lightbulb.implements(lightbulb.SlashCommand, lightbulb.PrefixCommand)
 async def categories(ctx):
     embed = hikari.Embed()
-    embed.add_field("Categories:", "Regular Squad\n No Ling S3\n E2 Lv1\n E1 Max Lv\n E1 Lv1\n E0 Max Level\n E0 Lv1\n Five Star Only\n E2 Lv1 Five Star Only\n Four Star Only\n E1 Max Level Four Star Only\n E1 Lv1 Four Star Only\n Three Star Only\n Two Star Only\n Vanguard Only\n Guard Only\n Sniper Only\n Defender Only\n Medic Only\n Supporter Only\n Caster Only\n Specialist Only\n Low Step\n 1P Relay\n 1 Tile Only\n Welfare Only\n No Normal Attack Operators\n Abyssal Hunters Only\n Liberi Only\n Vulpo Only\n Enmity Only\n Karlan Commercial Only\n Male Only\n Supporters Without Summoners\n Knights Only\n Feline Only\n Bears Only\n Fast-Redeploy Only\n Iberia Only\n Lupo Only\n Caprinae Only", flags=hikari.MessageFlag.EPHEMERAL)
-    await ctx.respond(embed)
+    embed.add_field("Categories:", "Regular Squad\n No Ling S3\n E2 Lv1\n E1 Max Lv\n E1 Lv1\n E0 Max Level\n E0 Lv1\n Five Star Only\n E2 Lv1 Five Star Only\n Four Star Only\n E1 Max Level Four Star Only\n E1 Lv1 Four Star Only\n Three Star Only\n Two Star Only\n Vanguard Only\n Guard Only\n Sniper Only\n Defender Only\n Medic Only\n Supporter Only\n Caster Only\n Specialist Only\n Low Step\n 1P Relay\n 1 Tile Only\n Welfare Only\n No Normal Attack Operators\n Abyssal Hunters Only\n Liberi Only\n Vulpo Only\n Enmity Only\n Karlan Commercial Only\n Male Only\n Supporters Without Summoners\n Knights Only\n Feline Only\n Bears Only\n Fast-Redeploy Only\n Iberia Only\n Lupo Only\n Caprinae Only")
+    await ctx.respond(embed, flags=hikari.MessageFlag.EPHEMERAL)
 
 
 def load(bot):
