@@ -1263,9 +1263,9 @@
         "operator": "Chiave",
         "module_branch": "SOL-Y",
         "stage_1_trait_upgrade": "Initial Deployment Cost -4",
-        "base_talent": "When deployed, all 1* operators' redeployment time -75%. Additionally, for every 1* operator deployed, self ATK and DEF +11% (13%)",
-        "stage_2_talent_upgrade": "When deployed, all 1* operators' redeployment time -78%. Additionally, for every 1* operator deployed, self ATK and DEF +13% (15%)",
-        "stage_3_talent_upgrade": "When deployed, all 1* operators' redeployment time -80%. Additionally, for every 1* operator deployed, self ATK and DEF +15% (17%)",
+        "base_talent": "When deployed, all [Robot] operators' Redeployment Time -75%. Additionally, for every 1* operator deployed, self ATK and DEF +11% (13%)",
+        "stage_2_talent_upgrade": "When deployed, all [Robot] operators' Redeployment Time -78%. Additionally, for every 1* operator deployed, self ATK and DEF +13% (15%)",
+        "stage_3_talent_upgrade": "When deployed, all [Robot] operators' Redeployment Time -80%. Additionally, for every 1* operator deployed, self ATK and DEF +15% (17%)",
         "total_stat_buffs": "ATK +42, DEF +35"
     },
     {
