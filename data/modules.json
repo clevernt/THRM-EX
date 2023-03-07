@@ -1562,7 +1562,7 @@
         "stage_1_trait_upgrade": "When healing units with less than 50% HP, healing effectiveness is increased by 15%",
         "base_talent": "Attack Speed +10 (13)",
         "stage_2_talent_upgrade": "Attack Speed +15 (18), gain +15% ATK when equipping Skill 2, gain +0.45 SP/sec when equipping Skill 3",
-        "stage_3_talent_upgrade": "Attack Speed +15 (18), gain +25 ATK when equipping Skill 2, gain +0.6 SP/sec when equipping Skill 3",
+        "stage_3_talent_upgrade": "Attack Speed +15 (18), gain +25% ATK when equipping Skill 2, gain +0.6 SP/sec when equipping Skill 3",
         "total_stat_buffs": "ATK +63, DEF +20"
     },
     {
