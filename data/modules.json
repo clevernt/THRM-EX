@@ -1486,7 +1486,7 @@
     },
     {
         "operator": "Weedy",
-        "module_branch": "TBA",
+        "module_branch": "PUS-X",
         "stage_1_trait_upgrade": "Refund 50% of current DP Cost when deployed on Ranged tiles",
         "base_talent": "Increase the force of the water cannon's normal attacks and skills by 1 stage. If the water cannon is deployed adjacent to Weedy, recover 1 SP to Weedy every 3 seconds",
         "stage_2_talent_upgrade": "Increase the force of the water cannon's normal attacks and skills by 1 stage. If the water cannon is deployed adjacent to Weedy, recover 1 SP to Weedy every 2.5 seconds and increases Weedy's ATK by 15%",
@@ -1495,7 +1495,7 @@
     },
     {
         "operator": "Enforcer",
-        "module_branch": "TBA",
+        "module_branch": "PUS-X",
         "stage_1_trait_upgrade": "Refund 50% of current DP Cost when deployed on Ranged tiles",
         "base_talent": "When attacking enemies with 3 or more weight, ignore 180 (200) DEF",
         "stage_2_talent_upgrade": "When attacking enemies with 3 or more weight, ignore 250 (270) DEF",
@@ -1504,7 +1504,7 @@
     },
     {
         "operator": "FEater",
-        "module_branch": "TBA",
+        "module_branch": "PUS-Y",
         "stage_1_trait_upgrade": "When blocking 2 or more enemies, increases Push strength by 1",
         "base_talent": "Gain 40% (43%) Physical Evasion",
         "stage_2_talent_upgrade": "Gain 47% (50%) Physical Evasion",
@@ -1513,7 +1513,7 @@
     },
     {
         "operator": "Shaw",
-        "module_branch": "TBA",
+        "module_branch": "PUS-Y",
         "stage_1_trait_upgrade": "When blocking 2 or more enemies, increases Push strength by 1",
         "base_talent": "RES +15",
         "stage_2_talent_upgrade": "RES +20",
@@ -1522,7 +1522,7 @@
     },
     {
         "operator": "Ifrit",
-        "module_branch": "TBA",
+        "module_branch": "BLA-X",
         "stage_1_trait_upgrade": "Damage dealt is increased based on target distance, up to 110%",
         "base_talent": "Recover an additional 2 SP every 6 (5.5) seconds",
         "stage_2_talent_upgrade": "Recover an additional 2 SP every 6 (5.5) seconds, with a 20% chance to recover 5 additional SP",
@@ -1531,7 +1531,7 @@
     },
     {
         "operator": "Corroserum",
-        "module_branch": "TBA",
+        "module_branch": "BLA-X",
         "stage_1_trait_upgrade": "Damage dealt is increased based on target distance, up to 110%",
         "base_talent": "After not attacking for 4 seconds, SP recovery speed +0.45 (0.5) SP/sec",
         "stage_2_talent_upgrade": "After not attacking for 4 seconds, SP recovery speed +0.6 (0.65) SP/sec",
