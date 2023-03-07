@@ -1489,89 +1489,89 @@
         "module_branch": "TBA",
         "stage_1_trait_upgrade": "Refund 50% of current DP Cost when deployed on Ranged tiles",
         "base_talent": "Increase the force of the water cannon's normal attacks and skills by 1 stage. If the water cannon is deployed adjacent to Weedy, recover 1 SP to Weedy every 3 seconds",
-        "stage_2_talent_upgrade": "Increase the force of the water cannon's normal attacks and skills by 1 stage. If the water cannon is deployed adjacent to Weedy, recover 1 SP to Weedy every ? seconds and increases Weedy's ATK by ?%",
-        "stage_3_talent_upgrade": "Increase the force of the water cannon's normal attacks and skills by 1 stage. If the water cannon is deployed adjacent to Weedy, recover 1 SP to Weedy every ? seconds and increases Weedy's ATK by ?%",
-        "total_stat_buffs": "HP +?, ATK +?"
+        "stage_2_talent_upgrade": "Increase the force of the water cannon's normal attacks and skills by 1 stage. If the water cannon is deployed adjacent to Weedy, recover 1 SP to Weedy every 2.5 seconds and increases Weedy's ATK by 15%",
+        "stage_3_talent_upgrade": "Increase the force of the water cannon's normal attacks and skills by 1 stage. If the water cannon is deployed adjacent to Weedy, recover 1 SP to Weedy every 2 seconds and increases Weedy's ATK by 20%",
+        "total_stat_buffs": "HP +210, ATK +72"
     },
     {
         "operator": "Enforcer",
         "module_branch": "TBA",
         "stage_1_trait_upgrade": "Refund 50% of current DP Cost when deployed on Ranged tiles",
         "base_talent": "When attacking enemies with 3 or more weight, ignore 180 (200) DEF",
-        "stage_2_talent_upgrade": "When attacking enemies with 3 or more weight, ignore ? (?) DEF",
-        "stage_3_talent_upgrade": "When attacking enemies with 3 or more weight, ignore ? (?) DEF",
-        "total_stat_buffs": "HP +?, ATK +?"
+        "stage_2_talent_upgrade": "When attacking enemies with 3 or more weight, ignore 250 (270) DEF",
+        "stage_3_talent_upgrade": "When attacking enemies with 3 or more weight, ignore 280 (300) DEF",
+        "total_stat_buffs": "HP +240, ATK +60"
     },
     {
         "operator": "FEater",
         "module_branch": "TBA",
         "stage_1_trait_upgrade": "When blocking 2 or more enemies, increases Push strength by 1",
         "base_talent": "Gain 40% (43%) Physical Evasion",
-        "stage_2_talent_upgrade": "Gain ?% (?%) Physical Evasion",
-        "stage_3_talent_upgrade": "Gain ?% (?%) Physical Evasion",
-        "total_stat_buffs": "HP +?, ATK +?, DEF +?"
+        "stage_2_talent_upgrade": "Gain 47% (50%) Physical Evasion",
+        "stage_3_talent_upgrade": "Gain 52% (55%) Physical Evasion",
+        "total_stat_buffs": "HP +170, ATK +35, DEF +35"
     },
     {
         "operator": "Shaw",
         "module_branch": "TBA",
         "stage_1_trait_upgrade": "When blocking 2 or more enemies, increases Push strength by 1",
         "base_talent": "RES +15",
-        "stage_2_talent_upgrade": "RES +?",
-        "stage_3_talent_upgrade": "RES +?",
-        "total_stat_buffs": "HP +?, ATK +?, DEF +?"
+        "stage_2_talent_upgrade": "RES +20",
+        "stage_3_talent_upgrade": "RES +23",
+        "total_stat_buffs": "HP +190, ATK +33, DEF +22"
     },
     {
         "operator": "Ifrit",
         "module_branch": "TBA",
         "stage_1_trait_upgrade": "Damage dealt is increased based on target distance, up to 110%",
         "base_talent": "Recover an additional 2 SP every 6 (5.5) seconds",
-        "stage_2_talent_upgrade": "Recover an additional 2 SP every 6 (5.5) seconds, with a chance to recover additional SP",
-        "stage_3_talent_upgrade": "Recover an additional 2 SP every 6 (5.5) seconds, with a chance to recover additional SP",
-        "total_stat_buffs": "ATK +, ASPD +"
+        "stage_2_talent_upgrade": "Recover an additional 2 SP every 6 (5.5) seconds, with a 20% chance to recover 5 additional SP",
+        "stage_3_talent_upgrade": "Recover an additional 2 SP every 6 (5.5) seconds, with a 30% chance to recover 5 additional SP",
+        "total_stat_buffs": "ATK +72, ASPD +7"
     },
     {
         "operator": "Corroserum",
         "module_branch": "TBA",
         "stage_1_trait_upgrade": "Damage dealt is increased based on target distance, up to 110%",
         "base_talent": "After not attacking for 4 seconds, SP recovery speed +0.45 (0.5) SP/sec",
-        "stage_2_talent_upgrade": "After not attacking for 4 seconds, SP recovery speed +? (?*) SP/sec",
-        "stage_3_talent_upgrade": "After not attacking for 4 seconds, SP recovery speed +? (?) SP/sec",
-        "total_stat_buffs": "HP +, ATK +"
+        "stage_2_talent_upgrade": "After not attacking for 4 seconds, SP recovery speed +0.6 (0.65) SP/sec",
+        "stage_3_talent_upgrade": "After not attacking for 4 seconds, SP recovery speed +0.65 (0.7) SP/sec",
+        "total_stat_buffs": "HP +190, ATK +60"
     },
     {
         "operator": "Kirin X Yato",
         "module_branch": "EXE-X",
         "stage_1_trait_upgrade": "Refund 80% of current operator deploy cost on retreat",
-        "base_talent": "ATK +13% during skill duration and for 10 seconds after skill ends",
-        "stage_2_talent_upgrade": "ATK +?% during skill duration and for 10 seconds after skill ends, additional ATK boost during the skill",
-        "stage_3_talent_upgrade": "ATK +?% during skill duration and for 10 seconds after skill ends, additional ATK boost during the skill",
-        "total_stat_buffs": "HP +, ATK +, DEF +"
+        "base_talent": "ATK +13% (16%) during skill duration and for 10 seconds after skill ends",
+        "stage_2_talent_upgrade": "ATK +14% (17%) during skill duration and for 10 seconds after skill ends, additionaly gain 3% ATK during the skill",
+        "stage_3_talent_upgrade": "ATK +15% (18%) during skill duration and for 10 seconds after skill ends, additionaly gain 5% ATK during the skill",
+        "total_stat_buffs": "HP +123, ATK +48, DEF +28"
     },
     {
         "operator": "Rathalos S Noir Corne",
         "module_branch": "MUS-X",
         "stage_1_trait_upgrade": "When HP is below 50%, gains 25% Shelter",
         "base_talent": "When skill is not activated, gain 7% ATK after 5 consecutive attacks (up to 3 layers)",
-        "stage_2_talent_upgrade": "When skill is not activated, gain ?% ATK after 5 consecutive attacks (up to 3 layers)",
-        "stage_3_talent_upgrade": "When skill is not activated, gain ?% ATK after 5 consecutive attacks (up to 3 layers)",
-        "total_stat_buffs": "HP +, ATK +"
+        "stage_2_talent_upgrade": "When skill is not activated, gain 8% ATK after 5 consecutive attacks (up to 3 layers)",
+        "stage_3_talent_upgrade": "When skill is not activated, gain 9% ATK after 5 consecutive attacks (up to 3 layers)",
+        "total_stat_buffs": "HP +500, ATK +36"
     },
     {
         "operator": "Shining",
         "module_branch": "PHY-X",
         "stage_1_trait_upgrade": "When healing units with less than 50% HP, healing effectiveness is increased by 15%",
         "base_talent": "Attack Speed +10 (13)",
-        "stage_2_talent_upgrade": "Attack Speed +?, gain +? ATK when equipping Skill 2, gain +? SP/sec when equipping Skill 3",
-        "stage_3_talent_upgrade": "Attack Speed +?, gain +? ATK when equipping Skill 2, gain +? SP/sec when equipping Skill 3",
-        "total_stat_buffs": "ATK +, DEF +"
+        "stage_2_talent_upgrade": "Attack Speed +15 (18), gain +15% ATK when equipping Skill 2, gain +0.45 SP/sec when equipping Skill 3",
+        "stage_3_talent_upgrade": "Attack Speed +15 (18), gain +25 ATK when equipping Skill 2, gain +0.6 SP/sec when equipping Skill 3",
+        "total_stat_buffs": "ATK +63, DEF +20"
     },
     {
         "operator": "Siege",
         "module_branch": "SOL-Y",
         "stage_1_trait_upgrade": "Initial Deployment Cost -4",
         "base_talent": "Obtain 1 SP when an enemy dies within the 4 adjacent tiles",
-        "stage_2_talent_upgrade": "Obtain ? SP when an enemy dies within the 4 adjacent tiles, and another [Vanguard] on the field recovers ? SP",
-        "stage_3_talent_upgrade": "Obtain ? SP when an enemy dies within the 4 adjacent tiles, and another [Vanguard] on the field recovers ? SP",
-        "total_stat_buffs": "HP +, ATK +"
+        "stage_2_talent_upgrade": "Obtain 2 SP when an enemy dies within the 4 adjacent tiles, and another random [Vanguard] on the field gains 1 SP",
+        "stage_3_talent_upgrade": "Obtain 3 SP when an enemy dies within the 4 adjacent tiles, and another random [Vanguard] on the field gains 1 SP",
+        "total_stat_buffs": "HP +260, ATK +82"
     }
 ]
