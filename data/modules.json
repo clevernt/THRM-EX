@@ -1122,7 +1122,7 @@
         "base_talent": "Allies within Attack Range gain DEF +60 (65)",
         "stage_2_talent_upgrade": "Allies within Attack Range gain 80 (85) DEF, melee units in range gain additional 30 DEF",
         "stage_3_talent_upgrade": "Allies within Attack Range gain 100 (105) DEF, melee units in range gain additional 40 DEF",
-        "total_stat_buffs": "ATK 65, ASPD +7"
+        "total_stat_buffs": "ATK +65, ASPD +7"
     },
     {
         "operator": "Folinic",
