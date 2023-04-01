@@ -1476,7 +1476,7 @@
         "total_stat_buffs": "HP +270, ATK +50, DEF +50"
     },
     {
-        "operator": "Jie Yun",
+        "operator": "Jieyun",
         "module_branch": "ART-Y",
         "stage_1_trait_upgrade": "Attacks ignore 100 DEF",
         "base_talent": "When deployed for the first time, ATK +13% (15%), DP Cost -3",
