@@ -1668,7 +1668,7 @@
     "operator": "Ceobe",
     "module_branch": "CCR-Y",
     "stage_1_trait_upgrade": "Gain 1 SP when normal attacks hits an [Elite] or [Leader] enemy",
-    "base_talent": "When there are no allies in the 4 adjacent tiles when deployed, ATK +8% and Attack Speed +8",
+    "base_talent": "When there are no allies in the 4 adjacent tiles, ATK +8% and Attack Speed +8",
     "stage_2_talent_upgrade": "When there are no allies in the 4 adjacent tiles when deployed, ATK +?% and Attack Speed +?",
     "stage_3_talent_upgrade": "When there are no allies in the 4 adjacent tiles when deployed, ATK +?% and Attack Speed +?",
     "total_stat_buffs": "HP +?, ATK +?, DEF +?"
