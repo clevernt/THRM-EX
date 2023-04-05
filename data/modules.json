@@ -1586,7 +1586,7 @@
   {
     "operator": "Lin",
     "module_branch": "TBA",
-    "stage_1_trait_upgrade": "Retains a portion of off-skill DEF and RES buff when skill is active",
+    "stage_1_trait_upgrade": "Further increase DEF and RES when skill is not active. Retains a portion of the buff when skill is active",
     "base_talent": "When attacked, has 50% chance to recover 1 SP",
     "stage_2_talent_upgrade": "When attacked, has 50% chance to recover ? SP",
     "stage_3_talent_upgrade": "When attacked, has ?% chance to recover ? SP",
@@ -1595,7 +1595,7 @@
   {
     "operator": "Mint",
     "module_branch": "TBA",
-    "stage_1_trait_upgrade": "Retains a portion of off-skill DEF and RES buff when skill is active",
+    "stage_1_trait_upgrade": "Further increase DEF and RES when skill is not active. Retains a portion of the buff when skill is active",
     "base_talent": "When skill is not active, allies within the 4 adjacent tiles gain DEF +10% (?%); When skill is active, reduce Taunt level",
     "stage_2_talent_upgrade": "When skill is not active, allies within the 4 adjacent tiles gain DEF +?% (?%); When skill is active, reduce Taunt level",
     "stage_3_talent_upgrade": "When skill is not active, allies within the 4 adjacent tiles gain DEF +?% (?%); When skill is active, reduce Taunt level",
@@ -1604,7 +1604,7 @@
   {
     "operator": "Beeswax",
     "module_branch": "TBA",
-    "stage_1_trait_upgrade": "Retains a portion of off-skill DEF and RES buff when skill is active",
+    "stage_1_trait_upgrade": "Further increase DEF and RES when skill is not active. Retains a portion of the buff when skill is active",
     "base_talent": "While skill is not active, recover 4% Max HP every second",
     "stage_2_talent_upgrade": "While skill is not active, increase Max HP, and recover 4% Max HP every second",
     "stage_3_talent_upgrade": "While skill is not active, further increase Max HP, and recover 4% Max HP every second",
