@@ -1588,7 +1588,7 @@
     "module_branch": "TBA",
     "stage_1_trait_upgrade": "Gain ~~+200%~~ -> **+215%** DEF & ~~+20~~ -> **25** RES when skill is inactive. When skill is active, retain a portion of that buff (+100% DEF & +10 RES)",
     "base_talent": "When attacked, has 50% (55%) chance to recover 1 SP",
-    "stage_2_talent_upgrade": "When attacked, has 50% (55%0 chance to recover 2 SP",
+    "stage_2_talent_upgrade": "When attacked, has 50% (55%) chance to recover 2 SP",
     "stage_3_talent_upgrade": "When attacked, has 75% (80%) chance to recover 2 SP",
     "total_stat_buffs": "ATK +77, DEF +53"
   },
