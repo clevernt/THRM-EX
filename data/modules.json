@@ -1662,7 +1662,7 @@
     "base_talent": "When in team, all ally [Defender] operators gain Max HP +16% (20%)",
     "stage_2_talent_upgrade": "When in team, all ally [Defender] operators gain Max HP +19% (23%); For every [Defender] operator deployed, healing received by self and Max HP +3%, stacks up to 3 layers",
     "stage_3_talent_upgrade": "When in team, all ally [Defender] operators gain Max HP +21% (25%); For every [Defender] operator deployed, healing received by self and Max HP +4%, stacks up to 3 layers",
-    "total_stat_buffs": "HP +?, ATK +?, DEF +?"
+    "total_stat_buffs": "HP +550, ATK +70, DEF +30"
   },
   {
     "operator": "Ceobe",
