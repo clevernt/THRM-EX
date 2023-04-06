@@ -1577,91 +1577,91 @@
   {
     "operator": "Carnelian",
     "module_branch": "TBA",
-    "stage_1_trait_upgrade": "Retains a portion of offskill DEF and RES buff when skill is active",
+    "stage_1_trait_upgrade": "Gain ~~+200%~~ -> **+215%** DEF & ~~+20~~ -> **25** RES when skill is inactive. When skill is active, retain a portion of that buff (+100% DEF & +10 RES)",
     "base_talent": "Recover 40% (45%) Max HP after activating skill; When [Charged], effect is doubled",
-    "stage_2_talent_upgrade": "During skill, increase Max HP. Recover 40% (45%) Max HP after activating skill; When [Charged], effect is doubled",
-    "stage_3_talent_upgrade": "During skill, increase Max HP. Recover ?% (?%) Max HP after activating skill; When [Charged], effect is doubled",
-    "total_stat_buffs": "HP +?, ATK +?"
+    "stage_2_talent_upgrade": "During skill, Max HP +30%. Recover 40% (45%) Max HP after activating skill; When [Charged], effect is doubled",
+    "stage_3_talent_upgrade": "During skill, Max HP +45%. Recover 45% (50%) Max HP after activating skill; When [Charged], effect is doubled",
+    "total_stat_buffs": "HP +260, ATK +85"
   },
   {
     "operator": "Lin",
     "module_branch": "TBA",
-    "stage_1_trait_upgrade": "Further increase DEF and RES when skill is not active. Retains a portion of the buff when skill is active",
-    "base_talent": "When attacked, has 50% chance to recover 1 SP",
-    "stage_2_talent_upgrade": "When attacked, has 50% chance to recover ? SP",
-    "stage_3_talent_upgrade": "When attacked, has ?% chance to recover ? SP",
-    "total_stat_buffs": "ATK +?, DEF +?"
+    "stage_1_trait_upgrade": "Gain ~~+200%~~ -> **+215%** DEF & ~~+20~~ -> **25** RES when skill is inactive. When skill is active, retain a portion of that buff (+100% DEF & +10 RES)",
+    "base_talent": "When attacked, has 50% (55%) chance to recover 1 SP",
+    "stage_2_talent_upgrade": "When attacked, has 50% (55%0 chance to recover 2 SP",
+    "stage_3_talent_upgrade": "When attacked, has 75% (80%) chance to recover 2 SP",
+    "total_stat_buffs": "ATK +77, DEF +53"
   },
   {
     "operator": "Mint",
     "module_branch": "TBA",
-    "stage_1_trait_upgrade": "Further increase DEF and RES when skill is not active. Retains a portion of the buff when skill is active",
-    "base_talent": "When skill is not active, allies within the 4 adjacent tiles gain DEF +10% (?%); When skill is active, reduce Taunt level",
-    "stage_2_talent_upgrade": "When skill is not active, allies within the 4 adjacent tiles gain DEF +?% (?%); When skill is active, reduce Taunt level",
-    "stage_3_talent_upgrade": "When skill is not active, allies within the 4 adjacent tiles gain DEF +?% (?%); When skill is active, reduce Taunt level",
-    "total_stat_buffs": "HP +?, ATK +?, DEF +?"
+    "stage_1_trait_upgrade": "Gain ~~+200%~~ -> **+215%** DEF & ~~+20~~ -> **25** RES when skill is inactive. When skill is active, retain a portion of that buff (+100% DEF & +10 RES)",
+    "base_talent": "When skill is not active, allies within the 4 adjacent tiles gain DEF +10% (12%); When skill is active, reduce Taunt level",
+    "stage_2_talent_upgrade": "When skill is not active, allies within the 4 adjacent tiles gain DEF +18% (20%); When skill is active, reduce Taunt level",
+    "stage_3_talent_upgrade": "When skill is not active, allies within the 4 adjacent tiles gain DEF +21% (23%); When skill is active, reduce Taunt level",
+    "total_stat_buffs": "HP +170, ATK +52, DEF +23"
   },
   {
     "operator": "Beeswax",
     "module_branch": "TBA",
-    "stage_1_trait_upgrade": "Further increase DEF and RES when skill is not active. Retains a portion of the buff when skill is active",
+    "stage_1_trait_upgrade": "Gain ~~+200%~~ -> **+215%** DEF & ~~+20~~ -> **25** RES when skill is inactive. When skill is active, retain a portion of that buff (+100% DEF & +10 RES)",
     "base_talent": "While skill is not active, recover 4% Max HP every second",
-    "stage_2_talent_upgrade": "While skill is not active, increase Max HP, and recover 4% Max HP every second",
-    "stage_3_talent_upgrade": "While skill is not active, further increase Max HP, and recover 4% Max HP every second",
-    "total_stat_buffs": "HP +?, ATK +?"
+    "stage_2_talent_upgrade": "While skill is not active, Max HP +10%, and recover 4% Max HP every second",
+    "stage_3_talent_upgrade": "While skill is not active, Max HP +15%, and recover 4% Max HP every second",
+    "total_stat_buffs": "HP +210, ATK +70"
   },
   {
     "operator": "Dorothy",
     "module_branch": "TBA",
     "stage_1_trait_upgrade": "20% chance to deploy a trap that deals 2x damage",
     "base_talent": "After a Resonator activates, Dorothy gains +2% ATK, stacking up to 10 (12) layers",
-    "stage_2_talent_upgrade": "After a Resonator activates, Dorothy gains +?% ATK, stacking up to 10 (12) layers",
-    "stage_3_talent_upgrade": "After a Resonator activates, Dorothy gains +?% ATK, stacking up to 10 (12) layers",
-    "total_stat_buffs": "HP +?, ATK +?"
+    "stage_2_talent_upgrade": "After a Resonator activates, Dorothy gains +3% ATK, stacking up to 10 (12) layers",
+    "stage_3_talent_upgrade": "After a Resonator activates, Dorothy gains +4% ATK, stacking up to 10 (12) layers",
+    "total_stat_buffs": "HP +155, ATK +57"
   },
   {
     "operator": "Frost",
     "module_branch": "TBA",
     "stage_1_trait_upgrade": "20% chance to deploy a trap that deals 2x damage",
     "base_talent": "Can use 8 (10) Welcome Mats (can hold up to 10). The first enemy to step on each Welcome Mat will trigger it",
-    "stage_2_talent_upgrade": "Can use 8 (10) Welcome Mats (can hold up to 10). The first enemy to step on each Welcome Mat will trigger it; Self and Welcome Mats ignore a certain amount of DEF",
-    "stage_3_talent_upgrade": "Can use 8 (10) Welcome Mats (can hold up to 10). The first enemy to step on each Welcome Mat will trigger it; Self and Welcome Mats ignore a certain amount of DEF",
-    "total_stat_buffs": "ATK +?, DEF +?"
+    "stage_2_talent_upgrade": "Can use 8 (10) Welcome Mats (can hold up to 10). The first enemy to step on each Welcome Mat will trigger it; Self and Welcome Mats ignore 80 DEF",
+    "stage_3_talent_upgrade": "Can use 8 (10) Welcome Mats (can hold up to 10). The first enemy to step on each Welcome Mat will trigger it; Self and Welcome Mats ignore 120 DEF",
+    "total_stat_buffs": "ATK +47, DEF +25"
   },
   {
     "operator": "Robin",
     "module_branch": "TBA",
     "stage_1_trait_upgrade": "20% chance to deploy a trap that deals 2x damage",
     "base_talent": "N/A",
-    "stage_2_talent_upgrade": "When attacked, gain Camouflage for several seconds",
-    "stage_3_talent_upgrade": "When attacked, gain Camouflage for several seconds+",
-    "total_stat_buffs": "HP +?, ATK +?"
+    "stage_2_talent_upgrade": "When attacked, gain Camouflage for 4 seconds",
+    "stage_3_talent_upgrade": "When attacked, gain Camouflage for 6 seconds+",
+    "total_stat_buffs": "HP +185, ATK +41"
   },
   {
     "operator": "Cement",
     "module_branch": "HES-X",
     "stage_1_trait_upgrade": "SP recovery speed is reduced (reduced to 20%). While blocking, SP recovery speed returns to normal. (Can gain SP from external sources without blocking)",
-    "base_talent": "Gain 12% Physical damage reduction; After being deployed for 35 seconds, the effect doubles",
-    "stage_2_talent_upgrade": "Gain ?% Physical damage reduction; After being deployed for 35 seconds, the effect doubles",
-    "stage_3_talent_upgrade": "Gain ?% Physical damage reduction; After being deployed for 35 seconds, the effect doubles",
-    "total_stat_buffs": "ATK +?, DEF +?"
+    "base_talent": "Gain 12% (15%) Physical damage reduction; After being deployed for 35 seconds, the effect doubles",
+    "stage_2_talent_upgrade": "Gain 14% (17%) Physical damage reduction; After being deployed for 35 seconds, the effect doubles",
+    "stage_3_talent_upgrade": "Gain 16% (19%) Physical damage reduction; After being deployed for 35 seconds, the effect doubles",
+    "total_stat_buffs": "ATK +57, DEF 100"
   },
   {
     "operator": "Morgan",
     "module_branch": "DRE-X",
     "stage_1_trait_upgrade": "When attacking blocked enemies, ATK increased to 115%",
-    "base_talent": "When deployed, gain ATK [Tenacity] effect up to 50% ATK (caps when 70% HP is lost)",
-    "stage_2_talent_upgrade": "When deployed, gain ATK [Tenacity] effect up to ?% ATK (caps when 70% HP is lost)",
-    "stage_3_talent_upgrade": "When deployed, gain ATK [Tenacity] effect up to ?% ATK (caps when 70% HP is lost)",
-    "total_stat_buffs": "HP +?, ATK +?"
+    "base_talent": "When deployed, gain ATK [Tenacity] effect up to 50% (52%) ATK (caps when 70% HP is lost)",
+    "stage_2_talent_upgrade": "When deployed, gain ATK [Tenacity] effect up to 55% (57%) ATK (caps when 70% HP is lost)",
+    "stage_3_talent_upgrade": "When deployed, gain ATK [Tenacity] effect up to 58% (60%) ATK (caps when 70% HP is lost)",
+    "total_stat_buffs": "HP +350, ATK +82"
   },
   {
     "operator": "Nian",
     "module_branch": "PRO-Y",
     "stage_1_trait_upgrade": "Blocks 4 enemies",
     "base_talent": "When in team, all ally [Defender] operators gain Max HP +16% (20%)",
-    "stage_2_talent_upgrade": "When in team, all ally [Defender] operators gain Max HP +?% (?%); For every [Defender] operator deployed, further increase healing received by self and Max HP, stacks up to several layers",
-    "stage_3_talent_upgrade": "When in team, all ally [Defender] operators gain Max HP +?% (?%); For every [Defender] operator deployed, further increase healing received by self and Max HP, stacks up to several layers",
+    "stage_2_talent_upgrade": "When in team, all ally [Defender] operators gain Max HP +19% (23%); For every [Defender] operator deployed, healing received by self and Max HP +3%, stacks up to 3 layers",
+    "stage_3_talent_upgrade": "When in team, all ally [Defender] operators gain Max HP +21% (25%); For every [Defender] operator deployed, healing received by self and Max HP +4%, stacks up to 3 layers",
     "total_stat_buffs": "HP +?, ATK +?, DEF +?"
   },
   {
@@ -1669,8 +1669,8 @@
     "module_branch": "CCR-Y",
     "stage_1_trait_upgrade": "Gain 1 SP when normal attacks hits an [Elite] or [Leader] enemy",
     "base_talent": "When there are no allies in the 4 adjacent tiles, ATK +8% and Attack Speed +8",
-    "stage_2_talent_upgrade": "When there are no allies in the 4 adjacent tiles when deployed, ATK +?% and Attack Speed +?",
-    "stage_3_talent_upgrade": "When there are no allies in the 4 adjacent tiles when deployed, ATK +?% and Attack Speed +?",
-    "total_stat_buffs": "HP +?, ATK +?, DEF +?"
+    "stage_2_talent_upgrade": "if there are no allies in the 4 adjacent tiles when deployed, ATK +12% and Attack Speed +12",
+    "stage_3_talent_upgrade": "if there are no allies in the 4 adjacent tiles when deployed, ATK +15% and Attack Speed +15",
+    "total_stat_buffs": "HP +120, ATK +56, DEF +23"
   }
 ]
