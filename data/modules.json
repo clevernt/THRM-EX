@@ -1576,7 +1576,7 @@
   },
   {
     "operator": "Carnelian",
-    "module_branch": "TBA",
+    "module_branch": "PLX-X",
     "stage_1_trait_upgrade": "Gain ~~+200%~~ -> **+215%** DEF & ~~+20~~ -> **25** RES when skill is inactive. When skill is active, retain a portion of that buff (+100% DEF & +10 RES)",
     "base_talent": "Recover 40% (45%) Max HP after activating skill; When [Charged], effect is doubled",
     "stage_2_talent_upgrade": "During skill, Max HP +30%. Recover 40% (45%) Max HP after activating skill; When [Charged], effect is doubled",
@@ -1585,7 +1585,7 @@
   },
   {
     "operator": "Lin",
-    "module_branch": "TBA",
+    "module_branch": "PLX-X",
     "stage_1_trait_upgrade": "Gain ~~+200%~~ -> **+215%** DEF & ~~+20~~ -> **25** RES when skill is inactive. When skill is active, retain a portion of that buff (+100% DEF & +10 RES)",
     "base_talent": "When attacked, has 50% (55%) chance to recover 1 SP",
     "stage_2_talent_upgrade": "When attacked, has 50% (55%) chance to recover 2 SP",
@@ -1594,7 +1594,7 @@
   },
   {
     "operator": "Mint",
-    "module_branch": "TBA",
+    "module_branch": "PLX-X",
     "stage_1_trait_upgrade": "Gain ~~+200%~~ -> **+215%** DEF & ~~+20~~ -> **25** RES when skill is inactive. When skill is active, retain a portion of that buff (+100% DEF & +10 RES)",
     "base_talent": "When skill is not active, allies within the 4 adjacent tiles gain DEF +10% (12%); When skill is active, reduce Taunt level",
     "stage_2_talent_upgrade": "When skill is not active, allies within the 4 adjacent tiles gain DEF +18% (20%); When skill is active, reduce Taunt level",
@@ -1603,7 +1603,7 @@
   },
   {
     "operator": "Beeswax",
-    "module_branch": "TBA",
+    "module_branch": "PLX-X",
     "stage_1_trait_upgrade": "Gain ~~+200%~~ -> **+215%** DEF & ~~+20~~ -> **25** RES when skill is inactive. When skill is active, retain a portion of that buff (+100% DEF & +10 RES)",
     "base_talent": "While skill is not active, recover 4% Max HP every second",
     "stage_2_talent_upgrade": "While skill is not active, Max HP +10%, and recover 4% Max HP every second",
@@ -1612,7 +1612,7 @@
   },
   {
     "operator": "Dorothy",
-    "module_branch": "TBA",
+    "module_branch": "TRP-Y",
     "stage_1_trait_upgrade": "20% chance to deploy a trap that deals 2x damage",
     "base_talent": "After a Resonator activates, Dorothy gains +2% ATK, stacking up to 10 (12) layers",
     "stage_2_talent_upgrade": "After a Resonator activates, Dorothy gains +3% ATK, stacking up to 10 (12) layers",
@@ -1621,7 +1621,7 @@
   },
   {
     "operator": "Frost",
-    "module_branch": "TBA",
+    "module_branch": "TRP-Y",
     "stage_1_trait_upgrade": "20% chance to deploy a trap that deals 2x damage",
     "base_talent": "Can use 8 (10) Welcome Mats (can hold up to 10). The first enemy to step on each Welcome Mat will trigger it",
     "stage_2_talent_upgrade": "Can use 8 (10) Welcome Mats (can hold up to 10). The first enemy to step on each Welcome Mat will trigger it; Self and Welcome Mats ignore 80 DEF",
@@ -1630,7 +1630,7 @@
   },
   {
     "operator": "Robin",
-    "module_branch": "TBA",
+    "module_branch": "TRP-Y",
     "stage_1_trait_upgrade": "20% chance to deploy a trap that deals 2x damage",
     "base_talent": "N/A",
     "stage_2_talent_upgrade": "When attacked, gain Camouflage for 4 seconds",
