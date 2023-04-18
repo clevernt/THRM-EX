@@ -8,47 +8,6 @@ import json
 bot = lightbulb.BotApp 
 plugin = lightbulb.Plugin('modules')
 
-async def paginate_embeds(ctx, embeds):
-    """
-    Paginates a list of embeds in a Discord channel.
-    """
-
-    page = 0
-    total_pages = len(embeds)
-    reaction_emojis = {"⬅️", "➡️"}
-
-    def check(reaction, user):
-        return user != bot.user and str(reaction.emoji) in reaction_emojis
-
-    while True:
-        current_embed = embeds[page]
-        current_embed.set_footer(text=f"Page {page + 1}/{total_pages}")
-
-        message = await ctx.respond(embed=current_embed)
-
-        for emoji in reaction_emojis:
-            await message.add_reaction(emoji)
-
-        try:
-            reaction, user = await bot.wait_for(
-                "reaction_add", timeout=60.0, check=check)
-
-            if str(reaction.emoji) == "⬅️":
-                page -= 1
-                if page < 0:
-                    page = total_pages - 1
-
-            if str(reaction.emoji) == "➡️":
-                page += 1
-                if page > total_pages - 1:
-                    page = 0
-
-            await message.remove_reaction(reaction, user)
-
-        except TimeoutError:
-            await message.clear_reactions()
-            break
-
 @plugin.command
 @lightbulb.option('operator', 'Operator', required=True, autocomplete=True)
 @lightbulb.command('module', "Get details about an operator's module", auto_defer=True)
@@ -109,7 +68,7 @@ async def module(ctx):
                     embed.add_field("Slightly Reduced Attack Range:", "See below")
                     embed.set_image("https://i.imgur.com/dx7Qy8b.png")
                 embeds.append(embed)
-    await paginate_embeds(ctx, embeds)
+    await ctx.respond(embeds)
 
 @module.autocomplete("operator")
 async def module_autocomplete(
