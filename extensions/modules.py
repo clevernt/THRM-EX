@@ -68,7 +68,7 @@ async def module(ctx):
                     embed.add_field("Slightly Reduced Attack Range:", "See below")
                     embed.set_image("https://i.imgur.com/dx7Qy8b.png")
                 embeds.append(embed)
-    await ctx.respond(embeds)
+    await ctx.respond(embeds=embeds)
 
 @module.autocomplete("operator")
 async def module_autocomplete(
