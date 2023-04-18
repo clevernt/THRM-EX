@@ -8,7 +8,7 @@ import json
 bot = lightbulb.BotApp 
 plugin = lightbulb.Plugin('modules')
 
-async def paginate_embeds(channel, embeds):
+async def paginate_embeds(ctx, embeds):
     """
     Paginates a list of embeds in a Discord channel.
     """
@@ -24,7 +24,7 @@ async def paginate_embeds(channel, embeds):
         current_embed = embeds[page]
         current_embed.set_footer(text=f"Page {page + 1}/{total_pages}")
 
-        message = await channel.send(embed=current_embed)
+        message = await ctx.respond(embed=current_embed)
 
         for emoji in reaction_emojis:
             await message.add_reaction(emoji)
@@ -48,7 +48,7 @@ async def paginate_embeds(channel, embeds):
         except TimeoutError:
             await message.clear_reactions()
             break
-        
+
 @plugin.command
 @lightbulb.option('operator', 'Operator', required=True, autocomplete=True)
 @lightbulb.command('module', "Get details about an operator's module", auto_defer=True)
@@ -109,6 +109,7 @@ async def module(ctx):
                     embed.add_field("Slightly Reduced Attack Range:", "See below")
                     embed.set_image("https://i.imgur.com/dx7Qy8b.png")
                 embeds.append(embed)
+    await paginate_embeds(ctx, embeds)
 
 @module.autocomplete("operator")
 async def module_autocomplete(
