@@ -159,17 +159,8 @@ async def arkrec_autocomplete(
 @lightbulb.implements(lightbulb.SlashCommand, lightbulb.PrefixCommand)
 async def categories(ctx):
     embed = hikari.Embed()
-    with open("./data/categories.json", encoding="utf-8") as g:
-        categoriesdata = json.load(g)
-        Categories = categoriesdata["Categories"]
-        category = i["category"]
-        categories_en = []
-        for x in category:
-            for key, value in Categories.items():
-                if key == x:
-                    en_name = value
-                    categories_en.append(en_name)
-    embed.add_field(categories_en)
+    embed.add_field("Categories:", "Regular Squad\n No Ling S3\n E2 Lv1\n E1 Max Lv\n E1 Lv1\n E0 Max Level\n E0 Lv1\n Five Star Only\n E2 Lv1 Five Star Only\n Four Star Only\n E1 Max Level Four Star Only\n E1 Lv1 Four Star Only\n Three Star Only\n Two Star Only\n Vanguard Only\n Guard Only\n Sniper Only\n Defender Only\n Medic Only\n Supporter Only\n Caster Only\n Specialist Only\n Low Step\n 1P Relay\n 1 Tile Only\n Welfare Only\n No Normal Attack Operators\n Abyssal Hunters Only\n Liberi Only\n Vulpo Only\n Enmity Only\n Karlan Commercial Only\n Male Only\n Supporters Without Summoners\n Knights Only\n Feline Only\n Bears Only\n Fast-Redeploy Only\n Iberia Only\n Lupo Only\n Caprinae Only")
+    await ctx.respond(embed, flags=hikari.MessageFlag.EPHEMERAL)
 
 
 def load(bot):
