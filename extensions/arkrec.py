@@ -50,21 +50,21 @@ async def arkrec(ctx):
     }
     response = requests.request("POST", arkrec_url, json=payload, headers=headers)
     data = response.json()
-    if stage.upper() in ["10-7", "10-11", "10-15", "10-17", "11-3", "11-8", "11-12", "11-15", "11-20", "12-7"]:
+    if stage.upper() in ["10-7", "10-11", "10-15", "10-17", "11-3", "11-8", "11-12", "11-15", "11-20", "12-7", ""]:
         if mode == "challenge":
             stage_url = f"https://prts.wiki/w/文件:磨难{stage.upper()}_{stage_name}_地图.png"
         else:
             stage_url = f"https://prts.wiki/w/文件:{stage.upper()}_{stage_name}_地图.png"
     else:
         stage_url = f"https://prts.wiki/w/文件:{stage.upper()}_{stage_name}_地图.png"
-
-    session = HTMLSession()
     resp = session.get(stage_url)
-    match = re.search(r'https://prts\.wiki/w/文件:[^"]+\.(?:jpg|gif|png)', resp.text)
-    if match:
-        stage_thumbnail_url = match.group()
-    else:
-        stage_thumbnail_url = None
+    urls = resp.html.absolute_links
+    for url in urls:
+        if re.match(r'(?:([^:/?#]+):)?(?://([^/?#]*))?([^?#]*\.(?:jpg|gif|png))(?:\?([^#]*))?(?:#(.*))?', url):
+            if "800px" in url:
+                stage_thumbnail_url = url
+        else:
+            pass
     with open("./data/ops_names.json", encoding="utf-8") as c:
         opsdata = json.load(c)
         Ops = opsdata["Operators"]
