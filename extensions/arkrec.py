@@ -114,8 +114,8 @@ async def arkrec(ctx):
                     stage_url = f"https://prts.wiki/w/文件:{stage.upper()}_{stage_name}_地图.png"
             else:
                 stage_url = f"https://prts.wiki/w/文件:{stage.upper()}_{stage_name}_地图.png"
-                resp = session.get(stage_url)
-                urls = resp.html.absolute_links
+            resp = session.get(stage_url)
+            urls = resp.html.absolute_links
             for url in urls:
                 if re.match(r'(?:([^:/?#]+):)?(?://([^/?#]*))?([^?#]*\.(?:jpg|gif|png))(?:\?([^#]*))?(?:#(.*))?', url):
                     if "800px" in url:
