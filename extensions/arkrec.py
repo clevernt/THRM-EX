@@ -83,6 +83,7 @@ async def arkrec(ctx):
             ops_count = len(i["team"])
             ops = i["team"]
             raider = i["raider"]
+            date = i["date_published"][:10]
             ops_en_ver = []
             for i in ops:
                 if i in ["黑角", "夜刀", "巡林者", "杜林"]:
@@ -132,6 +133,7 @@ async def arkrec(ctx):
             embed.add_field("Category(s)", sep.join(map(str, categories_en)), inline=True)
             embed.add_field("Operator Count", ops_count, inline=True)
             embed.add_field("Squad", sep.join(map(str, ops_en_ver)), inline=True)
+            embed.add_field("Date", date, inline=True)
             embed.add_field("Link", clear_link, inline=True)
             embed.set_image(stage_thumbnail_url)
             await ctx.respond(embed)
