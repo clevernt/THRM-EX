@@ -1730,7 +1730,7 @@
   {
     "operator": "Melanite",
     "module_branch": "ARC-Y",
-    "stage_1_trait_upgrade": "Attacks deals physical splash damage ~~Twice~~ Thrice to Ground enemies in a small area",
+    "stage_1_trait_upgrade": "When attacking an enemy directly ahead, ATK increases to 105% and ignores the target's Physical Evasion",
     "base_talent": "After activating a skill for the first time, damage dealt by subsequent skills is increased by 15%",
     "stage_2_talent_upgrade": "After activating a skill for the first time, damage dealt by subsequent skills is increased",
     "stage_3_talent_upgrade": "After activating a skill for the first time, damage dealt by subsequent skills is further increased",
