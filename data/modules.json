@@ -1675,83 +1675,83 @@
   },
   {
     "operator": "Gnosis",
-    "module_branch": "TBA",
-    "stage_1_trait_upgrade": "Attacks inflict [Weak] for 2 seconds",
+    "module_branch": "UMD-X",
+    "stage_1_trait_upgrade": "Attacks inflict 10% [Weaken] for 2 seconds",
     "base_talent": "Attacks inflict Chill for 1 second. Apply 25% (27%) Weakening effect to Chilled enemies within Attack Range. Increase the Weakening effect to 2x against Frozen enemies within Attack Range",
-    "stage_2_talent_upgrade": "Attacks inflict Chill for 1 second. Apply ?% (?%) Weakening effect to Chilled enemies within Attack Range. Increase the Weakening effect to 2x against Frozen enemies within Attack Range",
-    "stage_3_talent_upgrade": "Attacks inflict Chill for 1 second. Apply ?% (?%) Weakening effect to Chilled enemies within Attack Range. Increase the Weakening effect to 2x against Frozen enemies within Attack Range",
-    "total_stat_buffs": "HP +?, ATK +?, DEF +?"
+    "stage_2_talent_upgrade": "Attacks inflict Chill for 1 second. Apply 28% (30%) Weakening effect to Chilled enemies within Attack Range. Increase the Weakening effect to 2x against Frozen enemies within Attack Range",
+    "stage_3_talent_upgrade": "Attacks inflict Chill for 1 second. Apply 30% (32%) Weakening effect to Chilled enemies within Attack Range. Increase the Weakening effect to 2x against Frozen enemies within Attack Range",
+    "total_stat_buffs": "HP +145, ATK +25, DEF +30"
   },
   {
     "operator": "Pramanix",
-    "module_branch": "TBA",
-    "stage_1_trait_upgrade": "Attacks inflict [Weak] for 2 seconds",
+    "module_branch": "UMD-X",
+    "stage_1_trait_upgrade": "Attacks inflict 10% [Weaken] for 2 seconds",
     "base_talent": "Attack 2 targets simultaneously",
-    "stage_2_talent_upgrade": "Attack 2 targets simultaneously. Attacks have a certain chance to apply 1 second of [Cold]",
-    "stage_3_talent_upgrade": "Attack 2 targets simultaneously. Attacks have an increased chance to apply 1 second of [Cold]",
-    "total_stat_buffs": "HP +?, ASPD +?"
+    "stage_2_talent_upgrade": "Attack 2 targets simultaneously. Attacks have a 20% chance to apply 1 second of [Cold]",
+    "stage_3_talent_upgrade": "Attack 2 targets simultaneously. Attacks have a 25% chance to apply 1 second of [Cold]",
+    "total_stat_buffs": "HP +180, ASPD +8"
   },
   {
     "operator": "Shamare",
-    "module_branch": "TBA",
-    "stage_1_trait_upgrade": "Attacks inflict [Weak] for 2 seconds",
+    "module_branch": "UMD-X",
+    "stage_1_trait_upgrade": "Attacks inflict 10% [Weaken] for 2 seconds",
     "base_talent": "N/A",
-    "stage_2_talent_upgrade": "A few seconds after deployment, reduce Taunt level",
-    "stage_3_talent_upgrade": "A few- seconds after deployment, reduce Taunt level",
-    "total_stat_buffs": "ATK +?, DEF +?"
+    "stage_2_talent_upgrade": "15 seconds after deployment, reduce Taunt level",
+    "stage_3_talent_upgrade": "10 seconds after deployment, reduce Taunt level",
+    "total_stat_buffs": "ATK +30, DEF +35"
   },
   {
     "operator": "Rosmontis",
-    "module_branch": "TBA",
+    "module_branch": "BOM-X",
     "stage_1_trait_upgrade": "Attacks deals physical splash damage ~~Twice~~ Thrice to Ground enemies in a small area",
     "base_talent": "Attacks ignore 160 (175) DEF",
-    "stage_2_talent_upgrade": "Attacks ignore increased amount of DEF",
-    "stage_3_talent_upgrade": "Attacks ignore further increased amount of DEF",
-    "total_stat_buffs": "HP +?, ATK +?"
+    "stage_2_talent_upgrade": "Attacks ignore 190 (205) DEF",
+    "stage_3_talent_upgrade": "Attacks ignore 220 (235) DEF",
+    "total_stat_buffs": "HP +275, ATK +75"
   },
   {
     "operator": "Greyy the Lightningbearer",
-    "module_branch": "TBA",
+    "module_branch": "BOM-X",
     "stage_1_trait_upgrade": "Attacks deals physical splash damage ~~Twice~~ Thrice to Ground enemies in a small area",
     "base_talent": "When attacking, 40% chance to Slow the target for 2 seconds",
-    "stage_2_talent_upgrade": "When attacking, 40% chance to Slow the target for 2 seconds, Damage dealt to Slowed enemies is increased",
-    "stage_3_talent_upgrade": "When attacking, 40% chance to Slow the target for 2 seconds, Damage dealt to Slowed enemies is further increased",
-    "total_stat_buffs": "HP +?, ATK +?, DEF +?"
+    "stage_2_talent_upgrade": "When attacking, 40% chance to Slow the target for 2 seconds, Damage dealt to Slowed enemies is increased by 10%",
+    "stage_3_talent_upgrade": "When attacking, 40% chance to Slow the target for 2 seconds, Damage dealt to Slowed enemies is increased by 15%",
+    "total_stat_buffs": "HP +240, ATK +40, DEF +15"
   },
   {
     "operator": "Ho'olheyak",
     "module_branch": "CCR-X",
     "stage_1_trait_upgrade": "Ignores 10 RES",
-    "base_talent": "When attacking Aerial units, ATK is increased to 120% and inflict Silence for 3 seconds",
-    "stage_2_talent_upgrade": "When attacking Aerial units, ATK is increased and inflict Silence for longer",
-    "stage_3_talent_upgrade": "When attacking Aerial units, ATK is further increased and inflict Silence for even longer",
-    "total_stat_buffs": "HP +?, ATK +?"
+    "base_talent": "When attacking Aerial units, ATK is increased to 120% (123%) and inflict Silence for 3 seconds",
+    "stage_2_talent_upgrade": "When attacking Aerial units, ATK is increased to 130% (133%) and inflict Silence for 4 seconds",
+    "stage_3_talent_upgrade": "When attacking Aerial units, ATK is increased to 135% (138%) and inflict Silence for 5 seconds",
+    "total_stat_buffs": "HP +175, ATK +65"
   },
   {
     "operator": "Melanite",
     "module_branch": "ARC-Y",
     "stage_1_trait_upgrade": "When attacking an enemy directly ahead, ATK increases to 105% and ignores the target's Physical Evasion",
-    "base_talent": "After activating a skill for the first time, damage dealt by subsequent skills is increased by 15%",
-    "stage_2_talent_upgrade": "After activating a skill for the first time, damage dealt by subsequent skills is increased",
-    "stage_3_talent_upgrade": "After activating a skill for the first time, damage dealt by subsequent skills is further increased",
-    "total_stat_buffs": "ATK +?, DEF +?"
+    "base_talent": "After activating a skill for the first time, damage dealt by subsequent skills is increased by 15% (16%)",
+    "stage_2_talent_upgrade": "After activating a skill for the first time, damage dealt by subsequent skills is increased by 19% (20%)",
+    "stage_3_talent_upgrade": "After activating a skill for the first time, damage dealt by subsequent skills is increased by 24% (25%)",
+    "total_stat_buffs": "ATK +75, DEF +30"
   },
   {
     "operator": "W",
     "module_branch": "ART-Y",
     "stage_1_trait_upgrade": "Ignore 100 DEF",
     "base_talent": "10 seconds after deployment, gain 60% Physical and Arts Evasion and reduce Taunt level",
-    "stage_2_talent_upgrade": "10 seconds after deployment, gain 60% Physical and Arts Evasion and reduce Taunt level. ATK is gradually increased to a certain percentage over a few seconds when no damage is taken, ATK buff is reset upon taking damage",
-    "stage_3_talent_upgrade": "? seconds after deployment, gain 60% Physical and Arts Evasion and reduce Taunt level. ATK is gradually increased+ to a certain percentage over a few seconds- when no damage is taken, ATK buff is reset upon taking damage",
-    "total_stat_buffs": "HP +?, ATK +?"
+    "stage_2_talent_upgrade": "10 seconds after deployment, gain 60% Physical and Arts Evasion and reduce Taunt level. ATK is gradually increased to a maximum of 10% over 20 seconds when no damage is taken, ATK buff is reset upon taking damage",
+    "stage_3_talent_upgrade": "10 seconds after deployment, gain 60% Physical and Arts Evasion and reduce Taunt level. ATK is gradually increased to a maximum of 20% over 16 seconds when no damage is taken, ATK buff is reset upon taking damage",
+    "total_stat_buffs": "HP +200, ATK +85"
   },
   {
     "operator": "Kal'tsit",
     "module_branch": "PHY-Y",
     "stage_1_trait_upgrade": "When healing melee units, healing effectiveness is increased by 15%",
     "base_talent": "Can summon and heal Mon3tr. Mon3tr has 25 seconds redeployment time. Kal'tsit will prioritize healing self and Mon3tr. If not within Kal'tsit's Attack Range, Mon3tr's DEF is reduced to 0",
-    "stage_2_talent_upgrade": "Can summon and heal Mon3tr. Mon3tr has 25 seconds redeployment time. Kal'tsit will prioritize healing self and Mon3tr. When Mon3tr is within Kal'tsit's Attack Range, Mon3tr's ASPD and DEF are increased; otherwise Mon3tr's DEF is reduced to 0",
-    "stage_3_talent_upgrade": "Can summon and heal Mon3tr. Mon3tr has 25 seconds redeployment time. Kal'tsit will prioritize healing self and Mon3tr. When Mon3tr is within Kal'tsit's Attack Range, Mon3tr's ASPD and DEF are increased; otherwise Mon3tr's DEF is reduced to 0",
-    "total_stat_buffs": "HP +?, ASPD +?"
+    "stage_2_talent_upgrade": "Can summon and heal Mon3tr. Mon3tr has 25 seconds redeployment time. Kal'tsit will prioritize healing self and Mon3tr. When Mon3tr is within Kal'tsit's Attack Range, Mon3tr's ASPD +12 and DEF +15%; otherwise Mon3tr's DEF is reduced to 0",
+    "stage_3_talent_upgrade": "Can summon and heal Mon3tr. Mon3tr has 25 seconds redeployment time. Kal'tsit will prioritize healing self and Mon3tr. When Mon3tr is within Kal'tsit's Attack Range, Mon3tr's ASPD +20 and DEF +20%; otherwise Mon3tr's DEF is reduced to 0",
+    "total_stat_buffs": "HP +195, ASPD +7"
   }
 ]
