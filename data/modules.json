@@ -1742,7 +1742,7 @@
     "stage_1_trait_upgrade": "Ignore 100 DEF",
     "base_talent": "10 seconds after deployment, gain 60% Physical and Arts Evasion and reduce Taunt level",
     "stage_2_talent_upgrade": "10 seconds after deployment, gain 60% Physical and Arts Evasion and reduce Taunt level. ATK is gradually increased to a maximum of 10% over 20 seconds when no damage is taken, ATK buff is reset upon taking damage",
-    "stage_3_talent_upgrade": "10 seconds after deployment, gain 60% Physical and Arts Evasion and reduce Taunt level. ATK is gradually increased to a maximum of 20% over 16 seconds when no damage is taken, ATK buff is reset upon taking damage",
+    "stage_3_talent_upgrade": "8 seconds after deployment, gain 60% Physical and Arts Evasion and reduce Taunt level. ATK is gradually increased to a maximum of 20% over 16 seconds when no damage is taken, ATK buff is reset upon taking damage",
     "total_stat_buffs": "HP +200, ATK +85"
   },
   {
