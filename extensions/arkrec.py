@@ -84,7 +84,7 @@ async def arkrec(ctx):
             ops = i["team"]
             if "Low Step" in categories_en:
                 remark = i["remark1"]
-                step_count = remark.split('步')[0]
+                step_count = remark.split('步')
             raider = i["raider"]
             date = i["date_published"][:10]
             ops_en_ver = []
@@ -135,7 +135,7 @@ async def arkrec(ctx):
             embed.add_field("Player", raider, inline=True)
             embed.add_field("Category(s)", sep.join(map(str, categories_en)), inline=True)
             if step_count:
-                embed.add_field("Step Count", f'{step_count} Steps', inline=True)
+                embed.add_field("Step Count", f'{step_count[0]} Steps', inline=True)
             else:
                 embed.add_field("Operator Count", ops_count, inline=True)
             embed.add_field("Squad", sep.join(map(str, ops_en_ver)), inline=True)
