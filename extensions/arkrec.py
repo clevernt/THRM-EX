@@ -83,7 +83,7 @@ async def arkrec(ctx):
             ops_count = len(i["team"])
             ops = i["team"]
             if "Low Step" in categories_en:
-                remark = i["remark"]
+                remark = i["remark1"]
                 step_count = f"{remark.split('步')[0]} Steps"
             raider = i["raider"]
             date = i["date_published"][:10]
