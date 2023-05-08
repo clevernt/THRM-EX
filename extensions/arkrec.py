@@ -80,11 +80,12 @@ async def arkrec(ctx):
             clear_found.append(True)
             stage = i["operation"]
             clear_link = i["url"]
-            ops_count = len(i["team"])
-            ops = i["team"]
             if "Low Step" in categories_en:
                 remark = i["remark1"]
-                step_count = remark.split('步')
+                step_count = remark.split('步')[0]
+            else:
+                ops_count = len(i["team"])
+            ops = i["team"]
             raider = i["raider"]
             date = i["date_published"][:10]
             ops_en_ver = []
