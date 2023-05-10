@@ -1,5 +1,7 @@
 from typing import Union
 from typing import Sequence
+from thefuzz import fuzz
+from thefuzz import process
 import lightbulb
 import hikari
 import requests
