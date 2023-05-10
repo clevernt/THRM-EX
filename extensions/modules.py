@@ -5,8 +5,9 @@ import lightbulb
 import hikari
 import json
 
-bot = lightbulb.BotApp 
+bot = lightbulb.BotApp
 plugin = lightbulb.Plugin('modules')
+
 
 @plugin.command
 @lightbulb.option('operator', 'Operator', required=True, autocomplete=True)
@@ -29,15 +30,15 @@ async def module(ctx):
             if operator.lower() in operators_list:
                 await ctx.respond(f"{operator.title()} does not have a module *yet*", flags=hikari.MessageFlag.EPHEMERAL)
             else:
-                await ctx.respond(f"{operator.title()} is not an operator", flags=hikari.MessageFlag.EPHEMERAL) 
-        embeds = []           
+                await ctx.respond(f"{operator.title()} is not an operator", flags=hikari.MessageFlag.EPHEMERAL)
+        embeds = []
         for i in data:
             name = i["operator"]
             for key, value in ops_id_data.items():
                 if key == name:
-                    operator_code = value 
+                    operator_code = value
                     operator_icon = f"https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avatars/{operator_code}.png"
-            if name.lower() == operator.lower():       
+            if name.lower() == operator.lower():
                 module_branch = i["module_branch"]
                 stage_1_trait_upgrade = i["stage_1_trait_upgrade"]
                 base_talent = i["base_talent"]
@@ -46,14 +47,19 @@ async def module(ctx):
                 total_stat_buffs = i["total_stat_buffs"]
                 embed = hikari.Embed(title=name)
                 embed.add_field("Module Branch", module_branch)
-                embed.add_field("Stage 1 | Trait Upgrade", stage_1_trait_upgrade)
+                embed.add_field("Stage 1 | Trait Upgrade",
+                                stage_1_trait_upgrade)
                 if base_talent != "N/A":
                     embed.add_field("Base Talent", base_talent)
-                    embed.add_field("Stage 2 | Talent Upgrade", stage_2_talent_upgrade)
-                    embed.add_field("Stage 3 | Talent Upgrade", stage_3_talent_upgrade)
+                    embed.add_field("Stage 2 | Talent Upgrade",
+                                    stage_2_talent_upgrade)
+                    embed.add_field("Stage 3 | Talent Upgrade",
+                                    stage_3_talent_upgrade)
                 elif base_talent == "N/A":
-                    embed.add_field("Stage 2 | New Talent", stage_2_talent_upgrade)
-                    embed.add_field("Stage 3 | Talent Upgrade", stage_3_talent_upgrade)
+                    embed.add_field("Stage 2 | New Talent",
+                                    stage_2_talent_upgrade)
+                    embed.add_field("Stage 3 | Talent Upgrade",
+                                    stage_3_talent_upgrade)
                 embed.add_field("Total Stat Buffs", total_stat_buffs)
                 embed.add_field("Modules Sheet", "https://bit.ly/AKModules")
                 embed.set_footer("DM CleverShadow#5250 for any errors.")
@@ -61,19 +67,21 @@ async def module(ctx):
                 if module_branch == "SPC-X":
                     embed.add_field("Increased Attack Range:", "See below")
                     embed.set_image("https://i.imgur.com/aQUIiMu.png")
-                if module_branch == "RIN-X": 
+                if module_branch == "RIN-X":
                     embed.add_field("Increased Attack Range:", "See below")
                     embed.set_image("https://i.imgur.com/x8bMsT8.png")
                 if name == "Tomimi":
-                    embed.add_field("Slightly Reduced Attack Range:", "See below")
+                    embed.add_field(
+                        "Slightly Reduced Attack Range:", "See below")
                     embed.set_image("https://i.imgur.com/dx7Qy8b.png")
                 embeds.append(embed)
     await ctx.respond(embeds=embeds)
 
+
 @module.autocomplete("operator")
 async def module_autocomplete(
     opt: hikari.AutocompleteInteractionOption, inter: hikari.AutocompleteInteraction
-    ) -> Union[str, Sequence[str], hikari.CommandChoice, Sequence[hikari.CommandChoice]]:
+) -> Union[str, Sequence[str], hikari.CommandChoice, Sequence[hikari.CommandChoice]]:
     user_input = opt.value
     operators_list = []
     with open("./data/operator_name_to_id.json", "r") as d:
@@ -83,6 +91,7 @@ async def module_autocomplete(
             operators_list.append(operator_name.lower())
     close_matches = get_close_matches(user_input, operators_list, cutoff=0.3)
     return close_matches
+
 
 def load(bot):
     bot.add_plugin(plugin)
