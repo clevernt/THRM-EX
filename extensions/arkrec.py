@@ -1,10 +1,10 @@
 from typing import Union
 from typing import Sequence
-from fuzzywuzzy import process
 import lightbulb
 import hikari
 import requests
 import json
+from difflib import get_close_matches
 from requests_html import HTMLSession
 import re
 
@@ -151,20 +151,17 @@ async def arkrec(ctx):
 @arkrec.autocomplete("category")
 async def arkrec_autocomplete(
     opt: hikari.AutocompleteInteractionOption, inter: hikari.AutocompleteInteraction
-):
+    ) -> Union[str, Sequence[str], hikari.CommandChoice, Sequence[hikari.CommandChoice]]:
     user_input = opt.value
     with open("./data/categories.json", encoding="utf-8") as g:
         categoriesdata = json.load(g)
-        categories = categoriesdata["Categories"]
-        categories_en = [value.lower() for value in categories.values()]
-        match_name, _, _ = process.extractOne(user_input.lower(), categories_en)
-        for key, value in categories.items():
-            if value.lower() == match_name:
-                result = value
-                break
-        else:
-            result = None
-    return result
+        Categories = categoriesdata["Categories"]  
+        categories_en = []
+        for _, value in Categories.items():
+            en_name = value.lower()
+            categories_en.append(en_name)
+    close_matches = get_close_matches(user_input, categories_en, cutoff=0.1)
+    return close_matches
 
 @plugin.command
 @lightbulb.command('categories', 'Lists all arkrec categories')
