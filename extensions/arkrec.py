@@ -34,9 +34,9 @@ async def arkrec(ctx):
     with open("./data/stage_table.json", encoding="utf-8") as f:
         stagesdata = json.load(f)
         stages = stagesdata["stages"]
-        for i in stages:
-            if i["value"]["code"].lower() == stage.lower():
-                stage_name = i["value"]["name"]
+        for key, stage_value in stages.items():
+            if stage_value["code"].lower() == stage.lower():
+                stage_name = stage_value["name"]
     try:
         payload = {
             "operation": stage.upper(),
