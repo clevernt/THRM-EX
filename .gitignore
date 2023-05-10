@@ -1,10 +1,9 @@
 __pycache__/
 .vscode/
 modules_test.py
-a.py
+testing.py
 extensions/__pycache__
 nppBackup/
-main.py
 .env
 data/aliases.json
 data/modules_backup.json

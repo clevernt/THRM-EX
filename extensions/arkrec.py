@@ -1,10 +1,10 @@
 from typing import Union
 from typing import Sequence
+from fuzzywuzzy import process
 import lightbulb
 import hikari
 import requests
 import json
-from difflib import get_close_matches
 from requests_html import HTMLSession
 import re
 
@@ -106,9 +106,10 @@ async def arkrec(ctx):
             #await ctx.respond(f"Stage: {stage}, Category(s): {sep.join(map(str, categories_en))}, Lowest ops: {ops_count}, Squad: {sep.join(map(str, ops_en_ver))} Link: {clear_link}")
             embed = hikari.Embed(title="Clear Found")
             embed.add_field("Stage", stage, inline=True)
-            if stage in ["10-7", "10-11", "10-15", "10-17", 
-                        "11-3", "11-8", "11-12", "11-15",
-                        "11-20", "12-7", "12-13", "12-19", "12-20"]:
+            adverse_stages = {"10-7", "10-11", "10-15", "10-17",
+                            "11-3", "11-8", "11-12", "11-15",
+                            "11-20", "12-7", "12-13", "12-19", "12-20"}
+            if stage in adverse_stages:
                 if operationType == "challenge":
                     stage_url = f"https://prts.wiki/w/文件:磨难{stage.upper()}_{stage_name}_地图.png"
                 else:
@@ -120,7 +121,11 @@ async def arkrec(ctx):
             for url in urls:
                 if re.match(r'(?:([^:/?#]+):)?(?://([^/?#]*))?([^?#]*\.(?:jpg|gif|png))(?:\?([^#]*))?(?:#(.*))?', url):
                     if "800px" in url:
-                        stage_thumbnail_url = url
+                        try:
+                            stage_thumbnail_url = url
+                            break
+                        except UnboundLocalError:
+                            pass
                 else:
                     pass
             if operationType == "challenge":
@@ -146,17 +151,20 @@ async def arkrec(ctx):
 @arkrec.autocomplete("category")
 async def arkrec_autocomplete(
     opt: hikari.AutocompleteInteractionOption, inter: hikari.AutocompleteInteraction
-    ) -> Union[str, Sequence[str], hikari.CommandChoice, Sequence[hikari.CommandChoice]]:
+):
     user_input = opt.value
     with open("./data/categories.json", encoding="utf-8") as g:
         categoriesdata = json.load(g)
-        Categories = categoriesdata["Categories"]  
-        categories_en = []
-        for _, value in Categories.items():
-            en_name = value.lower()
-            categories_en.append(en_name)
-    close_matches = get_close_matches(user_input, categories_en, cutoff=0.1)
-    return close_matches
+        categories = categoriesdata["Categories"]
+        categories_en = [value.lower() for value in categories.values()]
+        match_name, _, _ = process.extractOne(user_input.lower(), categories_en)
+        for key, value in categories.items():
+            if value.lower() == match_name:
+                result = value
+                break
+        else:
+            result = None
+    return result
 
 @plugin.command
 @lightbulb.command('categories', 'Lists all arkrec categories')
