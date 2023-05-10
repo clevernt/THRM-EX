@@ -111,6 +111,7 @@ async def arkrec(ctx):
             adverse_stages = {"10-7", "10-11", "10-15", "10-17",
                             "11-3", "11-8", "11-12", "11-15",
                             "11-20", "12-7", "12-13", "12-19", "12-20"}
+
             if stage in adverse_stages:
                 if operationType == "challenge":
                     stage_url = f"https://prts.wiki/w/文件:磨难{stage.upper()}_{stage_name}_地图.png"
@@ -118,18 +119,19 @@ async def arkrec(ctx):
                     stage_url = f"https://prts.wiki/w/文件:{stage.upper()}_{stage_name}_地图.png"
             else:
                 stage_url = f"https://prts.wiki/w/文件:{stage.upper()}_{stage_name}_地图.png"
+
             resp = session.get(stage_url)
             urls = resp.html.absolute_links
+
+            found_thumbnail_url = False
             for url in urls:
                 if re.match(r'(?:([^:/?#]+):)?(?://([^/?#]*))?([^?#]*\.(?:jpg|gif|png))(?:\?([^#]*))?(?:#(.*))?', url):
                     if "800px" in url:
-                        try:
-                            stage_thumbnail_url = url
-                            break
-                        except UnboundLocalError:
-                            pass
-                else:
-                    pass
+                        stage_thumbnail_url = url
+                        found_thumbnail_url = True
+                        break
+            if not found_thumbnail_url:
+                stage_thumbnail_url = None
             if operationType == "challenge":
                 embed.add_field("CM", "✅", inline=True)
             elif operationType == "normal":
