@@ -14,11 +14,6 @@ import re
 
 session = HTMLSession()
 plugin = lightbulb.Plugin('arkrec')
-CATEGORIES_FILE = "./data/categories.json"
-with open(CATEGORIES_FILE, encoding="utf-8") as f:
-    CATEGORIES_DATA = json.load(f)
-    CATEGORIES = CATEGORIES_DATA["Categories"]
-    CATEGORIES_EN = [value.lower() for value in CATEGORIES.values()]
 
 @plugin.command
 @lightbulb.option('category', 'Category', required=True, autocomplete=True)
@@ -174,13 +169,17 @@ async def arkrec(ctx):
 @arkrec.autocomplete("category")
 async def arkrec_autocomplete(
     opt: hikari.AutocompleteInteractionOption, inter: hikari.AutocompleteInteraction
-) -> list:
-    user_inputs = opt.value.lower().split(",")
-    close_matches_list = []
-    for user_input in user_inputs:
-        close_matches = get_close_matches(user_input, CATEGORIES_EN, cutoff=0.1)
-        close_matches_list.append(close_matches)
-    return close_matches_list
+    ) -> Union[str, Sequence[str], hikari.CommandChoice, Sequence[hikari.CommandChoice]]:
+    user_input = opt.value
+    with open("./data/categories.json", encoding="utf-8") as g:
+        categoriesdata = json.load(g)
+        Categories = categoriesdata["Categories"]  
+        categories_en = []
+        for _, value in Categories.items():
+            en_name = value.lower()
+            categories_en.append(en_name)
+    close_matches = get_close_matches(user_input, categories_en, cutoff=0.1)
+    return close_matches
 
 @plugin.command
 @lightbulb.command('categories', 'Lists all arkrec categories')
