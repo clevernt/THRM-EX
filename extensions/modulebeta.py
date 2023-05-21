@@ -4,7 +4,7 @@ import json
 bot = lightbulb.BotApp
 plugin = lightbulb.Plugin('modulebeta')
 
-with open("modules.json", "r", encoding="utf-8") as f:
+with open("./data/modules.json", "r", encoding="utf-8") as f:
     operator_data = json.load(f)
 
 OPERATORS = {operator["operator"].lower(
