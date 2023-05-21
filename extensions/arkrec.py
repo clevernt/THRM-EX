@@ -1,4 +1,3 @@
-import asyncio
 from typing import Union
 from typing import Sequence
 from thefuzz import fuzz
@@ -11,41 +10,8 @@ from difflib import get_close_matches
 from requests_html import HTMLSession
 import re
 
-bot = lightbulb.BotApp
 session = HTMLSession()
 plugin = lightbulb.Plugin('arkrec')
-
-class PaginationView(hikari.ui.View):
-    def __init__(self, pages):
-        super().__init__()
-        self.pages = pages
-        self.page_number = 0
-        self.page_count = len(self.pages)
-        self.message = None
-
-        left_arrow = hikari.ui.Button(
-            style=hikari.ButtonStyle.SECONDARY,
-            label="Prev",
-            emoji="\U000025c0",
-            custom_id="prev"
-        )
-        right_arrow = hikari.ui.Button(
-            style=hikari.ButtonStyle.SECONDARY,
-            label="Next",
-            emoji="\U000025b6",
-            custom_id="next"
-        )
-        self.add_item(left_arrow)
-        self.add_item(right_arrow)
-
-    async def on_button_click(self, event: hikari.InteractionButtonClickEvent):
-        if event.custom_id == "prev" and self.page_number > 0:
-            self.page_number -= 1
-        elif event.custom_id == "next" and self.page_number < self.page_count - 1:
-            self.page_number += 1
-        await self.message.edit(embed=self.pages[self.page_number])
-        await event.respond()
-
 
 @plugin.command
 @lightbulb.option('category', 'Category', required=True, autocomplete=True)
@@ -95,7 +61,6 @@ async def arkrec(ctx):
         Categories = categoriesdata["Categories"]
 
     clear_found = []
-    results = []
     for i in data:
         try:
             operationType = i["operationType"]
@@ -180,30 +145,12 @@ async def arkrec(ctx):
             embed.add_field("Date", date, inline=True)
             embed.add_field("Link", clear_link, inline=True)
             embed.set_image(stage_thumbnail_url)
-            results.append(embed)
-
-    PAGE_SIZE = 10
-    pages = [results[i:i + PAGE_SIZE][0] for i in range(0, len(results), PAGE_SIZE)]
-
-    # Create a view with pagination buttons
-    view = PaginationView(pages)
-
-    # Create an embedded message with the first page of results and send it to the user
-    view.message = await ctx.respond(embed=pages[0], view=view)
-
-    def check(interaction):
-        return str(interaction.custom_id) in ["prev", "next"]
-
-    while True:
-        try:
-            interaction = await bot.interactions.wait_for(hikari.InteractionType.BUTTON_CLICK, check=check, timeout=60.0)
-        except asyncio.TimeoutError:
-            view.stop()
+            await ctx.respond(embed)
             break
-
-        # Invoke the on_button_click() method of the view
-        await view.invoke(interaction)
-        await interaction.respond(type=hikari.ResponseType.DEFERRED_UPDATE_MESSAGE)
+        else:
+            clear_found.append(False)
+    if True not in clear_found:
+        await ctx.respond(f"{ctx.author.mention} Couldn't find a clear", flags=hikari.MessageFlag.EPHEMERAL)
 
 @arkrec.autocomplete("category")
 async def arkrec_autocomplete(
