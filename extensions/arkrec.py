@@ -1,7 +1,5 @@
 from typing import Union
 from typing import Sequence
-import aiohttp
-from bs4 import BeautifulSoup
 from thefuzz import fuzz
 from thefuzz import process
 import lightbulb
@@ -35,40 +33,32 @@ async def arkrec(ctx):
             mode = None
     else:
         mode = None
-    def get_stage_name(stage_code: str) -> str:
-        with open("./data/stage_table.json", encoding="utf-8") as f:
-            stagesdata = json.load(f)
-            stages = stagesdata["stages"]
-            for key, stage_value in stages.items():
-                if stage_value["code"].lower() == stage_code.lower():
-                    return stage_value["name"]
-        return None
-    stage_name = get_stage_name(stage)
-    if stage_name is None:
-        await ctx.respond("Stage not found")
-        return
+    with open("./data/stage_table.json", encoding="utf-8") as f:
+        stagesdata = json.load(f)
+        stages = stagesdata["stages"]
+        for key, stage_value in stages.items():
+            if stage_value["code"].lower() == stage.lower():
+                stage_name = stage_value["name"]
     try:
         payload = {
             "operation": stage.upper(),
             "cn_name": stage_name
         }
     except UnboundLocalError:
-        await ctx.respond("Stage not found")
-        return
+        await ctx.respond(f"{ctx.author.mention} Are you sure that's a stage?",)
     headers = {
         "Content-Type": "application/json",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0"
     }
+    response = requests.request("POST", arkrec_url, json=payload, headers=headers)
+    data = response.json()
+    with open("./data/ops_names.json", encoding="utf-8") as c:
+        opsdata = json.load(c)
+        Ops = opsdata["Operators"]
 
-    async with aiohttp.CLientSession() as session:
-        async with session.post(arkrec_url, json=payload, headers=headers) as response:
-            data = await response.json()
-
-    def load_json_file(filename: str) -> dict:
-        with open(filename, encoding="utf-8") as f:
-            return json.load(f)
-    operators = load_json_file("./data/ops_names.json")["Operators"]
-    categories = load_json_file("./data/categories.json")["Categories"]
+    with open("./data/categories.json", encoding="utf-8") as g:
+        categoriesdata = json.load(g)
+        Categories = categoriesdata["Categories"]
 
     clear_found = []
     for i in data:
@@ -77,14 +67,14 @@ async def arkrec(ctx):
         except KeyError:
             operationType = None
             if mode == "challenge":
-                await ctx.respond("This stage does not have CM")
+                await ctx.respond(f"{ctx.author.mention} This stage does not have CM.")
                 break
         else:
             pass
         category = i["category"]
         categories_en = []
         for x in category:
-            for key, value in categories.items():
+            for key, value in Categories.items():
                 if key == x:
                     en_name = value
                     categories_en.append(en_name)
@@ -99,7 +89,7 @@ async def arkrec(ctx):
             ops_en_ver = []
             for i in ops:
                 if i in ["黑角", "夜刀", "巡林者", "杜林"]:
-                    for key, value in operators.items():
+                    for key, value in Ops.items():
                         if value == i:
                             en_name = key
                             ops_en_ver.append(f"{en_name}")
@@ -110,11 +100,12 @@ async def arkrec(ctx):
                 else:
                     skill = i[-1]
                     cn_name = i.rstrip(i[-1])
-                    for key, value in operators.items():
+                    for key, value in Ops.items():
                         if value == cn_name:
                             en_name = key
                             ops_en_ver.append(f"{en_name} S{skill}")
             sep = ", "
+            #await ctx.respond(f"Stage: {stage}, Category(s): {sep.join(map(str, categories_en))}, Lowest ops: {ops_count}, Squad: {sep.join(map(str, ops_en_ver))} Link: {clear_link}")
             embed = hikari.Embed(title="Clear Found")
             embed.add_field("Stage", stage, inline=True)
             adverse_stages = {"10-7", "10-11", "10-15", "10-17",
@@ -129,23 +120,18 @@ async def arkrec(ctx):
             else:
                 stage_url = f"https://prts.wiki/w/文件:{stage.upper()}_{stage_name}_地图.png"
 
-            stage_thumbnail_url = None
+            resp = session.get(stage_url)
+            urls = resp.html.absolute_links
+
             found_thumbnail_url = False
-            async with session.get(stage_url) as stage_resp:
-                stage_html = await stage_resp.text()
-                stage_soup = BeautifulSoup(stage_html, 'html.parser')
-                urls = stage_soup.find_all('a')
-                for url in urls:
-                    url = url.get('href')
-                    if url and re.match(
-                            r'(?:([^:/?#]+):)?(?://([^/?#]*))?([^?#]*\.(?:jpg|gif|png))(?:\?([^#]*))?(?:#(.*))?'
-                            , url):
-                        if "800px" in url:
-                            stage_thumbnail_url = url
-                            found_thumbnail_url = True
-                            break
-                if not found_thumbnail_url:
-                    stage_thumbnail_url = None
+            for url in urls:
+                if re.match(r'(?:([^:/?#]+):)?(?://([^/?#]*))?([^?#]*\.(?:jpg|gif|png))(?:\?([^#]*))?(?:#(.*))?', url):
+                    if "800px" in url:
+                        stage_thumbnail_url = url
+                        found_thumbnail_url = True
+                        break
+            if not found_thumbnail_url:
+                stage_thumbnail_url = None
             if operationType == "challenge":
                 embed.add_field("CM", "✅", inline=True)
             elif operationType == "normal":
@@ -164,7 +150,7 @@ async def arkrec(ctx):
         else:
             clear_found.append(False)
     if True not in clear_found:
-        await ctx.respond("Couldn't find a clear", flags=hikari.MessageFlag.EPHEMERAL)
+        await ctx.respond(f"{ctx.author.mention} Couldn't find a clear", flags=hikari.MessageFlag.EPHEMERAL)
 
 @arkrec.autocomplete("category")
 async def arkrec_autocomplete(
