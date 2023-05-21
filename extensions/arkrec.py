@@ -150,7 +150,7 @@ async def arkrec(ctx):
             results.append(embed)
 
     PAGE_SIZE = 10
-    pages = [results[i:i + PAGE_SIZE] for i in range(0, len(results), PAGE_SIZE)]
+    pages = [results[i:i + PAGE_SIZE][0] for i in range(0, len(results), PAGE_SIZE)]
 
     page_number = 0
     page_count = len(pages)
