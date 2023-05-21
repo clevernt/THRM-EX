@@ -155,8 +155,9 @@ async def arkrec(ctx):
     page_number = 0
     page_count = len(pages)
     message = await ctx.respond(embed=pages[page_number])
-    await message.add_reaction('\U000025c0')  # left arrow
-    await message.add_reaction('\U000025b6')  # right arrow
+    msg = await message.message()
+    await msg.add_reaction('\U000025c0')  # left arrow
+    await msg.add_reaction('\U000025b6')  # right arrow
 
     def check(reaction, user):
         return user == ctx.author and str(reaction.emoji) in ['\U000025c0', '\U000025b6']
