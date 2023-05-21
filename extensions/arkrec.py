@@ -1,3 +1,4 @@
+import asyncio
 from typing import Union
 from typing import Sequence
 from thefuzz import fuzz
@@ -61,6 +62,7 @@ async def arkrec(ctx):
         Categories = categoriesdata["Categories"]
 
     clear_found = []
+    results = []
     for i in data:
         try:
             operationType = i["operationType"]
@@ -145,10 +147,36 @@ async def arkrec(ctx):
             embed.add_field("Date", date, inline=True)
             embed.add_field("Link", clear_link, inline=True)
             embed.set_image(stage_thumbnail_url)
-            await ctx.respond(embed)
+            results.append(embed)
+
+    PAGE_SIZE = 10
+    pages = [results[i:i + PAGE_SIZE] for i in range(0, len(results), PAGE_SIZE)]
+
+    page_number = 0
+    page_count = len(pages)
+    message = await ctx.respond(embed=pages[page_number])
+    await message.add_reaction('\U000025c0')  # left arrow
+    await message.add_reaction('\U000025b6')  # right arrow
+
+    def check(reaction, user):
+        return user == ctx.author and str(reaction.emoji) in ['\U000025c0', '\U000025b6']
+
+    while True:
+        try:
+            reaction, user = await hikari.GatewayBot.wait_for(hikari.reactions.ReactionAddEvent, timeout=60.0, predicate=check)
+        except asyncio.TimeoutError:
+            await message.clear_reactions()
             break
         else:
-            clear_found.append(False)
+            if str(reaction.emoji) == '\U000025c0' and page_number > 0:
+                page_number -= 1
+            elif str(reaction.emoji) == '\U000025b6' and page_number < page_count - 1:
+                page_number += 1
+
+            # Update the embedded message with the next page of results
+            await message.edit(embed=pages[page_number])
+            await reaction.delete()
+
     if True not in clear_found:
         await ctx.respond(f"{ctx.author.mention} Couldn't find a clear", flags=hikari.MessageFlag.EPHEMERAL)
 
