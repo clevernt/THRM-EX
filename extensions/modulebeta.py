@@ -2,7 +2,7 @@ import hikari
 import lightbulb
 import json
 bot = lightbulb.BotApp
-plugin = lightbulb.Plugin('modulesbeta')
+plugin = lightbulb.Plugin('modulebeta')
 
 with open("operator_data.json", "r", encoding="utf-8") as f:
     operator_data = json.load(f)
