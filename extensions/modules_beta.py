@@ -28,7 +28,7 @@ def create_embed(module_data):
 
 @plugin.command
 @lightbulb.option('operator', 'Operator', required=True, autocomplete=True)
-@lightbulb.command('module', "Get details about an operator's module", auto_defer=True)
+@lightbulb.command('modulebeta', "Get details about an operator's module", auto_defer=True)
 @lightbulb.implements(lightbulb.SlashCommand, lightbulb.PrefixCommand)
 async def modulebeta(ctx):
     operator_name = ctx.options.operator.strip()
