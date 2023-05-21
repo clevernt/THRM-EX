@@ -44,6 +44,7 @@ class PaginationView(hikari.ui.View):
         elif event.custom_id == "next" and self.page_number < self.page_count - 1:
             self.page_number += 1
         await self.message.edit(embed=self.pages[self.page_number])
+        await event.respond()
 
 
 @plugin.command
