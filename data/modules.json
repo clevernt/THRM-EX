@@ -441,12 +441,12 @@
     "total_stat_buffs": "HP +170, ATK +75"
   },
   {
-    "operator": "Pozyomka",
+    "operator": "Pozёmka",
     "module_branch": "ARC-Y",
     "stage_1_trait_upgrade": "When attacking an enemy directly ahead, ATK increases to 105% and ignores the target's Physical Evasion",
-    "base_talent": "Can use a 'Typewriter' that lasts for 25 seconds. The 'Typewriter' has the same skills as Pozyomka and has an independent Redeployment Time",
-    "stage_2_talent_upgrade": "Can use a 'Typewriter' with higher stats that lasts for 25 seconds. The 'Typewriter' has the same skills as Pozyomka and has an independent Redeployment Time \n'Typewriter': ATK +50",
-    "stage_3_talent_upgrade": "Can use a 'Typewriter' with even higher stats that lasts for 25 seconds. The 'Typewriter' has the same skills as Pozyomka and has an independent Redeployment Time \n'Typewriter': ATK +50 > **+70**",
+    "base_talent": "Can use a 'Typewriter' that lasts for 25 seconds. The 'Typewriter' has the same skills as Pozёmka and has an independent Redeployment Time",
+    "stage_2_talent_upgrade": "Can use a 'Typewriter' with higher stats that lasts for 25 seconds. The 'Typewriter' has the same skills as Pozёmka and has an independent Redeployment Time \n'Typewriter': ATK +50",
+    "stage_3_talent_upgrade": "Can use a 'Typewriter' with even higher stats that lasts for 25 seconds. The 'Typewriter' has the same skills as Pozёmka and has an independent Redeployment Time \n'Typewriter': ATK +50 > **+70**",
     "total_stat_buffs": "HP +170, ATK +75"
   },
   {
