@@ -1793,7 +1793,7 @@
   {
     "operator": "Aak",
     "module_branch": "TBA",
-    "stage_1_trait_upgrade": "When HP is higher than 80%, gain +0.5 SP/s",
+    "stage_1_trait_upgrade": "When HP is higher than 80%, gain +0.25 SP/s",
     "base_talent": "When attacking, randomly activate one of the following effects: Recover 15% HP to self; Deal 150% damage; Slow the target for 1.4 seconds; Stun the target for 1 second",
     "stage_2_talent_upgrade": "When attacking, randomly activate one of the following effects: Recover + HP to self; Deal + damage; Slow the target for + seconds; Stun the target for + second; There is a certain chance that all the aforementioned effects will be triggered at the same time",
     "stage_3_talent_upgrade": "When attacking, randomly activate one of the following effects: Recover ++ HP to self; Deal ++ damage; Slow the target for ++ seconds; Stun the target for ++ second; There is a certain chance that all the aforementioned effects will be triggered at the same time",
@@ -1802,7 +1802,7 @@
   {
     "operator": "Spuria",
     "module_branch": "TBA",
-    "stage_1_trait_upgrade": "When HP is higher than 80%, gain +0.5 SP/s",
+    "stage_1_trait_upgrade": "When HP is higher than 80%, gain +0.25 SP/s",
     "base_talent": "Each attack has a 70% chance of triggering one of the following effects: Attack deals 2 hits; Stun the target for 1 second; Attack ignores 80% DEF",
     "stage_2_talent_upgrade": "Each attack has a 70% chance of triggering one of the following effects: Attack deals 2 hits; Stun the target for 1 second; Attack ignores 80% DEF; The attack that triggers any of the aforementioned effects has increased ATK",
     "stage_3_talent_upgrade": "Each attack has a 70% chance of triggering one of the following effects: Attack deals 2 hits; Stun the target for 1 second; Attack ignores 80% DEF; The attack that triggers any of the aforementioned effects has increased+ ATK",
