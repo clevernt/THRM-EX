@@ -7,5 +7,5 @@ nppBackup/
 .env
 data/aliases.json
 data/modules_backup.json
-chars_with_rarity
+data/chars_with_rarity.json
 gacha.py
