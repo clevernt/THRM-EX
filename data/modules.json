@@ -1768,8 +1768,8 @@
     "module_branch": "CRA-X",
     "stage_1_trait_upgrade": "Can hold 1 more Support Device.\nSupport Device DP Cost is reduced\nS1: -1\nS2: -1\nS3: -4",
     "base_talent": "When a Support Device within the 8 surrounding tiles of Stainless is destroyed, there is 70% (80%) chance to recycle it and grant Stainless 1 Support Device",
-    "stage_2_talent_upgrade": "When there is a Support Device within the 8 surrounding tiles of Stainless, gains +0.1 SP/s. When a Support Device within the 8 surrounding tiles is destroyed, there is an 80% chance to recycle it and grant Stainless 1 Support Device",
-    "stage_3_talent_upgrade": "When there is a Support Device within the 8 surrounding tiles of Stainless, gains +0.2 SP/s. When a Support Device within the 8 surrounding tiles is destroyed, there is a 90% chance to recycle it and grant Stainless 1 Support Device",
+    "stage_2_talent_upgrade": "When there is a Support Device within the 8 surrounding tiles of Stainless, gains +0.1 SP/s. When a Support Device within the 8 surrounding tiles is destroyed, there is an 80% (90%) chance to recycle it and grant Stainless 1 Support Device",
+    "stage_3_talent_upgrade": "When there is a Support Device within the 8 surrounding tiles of Stainless, gains +0.2 SP/s. When a Support Device within the 8 surrounding tiles is destroyed, there is a 90% (100%) chance to recycle it and grant Stainless 1 Support Device",
     "total_stat_buffs": "ATK +45, DEF +45, ASPD +5"
   },
   {
