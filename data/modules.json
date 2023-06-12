@@ -1755,15 +1755,6 @@
     "total_stat_buffs": "HP +195, ASPD +7"
   },
   {
-    "operator": "Kal'tsit",
-    "module_branch": "PHY-Y",
-    "stage_1_trait_upgrade": "When healing melee units, healing effectiveness is increased by 15%",
-    "base_talent": "Can summon and heal Mon3tr. Mon3tr has 25 seconds redeployment time. Kal'tsit will prioritize healing self and Mon3tr. If not within Kal'tsit's Attack Range, Mon3tr's DEF is reduced to 0",
-    "stage_2_talent_upgrade": "Can summon and heal Mon3tr. Mon3tr has 25 seconds redeployment time. Kal'tsit will prioritize healing self and Mon3tr. When Mon3tr is within Kal'tsit's Attack Range, Mon3tr's ASPD +12 and DEF +15%; otherwise Mon3tr's DEF is reduced to 0",
-    "stage_3_talent_upgrade": "Can summon and heal Mon3tr. Mon3tr has 25 seconds redeployment time. Kal'tsit will prioritize healing self and Mon3tr. When Mon3tr is within Kal'tsit's Attack Range, Mon3tr's ASPD +20 and DEF +20%; otherwise Mon3tr's DEF is reduced to 0",
-    "total_stat_buffs": "HP +195, ASPD +7"
-  },
-  {
     "operator": "Stainless",
     "module_branch": "CRA-X",
     "stage_1_trait_upgrade": "Can hold 1 more Support Device.\nSupport Device DP Cost is reduced\nS1: -1\nS2: -1\nS3: -4",
