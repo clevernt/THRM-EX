@@ -62,7 +62,6 @@ async def module(ctx):
                                     stage_3_talent_upgrade)
                 embed.add_field("Total Stat Buffs", total_stat_buffs)
                 embed.add_field("Modules Sheet", "https://bit.ly/AKModules")
-                embed.set_footer("DM CleverShadow#5250 for any errors.")
                 embed.set_thumbnail(operator_icon)
                 if module_branch == "SPC-X":
                     embed.add_field("Increased Attack Range:", "See below")
