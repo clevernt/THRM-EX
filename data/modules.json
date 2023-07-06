@@ -1825,5 +1825,68 @@
     "stage_2_talent_upgrade": "When deployed, all [Kazimierz] operators gain 27% (30%) Physical Evasion, and generate 2 DP after another [Kazimierz] operator is deployed",
     "stage_3_talent_upgrade": "When deployed, all [Kazimierz] operators gain 30% (33%) Physical Evasion. and generate 3 DP after another [Kazimierz] operator is deployed",
     "total_stat_buffs": "ATK +70, DEF +48"
+  },
+  {
+    "operator": "Saileach",
+    "module_branch": "BEA-X",
+    "stage_1_trait_upgrade": "When skill is active, grant +1 Block for an ally infront",
+    "base_talent": "When deployed, holds an Ensign. Within the 8 surrounding tiles of the Ensign, ally operators gain +10 (12) Attack Speed and enemies have -10 (12) Attack Speed",
+    "stage_2_talent_upgrade": "When deployed, holds an Ensign. Within the 8 surrounding tiles of the Ensign, ally operators gain +12 (14) Attack Speed and enemies have -12 (14) Attack Speed",
+    "stage_3_talent_upgrade": "When deployed, holds an Ensign. Within the 8 surrounding tiles of the Ensign, ally operators gain +13 (15) Attack Speed and enemies have -13 (15) Attack Speed",
+    "total_stat_buffs": "HP +200, ATK +68"
+  },
+  {
+    "operator": "Santalla",
+    "module_branch": "SPC-Y",
+    "stage_1_trait_upgrade": "Reduces Deployment Cost (-8 DP Cost)",
+    "base_talent": "15 seconds after deployment, ATK +15% (18%) and gain [Resist]",
+    "stage_2_talent_upgrade": "15 seconds after deployment, ATK +18% (21%) and gain [Resist]",
+    "stage_3_talent_upgrade": "15 seconds after deployment, ATK +20% (23%) and gain [Resist]",
+    "total_stat_buffs": "HP +155, ATK +70"
+  },
+  {
+    "operator": "Hellagur",
+    "module_branch": "MUS-Y",
+    "stage_1_trait_upgrade": "Does not retreat when defeated and restores 30% HP (Can only trigger 1 time on each deployment)",
+    "base_talent": "When not blocking enemies, recover 60 (70) HP every second",
+    "stage_2_talent_upgrade": "When not blocking enemies or when HP is below 30%, recover 70 (80) HP every second",
+    "stage_3_talent_upgrade": "When not blocking enemies or when HP is below 30%, recover 80 (90) HP every second",
+    "total_stat_buffs": "ATK +90, DEF +60"
+  },
+  {
+    "operator": "Elysium",
+    "module_branch": "BEA-X",
+    "stage_1_trait_upgrade": "When skill is active, grant +1 Block for an ally infront",
+    "base_talent": "When deployed, deployment cost of all [Sniper] operators -2. Additionally, when skill is active all [Sniper] operators gain +20 (23) Attack Speed",
+    "stage_2_talent_upgrade": "When deployed, deployment cost of all [Sniper] operators -2. Additionally, when skill is active all [Sniper] operators gain +23 (26) Attack Speed",
+    "stage_3_talent_upgrade": "When deployed, deployment cost of all [Sniper] operators -2. Additionally, when skill is active all [Sniper] operators gain +25 (28) Attack Speed",
+    "total_stat_buffs": "HP +150, DEF +55"
+  },
+  {
+    "operator": "Myrtle",
+    "module_branch": "BEA-X",
+    "stage_1_trait_upgrade": "When skill is active, grant +1 Block for an ally infront",
+    "base_talent": "When deployed, all [Vanguard] operators recover 25 (28) HP every second",
+    "stage_2_talent_upgrade": "When deployed, all [Vanguard] operators recover 28 (31) HP every second",
+    "stage_3_talent_upgrade": "When deployed, all [Vanguard] operators recover 30 (33) HP every second",
+    "total_stat_buffs": "HP +150, DEF +35"
+  },
+  {
+    "operator": "Phantom",
+    "module_branch": "EXE-Y",
+    "stage_1_trait_upgrade": "ATK +10% when there is no ally in the surrounding 4 tiles",
+    "base_talent": "Can summon a clone with higher stats. The clone has the same skills as Phantom and has a separate redeployment time",
+    "stage_2_talent_upgrade": "Can summon a clone with higher stats. The clone has the same skills as Phantom and has a separate redeployment time; when the clone and Phantom are deployed at the same time, both gain +10% ATK",
+    "stage_3_talent_upgrade": "Can summon a clone with further improved stats. The clone has the same skills as Phantom and has a separate redeployment time; when the clone and Phantom are deployed at the same time, both gain +10% ATK\nClone Stats: HP +100, ATK +60, DEF +40",
+    "total_stat_buffs": "ATK +75, DEF +30"
+  },
+  {
+    "operator": "Typhon",
+    "module_branch": "SIE-X",
+    "stage_1_trait_upgrade": "When attacking heavy enemies (weight >= 3), ATK is increased to 115%",
+    "base_talent": "When attacking continuously, gradually increase the amount of enemy DEF ignored, up to 50% (every attack increases enemy DEF ignored by 10%). This effect is lost if Typhon stops attacking for 8 seconds",
+    "stage_2_talent_upgrade": "When attacking continuously, gradually increase the amount of enemy DEF ignored, up to 55% (every attack increases enemy DEF ignored by 11%). This effect is lost if Typhon stops attacking for 8 seconds",
+    "stage_3_talent_upgrade": "When attacking continuously, gradually increase the amount of enemy DEF ignored, up to 60% (every attack increases enemy DEF ignored by 12%). This effect is lost if Typhon stops attacking for 10 seconds",
+    "total_stat_buffs": "HP +210, ATK +90"
   }
 ]
