@@ -1888,5 +1888,122 @@
     "stage_2_talent_upgrade": "When attacking continuously, gradually increase the amount of enemy DEF ignored, up to 55% (every attack increases enemy DEF ignored by 11%). This effect is lost if Typhon stops attacking for 8 seconds",
     "stage_3_talent_upgrade": "When attacking continuously, gradually increase the amount of enemy DEF ignored, up to 60% (every attack increases enemy DEF ignored by 12%). This effect is lost if Typhon stops attacking for 10 seconds",
     "total_stat_buffs": "HP +210, ATK +90"
+  },
+  {
+    "operator": "Gavial the Invincible",
+    "module_branch": "CEN-X",
+    "stage_1_trait_upgrade": "When attacking blocked enemies, ATK is increased to 110%",
+    "base_talent": "ATK and DEF +10% (12%). For every enemy blocked, further increase ATK and DEF by 4% (5%)",
+    "stage_2_talent_upgrade": "ATK and DEF +13% (15%). For every enemy blocked, further increase ATK and DEF by 4% (5%)",
+    "stage_3_talent_upgrade": "ATK and DEF +13% (15%). For every enemy blocked, further increase ATK and DEF by +5% (6%0",
+    "total_stat_buffs": "HP +200, ATK +73, DEF +34"
+  },
+  {
+    "operator": "Blaze",
+    "module_branch": "CEN-X",
+    "stage_1_trait_upgrade": "When attacking blocked enemies, ATK is increased to 110%",
+    "base_talent": "15 (12) seconds after deployment, gain Resist",
+    "stage_2_talent_upgrade": "15 (12) seconds after deployment, gain Resist. 30 seconds after deployment, gain 4% ATK. 45 seconds after deployment, gain 7 ASPD",
+    "stage_3_talent_upgrade": "15 (12) seconds after deployment, gain Resist. 30 seconds after deployment, gain 6% ATK. 45 seconds after deployment, gain 12 ASPD",
+    "total_stat_buffs": "HP +285, ATK +86"
+  },
+  {
+    "operator": "Broca",
+    "module_branch": "CEN-X",
+    "stage_1_trait_upgrade": "When attacking blocked enemies, ATK is increased to 110%",
+    "base_talent": "When blocking 2 or more enemies, ATK and DEF +12% (14%)",
+    "stage_2_talent_upgrade": "When blocking 2 or more enemies, ATK and DEF +15% (17%)",
+    "stage_3_talent_upgrade": "When blocking 2 or more enemies, ATK and DEF +17% (19%)",
+    "total_stat_buffs": "HP +155, ATK +50, DEF +24"
+  },
+  {
+    "operator": "Specter",
+    "module_branch": "CEN-X",
+    "stage_1_trait_upgrade": "When attacking blocked enemies, ATK is increased to 110%",
+    "base_talent": "N/A",
+    "stage_2_talent_upgrade": "When deployed, all damage dealt by [Abyssal Hunter] operators increases by 3%",
+    "stage_3_talent_upgrade": "When deployed, all damage dealt by [Abyssal Hunter] operators increases by 5%",
+    "total_stat_buffs": "ATK +60, DEF +48"
+  },
+  {
+    "operator": "Savage",
+    "module_branch": "CEN-X",
+    "stage_1_trait_upgrade": "When attacking blocked enemies, ATK is increased to 110%",
+    "base_talent": "When there are 2 or more high tiles among the 4 adjacent tiles, ATK and DEF +10%",
+    "stage_2_talent_upgrade": "When there are 2 or more high tiles among the 4 adjacent tiles, ATK and DEF +13%",
+    "stage_3_talent_upgrade": "When there are 2 or more high tiles among the 4 adjacent tiles, ATK and DEF +15%",
+    "total_stat_buffs": "ATK +60, DEF +30"
+  },
+  {
+    "operator": "Estelle",
+    "module_branch": "CEN-Y",
+    "stage_1_trait_upgrade": "When HP is below 50%, gain 20% Physical damage reduction",
+    "base_talent": "When an enemy dies within the 8 surrounding tiles, recover 12% (14%) Max HP",
+    "stage_2_talent_upgrade": "When an enemy dies within the 8 surrounding tiles, recover 14% (16%) Max HP",
+    "stage_3_talent_upgrade": "When an enemy dies within the 8 surrounding tiles, recover 16% (18%) Max HP",
+    "total_stat_buffs": "HP +120, ATK +52"
+  },
+  {
+    "operator": "Executor the Ex Foedere",
+    "module_branch": "REA-X",
+    "stage_1_trait_upgrade": "Recovers ~~50~~ -> **60** HP with every enemy hit (up to Block count)",
+    "base_talent": "When attacking, 20% (23%) chance to deal an additional hit. When skill is activated, this chance increases by 5% for every 1 ammo spent. The increased chance resets when the skill ends",
+    "stage_2_talent_upgrade": "When attacking, 30% (33%) chance to deal an additional hit that ignores 150 DEF. When skill is activated, this chance increases by 5% for every 1 ammo spent. The increased chance resets when the skill ends",
+    "stage_3_talent_upgrade": "When attacking, 35% (38%) chance to deal an additional hit that ignores 300 DEF. When skill is activated, this chance increases by 5% for every 1 ammo spent. The increased chance resets when the skill ends",
+    "total_stat_buffs": "ATK +60, DEF +40, ASPD +7"
+  },
+  {
+    "operator": "La Pluma",
+    "module_branch": "REA-X",
+    "stage_1_trait_upgrade": "Recovers ~~50~~ -> **60** HP with every enemy hit (up to Block count)",
+    "base_talent": "Increase Attack Speed by +3 for every enemy killed, stacks up to 12 layers",
+    "stage_2_talent_upgrade": "Increase Attack Speed by +3 for every enemy killed, stacks up to 12 layers. When fully stacked, ATK +5%",
+    "stage_3_talent_upgrade": "Increase Attack Speed by +3 for every enemy killed, stacks up to 12 layers. When fully stacked, ATK +8%",
+    "total_stat_buffs": "HP +240, ATK +30, DEF +30"
+  },
+  {
+    "operator": "Highmore",
+    "module_branch": "REA-X",
+    "stage_1_trait_upgrade": "Recovers ~~50~~ -> **60** HP with every enemy hit (up to Block count)",
+    "base_talent": "Every hit against an enemy recovers 30 (35) Elemental damage to self (up to Block Count)",
+    "stage_2_talent_upgrade": "Every hit against an enemy recovers 35 (40) Elemental damage to self (up to Block Count)",
+    "stage_3_talent_upgrade": "Every hit against an enemy recovers 40 (45) Elemental damage to self (up to Block Count)",
+    "total_stat_buffs": "HP +300, ASPD +6"
+  },
+  {
+    "operator": "Humus",
+    "module_branch": "REA-X",
+    "stage_1_trait_upgrade": "Recovers ~~50~~ -> **60** HP with every enemy hit (up to Block count)",
+    "base_talent": "HP gained exceeding Max HP is converted to Barrier (up to 100% (104%) of Max HP)",
+    "stage_2_talent_upgrade": "HP gained exceeding Max HP is converted to Barrier (up to 100% (104%) of Max HP); When self Barrier is up, DEF +5%",
+    "stage_3_talent_upgrade": "HP gained exceeding Max HP is converted to Barrier (up to 100% (104%) of Max HP); When self Barrier is up, DEF +8%",
+    "total_stat_buffs": "HP +200, ATK +20, DEF +30"
+  },
+  {
+    "operator": "Bryophyta",
+    "module_branch": "INS-X",
+    "stage_1_trait_upgrade": "Attack Increased to 120% > **130%** when attacking enemies not blocked by self",
+    "base_talent": "When not blocking enemies, increase the DEF of melee operators within the 8 surrounding tiles by 12% (14%). When blocking enemies, increase self DEF by 12% (14%)",
+    "stage_2_talent_upgrade": "When not blocking enemies, increase the DEF of melee operators within the 8 surrounding tiles by 15% (17%). When blocking enemies, increase self DEF by 15% (17%)",
+    "stage_3_talent_upgrade": "When not blocking enemies, increase the DEF of melee operators within the 8 surrounding tiles by 17% (19%). When blocking enemies, increase self DEF by 17% (19%)",
+    "total_stat_buffs": "HP +190, ATK +60"
+  },
+  {
+    "operator": "Poncirus",
+    "module_branch": "SOL-X",
+    "stage_1_trait_upgrade": "ATK and DEF +8% when blocking enemies",
+    "base_talent": "30 seconds after deployment, Max HP +15% (18%)",
+    "stage_2_talent_upgrade": "30 seconds after deployment, Max HP +18% (21%)",
+    "stage_3_talent_upgrade": "30 seconds after deployment, Max HP +20% (23%)",
+    "total_stat_buffs": "HP +260, DEF +37"
+  },
+  {
+    "operator": "Swire the Elegant Wit",
+    "module_branch": "MER-X",
+    "stage_1_trait_upgrade": "While deployed, 3 > 2 DP are consumed every 3 seconds (automatically retreats without sufficient DP)",
+    "base_talent": "Gains 1 Coin on skill activation (used for skill effects). During skill activation, gain 1 Coin whenever DP is consumed by trait and increase ATK by 4% (stacks up to 8 times)",
+    "stage_2_talent_upgrade": "Gains 1 Coin on skill activation (used for skill effects). During skill activation, gain 1 Coin whenever DP is consumed by trait and increase ATK by +5% (stacks up to 8 times)",
+    "stage_3_talent_upgrade": "Gains 2 Coin on skill activation (used for skill effects). During skill activation, gain 1 Coin whenever DP is consumed by trait and increase ATK by +5% (stacks up to 8 times)",
+    "total_stat_buffs": "HP +200, ATK +40, DEF +50"
   }
 ]
