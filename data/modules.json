@@ -1937,7 +1937,7 @@
   {
     "operator": "Estelle",
     "module_branch": "CEN-Y",
-    "stage_1_trait_upgrade": "When HP is below 50%, gain 20% Physical damage reduction",
+    "stage_1_trait_upgrade": "When HP is above 50%, gain 20% Physical damage reduction",
     "base_talent": "When an enemy dies within the 8 surrounding tiles, recover 12% (14%) Max HP",
     "stage_2_talent_upgrade": "When an enemy dies within the 8 surrounding tiles, recover 14% (16%) Max HP",
     "stage_3_talent_upgrade": "When an enemy dies within the 8 surrounding tiles, recover 16% (18%) Max HP",
