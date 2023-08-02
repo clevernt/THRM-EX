@@ -660,9 +660,9 @@
     "operator": "Skyfire",
     "module_branch": "SPC-Y",
     "stage_1_trait_upgrade": "Reduces Deployment Cost (-8 DP Cost)",
-    "base_talent": "When deployed, all blocked enemies receive +18% (+3%) Arts damage taken",
-    "stage_2_talent_upgrade": "When deployed, all blocked enemies receive +20% Arts damage taken",
-    "stage_3_talent_upgrade": "When deployed, all blocked enemies receive +23% Arts damage taken",
+    "base_talent": "When deployed, all blocked enemies receive +15% (18%) Arts damage taken",
+    "stage_2_talent_upgrade": "When deployed, all blocked enemies receive +20% (23%) Arts damage taken",
+    "stage_3_talent_upgrade": "When deployed, all blocked enemies receive +23% (26%) Arts damage taken",
     "total_stat_buffs": "ATK +70, ASPD +5"
   },
   {
