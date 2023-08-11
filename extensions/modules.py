@@ -82,7 +82,8 @@ async def module(ctx):
 async def display_page(ctx, page, embeds, total_pages):
     embed = embeds[page - 1]
     embed.set_footer(text=f"Page {page}/{total_pages}")
-    msg = await ctx.respond(embed=embed)
+
+    msg = await ctx.respond(embed=embed, with_defferal=True)
 
     if total_pages > 1:
         await msg.add_reaction("◀️")
@@ -108,12 +109,7 @@ async def display_page(ctx, page, embeds, total_pages):
             elif str(reaction_event.emoji) == "▶️" and page < total_pages:
                 page += 1
 
-            await msg.delete()
-            embed = embeds[page - 1]
-            embed.set_footer(text=f"Page {page}/{total_pages}")
-            new_msg = await ctx.respond(embed=embed)
-            await new_msg.add_reaction("◀️")
-            await new_msg.add_reaction("▶️")
+            await msg.edit(embed=embeds[page - 1])
 
 
 @module.autocomplete("operator")
