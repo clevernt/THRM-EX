@@ -86,8 +86,8 @@ async def display_page(ctx, page, embeds, total_pages):
     msg = await ctx.respond(embed=embed, flags=hikari.MessageFlag.EPHEMERAL)
 
     if total_pages > 1:
-        await msg.add_reaction("◀️")
-        await msg.add_reaction("▶️")
+        await ctx.bot.add_reaction(msg, "◀️")
+        await ctx.bot.add_reaction(msg, "▶️")
 
         def check(event):
             return (
