@@ -111,9 +111,9 @@ async def display_page(ctx, page, embeds, total_pages):
             await msg.delete()
             embed = embeds[page - 1]
             embed.set_footer(text=f"Page {page}/{total_pages}")
-            msg = await ctx.respond(embed=embed)
-            await msg.add_reaction("◀️")
-            await msg.add_reaction("▶️")
+            new_msg = await ctx.respond(embed=embed)
+            await new_msg.add_reaction("◀️")
+            await new_msg.add_reaction("▶️")
 
 
 @module.autocomplete("operator")
