@@ -83,11 +83,7 @@ async def display_page(ctx, page, embeds, total_pages):
     embed = embeds[page - 1]
     embed.set_footer(text=f"Page {page}/{total_pages}")
 
-    deferred = hikari.InteractionDeferredBuilder(
-        ephemeral=True
-    )  # We defer the response first
-
-    msg = await ctx.respond(deferred=deferred)
+    msg = await ctx.respond(embed=embed, flags=hikari.MessageFlag.EPHEMERAL)
 
     if total_pages > 1:
         await msg.add_reaction("◀️")
