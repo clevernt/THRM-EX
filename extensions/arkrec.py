@@ -11,7 +11,6 @@ import json
 session = HTMLSession()
 plugin = lightbulb.Plugin('arkrec')
 
-STAGE_TABLE_PATH = "./data/stage_table.json"
 OPS_NAMES_PATH = "./data/ops_names.json"
 CATEGORIES_PATH = "./data/categories.json"
 
@@ -45,7 +44,6 @@ def find_image_url(urls):
 @lightbulb.command('arkrec', 'finds clears from arkrec', auto_defer=True)
 @lightbulb.implements(lightbulb.SlashCommand)
 async def arkrec(ctx):
-    stages_data = load_json(STAGE_TABLE_PATH)
     ops_data = load_json(OPS_NAMES_PATH)
     categories_data = load_json(CATEGORIES_PATH)
 
@@ -54,18 +52,19 @@ async def arkrec(ctx):
     category = ctx.options.category.strip()
     mode = ctx.options.mode.strip() if ctx.options.mode else None
 
-    stage_value = stages_data["stages"].get(stage.lower())
-    if not stage_value:
-        await ctx.respond(f"{ctx.author.mention} Are you sure that's a valid stage?")
-        return
-
-    stage_name = stage_value["name"]
-    operation_type = stage_value.get("operationType")
-
-    payload = {
-        "operation": stage.upper(),
-        "cn_name": stage_name
-    }
+    with open("./data/stage_table.json", encoding="utf-8") as f:
+        stagesdata = json.load(f)
+        stages = stagesdata["stages"]
+        for key, stage_value in stages.items():
+            if stage_value["code"].lower() == stage.lower():
+                stage_name = stage_value["name"]
+    try:
+        payload = {
+            "operation": stage.upper(),
+            "cn_name": stage_name
+        }
+    except UnboundLocalError:
+        await ctx.respond(f"{ctx.author.mention} Are you sure that's a stage?",)
 
     headers = {
         "Content-Type": "application/json",
