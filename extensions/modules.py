@@ -83,7 +83,11 @@ async def display_page(ctx, page, embeds, total_pages):
     embed = embeds[page - 1]
     embed.set_footer(text=f"Page {page}/{total_pages}")
 
-    msg = await ctx.respond(embed=embed, defer_response=True)
+    deferred = hikari.InteractionDeferredBuilder(
+        ephemeral=True
+    )  # We defer the response first
+
+    msg = await ctx.respond(deferred=deferred)
 
     if total_pages > 1:
         await msg.add_reaction("◀️")
@@ -109,7 +113,11 @@ async def display_page(ctx, page, embeds, total_pages):
             elif str(reaction_event.emoji) == "▶️" and page < total_pages:
                 page += 1
 
-            await msg.edit(embed=embeds[page - 1])
+            embed = embeds[page - 1]
+            embed.set_footer(text=f"Page {page}/{total_pages}")
+
+            # We edit the existing message with new content
+            await msg.edit(embed=embed)
 
 
 @module.autocomplete("operator")
