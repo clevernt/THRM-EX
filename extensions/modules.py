@@ -83,7 +83,7 @@ async def display_page(ctx, page, embeds, total_pages):
     embed = embeds[page - 1]
     embed.set_footer(text=f"Page {page}/{total_pages}")
 
-    msg = await ctx.respond(embed=embed, with_defferal=True)
+    msg = await ctx.respond(embed=embed, defer_response=True)
 
     if total_pages > 1:
         await msg.add_reaction("◀️")
