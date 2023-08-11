@@ -74,7 +74,46 @@ async def module(ctx):
                         "Slightly Reduced Attack Range:", "See below")
                     embed.set_image("https://i.imgur.com/dx7Qy8b.png")
                 embeds.append(embed)
-    await ctx.respond(embeds=embeds)
+    total_pages = len(embeds)
+    page = 1
+    await display_page(ctx, page, embeds, total_pages)
+
+
+async def display_page(ctx, page, embeds, total_pages):
+    embed = embeds[page - 1]
+    embed.set_footer(text=f"Page {page}/{total_pages}")
+    msg = await ctx.respond(embed=embed)
+
+    if total_pages > 1:
+        await msg.add_reaction("◀️")
+        await msg.add_reaction("▶️")
+
+        def check(event):
+            return (
+                event.member_id == ctx.member.id
+                and event.message_id == msg.id
+                and str(event.emoji) in ["◀️", "▶️"]
+            )
+
+        while True:
+            try:
+                reaction_event = await ctx.bot.wait_for(
+                    hikari.ReactionAddEvent, timeout=60.0, check=check
+                )
+            except TimeoutError:
+                break
+
+            if str(reaction_event.emoji) == "◀️" and page > 1:
+                page -= 1
+            elif str(reaction_event.emoji) == "▶️" and page < total_pages:
+                page += 1
+
+            await msg.delete()
+            embed = embeds[page - 1]
+            embed.set_footer(text=f"Page {page}/{total_pages}")
+            msg = await ctx.respond(embed=embed)
+            await msg.add_reaction("◀️")
+            await msg.add_reaction("▶️")
 
 
 @module.autocomplete("operator")
