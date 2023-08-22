@@ -1777,8 +1777,8 @@
     "module_branch": "CRA-X",
     "stage_1_trait_upgrade": "Can hold 1 more Support Device.\nSupport Device DP Cost is reduced\nS1, S2: -2",
     "base_talent": "Carries 3 Stylers (can only deploy 3 together). Stylers grant DEF +30% (33%) and 2 Shields to a melee unit (lasts for 25 seconds, DEF increase does not stack)",
-    "stage_2_talent_upgrade": "Carries 3 Stylers (can only deploy 3 together). Stylers grant DEF +36% (39%) and 3 Shields to a melee unit (lasts for 25 seconds, DEF increase does not stack)",
-    "stage_3_talent_upgrade": "Carries 3 Stylers (can only deploy 3 together). Stylers grant DEF +40% (43%) and 3 Shields to a melee unit (lasts for 25 seconds, DEF increase does not stack)",
+    "stage_2_talent_upgrade": "Carries 3 Stylers (can only deploy 3 together). Stylers grant DEF +36% (39%) and 2 Shields to a melee unit (lasts for 25 seconds, DEF increase does not stack)",
+    "stage_3_talent_upgrade": "Carries 3 Stylers (can only deploy 3 together). Stylers grant DEF +40% (43%) and 2 Shields to a melee unit (lasts for 25 seconds, DEF increase does not stack)",
     "total_stat_buffs": "HP +250, DEF +46"
   },
   {
