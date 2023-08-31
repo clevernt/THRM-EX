@@ -1539,7 +1539,7 @@
     "total_stat_buffs": "HP +190, ATK +60"
   },
   {
-    "operator": "Kirin X Yato",
+    "operator": "Kirin R Yato",
     "module_branch": "EXE-X",
     "stage_1_trait_upgrade": "Refund 80% of current operator deploy cost on retreat",
     "base_talent": "ATK +13% (16%) during skill duration and for 10 seconds after skill ends",
