@@ -2005,5 +2005,68 @@
     "stage_2_talent_upgrade": "Gains 1 Coin on skill activation (used for skill effects). During skill activation, gain 1 Coin whenever DP is consumed by trait and increase ATK by +5% (stacks up to 8 times)",
     "stage_3_talent_upgrade": "Gains 2 Coin on skill activation (used for skill effects). During skill activation, gain 1 Coin whenever DP is consumed by trait and increase ATK by +5% (stacks up to 8 times)",
     "total_stat_buffs": "HP +200, ATK +40, DEF +50"
+  },
+  {
+    "operator": "Silence the Paradigmatic",
+    "module_branch": "BLS-X",
+    "stage_1_trait_upgrade": "When skill is active, attacks restore the HP of allies (heal amount is equal to ~~75%~~ 100% of ATK)",
+    "base_talent": "Allies with less than 50% HP within Attack Range recover HP equal to 5% (6%) of Silence's ATK every second. This effect is doubled for [Rhine Labs] operators",
+    "stage_2_talent_upgrade": "Allies within Attack Range gain 6% Max HP, and ones with less than 50% HP within Attack Range recover HP equal to 6% (7%) of Silence's ATK every second. This effect is doubled for [Rhine Labs] operators",
+    "stage_3_talent_upgrade": "Allies within Attack Range gain 10% Max HP, and ones with less than 50% HP within Attack Range recover HP equal to 7% (8%) of Silence's ATK every second. This effect is doubled for [Rhine Labs] operators",
+    "total_stat_buffs": "HP +150, ATK +70"
+  },
+  {
+    "operator": "Tsukinogi",
+    "module_branch": "BLS-X",
+    "stage_1_trait_upgrade": "When skill is active, attacks restore the HP of allies (heal amount is equal to ~~75%~~ 100% of ATK)",
+    "base_talent": "Apply 18% (20%) Shelter effect to allies with less than 40% HP within Attack Range",
+    "stage_2_talent_upgrade": "Apply 20% (22%) Shelter effect and +5% DEF to allies with less than 40% HP within Attack Range",
+    "stage_3_talent_upgrade": "Apply 22% (24%) Shelter effect and +8% DEF to allies with less than 40% HP within Attack Range",
+    "total_stat_buffs": "ATK +50, DEF +25"
+  },
+  {
+    "operator": "Nine-Colored Deer",
+    "module_branch": "BLS-X",
+    "stage_1_trait_upgrade": "When skill is active, attacks restore the HP of allies (heal amount is equal to ~~75%~~ 100% of ATK)",
+    "base_talent": "Apply 20% Shelter effect to allies with less than 40% HP within Attack Range",
+    "stage_2_talent_upgrade": "Apply 23% Shelter effect to allies with less than 50% HP within Attack Range",
+    "stage_3_talent_upgrade": "Apply 26% Shelter effect to allies with less than 60% HP within Attack Range",
+    "total_stat_buffs": "ATK +50, DEF +25"
+  },
+  {
+    "operator": "Quercus",
+    "module_branch": "BLS-X",
+    "stage_1_trait_upgrade": "When skill is active, attacks restore the HP of allies (heal amount is equal to ~~75%~~ 100% of ATK)",
+    "base_talent": "Apply 14% (16%) Shelter effect to allies with more than 70% HP within Attack Range",
+    "stage_2_talent_upgrade": "Apply 16% (18%) Shelter effect to allies with more than 70% HP within Attack Range",
+    "stage_3_talent_upgrade": "Apply 16% (18%) Shelter effect to allies with more than 60% HP within Attack Range",
+    "total_stat_buffs": "HP +110, ATK +30, DEF +25"
+  },
+  {
+    "operator": "Ch'en",
+    "module_branch": "SWO-Y",
+    "stage_1_trait_upgrade": "Attacks ignore 70 DEF",
+    "base_talent": "ATK +6% (7%), DEF +6% (7%), Physical Evasion +10% (13%)",
+    "stage_2_talent_upgrade": "ATK +11% (12%), DEF +11% (12%), Physical Evasion +15% (18%)",
+    "stage_3_talent_upgrade": "ATK +15% (16%), DEF +15% (16%), Physical Evasion +18% (21%)",
+    "total_stat_buffs": "ATK +85, DEF +42"
+  },
+  {
+    "operator": "Saga",
+    "module_branch": "SOL-X",
+    "stage_1_trait_upgrade": "ATK and DEF +8% when blocking enemies",
+    "base_talent": "When dealing lethal damage, leave the enemy with 1 HP and inflict [Critically Wounded] (Reduce movement speed and become unable to be blocked; Will die after 10 seconds; If killed, grant +2 SP to the attacker). Saga will not attack [Critically Wounded] targets",
+    "stage_2_talent_upgrade": "Increase damage dealt to enemies below 50% HP by 10%; When dealing lethal damage, leave the enemy with 1 HP and inflict [Critically Wounded] (Reduce movement speed and become unable to be blocked; Will die after 10 seconds; If killed, grant +2 SP to the attacker). Saga will not attack [Critically Wounded] targets",
+    "stage_3_talent_upgrade": "Increase damage dealt to enemies below 50% HP by 15%; When dealing lethal damage, leave the enemy with 1 HP and inflict [Critically Wounded] (Reduce movement speed and become unable to be blocked; Will die after 10 seconds; If killed, grant +2 SP to the attacker). Saga will not attack [Critically Wounded] targets",
+    "total_stat_buffs": "ATK +70, DEF +44"
+  },
+  {
+    "operator": "Almond",
+    "module_branch": "HOK-X",
+    "stage_1_trait_upgrade": "When shifting enemies, the targets receive Arts Damage proportional to distance moved (800 Arts Damage per tile shifted)",
+    "base_talent": "Immediately restore 8 (10) SP after the first skill activation in each battle",
+    "stage_2_talent_upgrade": "Immediately restore 10 (12) SP after the first skill activation in each battle",
+    "stage_3_talent_upgrade": "Immediately restore 12 (14) SP after the first skill activation in each battle",
+    "total_stat_buffs": "HP +280, DEF +25"
   }
 ]
