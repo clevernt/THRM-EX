@@ -2055,9 +2055,9 @@
     "operator": "Saga",
     "module_branch": "SOL-X",
     "stage_1_trait_upgrade": "ATK and DEF +8% when blocking enemies",
-    "base_talent": "When dealing lethal damage, leave the enemy with 1 HP and inflict [Critically Wounded] (Reduce movement speed and become unable to be blocked; Will die after 10 seconds; If killed, grant +2 SP to the attacker). Saga will not attack [Critically Wounded] targets",
-    "stage_2_talent_upgrade": "Increase damage dealt to enemies below 50% HP by 10%; When dealing lethal damage, leave the enemy with 1 HP and inflict [Critically Wounded] (Reduce movement speed and become unable to be blocked; Will die after 10 seconds; If killed, grant +2 SP to the attacker). Saga will not attack [Critically Wounded] targets",
-    "stage_3_talent_upgrade": "Increase damage dealt to enemies below 50% HP by 15%; When dealing lethal damage, leave the enemy with 1 HP and inflict [Critically Wounded] (Reduce movement speed and become unable to be blocked; Will die after 10 seconds; If killed, grant +2 SP to the attacker). Saga will not attack [Critically Wounded] targets",
+    "base_talent": "talent 1 text is too long and irrelevant",
+    "stage_2_talent_upgrade": "Increase damage dealt to enemies below 50% HP by 10%",
+    "stage_3_talent_upgrade": "Increase damage dealt to enemies below 50% HP by 15%",
     "total_stat_buffs": "ATK +70, DEF +44"
   },
   {
