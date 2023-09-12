@@ -2,7 +2,6 @@ import lightbulb
 import hikari
 import requests
 import json
-import re
 
 from typing import Union
 from typing import Sequence
@@ -15,22 +14,7 @@ plugin = lightbulb.Plugin("arkrec")
 ARKREC_URL = "https://arkrec.com/api/records"
 
 mode_mapping = {"Normal Mode": "normal", "Challenge Mode": "challenge"}
-adverse_stages = {
-    "10-7",
-    "10-11",
-    "10-15",
-    "10-17",
-    "11-3",
-    "11-8",
-    "11-12",
-    "11-15",
-    "11-20",
-    "12-7",
-    "12-13",
-    "12-19",
-    "12-20",
-}
-skilless_operators = [
+unskilled_operators = [
     "Friston-3",
     "U-Official",
     "THRM-EX",
@@ -43,15 +27,17 @@ skilless_operators = [
 with open("./data/stage_table.json", encoding="utf-8") as f:
     stage_table = json.load(f)["stages"]
 with open("./data/operator_names.json", encoding="utf-8") as f:
-    operator_names = json.load(f)
+    operator_names_data = json.load(f)
+    operator_names = {v: k for k, v in operator_names_data.items()}
 with open("./data/categories.json", encoding="utf-8") as f:
     categories = json.load(f)
+    categories_en = [value.lower() for value in categories.values()]
 
 
 def filter_and_translate(operators_list, operator_names):
     operators_list_en = []
     for operator in operators_list:
-        if operator in skilless_operators:
+        if operator in unskilled_operators:
             operators_list_en.append(operator_names[operator])
         else:
             skill = operator[-1]
@@ -62,12 +48,7 @@ def filter_and_translate(operators_list, operator_names):
 
 
 @plugin.command
-@lightbulb.option(
-    "category", 
-    "Category",
-    required=True, 
-    autocomplete=True
-)
+@lightbulb.option("category", "Category", required=True, autocomplete=True)
 @lightbulb.option(
     "mode",
     "Mode",
@@ -75,25 +56,15 @@ def filter_and_translate(operators_list, operator_names):
     required=False,
     default=None,
 )
-@lightbulb.option(
-    "stage", 
-    "Stage Name", 
-    required=True
-)
-@lightbulb.command(
-    "arkrec", 
-    "finds clears from arkrec", 
-    auto_defer=True
-)
+@lightbulb.option("stage", "Stage Name", required=True)
+@lightbulb.command("arkrec", "Finds clears from arkrec", auto_defer=True)
 @lightbulb.implements(lightbulb.SlashCommand)
 async def arkrec(ctx):
-    requested_stage = ctx.options.stage.strip()
-    requested_category = ctx.options.category.strip()
-    if ctx.options.mode.strip() is not None:
-        mode_mapping.get(mode)
-    else:
-        mode = None
+    requested_stage = ctx.options["stage"]
+    requested_category = ctx.options["category"]
+    mode = mode_mapping.get(ctx.options["mode"], None)
 
+    stage_name = None
     for _, value in stage_table.items():
         if value["code"].lower() == requested_stage.lower():
             stage_name = value["name"]
@@ -116,7 +87,7 @@ async def arkrec(ctx):
         response.raise_for_status()
     except requests.exceptions.RequestException as e:
         await ctx.respond(hikari.Embed(description=f"Request error: {e}"))
-        return  
+        return
     data = response.json()
     clear_found = []
     for i in data:
@@ -137,10 +108,8 @@ async def arkrec(ctx):
         categories_cn = i["category"]
         categories_en = [categories.get(category) for category in categories_cn]
 
-        if (
-            requested_category.title() in categories_en
-            and operationType == mode
-            or mode == None
+        if (requested_category.title() in categories_en) and (
+            operationType == mode or mode == None
         ):
             clear_found.append(True)
             stage_code = i["operation"]
@@ -154,15 +123,9 @@ async def arkrec(ctx):
             sep = ", "
             embed = hikari.Embed(title="Clear Found")
             embed.add_field("Stage", stage_code, inline=True)
-
-
-            if operationType == "challenge":
-                embed.add_field("CM", "✅", inline=True)
-            elif operationType == "normal":
-                embed.add_field("CM", "❌", inline=True)
-            else:
-                pass
-
+            embed.add_field(
+                "CM", "❌" if operationType == "normal" else "✅", inline=True
+            )
             embed.add_field("Player", raider, inline=True)
             embed.add_field(
                 "Category(s)", sep.join(map(str, categories_en)), inline=True
@@ -170,7 +133,7 @@ async def arkrec(ctx):
             embed.add_field("Operator Count", operator_count, inline=True)
             embed.add_field("Squad", sep.join(map(str, operators_list_en)), inline=True)
             embed.add_field("Date Published", date_published, inline=True)
-            embed.add_field("Link", clear_link, inline=True)
+            embed.add_field(f"Clear Link", clear_link, inline=True)
             await ctx.respond(embed)
             break
         else:
@@ -178,7 +141,7 @@ async def arkrec(ctx):
     if True not in clear_found:
         await ctx.respond(
             hikari.Embed(
-                description=f"No clear found matching the following input:\nStage: `{requested_stage}\nCategory: `{requested_category}`"
+                description=f"No clear found matching the following parameters:\nStage: `{requested_stage}`\nCategory: `{requested_category}`"
             )
         )
 
@@ -188,12 +151,9 @@ async def arkrec_autocomplete(
     opt: hikari.AutocompleteInteractionOption, inter: hikari.AutocompleteInteraction
 ) -> Union[str, Sequence[str], hikari.CommandChoice, Sequence[hikari.CommandChoice]]:
     user_input = opt.value
-    categories_en = []
-    for _, value in categories.items():
-        en_name = value.lower()
-        categories_en.append(en_name)
-    close_matches = get_close_matches(user_input, categories_en, cutoff=0.1)
+    close_matches = get_close_matches(user_input, categories_en, cutoff=0.4)
     return close_matches
+
 
 def load(bot):
     bot.add_plugin(plugin)
