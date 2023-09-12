@@ -89,7 +89,10 @@ def filter_and_translate(operators_list, operator_names):
 async def arkrec(ctx):
     requested_stage = ctx.options.stage.strip()
     requested_category = ctx.options.category.strip()
-    mode = mode_mapping.get(ctx.options.mode.strip(), None)
+    if ctx.options.mode.strip() is not None:
+        mode_mapping.get(mode)
+    else:
+        mode = None
 
     for _, value in stage_table.items():
         if value["code"].lower() == requested_stage.lower():
