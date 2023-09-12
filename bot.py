@@ -5,7 +5,8 @@ load_dotenv()
 
 bot = lightbulb.BotApp(
     token=os.getenv('token'),
-    prefix=";"
+    prefix=";",
+    default_enabled_guilds=753858152486797352
 )
 
 bot.load_extensions_from('./extensions')
