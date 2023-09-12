@@ -35,7 +35,7 @@ async def module(ctx):
     if requested_operator.lower() not in operators_with_modules:
         await ctx.respond(
             hikari.Embed(
-                description=f"{requested_operator} is either an invalid operator or does not have a module yet"
+                description=f"`{requested_operator}` is either an invalid operator or does not have a module yet"
             )
         )
     avatar_url = get_operator_avatar(requested_operator)
