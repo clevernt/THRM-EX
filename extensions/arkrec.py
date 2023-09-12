@@ -185,29 +185,12 @@ async def arkrec_autocomplete(
     opt: hikari.AutocompleteInteractionOption, inter: hikari.AutocompleteInteraction
 ) -> Union[str, Sequence[str], hikari.CommandChoice, Sequence[hikari.CommandChoice]]:
     user_input = opt.value
-    with open("./data/categories.json", encoding="utf-8") as g:
-        categoriesdata = json.load(g)
-        Categories = categoriesdata["Categories"]
-        categories_en = []
-        for _, value in Categories.items():
-            en_name = value.lower()
-            categories_en.append(en_name)
+    categories_en = []
+    for _, value in categories.items():
+        en_name = value.lower()
+        categories_en.append(en_name)
     close_matches = get_close_matches(user_input, categories_en, cutoff=0.1)
     return close_matches
-
-
-@plugin.command
-@lightbulb.command("categories", "Lists all arkrec categories")
-@lightbulb.implements(lightbulb.SlashCommand, lightbulb.PrefixCommand)
-async def categories(ctx):
-    with open("./data/categories.json", encoding="utf-8") as f:
-        categoriesdata = json.load(f)
-        categories = categoriesdata["Categories"]
-
-    embed = hikari.Embed()
-    embed.add_field("Categories:", "\n".join([f"• {v}" for v in categories.values()]))
-    await ctx.respond(embed=embed, flags=hikari.MessageFlag.EPHEMERAL)
-
 
 def load(bot):
     bot.add_plugin(plugin)
