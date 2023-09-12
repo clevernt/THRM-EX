@@ -1,7 +1,5 @@
 __pycache__/
 .vscode/
-modules_test.py
-testing.py
 extensions/__pycache__
 nppBackup/
 .env
