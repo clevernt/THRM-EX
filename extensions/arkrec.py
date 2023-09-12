@@ -43,9 +43,9 @@ skilless_operators = [
 with open("./data/stage_table.json", encoding="utf-8") as f:
     stage_table = json.load(f)["stages"]
 with open("./data/operator_names.json", encoding="utf-8") as f:
-    operator_names = json.load(f)["operators"]
+    operator_names = json.load(f)
 with open("./data/categories.json", encoding="utf-8") as f:
-    categories = json.load(f)["categories"]
+    categories = json.load(f)
 
 
 def filter_and_translate(operators_list, operator_names):
