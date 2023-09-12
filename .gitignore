@@ -6,5 +6,3 @@ extensions/__pycache__
 nppBackup/
 .env
 data/aliases.json
-data/modules_backup.json
-gacha.py
