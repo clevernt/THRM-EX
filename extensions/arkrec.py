@@ -40,7 +40,7 @@ skilless_operators = [
     "正义骑士号",
 ]
 
-with open("./ArknightsGameData/zh_CN/excel/stage_table.json", encoding="utf-8") as f:
+with open("./data/stage_table.json", encoding="utf-8") as f:
     stage_table = json.load(f)["stages"]
 with open("./data/operator_names.json", encoding="utf-8") as f:
     operator_names = json.load(f)["operators"]
