@@ -22,11 +22,11 @@ unskilled_operators = [
     "Lancet-2",
     "Castle-3",
     "正义骑士号",
-    "12F",
-    "Yato",
-    "Noir Corne",
-    "Durin",
-    "Rangers"
+    "夜刀",
+    "巡林者",
+    "黑角",
+    "杜林",
+    "12F"
 ]
 
 with open("./data/stage_table.json", encoding="utf-8") as f:
