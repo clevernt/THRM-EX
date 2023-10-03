@@ -20,7 +20,7 @@ def get_operator_avatar(operator_name):
     with open("./data/operator_ids.json", "r") as f:
         data = json.load(f)
         for operator, _id in data.items():
-            if operator == operator_name.title():
+            if operator.lower() == operator_name.lower():
                 operator_id = _id
     avatar_url = f"https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avatars/{operator_id}.png"
     return avatar_url
