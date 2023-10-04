@@ -32,7 +32,7 @@ def get_modules(operator_name):
     with open("./data/modules.json") as f:
         modules = json.load(f)
         for module in modules:
-            if module["operator"].lower() == operator.lower():
+            if module["operator"].lower() == operator_name.lower():
                 modules_list.append(module)
 
     return modules_list   
