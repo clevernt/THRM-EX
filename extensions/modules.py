@@ -52,6 +52,7 @@ async def module(ctx):
         )
     avatar_url = get_operator_avatar(requested_operator)
     modules_list = get_modules(requested_operator)
+    embeds = []
     for module in modules_list:
         embed = hikari.Embed(title=module["operator"])
         embed.add_field("Module Branch", module["module_branch"])
