@@ -56,7 +56,7 @@ async def module(ctx):
         embed = hikari.Embed(title=module["operator"])
         embed.add_field("Module Branch", module["module_branch"])
         embed.add_field("Stage 1 | Trait Upgrade", module["stage_1_trait_upgrade"])
-        if base_talent != "N/A":
+        if module["base_talent"] != "N/A":
             embed.add_field("Base Talent", module["base_talent"])
             embed.add_field("Stage 2 | Talent Upgrade", module["stage_2_talent_upgrade"])
             embed.add_field("Stage 3 | Talent Upgrade", module["stage_3_talent_upgrade"])
