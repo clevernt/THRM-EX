@@ -66,13 +66,13 @@ async def module(ctx):
         embed.add_field("Total Stat Buffs", module["total_stat_buffs"])
         embed.add_field("Modules Sheet", "https://bit.ly/AKModules")
         embed.set_thumbnail(avatar_url)
-        if module_branch == "SPC-X":
+        if module["module_branch"] == "SPC-X":
             embed.add_field("Increased Attack Range:", "\u200b")
             embed.set_image("https://i.postimg.cc/w75TMGX9/SPC-X.png")
-        if module_branch == "RIN-X":
+        if module["module_branch"] == "RIN-X":
             embed.add_field("Increased Attack Range:", "\u200b")
             embed.set_image("https://i.postimg.cc/crGLsS8D/RIN-X.png")
-        if operator == "Tomimi":
+        if module["operator"] == "Tomimi":
             embed.add_field("Slightly Reduced Attack Range:", "\u200b")
             embed.set_image("https://i.postimg.cc/TKR2DJ0g/Tomimi.png")
         embeds.append(embed)
