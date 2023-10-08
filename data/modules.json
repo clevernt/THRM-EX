@@ -2068,5 +2068,68 @@
     "stage_2_talent_upgrade": "Immediately restore 10 (12) SP after the first skill activation in each battle",
     "stage_3_talent_upgrade": "Immediately restore 12 (14) SP after the first skill activation in each battle",
     "total_stat_buffs": "HP +280, DEF +25"
+  },
+  {
+    "operator": "Ebenholz",
+    "module_branch": "MSC-D",
+    "stage_1_trait_upgrade": "When dealing Arts damage, deals 8% of the damage dealt as Apoptosis damage",
+    "base_talent": "If there are no enemies near the target, attacks deal additional Arts damage equal to 15% (17%) ATK",
+    "stage_2_talent_upgrade": "If there are no enemies near the target, attacks deal additional Arts damage equal to 24% (26%) ATK; if the target is under Necrosis, deals additional Elemental damage equal to 20% ATK",
+    "stage_3_talent_upgrade": "If there are no enemies near the target, attacks deal additional Arts damage equal to 30% (32%) ATK; if the target is under Necrosis, deals additional Elemental damage equal to 30% ATK",
+    "total_stat_buffs": "ATK +124, RES +5"
+  },
+  {
+    "operator": "Fiammetta",
+    "module_branch": "ART-X",
+    "stage_1_trait_upgrade": "ATK increased to 110% when attacking blocked enemies",
+    "base_talent": "Fiammetta constantly loses HP (this effect will not reduce HP to 0); When HP is higher than 50%, gain Vigor effect of +25% ATK; When HP is higher than 80%, the Vigor effect is doubled",
+    "stage_2_talent_upgrade": "Fiammetta constantly loses HP (this effect will not reduce HP below 30%); When HP is higher than 50%, gain Vigor effect of +28% ATK; When HP is higher than 80%, the Vigor effect is doubled",
+    "stage_3_talent_upgrade": "Fiammetta constantly loses HP (this effect will not reduce HP below 50%); When HP is higher than 50%, gain Vigor effect of +30% ATK; When HP is higher than 80%, the Vigor effect is doubled",
+    "total_stat_buffs": "ATK +85, DEF +32"
+  },
+  {
+    "operator": "Verdant",
+    "module_branch": "PUM-Y",
+    "stage_1_trait_upgrade": "Substitute gains +20% HP",
+    "base_talent": "Substitute recovers 3.5% (4%) HP/s",
+    "stage_2_talent_upgrade": "Substitute recovers 3.5% (4%) HP/s, RES +5",
+    "stage_3_talent_upgrade": "Substitute recovers 3.5% (4%) HP/s, RES +8",
+    "total_stat_buffs": "HP +185, ATK +45"
+  },
+  {
+    "operator": "Delphine",
+    "module_branch": "MSC-Y",
+    "stage_1_trait_upgrade": "When holding a charge of stored energy, Attack Speed +30",
+    "base_talent": "When attacking an enemy with more than 80% HP, increase damage dealt by 18% (20%)",
+    "stage_2_talent_upgrade": "When attacking an enemy with more than 80% HP, increase damage dealt by 21% (23%)",
+    "stage_3_talent_upgrade": "When attacking an enemy with more than 80% HP, increase damage dealt by 23% (25%)",
+    "total_stat_buffs": "HP +120, ATK +92"
+  },
+  {
+    "operator": "Ashlock",
+    "module_branch": "FOR-X",
+    "stage_1_trait_upgrade": "ATK increased to 110% when attacking blocked enemies",
+    "base_talent": "ATK +8% (10%). If the 4 surrounding tiles are ground tiles, ATK +16% (18%) instead",
+    "stage_2_talent_upgrade": "ATK +10% (12%). If the 4 surrounding tiles are ground tiles, ATK +16% (18%) instead",
+    "stage_3_talent_upgrade": "ATK +10% (12%). If the 4 surrounding tiles are ground tiles, ATK +20% (22%) instead",
+    "total_stat_buffs": "HP +325, ATK +70"
+  },
+  {
+    "operator": "Firewhistle",
+    "module_branch": "FOR-X",
+    "stage_1_trait_upgrade": "ATK increased to 110% when attacking blocked enemies",
+    "base_talent": "When not blocking enemies, ATK +12% (14%). When blocking enemies, DEF +12% (14%)",
+    "stage_2_talent_upgrade": "When not blocking enemies, ATK +16% (18%). When blocking enemies, DEF +16% (18%)",
+    "stage_3_talent_upgrade": "When not blocking enemies, ATK +18% (20%). When blocking enemies, DEF +18% (20%)",
+    "total_stat_buffs": "ATK +58, DEF +58"
+  },
+  {
+    "operator": "Horn",
+    "module_branch": "FOR-X",
+    "stage_1_trait_upgrade": "ATK increased to 110% when attacking blocked enemies",
+    "base_talent": "When deployed, all ally [Defender] operators gain ATK +20% (23%)",
+    "stage_2_talent_upgrade": "When deployed, all ally [Defender] operators gain ATK +25% (28%)",
+    "stage_3_talent_upgrade": "When deployed, all ally [Defender] operators gain ATK +28% (31%)",
+    "total_stat_buffs": "ATK +100, DEF +70"
   }
 ]
