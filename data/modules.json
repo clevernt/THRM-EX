@@ -2110,8 +2110,8 @@
     "module_branch": "FOR-X",
     "stage_1_trait_upgrade": "ATK increased to 110% when attacking blocked enemies",
     "base_talent": "ATK +8% (10%). If the 4 surrounding tiles are ground tiles, ATK +16% (18%) instead",
-    "stage_2_talent_upgrade": "ATK +10% (12%). If the 4 surrounding tiles are ground tiles, ATK +16% (18%) instead",
-    "stage_3_talent_upgrade": "ATK +10% (12%). If the 4 surrounding tiles are ground tiles, ATK +20% (22%) instead",
+    "stage_2_talent_upgrade": "ATK +10% (12%). If the front and back tiles are ground tiles, ATK +16% (18%) instead",
+    "stage_3_talent_upgrade": "ATK +10% (12%). If the front and back are ground tiles, ATK +20% (22%) instead",
     "total_stat_buffs": "HP +325, ATK +70"
   },
   {
