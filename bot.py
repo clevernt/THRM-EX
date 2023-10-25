@@ -4,7 +4,7 @@ import os
 load_dotenv()
 
 bot = lightbulb.BotApp(
-    token=os.getenv('TOKEN'),
+    token=os.getenv('TEST_TOKEN'),
     help_slash_command=True
 )
 

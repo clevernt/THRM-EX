@@ -1,8 +1,5 @@
-hikari-lightbulb==2.2.4
-hikari==2.0.0.dev111
-requests==2.23.0
-python-dotenv==0.21.0
+hikari-lightbulb==2.3.3
+hikari==2.0.0.dev121
+requests==2.31.0
+python-dotenv==1.0.0
 requests-html==0.10.0
-hikari-miru==1.1.2
-thefuzz==0.19.0
-millify==0.1.1

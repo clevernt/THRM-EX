@@ -7,6 +7,7 @@ from typing import Union
 from typing import Sequence
 from difflib import get_close_matches
 from requests_html import HTMLSession
+from lightbulb.utils import nav
 
 session = HTMLSession()
 plugin = lightbulb.Plugin("arkrec")
@@ -31,12 +32,15 @@ unskilled_operators = [
 
 with open("./data/stage_table.json", encoding="utf-8") as f:
     stage_table = json.load(f)["stages"]
+
 with open("./data/operator_names.json", encoding="utf-8") as f:
     operator_names_data = json.load(f)
     operator_names = {v: k for k, v in operator_names_data.items()}
+
 with open("./data/categories.json", encoding="utf-8") as f:
     categories = json.load(f)
     categories_en = [value.lower() for value in categories.values()]
+
 
 
 def filter_and_translate(operators_list, operator_names):
@@ -70,6 +74,7 @@ async def arkrec(ctx):
     mode = mode_mapping.get(ctx.options["mode"], None)
 
     stage_name = None
+
     for _, value in stage_table.items():
         if value["code"].lower() == requested_stage.lower():
             stage_name = value["name"]
@@ -77,6 +82,7 @@ async def arkrec(ctx):
 
     if stage_name is not None:
         payload = {"operation": requested_stage.upper(), "cn_name": stage_name}
+
     else:
         await ctx.respond(
             hikari.Embed(description=f"Stage `{requested_stage}` was not found")
@@ -88,18 +94,24 @@ async def arkrec(ctx):
     }
 
     try:
-        response = requests.request("POST", ARKREC_URL, json=payload, headers=headers)
+        response = requests.request("POST", ARKREC_URL, json=payload, headers=headers, timeout=30)
         response.raise_for_status()
+
     except requests.exceptions.RequestException as e:
         await ctx.respond(hikari.Embed(description=f"Request error: {e}"))
         return
+
     data = response.json()
     clear_found = []
+    embeds = []
+
     for i in data:
         try:
-            operationType = i["operationType"]
+            operation_type = i["operation_type"]
+
         except KeyError:
-            operationType = None
+            operation_type = None
+
             if mode == "challenge":
                 await ctx.respond(
                     hikari.Embed(
@@ -107,6 +119,7 @@ async def arkrec(ctx):
                     )
                 )
                 break
+
         else:
             pass
 
@@ -114,7 +127,7 @@ async def arkrec(ctx):
         categories_en = [categories.get(category) for category in categories_cn]
 
         if (requested_category.title() in categories_en) and (
-            operationType == mode or mode == None
+            mode in (operation_type, None)
         ):
             clear_found.append(True)
             stage_code = i["operation"]
@@ -126,10 +139,10 @@ async def arkrec(ctx):
             operators_list_en = filter_and_translate(operators_list, operator_names)
 
             sep = ", "
-            embed = hikari.Embed(title="Clear Found")
+            embed = hikari.Embed()
             embed.add_field("Stage", stage_code, inline=True)
             embed.add_field(
-                "CM", "❌" if operationType == "normal" else "✅", inline=True
+                "CM", "❌" if operation_type == "normal" else "✅", inline=True
             )
             embed.add_field("Player", raider, inline=True)
             embed.add_field(
@@ -138,19 +151,22 @@ async def arkrec(ctx):
             embed.add_field("Operator Count", operator_count, inline=True)
             embed.add_field("Squad", sep.join(map(str, operators_list_en)), inline=True)
             embed.add_field("Date Published", date_published, inline=True)
-            embed.add_field(f"Clear Link", clear_link, inline=True)
-            await ctx.respond(embed)
-            break
+            embed.add_field("Clear Link", clear_link, inline=True)
+            embeds.append(embed)
+
         else:
             clear_found.append(False)
+
     if True not in clear_found:
         await ctx.respond(
             hikari.Embed(
-                description=f"No clear found matching the following parameters:\nStage: `{requested_stage}`\nCategory: `{requested_category}`"
+                description=f"No clears found matching the following parameters:\nStage: `{requested_stage} {mode}`\nCategory: `{requested_category}`"
             )
         )
-
-
+    
+    navigator = nav.ButtonNavigator(embeds)
+    await navigator.run(ctx)
+    
 @arkrec.autocomplete("category")
 async def arkrec_autocomplete(
     opt: hikari.AutocompleteInteractionOption, inter: hikari.AutocompleteInteraction
