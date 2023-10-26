@@ -104,25 +104,8 @@ async def arkrec(ctx):
     data = response.json()
     clear_found = []
     embeds = []
-
     for i in data:
-        try:
-            operation_type = i["operation_type"]
-
-        except KeyError:
-            operation_type = None
-
-            if mode == "challenge":
-                await ctx.respond(
-                    hikari.Embed(
-                        description=f"`{requested_stage}` does not have Challenge Mode"
-                    )
-                )
-                break
-
-        else:
-            pass
-
+        operation_type = i["operationType"]
         categories_cn = i["category"]
         categories_en = [categories.get(category) for category in categories_cn]
 
@@ -163,9 +146,10 @@ async def arkrec(ctx):
                 description=f"No clears found matching the following parameters:\nStage: `{requested_stage} {mode}`\nCategory: `{requested_category}`"
             )
         )
-    
-    navigator = nav.ButtonNavigator(embeds)
-    await navigator.run(ctx)
+        
+    if len(embeds) > 1:
+        navigator = nav.ButtonNavigator(embeds)
+        await navigator.run(ctx)
     
 @arkrec.autocomplete("category")
 async def arkrec_autocomplete(
