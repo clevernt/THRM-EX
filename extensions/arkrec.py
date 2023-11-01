@@ -143,7 +143,7 @@ async def arkrec(ctx):
     if True not in clear_found:
         await ctx.respond(
             hikari.Embed(
-                description=f"No clears found matching the following parameters:\nStage: `{requested_stage} {mode}`\nCategory: `{requested_category}`"
+                description=f"No clears found matching the following parameters:\nStage: `{requested_stage} {mode if mode else ''}`\nCategory: `{requested_category}`"
             )
         )
         
