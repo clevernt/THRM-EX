@@ -2131,5 +2131,68 @@
     "stage_2_talent_upgrade": "When deployed, all ally [Defender] operators gain ATK +25% (28%)",
     "stage_3_talent_upgrade": "When deployed, all ally [Defender] operators gain ATK +28% (31%)",
     "total_stat_buffs": "ATK +100, DEF +70"
+  },
+  {
+    "operator": "Mudrock",
+    "module_branch": "UNY-X",
+    "stage_1_trait_upgrade": "Reduce damage taken from enemies blocked by self by 15%",
+    "base_talent": "Gain 1 layer of Shield every 9 seconds (stacks up to 3 layers, gain 1 layer immediately after deployment). Recover 20% (22%) Max HP every time a layer of Shield breaks",
+    "stage_2_talent_upgrade": "Gain 1 layer of Shield every 9 seconds (stacks up to 3 layers, gain 1 layer immediately after deployment). Recover 22% (24%) Max HP and 1 SP every time a layer of Shield breaks",
+    "stage_3_talent_upgrade": "Gain 1 layer of Shield every 9 seconds (stacks up to 3 layers, gain 1 layer immediately after deployment). Recover 23% (25%) Max HP and 2 SP every time a layer of Shield breaks",
+    "total_stat_buffs": "HP +400, ATK +80"
+  },
+  {
+    "operator": "Penance",
+    "module_branch": "UNY-X",
+    "stage_1_trait_upgrade": "Reduce damage taken from enemies blocked by self by 15%",
+    "base_talent": "After deployment, immediately gain Barrier equal to 50% (55%) Max HP. When defeating an enemy, gain Barrier equal to 10% Max HP (caps at 300% Max HP)",
+    "stage_2_talent_upgrade": "After deployment, immediately gain Barrier equal to 60% (65%) Max HP. When defeating an enemy, gain Barrier equal to 11% Max HP (caps at 300% Max HP)",
+    "stage_3_talent_upgrade": "After deployment, immediately gain Barrier equal to 70% (75%) Max HP. When defeating an enemy, gain Barrier equal to 12% Max HP (caps at 300% Max HP)",
+    "total_stat_buffs": "HP +300, ATK +50, DEF +33"
+  },
+  {
+    "operator": "Vulcan",
+    "module_branch": "UNY-X",
+    "stage_1_trait_upgrade": "Reduce damage taken from enemies blocked by self by 15%",
+    "base_talent": "While skill is active, recover 4% (5%) Max HP every second and gain 25% (30%) melee Physical Evasion",
+    "stage_2_talent_upgrade": "Immediately restore 30% Max HP when skill is activated. Thereafter, recover 4% (5%) Max HP every second and gain 25% (30%) melee Physical Evasion for the duration of the skill",
+    "stage_3_talent_upgrade": "Immediately restore 60% Max HP when skill is activated. Thereafter, recover 4% (5%) Max HP every second and gain 25% (30%) melee Physical Evasion for the duration of the skill",
+    "total_stat_buffs": "HP +385, DEF +68"
+  },
+  {
+    "operator": "Lessing",
+    "module_branch": "DRE-X",
+    "stage_1_trait_upgrade": "When attacking blocked enemies, ATK increased to 115%",
+    "base_talent": "ATK +12% (16%) for 15 seconds after taking damage (can't stack)",
+    "stage_2_talent_upgrade": "ATK +17% (21%) for 15 seconds after taking damage (can't stack)",
+    "stage_3_talent_upgrade": "ATK +20% (24%) for 15 seconds after taking damage (can't stack)",
+    "total_stat_buffs": "HP +400, ATK +30, DEF +30"
+  },
+  {
+    "operator": "Bassline",
+    "module_branch": "GUA-Y",
+    "stage_1_trait_upgrade": "Damage taken is reduced by 15%",
+    "base_talent": "RES +12. If there are allies in the surrounding 8 tiles, RES +4",
+    "stage_2_talent_upgrade": "RES +12. If there are allies in the surrounding 8 tiles, grants Self and the allies +4 RES",
+    "stage_3_talent_upgrade": "RES +14. If there are allies in the surrounding 8 tiles, grants Self and the allies +5 RES",
+    "total_stat_buffs": "HP +400, ATK +30, DEF +30"
+  },
+  {
+    "operator": "Bagpipe",
+    "module_branch": "CHG-Y",
+    "stage_1_trait_upgrade": "When attacking an enemy with health below 40%, increase Attack to 115%",
+    "base_talent": "Every attack has 25% (28%) chance to deal 130% damage and attack an additional target",
+    "stage_2_talent_upgrade": "Every attack has 30% (33%) chance to deal 135% damage and attack an additional target",
+    "stage_3_talent_upgrade": "Every attack has 33% (36%) chance to deal 140% damage and attack an additional target",
+    "total_stat_buffs": "ATK +85, DEF +20"
+  },
+  {
+    "operator": "Nearl the Radiant Knight",
+    "module_branch": "DRE-Y",
+    "stage_1_trait_upgrade": "When defeated, do not retreat. HP restores to full, Max HP -60% and then gain +30 ASPD (Once per deployment)",
+    "base_talent": "After deployment, deal 80% True damage to enemies in the 4 adjacent tiles and Stun them for 3 seconds. If the last deployed operator is a [Kazimierz] operator, deal an additional hit",
+    "stage_2_talent_upgrade": "After deployment and after being defeated for the first time [...]",
+    "stage_3_talent_upgrade": "[...] deal 100% True damage to enemies in the 4 adjacent tiles and Stun them for 4 seconds. [...]",
+    "total_stat_buffs": "ATK +90, DEF +45"
   }
 ]
