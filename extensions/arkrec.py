@@ -2,12 +2,15 @@ import lightbulb
 import hikari
 import requests
 import json
+import pytz
 
 from typing import Union
 from typing import Sequence
 from difflib import get_close_matches
 from requests_html import HTMLSession
 from lightbulb.utils import nav
+from datetime import datetime
+from dateutil import parser
 
 session = HTMLSession()
 plugin = lightbulb.Plugin("arkrec")
@@ -33,26 +36,28 @@ unskilled_operators = [
 with open("./data/stage_table.json", encoding="utf-8") as f:
     stage_table = json.load(f)["stages"]
 
-with open("./data/operator_names.json", encoding="utf-8") as f:
-    operator_names_data = json.load(f)
-    operator_names = {v: k for k, v in operator_names_data.items()}
+with open("./data/operators.json", encoding="utf-8") as f:
+    data = json.load(f)
+    operator_names = {data[key]["name"]: key for key in data}
 
 with open("./data/categories.json", encoding="utf-8") as f:
     categories = json.load(f)
     categories_en = [value.lower() for value in categories.values()]
 
-
-
 def filter_and_translate(operators_list, operator_names):
     operators_list_en = []
+
     for operator in operators_list:
+
         if operator in unskilled_operators:
             operators_list_en.append(operator_names[operator])
+
         else:
             skill = operator[-1]
             name_cn = operator.rstrip(skill)
-            name_en = operator_names[name_cn]
+            name_en = operator_names.get(name_cn)
             operators_list_en.append(f"{name_en} S{skill}")
+            
     return operators_list_en
 
 
@@ -71,6 +76,7 @@ def filter_and_translate(operators_list, operator_names):
 async def arkrec(ctx):
     requested_stage = ctx.options["stage"]
     requested_category = ctx.options["category"]
+
     mode = mode_mapping.get(ctx.options["mode"], None)
 
     stage_name = None
@@ -113,28 +119,20 @@ async def arkrec(ctx):
             mode in (operation_type, None)
         ):
             clear_found.append(True)
+            raider_image = i["raiderImage"]
             stage_code = i["operation"]
             clear_link = i["url"]
             operator_count = len(i["team"])
             operators_list = i["team"]
             raider = i["raider"]
-            date_published = i["date_published"][:10]
+            date_published = i["date_published"]
+            parsed_timestamp = parser.isoparse(date_published).astimezone(pytz.UTC)
             operators_list_en = filter_and_translate(operators_list, operator_names)
 
             sep = ", "
-            embed = hikari.Embed()
-            embed.add_field("Stage", stage_code, inline=True)
-            embed.add_field(
-                "CM", "❌" if operation_type == "normal" else "✅", inline=True
-            )
-            embed.add_field("Player", raider, inline=True)
-            embed.add_field(
-                "Category(s)", sep.join(map(str, categories_en)), inline=True
-            )
-            embed.add_field("Operator Count", operator_count, inline=True)
+            embed = hikari.Embed(title=f"{stage_code} | {'Challenge Mode' if operation_type == 'challenge' else 'Normal Mode'}", description=sep.join(map(str, categories_en)), timestamp=parsed_timestamp, url=clear_link)
+            embed.set_author(name=raider, icon=raider_image)
             embed.add_field("Squad", sep.join(map(str, operators_list_en)), inline=True)
-            embed.add_field("Date Published", date_published, inline=True)
-            embed.add_field("Clear Link", clear_link, inline=True)
             embeds.append(embed)
 
         else:
@@ -147,17 +145,18 @@ async def arkrec(ctx):
             )
         )
         
-    if len(embeds) > 1:
+    if len(embeds) > 0:
         navigator = nav.ButtonNavigator(embeds)
         await navigator.run(ctx)
     
 @arkrec.autocomplete("category")
 async def arkrec_autocomplete(
     opt: hikari.AutocompleteInteractionOption, inter: hikari.AutocompleteInteraction
-) -> Union[str, Sequence[str], hikari.CommandChoice, Sequence[hikari.CommandChoice]]:
-    user_input = opt.value
-    close_matches = get_close_matches(user_input, categories_en, cutoff=0.4)
-    return close_matches
+) -> Union[str, Sequence[hikari.CommandChoice]]:
+    user_input = opt.value.lower()
+    matching_categories = [category for category in categories_en if user_input in category.lower()]
+    matching_categories = matching_categories[:25]
+    return [hikari.CommandChoice(name=category, value=category) for category in matching_categories]
 
 
 def load(bot):

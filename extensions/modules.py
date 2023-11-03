@@ -12,35 +12,43 @@ plugin = lightbulb.Plugin("modules")
 operators_with_modules = set()
 with open("./data/modules.json", "r") as f:
     data = json.load(f)
-    for module in data:
-        operator_name = module["operator"].lower()
-        operators_with_modules.add(operator_name)
-
-
-def get_operator_avatar(operator_name):
-    with open("./data/operator_ids.json", "r") as f:
-        data = json.load(f)
-        for operator, _id in data.items():
-            if operator.lower() == operator_name.lower():
-                operator_id = _id
-
-    avatar_url = f"https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avatars/{operator_id}.png"
-    return avatar_url
+    for operator in data:
+        operators_with_modules.add(operator.lower())
 
 def get_modules(operator_name):
     modules_list = []
     with open("./data/modules.json") as f:
-        modules = json.load(f)
-        for module in modules:
-            if module["operator"].lower() == operator_name.lower():
-                modules_list.append(module)
-
+        modules_data = json.load(f)
+        for operator, modules in modules_data.items():
+            if operator.lower() == operator_name.lower():
+                modules_list.extend(modules)
     return modules_list   
+
+def get_branch_trait(branch_code):
+    with open("./data/branches.json") as f:
+        branches_data = json.load(f)
+
+        return branches_data[branch_code.upper()]
+
+def get_branch_icon(branch_code):
+    branch_icon_url = f"https://raw.githubusercontent.com/Aceship/Arknight-Images/main/equip/type/{branch_code}.png"
+
+    return branch_icon_url
+
+def get_operator_avatar(operator):
+    with open("./data/operators.json", "r", encoding="utf-8") as f:
+        data = json.load(f)
+        for operator_name, operator_data in data.items():
+            if operator_name.lower() == operator.lower():
+                operator_id = operator_data["id"]
+        
+    avatar_url = f"https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avatars/{operator_id}.png"
+    return avatar_url
 
 @plugin.command
 @lightbulb.option("operator", "Operator", required=True, autocomplete=True)
 @lightbulb.command("module", "Get details about an operator's module", auto_defer=True)
-@lightbulb.implements(lightbulb.SlashCommand, lightbulb.PrefixCommand)
+@lightbulb.implements(lightbulb.SlashCommand)
 async def module(ctx):
     paginator = pag.EmbedPaginator()
     requested_operator = ctx.options.operator.strip()
@@ -54,18 +62,17 @@ async def module(ctx):
     modules_list = get_modules(requested_operator)
     embeds = []
     for module in modules_list:
-        embed = hikari.Embed(title=module["operator"])
-        embed.add_field("Module Branch", module["module_branch"])
-        embed.add_field("Stage 1 | Trait Upgrade", module["stage_1_trait_upgrade"])
+        trait_upgrade = get_branch_trait(module["module_branch"])
+        embed = hikari.Embed(title=requested_operator.title(), description=trait_upgrade, color=16448250)
+        embed.set_author(name=module["module_branch"], icon=f"https://raw.githubusercontent.com/Aceship/Arknight-Images/main/equip/type/{module['module_branch'].lower()}.png")
         if module["base_talent"] != "N/A":
             embed.add_field("Base Talent", module["base_talent"])
-            embed.add_field("Stage 2 | Talent Upgrade", module["stage_2_talent_upgrade"])
-            embed.add_field("Stage 3 | Talent Upgrade", module["stage_3_talent_upgrade"])
+            embed.add_field("Stage 2 - Talent Upgrade", module["stage_2_talent_upgrade"])
+            embed.add_field("Stage 3 - Talent Upgrade", module["stage_3_talent_upgrade"])
         else:
-            embed.add_field("Stage 2 | New Talent", module["stage_2_talent_upgrade"])
-            embed.add_field("Stage 3 | Talent Upgrade", module["stage_3_talent_upgrade"])
-        embed.add_field("Total Stat Buffs", module["total_stat_buffs"])
-        embed.add_field("Modules Sheet", "https://bit.ly/AKModules")
+            embed.add_field("Stage 2 - New Talent", module["stage_2_talent_upgrade"])
+            embed.add_field("Stage 3 - Talent Upgrade", module["stage_3_talent_upgrade"])
+        embed.add_field(module["total_stat_buffs"], "~~why can't I leave this empty~~")
         embed.set_thumbnail(avatar_url)
         if module["module_branch"] == "SPC-X":
             embed.add_field("Increased Attack Range:", "\u200b")
@@ -73,7 +80,7 @@ async def module(ctx):
         if module["module_branch"] == "RIN-X":
             embed.add_field("Increased Attack Range:", "\u200b")
             embed.set_image("https://i.postimg.cc/crGLsS8D/RIN-X.png")
-        if module["operator"] == "Tomimi":
+        if requested_operator.lower() == "tomimi":
             embed.add_field("Slightly Reduced Attack Range:", "\u200b")
             embed.set_image("https://i.postimg.cc/TKR2DJ0g/Tomimi.png")
         embeds.append(embed)
@@ -86,11 +93,11 @@ async def module(ctx):
 @module.autocomplete("operator")
 async def module_autocomplete(
     opt: hikari.AutocompleteInteractionOption, inter: hikari.AutocompleteInteraction
-) -> Union[str, Sequence[str], hikari.CommandChoice, Sequence[hikari.CommandChoice]]:
-    user_input = opt.value
-    close_matches = get_close_matches(user_input, operators_with_modules, cutoff=0.3)
-    return close_matches
-
+) -> Union[str, Sequence[hikari.CommandChoice]]:
+    user_input = opt.value.lower()
+    matching_operators = [operator for operator in operators_with_modules if user_input in operator.lower()]
+    matching_operators = matching_operators[:25]
+    return [hikari.CommandChoice(name=operator, value=operator) for operator in matching_operators]
 
 def load(bot):
     bot.add_plugin(plugin)
