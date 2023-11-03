@@ -2,9 +2,6 @@ __pycache__/
 .vscode/
 extensions/__pycache__
 .env
-data/modules_backup.json
-data/operator_names.json
-data/operator_ids.json
 test.py 
 rewrite.py
 .venv/

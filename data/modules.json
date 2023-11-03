@@ -326,15 +326,15 @@
     {
       "base_talent": "When deployed, grant 1 [Offensive/Defensive-Recovery SP] to all allies every 4 seconds",
       "module_branch": "SWO-X",
-      "stage_2_talent_upgrade": "When deployed, grant 1 [Offensive/Defensive-Recovery SP] to all allies every 3 seconds",
-      "stage_3_talent_upgrade": "When deployed, grant 1 [Offensive/Defensive-Recovery SP] to all allies every 3 seconds. Ch'en gains 1 additional SP",
+      "stage_2_talent_upgrade": "When deployed, grant 1 [Offensive/Defensive-Recovery SP] to all allies every **3** seconds",
+      "stage_3_talent_upgrade": "When deployed, grant 1 [Offensive/Defensive-Recovery SP] to all allies every 3 seconds. **Ch'en gains 1 additional SP**",
       "total_stat_buffs": "ATK +80, ASPD +7"
     },
     {
       "base_talent": "ATK +6% (7%), DEF +6% (7%), Physical Evasion +10% (13%)",
       "module_branch": "SWO-Y",
-      "stage_2_talent_upgrade": "ATK +11% (12%), DEF +11% (12%), Physical Evasion +15% (18%)",
-      "stage_3_talent_upgrade": "ATK +15% (16%), DEF +15% (16%), Physical Evasion +18% (21%)",
+      "stage_2_talent_upgrade": "ATK **+11% (12%)**, DEF **+11% (12%)**, Physical Evasion **+15% (18%)**",
+      "stage_3_talent_upgrade": "ATK **+15% (16%)**, DEF **+15% (16%)**, Physical Evasion **+18% (21%)**",
       "total_stat_buffs": "ATK +85, DEF +42"
     }
   ],
@@ -342,8 +342,8 @@
     {
       "base_talent": "When deployed, all [Robot] operators' Redeployment Time -75%. Additionally, for every 1* operator deployed, self ATK and DEF +11% (13%)",
       "module_branch": "SOL-Y",
-      "stage_2_talent_upgrade": "When deployed, all [Robot] operators' Redeployment Time -78%. Additionally, for every 1* operator deployed, self ATK and DEF +13% (15%)",
-      "stage_3_talent_upgrade": "When deployed, all [Robot] operators' Redeployment Time -80%. Additionally, for every 1* operator deployed, self ATK and DEF +15% (17%)",
+      "stage_2_talent_upgrade": "When deployed, all [Robot] operators' **Redeployment Time -78%**. Additionally, for every 1* operator deployed, self ATK and DEF **+13% (15%)**",
+      "stage_3_talent_upgrade": "When deployed, all [Robot] operators' **Redeployment Time -80%**. Additionally, for every 1* operator deployed, self ATK and DEF **+15% (17%)**",
       "total_stat_buffs": "ATK +42, DEF +35"
     }
   ],
@@ -351,8 +351,8 @@
     {
       "base_talent": "When not blocking any enemies, ATK and DEF +12% (14%)",
       "module_branch": "HOK-X",
-      "stage_2_talent_upgrade": "When not blocking any enemies, ATK and DEF +18% (20%)",
-      "stage_3_talent_upgrade": "When not blocking any enemies, ATK and DEF +22% (24%)",
+      "stage_2_talent_upgrade": "When not blocking any enemies, ATK and DEF **+18% (20%)**",
+      "stage_3_talent_upgrade": "When not blocking any enemies, ATK and DEF **+22% (24%)**",
       "total_stat_buffs": "ATK +40, DEF +31"
     }
   ],
@@ -360,8 +360,8 @@
     {
       "base_talent": "DP Cost -4, Redeployment time -15 seconds, however Stun self for 10 seconds upon deployment",
       "module_branch": "DRE-X",
-      "stage_2_talent_upgrade": "DP Cost -6, Redeployment Time -25 seconds. however Stun self for 10 seconds upon deployment.",
-      "stage_3_talent_upgrade": "DP Cost -8, Redeployment Time -30 seconds. however Stun self for 10 seconds upon deployment.",
+      "stage_2_talent_upgrade": "**DP Cost -6**, Redeployment Time **-25 seconds**. however Stun self for 10 seconds upon deployment.",
+      "stage_3_talent_upgrade": "**DP Cost -8**, Redeployment Time **-30 seconds**. however Stun self for 10 seconds upon deployment.",
       "total_stat_buffs": "ATK +80, ASPD +4"
     }
   ],
@@ -369,8 +369,8 @@
     {
       "base_talent": "After not attacking for 4 seconds, SP recovery speed +0.45 (0.5) SP/sec",
       "module_branch": "BLA-X",
-      "stage_2_talent_upgrade": "After not attacking for 4 seconds, SP recovery speed +0.6 (0.65) SP/sec",
-      "stage_3_talent_upgrade": "After not attacking for 4 seconds, SP recovery speed +0.65 (0.7) SP/sec",
+      "stage_2_talent_upgrade": "After not attacking for 4 seconds, SP recovery speed **+0.6 (0.65) SP/sec**",
+      "stage_3_talent_upgrade": "After not attacking for 4 seconds, SP recovery speed **+0.65 (0.7) SP/sec**",
       "total_stat_buffs": "HP +190, ATK +60"
     }
   ],
@@ -378,8 +378,8 @@
     {
       "base_talent": "When blocking 2 or more enemies, DEF +16% (19%)",
       "module_branch": "SOL-X",
-      "stage_2_talent_upgrade": "When blocking 2 or more enemies, DEF +21% (24%)",
-      "stage_3_talent_upgrade": "When blocking 2 or more enemies, DEF +24% (27%)",
+      "stage_2_talent_upgrade": "When blocking 2 or more enemies, **DEF +21% (24%)**",
+      "stage_3_talent_upgrade": "When blocking 2 or more enemies, **DEF +24% (27%)**",
       "total_stat_buffs": "HP +195, DEF +30"
     }
   ],
@@ -387,8 +387,8 @@
     {
       "base_talent": "Has a 20% (23%) chance to evade Physical and Arts damage. The allies in the four surrounding tiles obtain half of the effect",
       "module_branch": "PRO-Y",
-      "stage_2_talent_upgrade": "Has a 24% (27%) chance to evade Physical and Arts damage. The allies in the four surrounding tiles obtain half of the effect",
-      "stage_3_talent_upgrade": "Has a 27% (30%) chance to evade Physical and Arts damage. The allies in the four surrounding tiles obtain half of the effect",
+      "stage_2_talent_upgrade": "Has a **24% (27%) chance** to evade Physical and Arts damage. The allies in the four surrounding tiles obtain half of the effect",
+      "stage_3_talent_upgrade": "Has a **27% (30%) chance** to evade Physical and Arts damage. The allies in the four surrounding tiles obtain half of the effect",
       "total_stat_buffs": "HP +350, DEF +68"
     }
   ],
@@ -396,8 +396,8 @@
     {
       "base_talent": "DEF +12%",
       "module_branch": "PRO-X",
-      "stage_2_talent_upgrade": "DEF +15%",
-      "stage_3_talent_upgrade": "DEF +18%",
+      "stage_2_talent_upgrade": "DEF **+15%**",
+      "stage_3_talent_upgrade": "DEF **+18%**",
       "total_stat_buffs": "HP +170, DEF +80"
     }
   ],
@@ -405,8 +405,8 @@
     {
       "base_talent": "When dealing damage, 20% (23%) chance to recover 1 additional SP",
       "module_branch": "SWO-Y",
-      "stage_2_talent_upgrade": "When dealing damage, 30% (33%) chance to recover 1 additional SP",
-      "stage_3_talent_upgrade": "When dealing damage, 33% (36%) chance to recover 1 additional SP",
+      "stage_2_talent_upgrade": "When dealing damage, **30% (33%) chance** to recover 1 additional SP",
+      "stage_3_talent_upgrade": "When dealing damage, **33% (36%) chance** to recover 1 additional SP",
       "total_stat_buffs": "HP +150, ATK +65"
     }
   ],
@@ -414,8 +414,8 @@
     {
       "base_talent": "Can summon 4 tentacles to assist in battle",
       "module_branch": "SUM-Y",
-      "stage_2_talent_upgrade": "Can summon 4 tentacles to assist in battle, Tentacle Max HP +10%",
-      "stage_3_talent_upgrade": "Can summon 4 tentacles to assist in battle, Tentacle Max HP +15%",
+      "stage_2_talent_upgrade": "Can summon 4 tentacles to assist in battle, **Tentacle Max HP +10%**",
+      "stage_3_talent_upgrade": "Can summon 4 tentacles to assist in battle, **Tentacle Max HP +15%**",
       "total_stat_buffs": "HP +115, ATK +35"
     }
   ],
@@ -423,8 +423,8 @@
     {
       "base_talent": "When attacking an enemy with more than 80% HP, increase damage dealt by 18% (20%)",
       "module_branch": "MSC-Y",
-      "stage_2_talent_upgrade": "When attacking an enemy with more than 80% HP, increase damage dealt by 21% (23%)",
-      "stage_3_talent_upgrade": "When attacking an enemy with more than 80% HP, increase damage dealt by 23% (25%)",
+      "stage_2_talent_upgrade": "When attacking an enemy with more than **80% HP**, increase damage dealt by **21% (23%)**",
+      "stage_3_talent_upgrade": "When attacking an enemy with more than 80% HP, increase damage dealt by **23% (25%)**",
       "total_stat_buffs": "HP +120, ATK +92"
     }
   ],
@@ -432,8 +432,8 @@
     {
       "base_talent": "N/A",
       "module_branch": "INS-Y",
-      "stage_2_talent_upgrade": "When there are 3* operators deployed, self Attack Speed +10",
-      "stage_3_talent_upgrade": "When there are 3* operators deployed, self Attack Speed +15",
+      "stage_2_talent_upgrade": "**When there are 3* operators deployed, self Attack Speed +10**",
+      "stage_3_talent_upgrade": "When there are 3* operators deployed, self **Attack Speed +15**",
       "total_stat_buffs": "HP +80, ATK +53, ASPD +5"
     }
   ],
@@ -441,8 +441,8 @@
     {
       "base_talent": "After a Resonator activates, Dorothy gains +2% ATK, stacking up to 10 (12) layers",
       "module_branch": "TRP-Y",
-      "stage_2_talent_upgrade": "After a Resonator activates, Dorothy gains +3% ATK, stacking up to 10 (12) layers",
-      "stage_3_talent_upgrade": "After a Resonator activates, Dorothy gains +4% ATK, stacking up to 10 (12) layers",
+      "stage_2_talent_upgrade": "After a Resonator activates, Dorothy gains **+3% ATK**, stacking up to 10 (12) layers",
+      "stage_3_talent_upgrade": "After a Resonator activates, Dorothy gains **+4% ATK**, stacking up to 10 (12) layers",
       "total_stat_buffs": "HP +155, ATK +57"
     }
   ],
@@ -450,15 +450,15 @@
     {
       "base_talent": "Increase ATK by 2% for every enemy killed by Dusk or Little Instinct, stacks up to 15 (18) layers",
       "module_branch": "SPC-X",
-      "stage_2_talent_upgrade": "Increase ATK by 2% for every enemy killed by Dusk or Little Instinct, stacks up to 20 (23) layers",
-      "stage_3_talent_upgrade": "Increase ATK by 2% for every enemy killed by Dusk or Little Instinct, stacks up to 21 (24) layers",
+      "stage_2_talent_upgrade": "Increase ATK by 2% for every enemy killed by Dusk or Little Instinct, stacks up to **20 (23) layers**",
+      "stage_3_talent_upgrade": "Increase ATK by 2% for every enemy killed by Dusk or Little Instinct, stacks up to **21 (24) layers**",
       "total_stat_buffs": "HP +190, ATK +80"
     },
     {
       "base_talent": "The first attack after deployment will summon a 'Little Instinct' at the target's location (only on deployable ground tiles) that lasts for 25 seconds",
       "module_branch": "SPC-Y",
-      "stage_2_talent_upgrade": "The first attack after deployment will summon 2 'Little Instincts' at the target's location and the surrounding 4 tiles (only on deployable ground tiles) that lasts for 25 seconds, All 'Little Instincts' have increased attributes and restore 1 SP for Dusk every 2.5 seconds\n'Little Instincts': Max HP +250, ATK +15, DEF +15",
-      "stage_3_talent_upgrade": "The first attack after deployment will summon 2 'Little Instincts' at the target's location and the surrounding 4 tiles (only on deployable ground tiles) that lasts for 25 seconds, All 'Little Instincts' have more increased attributes and restore 1 SP for Dusk every 1.5 seconds\n'Little Instincts': Max HP +400, ATK +25, DEF +25",
+      "stage_2_talent_upgrade": "The first attack after deployment will summon **2 'Little Instincts'** at the target's location **and the surrounding 4 tiles** (only on deployable ground tiles) that lasts for 25 seconds, **All 'Little Instincts' have increased attributes and restore 1 SP for Dusk every 2.5 seconds\n'Little Instincts': Max HP +250, ATK +15, DEF +15**",
+      "stage_3_talent_upgrade": "The first attack after deployment will summon 2 'Little Instincts' at the target's location and the surrounding 4 tiles (only on deployable ground tiles) that lasts for 25 seconds, All 'Little Instincts' have more increased attributes and restore 1 SP for Dusk every **1.5 seconds**\n'Little Instincts': **Max HP +400, ATK +25, DEF +25**",
       "total_stat_buffs": "ATK +82, ASPD +7"
     }
   ],
@@ -466,8 +466,8 @@
     {
       "base_talent": "Increases the duration of Slow effect by 0.1 (0.13) seconds",
       "module_branch": "DEC-Y",
-      "stage_2_talent_upgrade": "Increases the duration of Slow effect by 0.2 (0.23) seconds",
-      "stage_3_talent_upgrade": "Increases the duration of Slow effect by 0.3 (0.33) seconds",
+      "stage_2_talent_upgrade": "Increases the duration of Slow effect by **0.2 (0.23) seconds**",
+      "stage_3_talent_upgrade": "Increases the duration of Slow effect by **0.3 (0.33) seconds**",
       "total_stat_buffs": "HP +130, DEF +38"
     }
   ],
@@ -475,22 +475,22 @@
     {
       "base_talent": "Stored attack energy deals 135% damage. Can store one additional charge of attack energy that is only expended when attacking elite or boss enemies",
       "module_branch": "MSC-X",
-      "stage_2_talent_upgrade": "Stored attack energy deals 140% damage. Can store one additional charge of attack energy that is only expended when attacking elite or boss enemies",
-      "stage_3_talent_upgrade": "Stored attack energy deals 143% damage. Can store one additional charge of attack energy that is only expended when attacking elite or boss enemies",
+      "stage_2_talent_upgrade": "Stored attack energy deals **140% damage**. Can store one additional charge of attack energy that is only expended when attacking elite or boss enemies",
+      "stage_3_talent_upgrade": "Stored attack energy deals **143% damage**. Can store one additional charge of attack energy that is only expended when attacking elite or boss enemies",
       "total_stat_buffs": "ATK +90, ASPD +5"
     },
     {
       "base_talent": "If there are no enemies near the target, attacks deal additional Arts damage equal to 15% (17%) ATK",
       "module_branch": "MSC-Y",
-      "stage_2_talent_upgrade": "If there are no enemies near the target, attacks deal additional Arts damage equal to 18% (20%) ATK; Otherwise, deal Arts Damage to other enemies near the target equal to 25% ATK",
-      "stage_3_talent_upgrade": "If there are no enemies near the target, attacks deal additional Arts damage equal to 20% (22%) ATK; Otherwise, deal Arts Damage to other enemies near the target equal to 36% ATK",
+      "stage_2_talent_upgrade": "If there are no enemies near the target, attacks deal additional Arts damage equal to **18% (20%) ATK**; **Otherwise, deal Arts Damage to other enemies near the target equal to 25% ATK**",
+      "stage_3_talent_upgrade": "If there are no enemies near the target, attacks deal additional Arts damage equal to **20% (22%) ATK**; Otherwise, deal Arts Damage to other enemies near the target equal to **36% ATK**",
       "total_stat_buffs": "HP +175, ATK +135"
     },
     {
       "base_talent": "If there are no enemies near the target, attacks deal additional Arts damage equal to 15% (17%) ATK",
       "module_branch": "MSC-D",
-      "stage_2_talent_upgrade": "If there are no enemies near the target, attacks deal additional Arts damage equal to 24% (26%) ATK; if the target is under Necrosis, deals additional Elemental damage equal to 20% ATK",
-      "stage_3_talent_upgrade": "If there are no enemies near the target, attacks deal additional Arts damage equal to 30% (32%) ATK; if the target is under Necrosis, deals additional Elemental damage equal to 30% ATK",
+      "stage_2_talent_upgrade": "If there are no enemies near the target, attacks deal additional Arts damage equal to **24% (26%) ATK**; **if the target is under Necrosis, deals additional Elemental damage equal to 20% ATK**",
+      "stage_3_talent_upgrade": "If there are no enemies near the target, attacks deal additional Arts damage equal to **30% (32%) ATK**; if the target is under Necrosis, deals additional Elemental damage equal to **30% ATK**",
       "total_stat_buffs": "ATK +124, RES +5"
     }
   ],
@@ -498,8 +498,8 @@
     {
       "base_talent": "When deployed, deployment cost of all [Sniper] operators -2. Additionally, when skill is active all [Sniper] operators gain +20 (23) Attack Speed",
       "module_branch": "BEA-X",
-      "stage_2_talent_upgrade": "When deployed, deployment cost of all [Sniper] operators -2. Additionally, when skill is active all [Sniper] operators gain +23 (26) Attack Speed",
-      "stage_3_talent_upgrade": "When deployed, deployment cost of all [Sniper] operators -2. Additionally, when skill is active all [Sniper] operators gain +25 (28) Attack Speed",
+      "stage_2_talent_upgrade": "When deployed, deployment cost of all [Sniper] operators -2. Additionally, when skill is active all [Sniper] operators gain **+23 (26) Attack Speed**",
+      "stage_3_talent_upgrade": "When deployed, deployment cost of all [Sniper] operators -2. Additionally, when skill is active all [Sniper] operators gain **+25 (28) Attack Speed**",
       "total_stat_buffs": "HP +150, DEF +55"
     }
   ],
@@ -507,8 +507,8 @@
     {
       "base_talent": "When attacking enemies with 3 or more weight, ignore 180 (200) DEF",
       "module_branch": "PUS-X",
-      "stage_2_talent_upgrade": "When attacking enemies with 3 or more weight, ignore 250 (270) DEF",
-      "stage_3_talent_upgrade": "When attacking enemies with 3 or more weight, ignore 280 (300) DEF",
+      "stage_2_talent_upgrade": "When attacking enemies with 3 or more weight, ignore **250 (270) DEF**",
+      "stage_3_talent_upgrade": "When attacking enemies with 3 or more weight, ignore **280 (300) DEF**",
       "total_stat_buffs": "HP +240, ATK +60"
     }
   ],
@@ -516,8 +516,8 @@
     {
       "base_talent": "Can attack Slumbering enemies. When attacking Slumbering enemies, ignore 50% DEF",
       "module_branch": "SIE-X",
-      "stage_2_talent_upgrade": "Can attack Slumbering enemies. When attacking Slumbering enemies, ignore 55% DEF",
-      "stage_3_talent_upgrade": "Can attack Slumbering enemies. When attacking Slumbering enemies, ignore 60% DEF",
+      "stage_2_talent_upgrade": "Can attack Slumbering enemies. When attacking Slumbering enemies, ignore **55% DEF**",
+      "stage_3_talent_upgrade": "Can attack Slumbering enemies. When attacking Slumbering enemies, ignore **60% DEF**",
       "total_stat_buffs": "HP +130, ATK +70"
     }
   ],
@@ -525,8 +525,8 @@
     {
       "base_talent": "When an enemy dies within the 8 surrounding tiles, recover 12% (14%) Max HP",
       "module_branch": "CEN-Y",
-      "stage_2_talent_upgrade": "When an enemy dies within the 8 surrounding tiles, recover 14% (16%) Max HP",
-      "stage_3_talent_upgrade": "When an enemy dies within the 8 surrounding tiles, recover 16% (18%) Max HP",
+      "stage_2_talent_upgrade": "When an enemy dies within the 8 surrounding tiles, recover **14% (16%) Max HP**",
+      "stage_3_talent_upgrade": "When an enemy dies within the 8 surrounding tiles, recover **16% (18%) Max HP**",
       "total_stat_buffs": "HP +120, ATK +52"
     }
   ],
@@ -534,8 +534,8 @@
     {
       "base_talent": "Attacks have 25% chance to Bind the enemy for 3 seconds",
       "module_branch": "AMB-X",
-      "stage_2_talent_upgrade": "Attacks have 25% chance to Bind the enemy for 3.5 seconds",
-      "stage_3_talent_upgrade": "Attacks have 28% chance to Bind the enemy for 3.5 seconds",
+      "stage_2_talent_upgrade": "Attacks have **25% chance** to Bind the enemy for **3.5 seconds**",
+      "stage_3_talent_upgrade": "Attacks have **28% chance** to Bind the enemy for 3.5 seconds",
       "total_stat_buffs": "HP +300, ATK +60"
     }
   ],
@@ -543,15 +543,15 @@
     {
       "base_talent": "When blocking enemies, SP recovery speed +0.2 SP/sec",
       "module_branch": "HES-X",
-      "stage_2_talent_upgrade": "When blocking enemies, SP recovery speed +0.4 SP/sec",
-      "stage_3_talent_upgrade": "When blocking enemies, SP recovery speed +0.55 SP/sec",
+      "stage_2_talent_upgrade": "When blocking enemies, SP recovery speed **+0.4 SP/sec**",
+      "stage_3_talent_upgrade": "When blocking enemies, SP recovery speed **+0.55 SP/sec**",
       "total_stat_buffs": "ATK +105, DEF +85"
     },
     {
       "base_talent": "When HP is higher than 50%, attacks deal 115% (117%) damage; When HP is lower than 50%, gain 20% (22%) Shelter effect",
       "module_branch": "HES-Y",
-      "stage_2_talent_upgrade": "When HP is higher than 50%, attacks deal 120% (122%) damage; When HP is lower than 50%, gain 25% (27%) Shelter effect",
-      "stage_3_talent_upgrade": "When HP is higher than 50%, attacks deal 123% (125%) damage; When HP is lower than 50%, gain 28% (30%) Shelter effect",
+      "stage_2_talent_upgrade": "When HP is higher than 50%, attacks deal **120% (122%) damage**; When HP is lower than 50%, gain **25% (27%) Shelter effect**",
+      "stage_3_talent_upgrade": "When HP is higher than 50%, attacks deal **123% (125%) damage**; When HP is lower than 50%, gain **28% (30%) Shelter effect**",
       "total_stat_buffs": "ATK +85, DEF +110"
     }
   ],
@@ -559,8 +559,8 @@
     {
       "base_talent": "When attacking, 20% (23%) chance to deal an additional hit. When skill is activated, this chance increases by 5% for every 1 ammo spent. The increased chance resets when the skill ends",
       "module_branch": "REA-X",
-      "stage_2_talent_upgrade": "When attacking, 30% (33%) chance to deal an additional hit that ignores 150 DEF. When skill is activated, this chance increases by 5% for every 1 ammo spent. The increased chance resets when the skill ends",
-      "stage_3_talent_upgrade": "When attacking, 35% (38%) chance to deal an additional hit that ignores 300 DEF. When skill is activated, this chance increases by 5% for every 1 ammo spent. The increased chance resets when the skill ends",
+      "stage_2_talent_upgrade": "When attacking, **30% (33%) chance** to deal an additional hit **that ignores 150 DEF**. When skill is activated, this chance increases by 5% for every 1 ammo spent. The increased chance resets when the skill ends",
+      "stage_3_talent_upgrade": "When attacking, **35% (38%) chance** to deal an additional hit **that ignores 300 DEF**. When skill is activated, this chance increases by 5% for every 1 ammo spent. The increased chance resets when the skill ends",
       "total_stat_buffs": "ATK +60, DEF +40, ASPD +7"
     }
   ],
@@ -568,8 +568,8 @@
     {
       "base_talent": "ATK +6% (8%), Max HP +10% (13%). When deployed, grant the same effect to a random ally",
       "module_branch": "MAR-X",
-      "stage_2_talent_upgrade": "ATK +6% (8%), Max HP +10% (13%). When deployed, grant the same effect to two random allies",
-      "stage_3_talent_upgrade": "ATK +8% (10%), Max HP +14% (17%). When deployed, grant the same effect to two random allies",
+      "stage_2_talent_upgrade": "ATK +6% (8%), Max HP +10% (13%). When deployed, grant the same effect to **two random allies**",
+      "stage_3_talent_upgrade": "**ATK +8% (10%)**, **Max HP +14% (17%)**. When deployed, grant the same effect to two random allies",
       "total_stat_buffs": "HP +190, ATK +41"
     }
   ],
@@ -577,8 +577,8 @@
     {
       "base_talent": "When deployed, all ally [Caster] operators gain ATK +14% (16%)",
       "module_branch": "CCR-X",
-      "stage_2_talent_upgrade": "When in squad, all ally [Caster] operators gain ATK +18% (20%)",
-      "stage_3_talent_upgrade": "When in squad, all ally [Caster] operators gain ATK +22% (24%)",
+      "stage_2_talent_upgrade": "**When in squad**, all ally [Caster] operators gain **ATK +18% (20%)**",
+      "stage_3_talent_upgrade": "When in squad, all ally [Caster] operators gain **ATK +22% (24%)**",
       "total_stat_buffs": "HP +180, ATK +65"
     }
   ],
@@ -586,15 +586,15 @@
     {
       "base_talent": "When no damage is taken within 10 seconds, ATK +15% (18%)",
       "module_branch": "DEA-X",
-      "stage_2_talent_upgrade": "When no damage is taken within 8 seconds, ATK +20% (23%)",
-      "stage_3_talent_upgrade": "When no damage is taken within 6 seconds, ATK +22% (25%)",
+      "stage_2_talent_upgrade": "When no damage is taken within **8 seconds** **ATK +20% (23%)**",
+      "stage_3_talent_upgrade": "When no damage is taken within **6 seconds**, **ATK +22% (25%)**",
       "total_stat_buffs": "ATK +100, ASPD +7"
     },
     {
       "base_talent": "When no damage is taken within 10 seconds, ATK +15% (18%)",
       "module_branch": "DEA-Y",
-      "stage_2_talent_upgrade": "When no damage is taken within 5 seconds, ATK +15% (18%) and Attack Speed +4",
-      "stage_3_talent_upgrade": "When no damage is taken within 3 seconds, ATK +15% (18%) and Attack Speed +7",
+      "stage_2_talent_upgrade": "When no damage is taken within **5 seconds**, ATK +15% (18%) **and Attack Speed +4**",
+      "stage_3_talent_upgrade": "When no damage is taken within **3 seconds**, ATK +15% (18%) **and Attack Speed +7**",
       "total_stat_buffs": "HP +120, ATK +120"
     }
   ],
@@ -602,8 +602,8 @@
     {
       "base_talent": "Gain 40% (43%) Physical Evasion",
       "module_branch": "PUS-Y",
-      "stage_2_talent_upgrade": "Gain 47% (50%) Physical Evasion",
-      "stage_3_talent_upgrade": "Gain 52% (55%) Physical Evasion",
+      "stage_2_talent_upgrade": "Gain **47% (50%)** Physical Evasion",
+      "stage_3_talent_upgrade": "Gain **52% (55%)** Physical Evasion",
       "total_stat_buffs": "HP +170, ATK +35, DEF +35"
     }
   ],
@@ -611,15 +611,15 @@
     {
       "base_talent": "When skill is not active, Attack Speed +27 (30)",
       "module_branch": "ART-Y",
-      "stage_2_talent_upgrade": "When skill is not active, Attack Speed +27 (30). While skill is active, Attack Speed +5",
-      "stage_3_talent_upgrade": "When skill is not active, Attack Speed +30 (33). While skill is active, Attack Speed +10",
+      "stage_2_talent_upgrade": "When skill is not active, Attack Speed +27 (30). **While skill is active, Attack Speed +5**",
+      "stage_3_talent_upgrade": "When skill is not active, Attack Speed **+30 (33)**. **While skill is active, Attack Speed +10**",
       "total_stat_buffs": "ATK +70, DEF +43"
     },
     {
       "base_talent": "Fiammetta constantly loses HP (this effect will not reduce HP to 0); When HP is higher than 50%, gain Vigor effect of +25% ATK; When HP is higher than 80%, the Vigor effect is doubled",
       "module_branch": "ART-X",
-      "stage_2_talent_upgrade": "Fiammetta constantly loses HP (this effect will not reduce HP below 30%); When HP is higher than 50%, gain Vigor effect of +28% ATK; When HP is higher than 80%, the Vigor effect is doubled",
-      "stage_3_talent_upgrade": "Fiammetta constantly loses HP (this effect will not reduce HP below 50%); When HP is higher than 50%, gain Vigor effect of +30% ATK; When HP is higher than 80%, the Vigor effect is doubled",
+      "stage_2_talent_upgrade": "Fiammetta constantly loses HP (this effect will not reduce HP **below 30%**); When HP is higher than 50%, gain Vigor effect of **+28% ATK**; When HP is higher than 80%, the Vigor effect is doubled",
+      "stage_3_talent_upgrade": "Fiammetta constantly loses HP (this effect will not reduce HP below **50%**); When HP is higher than 50%, gain Vigor effect of **+30% ATK**; When HP is higher than 80%, the Vigor effect is doubled",
       "total_stat_buffs": "ATK +85, DEF +32"
     }
   ],
@@ -627,8 +627,8 @@
     {
       "base_talent": "When attacking enemies wielding ranged weapons, increase ATK to 140% (145%)",
       "module_branch": "DEA-Y",
-      "stage_2_talent_upgrade": "When attacking enemies wielding ranged weapons or enemies that do not attack, increase ATK to 145% (150%)",
-      "stage_3_talent_upgrade": "When attacking enemies wielding ranged weapons or enemies that do not attack, increase ATK to 150% (155%)",
+      "stage_2_talent_upgrade": "When attacking enemies wielding ranged weapons **or enemies that do not attack**, increase ATK to **145% (150%)**",
+      "stage_3_talent_upgrade": "When attacking enemies wielding ranged weapons or enemies that do not attack, increase ATK to **150% (155%)**",
       "total_stat_buffs": "HP +130, ATK +87"
     }
   ],
@@ -636,8 +636,8 @@
     {
       "base_talent": "When not blocking enemies, ATK +12% (14%). When blocking enemies, DEF +12% (14%)",
       "module_branch": "FOR-X",
-      "stage_2_talent_upgrade": "When not blocking enemies, ATK +16% (18%). When blocking enemies, DEF +16% (18%)",
-      "stage_3_talent_upgrade": "When not blocking enemies, ATK +18% (20%). When blocking enemies, DEF +18% (20%)",
+      "stage_2_talent_upgrade": "When not blocking enemies, **ATK +16% (18%)**. When blocking enemies, **DEF +16% (18%)**",
+      "stage_3_talent_upgrade": "When not blocking enemies, **ATK +18% (20%)**. When blocking enemies, **DEF +18% (20%)**",
       "total_stat_buffs": "ATK +58, DEF +58"
     }
   ],
@@ -645,8 +645,8 @@
     {
       "base_talent": " Increase Max HP by 40 (50) for every enemy killed, stacks up to 30 layers",
       "module_branch": "DRE-Y",
-      "stage_2_talent_upgrade": "Increases Max HP by 60 (70) for every enemy defeated in the 4 surrounding tiles, stacks up to 30 layers",
-      "stage_3_talent_upgrade": "Increases Max HP by 70 (80) for every enemy defeated in the 4 surrounding tiles, stacks up to 30 layers",
+      "stage_2_talent_upgrade": "Increases Max HP by **60 (70)** for every enemy **defeated in the 4 surrounding tiles**, stacks up to 30 layers",
+      "stage_3_talent_upgrade": "Increases Max HP by **70 (80)** for every enemy defeated in the 4 surrounding tiles, stacks up to 30 layers",
       "total_stat_buffs": "HP +430, ASPD +5"
     }
   ],
@@ -654,8 +654,8 @@
     {
       "base_talent": "After evading, the next attack hits twice and attacks multiple enemies equal to Block count",
       "module_branch": "SOL-Y",
-      "stage_2_talent_upgrade": "After evading, the next attack's ATK is increased to 115%, hits twice and attacks multiple enemies equal to Block count",
-      "stage_3_talent_upgrade": "After evading, the next attack's ATK is increased to 120%, hits twice and attacks multiple enemies equal to Block count",
+      "stage_2_talent_upgrade": "After evading, the next attack's **ATK is increased to 115%**, hits twice and attacks multiple enemies equal to Block count",
+      "stage_3_talent_upgrade": "After evading, the next attack's ATK is increased to **120%**, hits twice and attacks multiple enemies equal to Block count",
       "total_stat_buffs": "HP +300, ATK +45"
     },
     {
