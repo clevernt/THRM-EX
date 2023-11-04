@@ -132,7 +132,7 @@ async def arkrec(ctx):
             sep = ", "
             embed = hikari.Embed(title=f"{stage_code} | {'Challenge Mode' if operation_type == 'challenge' else 'Normal Mode'}", description=sep.join(map(str, categories_en)), timestamp=parsed_timestamp, url=clear_link)
             embed.set_author(name=raider, icon=raider_image)
-            embed.add_field("Squad", sep.join(map(str, operators_list_en)), inline=True)
+            embed.add_field(f"Squad - {operator_count} Operators", sep.join(map(str, operators_list_en)), inline=True)
             embeds.append(embed)
 
         else:
