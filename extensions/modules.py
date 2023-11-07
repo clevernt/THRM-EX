@@ -2,23 +2,25 @@ import lightbulb
 import hikari
 import json
 
-from difflib import get_close_matches
 from typing import Sequence, Union
 from lightbulb.utils import pag, nav
 
 bot = lightbulb.BotApp
 plugin = lightbulb.Plugin("modules")
 
+EMBED_COLOR = 16448250
+
 range_mods = {
     "SPC-X": "https://uwu.so/neuvium/new5soyo92",
-    "RIN-X": "https://uwu.so/neuvium/nesDf7uFTC"
+    "RIN-X": "https://uwu.so/neuvium/nesDf7uFTC",
 }
 
-operators_with_modules = set()
+operators_with_modules = {}
 with open("./data/modules.json", "r") as f:
     data = json.load(f)
     for operator in data:
-        operators_with_modules.add(operator.lower())
+        operators_with_modules[operator.lower()] = operator
+
 
 def get_modules(operator_name):
     modules_list = []
@@ -27,7 +29,8 @@ def get_modules(operator_name):
         for operator, modules in modules_data.items():
             if operator.lower() == operator_name.lower():
                 modules_list.extend(modules)
-    return modules_list   
+    return modules_list
+
 
 def get_branch_trait(branch_code):
     with open("./data/branches.json") as f:
@@ -35,10 +38,12 @@ def get_branch_trait(branch_code):
 
         return branches_data[branch_code.upper()]
 
+
 def get_branch_icon(branch_code):
     branch_icon_url = f"https://raw.githubusercontent.com/Aceship/Arknight-Images/main/equip/type/{branch_code}.png"
 
     return branch_icon_url
+
 
 def get_operator_avatar(operator):
     with open("./data/operators.json", "r", encoding="utf-8") as f:
@@ -46,9 +51,10 @@ def get_operator_avatar(operator):
         for operator_name, operator_data in data.items():
             if operator_name.lower() == operator.lower():
                 operator_id = operator_data["id"]
-        
+
     avatar_url = f"https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avatars/{operator_id}.png"
     return avatar_url
+
 
 @plugin.command
 @lightbulb.option("operator", "Operator", required=True, autocomplete=True)
@@ -56,29 +62,44 @@ def get_operator_avatar(operator):
 @lightbulb.implements(lightbulb.SlashCommand)
 async def module(ctx):
     paginator = pag.EmbedPaginator()
-    requested_operator = ctx.options.operator.strip()
-    if requested_operator.lower() not in operators_with_modules:
+    requested_operator = ctx.options.operator.strip().lower()
+    if requested_operator not in operators_with_modules:
         await ctx.respond(
             hikari.Embed(
                 description=f"`{requested_operator}` is either an invalid operator or does not have a module yet"
-            )
+            ),
+            flags=hikari.MessageFlag.EPHEMERAL,
         )
+        return
     avatar_url = get_operator_avatar(requested_operator)
     modules_list = get_modules(requested_operator)
     embeds = []
     for module in modules_list:
         trait_upgrade = get_branch_trait(module["module_branch"])
 
-        embed = hikari.Embed(title=requested_operator.title(), description=trait_upgrade, color=16448250)
-        embed.set_author(name=module["module_branch"], icon=f"https://raw.githubusercontent.com/Aceship/Arknight-Images/main/equip/type/{module['module_branch'].lower()}.png")
+        embed = hikari.Embed(
+            title=operators_with_modules[requested_operator],
+            description=trait_upgrade,
+            color=EMBED_COLOR,
+        )
+        embed.set_author(
+            name=module["module_branch"],
+            icon=f"https://raw.githubusercontent.com/Aceship/Arknight-Images/main/equip/type/{module['module_branch'].lower()}.png",
+        )
 
         if module["base_talent"] != "N/A":
             embed.add_field("Base Talent", module["base_talent"])
-            embed.add_field("Stage 2 - Talent Upgrade", module["stage_2_talent_upgrade"])
-            embed.add_field("Stage 3 - Talent Upgrade", module["stage_3_talent_upgrade"])
+            embed.add_field(
+                "Stage 2 - Talent Upgrade", module["stage_2_talent_upgrade"]
+            )
+            embed.add_field(
+                "Stage 3 - Talent Upgrade", module["stage_3_talent_upgrade"]
+            )
         else:
             embed.add_field("Stage 2 - New Talent", module["stage_2_talent_upgrade"])
-            embed.add_field("Stage 3 - Talent Upgrade", module["stage_3_talent_upgrade"])
+            embed.add_field(
+                "Stage 3 - Talent Upgrade", module["stage_3_talent_upgrade"]
+            )
 
         embed.set_thumbnail(avatar_url)
 
@@ -97,7 +118,6 @@ async def module(ctx):
         paginator.add_line(embed)
     navigator = nav.ButtonNavigator(embeds)
     await navigator.run(ctx)
-    
 
 
 @module.autocomplete("operator")
@@ -105,9 +125,17 @@ async def module_autocomplete(
     opt: hikari.AutocompleteInteractionOption, inter: hikari.AutocompleteInteraction
 ) -> Union[str, Sequence[hikari.CommandChoice]]:
     user_input = opt.value.lower()
-    matching_operators = [operator for operator in operators_with_modules if user_input in operator.lower()]
+    matching_operators = [
+        operator
+        for operator in operators_with_modules
+        if user_input in operator.lower()
+    ]
     matching_operators = matching_operators[:25]
-    return [hikari.CommandChoice(name=operator, value=operator) for operator in matching_operators]
+    return [
+        hikari.CommandChoice(name=operator, value=operator)
+        for operator in matching_operators
+    ]
+
 
 def load(bot):
     bot.add_plugin(plugin)
