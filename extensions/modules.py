@@ -9,6 +9,11 @@ from lightbulb.utils import pag, nav
 bot = lightbulb.BotApp
 plugin = lightbulb.Plugin("modules")
 
+range_mods = {
+    "SPC-X": "https://uwu.so/neuvium/new5soyo92",
+    "RIN-X": "https://uwu.so/neuvium/nesDf7uFTC"
+}
+
 operators_with_modules = set()
 with open("./data/modules.json", "r") as f:
     data = json.load(f)
@@ -63,8 +68,10 @@ async def module(ctx):
     embeds = []
     for module in modules_list:
         trait_upgrade = get_branch_trait(module["module_branch"])
+
         embed = hikari.Embed(title=requested_operator.title(), description=trait_upgrade, color=16448250)
         embed.set_author(name=module["module_branch"], icon=f"https://raw.githubusercontent.com/Aceship/Arknight-Images/main/equip/type/{module['module_branch'].lower()}.png")
+
         if module["base_talent"] != "N/A":
             embed.add_field("Base Talent", module["base_talent"])
             embed.add_field("Stage 2 - Talent Upgrade", module["stage_2_talent_upgrade"])
@@ -72,18 +79,21 @@ async def module(ctx):
         else:
             embed.add_field("Stage 2 - New Talent", module["stage_2_talent_upgrade"])
             embed.add_field("Stage 3 - Talent Upgrade", module["stage_3_talent_upgrade"])
-        embed.add_field(module["total_stat_buffs"], "~~why can't I leave this empty~~")
+
         embed.set_thumbnail(avatar_url)
-        if module["module_branch"] == "SPC-X":
-            embed.add_field("Increased Attack Range:", "\u200b")
-            embed.set_image("https://i.postimg.cc/w75TMGX9/SPC-X.png")
-        if module["module_branch"] == "RIN-X":
-            embed.add_field("Increased Attack Range:", "\u200b")
-            embed.set_image("https://i.postimg.cc/crGLsS8D/RIN-X.png")
-        if requested_operator.lower() == "tomimi":
-            embed.add_field("Slightly Reduced Attack Range:", "\u200b")
-            embed.set_image("https://i.postimg.cc/TKR2DJ0g/Tomimi.png")
+
+        if module["module_branch"] in range_mods:
+            embed.add_field(module["total_stat_buffs"], "New Attack Range:")
+            embed.set_image(range_mods[module["module_branch"]])
+        elif requested_operator.lower() == "tomimi":
+            embed.add_field(module["total_stat_buffs"], "New Attack Range:")
+            embed.set_image("https://uwu.so/neuvium/neyKuxn8jH")
+        else:
+            embed.add_field(module["total_stat_buffs"], "\u200b")
+
+        embed.set_footer("DM @neuvium for any errors/feedback")
         embeds.append(embed)
+
         paginator.add_line(embed)
     navigator = nav.ButtonNavigator(embeds)
     await navigator.run(ctx)

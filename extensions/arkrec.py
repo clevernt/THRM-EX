@@ -63,13 +63,7 @@ def filter_and_translate(operators_list, operator_names):
 
 @plugin.command
 @lightbulb.option("category", "Category", required=True, autocomplete=True)
-@lightbulb.option(
-    "mode",
-    "Mode",
-    choices=["Normal Mode", "Challenge Mode"],
-    required=False,
-    default=None,
-)
+@lightbulb.option("mode", "Mode", choices=["Normal Mode", "Challenge Mode"], required=False, default=None,)
 @lightbulb.option("stage", "Stage Name", required=True)
 @lightbulb.command("arkrec", "Finds clears from arkrec", auto_defer=True)
 @lightbulb.implements(lightbulb.SlashCommand)
@@ -98,7 +92,6 @@ async def arkrec(ctx):
         "Content-Type": "application/json",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0",
     }
-
     try:
         response = requests.request("POST", ARKREC_URL, json=payload, headers=headers, timeout=30)
         response.raise_for_status()
@@ -156,7 +149,7 @@ async def arkrec_autocomplete(
     user_input = opt.value.lower()
     matching_categories = [category for category in categories_en if user_input in category.lower()]
     matching_categories = matching_categories[:25]
-    return [hikari.CommandChoice(name=category, value=category) for category in matching_categories]
+    return [hikari.CommandChoice(name=category.title(), value=category.title()) for category in matching_categories]
 
 
 def load(bot):
