@@ -1,7 +1,5 @@
 __pycache__/
 .vscode/
-extensions/__pycache__
 .env
 test.py 
-rewrite.py
 .venv/
