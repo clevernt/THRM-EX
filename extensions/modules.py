@@ -66,7 +66,7 @@ async def module(ctx):
         else:
             embed.add_field(module["total_stat_buffs"], "\u200b")
 
-        embed.set_footer("DM @neuvium for any errors/feedback")
+        embed.set_footer("DM @selvuen for any errors/feedback")
         embeds.append(embed)
 
         paginator.add_line(embed)
