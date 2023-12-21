@@ -55,10 +55,11 @@
   "CCR-Y": "Gain 1 SP when normal attacks hit an [Elite] or [Leader] enemy",
   "PUS-X": "Refund 50% of current DP Cost when deployed on Ranged tiles",
   "PUS-Y": "When blocking 2 or more enemies, increases Push strength by 1",
-  "BLA-X": "Damage dealt is increased based on target distance, up to 110%",
+  "BLA-X": "Damage dealt is increased based on target distance, up to 110%",  
   "PLX-X": "Gain ~~+200%~~ -> **+215%** DEF & ~~+20~~ -> **25** RES when skill is inactive. **When skill is active, retain a portion of that buff (+100% DEF & +10 RES)**",
+  "PLX-Y": "DMG increased based on amount of enemies in range, up to 15% increase\n3% dmg_scale per enemy, up to 5 enemies",
   "TRP-Y": "20% chance to deploy a trap that deals 2x damage",
-  "UMD-X": "Attacks inflict 10% [Weaken] for 2 seconds",
+  "UMD-X": "Attacks inflict 10% Enfeeble for 2 seconds",
   "BOM-X": "Attacks deals physical splash damage ~~Twice~~ -> **Thrice** to Ground enemies in a small area",
   "CRA-X": "Can hold 1 more Support Device.\nSupport Device DP Cost is reduced",
   "GEE-X": "When HP is higher than 80%, gain +0.25 SP/s",
@@ -68,5 +69,9 @@
   "REA-X": "Recovers ~~50~~ -> **60** HP with every enemy hit (up to Block count)",
   "BLS-X": "When skill is active, attacks restore the HP of allies (heal amount is equal to ~~75%~~ -> **100%** of ATK)",
   "FOR-X": "ATK increased to 110% when attacking blocked enemies",
-  "UNY-X": "Reduce damage taken from enemies blocked by self by 15%"
+  "UNY-X": "Reduce damage taken from enemies blocked by self by 15%",
+  "FUN-X": "Drone starts at ~~20%~~ -> **35%** atk_scale, max stacks ~~6~~ -> **5**",
+  "FUN-Y": "Drone damage increased when attacking the same enemy (Up to ~~110%~~ -> **120%** of the operator's Attack)",
+  "INC-X": "Attacks deal Arts Damage and heal the HP of an ally within Attack Range for ~~50%~~ -> **60%** of the damage dealt",
+  "MER-Y": "Gain 4% ATK each time DP is consumed, up to 5 stacks"
 }
