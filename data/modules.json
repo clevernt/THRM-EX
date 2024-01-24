@@ -354,6 +354,15 @@
       "total_stat_buffs": "ATK +42, DEF +35"
     }
   ],
+  "Click": [
+    {
+      "base_talent": "Self and Float Unit gain Attack Speed +12",
+      "module_branch": "FUN-Y",
+      "stage_2_talent_upgrade": "Self and Float Unit gain Attack Speed **+15**",
+      "stage_3_talent_upgrade": "Self and Float Unit gain Attack Speed **+18**",
+      "total_stat_buffs": "ATK +25, DEF +15"
+    }
+  ],
   "Cliffheart": [
     {
       "base_talent": "When not blocking any enemies, ATK and DEF +12% (14%)",
@@ -424,6 +433,15 @@
       "stage_2_talent_upgrade": "Can summon 4 tentacles to assist in battle, **Tentacle Max HP +10%**",
       "stage_3_talent_upgrade": "Can summon 4 tentacles to assist in battle, **Tentacle Max HP +15%**",
       "total_stat_buffs": "HP +115, ATK +35"
+    }
+  ],
+  "Degenbrecher": [
+    {
+      "base_talent": "Attacks have 10% chance to deal 160% (165%) damage and Disarm the target for 5 seconds",
+      "module_branch": "SWO-X",
+      "stage_2_talent_upgrade": "Attacks have 10% chance to deal **165% (170%)** damage and Disarm the target for 5 seconds",
+      "stage_3_talent_upgrade": "Attacks have 10% chance to deal **170% (175%)** damage and Disarm the target for 5 seconds",
+      "total_stat_buffs": "HP +120, ATK +50, DEF +50"
     }
   ],
   "Delphine": [
@@ -589,6 +607,15 @@
       "total_stat_buffs": "HP +180, ATK +65"
     }
   ],
+  "FEater": [
+    {
+      "base_talent": "Gain 40% (43%) Physical Dodge",
+      "module_branch": "PUS-Y",
+      "stage_2_talent_upgrade": "Gain **47% (50%)** Physical Dodge",
+      "stage_3_talent_upgrade": "Gain **52% (55%)** Physical Dodge",
+      "total_stat_buffs": "HP +170, ATK +35, DEF +35"
+    }
+  ],
   "Fartooth": [
     {
       "base_talent": "When no damage is taken within 10 seconds, ATK +15% (18%)",
@@ -603,15 +630,6 @@
       "stage_2_talent_upgrade": "When no damage is taken within **5 seconds**, ATK +15% (18%) **and Attack Speed +4**",
       "stage_3_talent_upgrade": "When no damage is taken within **3 seconds**, ATK +15% (18%) **and Attack Speed +7**",
       "total_stat_buffs": "HP +120, ATK +120"
-    }
-  ],
-  "FEater": [
-    {
-      "base_talent": "Gain 40% (43%) Physical Dodge",
-      "module_branch": "PUS-Y",
-      "stage_2_talent_upgrade": "Gain **47% (50%)** Physical Dodge",
-      "stage_3_talent_upgrade": "Gain **52% (55%)** Physical Dodge",
-      "total_stat_buffs": "HP +170, ATK +35, DEF +35"
     }
   ],
   "Fiammetta": [
@@ -754,6 +772,15 @@
       "total_stat_buffs": "HP +145, ATK +25, DEF +30"
     }
   ],
+  "Goldenglow": [
+    {
+      "base_talent": "When skill is active, Float Units have 10% chance to self-destruct when attacking (will return to the operator's side), dealing 300% (315%) Arts damage to enemies in a small area",
+      "module_branch": "FUN-X",
+      "stage_2_talent_upgrade": "When skill is active, Float Units have 10% chance to self-destruct when attacking (will return to the operator's side), dealing **340% (355%)** Arts damage to enemies in a small area",
+      "stage_3_talent_upgrade": "When skill is active, Float Units have 10% chance to self-destruct when attacking (will return to the operator's side), dealing **360% (375%)** Arts damage to enemies in a small area",
+      "total_stat_buffs": "ATK +38, HP +125"
+    }
+  ],
   "Grani": [
     {
       "base_talent": "When deployed, all [Vanguard] operators gain 20% (25%) Physical Dodge",
@@ -849,6 +876,15 @@
       "stage_2_talent_upgrade": "When not blocking enemies **or when HP is below 30%**, recover **70 (80)** HP every second",
       "stage_3_talent_upgrade": "When not blocking enemies or when HP is below 30%, recover **80 (90)** HP every second",
       "total_stat_buffs": "ATK +90, DEF +60"
+    }
+  ],
+  "Hibiscus the Purifier": [
+    {
+      "base_talent": "Attacks inflict 12% (14%) Arts Fragility effect to enemies for 5 seconds",
+      "module_branch": "INC-X",
+      "stage_2_talent_upgrade": "Attacks inflict **17% (19%)** Arts Fragility effect to enemies for 5 seconds",
+      "stage_3_talent_upgrade": "Attacks inflict **20% (22%)** Arts Fragility effect to enemies for 5 seconds",
+      "total_stat_buffs": "HP +140, ATK +40"
     }
   ],
   "Highmore": [
@@ -1043,6 +1079,15 @@
       "stage_2_talent_upgrade": "ATK **+14% (17%)** during skill duration and for 10 seconds after skill ends, **additionaly gain 3% ATK during the skill**",
       "stage_3_talent_upgrade": "ATK **+15% (18%)** during skill duration and for 10 seconds after skill ends, additionaly gain **5%** ATK during the skill",
       "total_stat_buffs": "HP +123, ATK +48, DEF +28"
+    }
+  ],
+  "Kjera": [
+    {
+      "base_talent": "ATK +10% (13%). If there are 2 or more ground tiles within Attack Range, ATK +16% (19%) instead",
+      "module_branch": "FUN-Y",
+      "stage_2_talent_upgrade": "ATK **+15% (18%)**. If there are 2 or more ground tiles within Attack Range, ATK **+21% (24%)** instead",
+      "stage_3_talent_upgrade": "ATK **+18% (21%)**. If there are 2 or more ground tiles within Attack Range, ATK **+24% (27%)** instead",
+      "total_stat_buffs": "HP +102, ATK +28"
     }
   ],
   "Kroos the Keen Glint": [
@@ -1244,6 +1289,15 @@
       "stage_2_talent_upgrade": "When attacking or using skills, **40%** chance to increase ATK by 60%",
       "stage_3_talent_upgrade": "When attacking or using skills, **50%** chance to increase ATK by 60%",
       "total_stat_buffs": "HP +180, ATK +65"
+    }
+  ],
+  "Minimalist": [
+    {
+      "base_talent": "When attacking, 25% (30%) chance to deal 150% damage",
+      "module_branch": "FUN-Y",
+      "stage_2_talent_upgrade": "When attacking, **30% (35%)** chance to deal **155%** damage",
+      "stage_3_talent_upgrade": "When attacking, 30% (35%) chance to deal **160%** damage",
+      "total_stat_buffs": "HP +100, ATK +30"
     }
   ],
   "Mint": [
@@ -1594,6 +1648,15 @@
       "total_stat_buffs": "HP +180, ATK +65"
     }
   ],
+  "Reed the Flame Shadow": [
+    {
+      "base_talent": "When healing other allies, Reed receives 50% (55%) of the amount healed",
+      "module_branch": "INC-X",
+      "stage_2_talent_upgrade": "When healing other allies, **healing amount is increased by 3%** and Reed receives **55% (60%)** of the amount healed",
+      "stage_3_talent_upgrade": "When healing other allies, healing amount is increased by **5%** and Reed receives **60% (65%)** of the amount healed",
+      "total_stat_buffs": "HP +160, ATK +50"
+    }
+  ],
   "Roberta": [
     {
       "base_talent": "Carries 3 Stylers (can only deploy 3 together). Stylers grant DEF +30% (33%) and 2 Shields to a melee unit (lasts for 25 seconds, DEF increase does not stack)",
@@ -1610,6 +1673,15 @@
       "stage_2_talent_upgrade": "When attacked, gain Camouflage for 4 seconds",
       "stage_3_talent_upgrade": "When attacked, gain Camouflage for **6** seconds+",
       "total_stat_buffs": "HP +185, ATK +41"
+    }
+  ],
+  "Rockrock": [
+    {
+      "base_talent": "When deployed, gain ATK +4% (5%) every 15 seconds, stacks up to 4 layers",
+      "module_branch": "FUN-X",
+      "stage_2_talent_upgrade": "When deployed, gain ATK +4% (5%) every **10** seconds, stacks up to 4 layers",
+      "stage_3_talent_upgrade": "When deployed, gain ATK +4% (5%) every **10** seconds, stacks up to 4 layers. **When fully stacked, gain ASPD +5**",
+      "total_stat_buffs": "HP +80, ATK +18, DEF +16"
     }
   ],
   "Rope": [
@@ -2028,6 +2100,15 @@
       "total_stat_buffs": "HP +240, ATK +60"
     }
   ],
+  "Vendela": [
+    {
+      "base_talent": "Increase healing received by the ally with the highest Max HP within Attack Range by 15% (18%)",
+      "module_branch": "INC-X",
+      "stage_2_talent_upgrade": "Increase healing received by the ally with the highest Max HP within Attack Range by **20% (23%)**",
+      "stage_3_talent_upgrade": "Increase healing received by the ally with the highest Max HP within Attack Range by **23% (26%)**",
+      "total_stat_buffs": "HP +143, ATK +38"
+    }
+  ],
   "Verdant": [
     {
       "base_talent": "Substitute recovers 3.5% (4%) HP/s",
@@ -2157,87 +2238,6 @@
       "stage_2_talent_upgrade": "Deployment cost of all [Vanguard] operators in the same team -1, **and Zima's own Deployment Cost -1**",
       "stage_3_talent_upgrade": "Deployment cost of all [Vanguard] operators in the same team -1, **and all [Pioneer] operators' Deployment Costs -1**",
       "total_stat_buffs": "HP +260, DEF +37"
-    }
-  ],
-  "Goldenglow": [
-    {
-      "base_talent": "When skill is active, Float Units have 10% chance to self-destruct when attacking (will return to the operator's side), dealing 300% (315%) Arts damage to enemies in a small area",
-      "module_branch": "FUN-X",
-      "stage_2_talent_upgrade": "When skill is active, Float Units have 10% chance to self-destruct when attacking (will return to the operator's side), dealing **340% (355%)** Arts damage to enemies in a small area",
-      "stage_3_talent_upgrade": "When skill is active, Float Units have 10% chance to self-destruct when attacking (will return to the operator's side), dealing **360% (375%)** Arts damage to enemies in a small area",
-      "total_stat_buffs": "ATK +38, HP +125"
-    }
-  ],
-  "Kjera": [
-    {
-      "base_talent": "ATK +10% (13%). If there are 2 or more ground tiles within Attack Range, ATK +16% (19%) instead",
-      "module_branch": "FUN-Y",
-      "stage_2_talent_upgrade": "ATK **+15% (18%)**. If there are 2 or more ground tiles within Attack Range, ATK **+21% (24%)** instead",
-      "stage_3_talent_upgrade": "ATK **+18% (21%)**. If there are 2 or more ground tiles within Attack Range, ATK **+24% (27%)** instead",
-      "total_stat_buffs": "HP +102, ATK +28"
-    }
-  ],
-  "Rockrock": [
-    {
-      "base_talent": "When deployed, gain ATK +4% (5%) every 15 seconds, stacks up to 4 layers",
-      "module_branch": "FUN-X",
-      "stage_2_talent_upgrade": "When deployed, gain ATK +4% (5%) every **10** seconds, stacks up to 4 layers",
-      "stage_3_talent_upgrade": "When deployed, gain ATK +4% (5%) every **10** seconds, stacks up to 4 layers. **When fully stacked, gain ASPD +5**",
-      "total_stat_buffs": "HP +80, ATK +18, DEF +16"
-    }
-  ],
-  "Minimalist": [
-    {
-      "base_talent": "When attacking, 25% (30%) chance to deal 150% damage",
-      "module_branch": "FUN-Y",
-      "stage_2_talent_upgrade": "When attacking, **30% (35%)** chance to deal **155%** damage",
-      "stage_3_talent_upgrade": "When attacking, 30% (35%) chance to deal **160%** damage",
-      "total_stat_buffs": "HP +100, ATK +30"
-    }
-  ],
-  "Click": [
-    {
-      "base_talent": "Self and Float Unit gain Attack Speed +12",
-      "module_branch": "FUN-Y",
-      "stage_2_talent_upgrade": "Self and Float Unit gain Attack Speed **+15**",
-      "stage_3_talent_upgrade": "Self and Float Unit gain Attack Speed **+18**",
-      "total_stat_buffs": "ATK +25, DEF +15"
-    }
-  ],
-  "Degenbrecher": [
-    {
-      "base_talent": "Attacks have 10% chance to deal 160% (165%) damage and Disarm the target for 5 seconds",
-      "module_branch": "SWO-X",
-      "stage_2_talent_upgrade": "Attacks have 10% chance to deal **165% (170%)** damage and Disarm the target for 5 seconds",
-      "stage_3_talent_upgrade": "Attacks have 10% chance to deal **170% (175%)** damage and Disarm the target for 5 seconds",
-      "total_stat_buffs": "HP +120, ATK +50, DEF +50"
-    }
-  ],
-  "Reed the Flame Shadow": [
-    {
-      "base_talent": "When healing other allies, Reed receives 50% (55%) of the amount healed",
-      "module_branch": "INC-X",
-      "stage_2_talent_upgrade": "When healing other allies, **healing amount is increased by 3%** and Reed receives **55% (60%)** of the amount healed",
-      "stage_3_talent_upgrade": "When healing other allies, healing amount is increased by **5%** and Reed receives **60% (65%)** of the amount healed",
-      "total_stat_buffs": "HP +160, ATK +50"
-    }
-  ],
-  "Hibiscus the Purifier": [
-    {
-      "base_talent": "Attacks inflict 12% (14%) Arts Fragility effect to enemies for 5 seconds",
-      "module_branch": "INC-X",
-      "stage_2_talent_upgrade": "Attacks inflict **17% (19%)** Arts Fragility effect to enemies for 5 seconds",
-      "stage_3_talent_upgrade": "Attacks inflict **20% (22%)** Arts Fragility effect to enemies for 5 seconds",
-      "total_stat_buffs": "HP +140, ATK +40"
-    }
-  ],
-  "Vendela": [
-    {
-      "base_talent": "Increase healing received by the ally with the highest Max HP within Attack Range by 15% (18%)",
-      "module_branch": "INC-X",
-      "stage_2_talent_upgrade": "Increase healing received by the ally with the highest Max HP within Attack Range by **20% (23%)**",
-      "stage_3_talent_upgrade": "Increase healing received by the ally with the highest Max HP within Attack Range by **23% (26%)**",
-      "total_stat_buffs": "HP +143, ATK +38"
     }
   ]
 }
