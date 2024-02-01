@@ -29,7 +29,7 @@
   "Akafuyu": [
     {
       "base_talent": "N/A",
-      "module_branch": "MUS-X",
+      "module_branch": "SBL-X",
       "stage_2_talent_upgrade": "**DEF +8% when blocking enemies**",
       "stage_3_talent_upgrade": "**DEF +12%** when blocking enemies",
       "total_stat_buffs": "ATK +70, DEF +50"
@@ -910,14 +910,14 @@
   "Hellagur": [
     {
       "base_talent": "Increase Attack Speed based on HP lost (up to +100 Attack Speed when 70% HP is lost)",
-      "module_branch": "MUS-X",
+      "module_branch": "SBL-X",
       "stage_2_talent_upgrade": "Increase Attack Speed based on HP lost (up to **+120** Attack Speed when **60%** HP is lost)",
       "stage_3_talent_upgrade": "Increase Attack Speed based on HP lost (up to **+130** Attack Speed when **50%** HP is lost)",
       "total_stat_buffs": "HP +350, ATK +90"
     },
     {
       "base_talent": "When not blocking enemies, recover 60 (70) HP every second",
-      "module_branch": "MUS-Y",
+      "module_branch": "SBL-Y",
       "stage_2_talent_upgrade": "When not blocking enemies **or when HP is below 30%**, recover **70 (80)** HP every second",
       "stage_3_talent_upgrade": "When not blocking enemies or when HP is below 30%, recover **80 (90)** HP every second",
       "total_stat_buffs": "ATK +90, DEF +60"
@@ -1714,7 +1714,7 @@
   "Rathalos S Noir Corne": [
     {
       "base_talent": "When skill is not activated, gain 7% ATK after 5 consecutive attacks (up to 3 layers)",
-      "module_branch": "MUS-X",
+      "module_branch": "SBL-X",
       "stage_2_talent_upgrade": "When skill is not activated, gain **8%** ATK after 5 consecutive attacks (up to 3 layers)",
       "stage_3_talent_upgrade": "When skill is not activated, gain **9%** ATK after 5 consecutive attacks (up to 3 layers)",
       "total_stat_buffs": "HP +500, ATK +36"
@@ -2184,7 +2184,7 @@
   "Utage": [
     {
       "base_talent": "N/A",
-      "module_branch": "MUS-X",
+      "module_branch": "SBL-X",
       "stage_2_talent_upgrade": "When HP is below 50%, gains 3% ATK and DEF",
       "stage_3_talent_upgrade": "When HP is below 50%, gains **4%** ATK and DEF",
       "total_stat_buffs": "HP +240, ATK +60"
@@ -2342,7 +2342,7 @@
   "Zuo Le": [
     {
       "base_talent": "When deployed, gain Berserk effect of up to 50 ASPD and +2 SP/s (reaches the maximum effect at 70% HP lost)",
-      "module_branch": "MUS-X",
+      "module_branch": "SBL-X",
       "stage_2_talent_upgrade": "When deployed, gain Berserk effect of up to **60 ASPD** and **+2.2 SP/s** (reaches the maximum effect at **60% HP lost**)",
       "stage_3_talent_upgrade": "When deployed, gain Berserk effect of up to **70 ASPD** and **+2.3 SP/s** (reaches the maximum effect at **50% HP lost**)",
       "total_stat_buffs": "ATK +90, DEF +60"
