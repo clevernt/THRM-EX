@@ -173,6 +173,15 @@
       "total_stat_buffs": "HP +400, ATK +30, DEF +30"
     }
   ],
+  "Beehunter": [
+    {
+      "base_talent": "When attacking the same target, every attack increases ATK by 5% (6%), stacking up to 5 layers. Changing targets will reset the effect",
+      "module_branch": "FGT-Y",
+      "stage_2_talent_upgrade": "When attacking the same target, every attack increases ATK by **6% (7%)**, stacking up to 5 layers. Changing targets will reset the effect",
+      "stage_3_talent_upgrade": "When attacking the same target, every attack increases ATK by **7% (8%)**, stacking up to 5 layers. Changing targets will reset the effect",
+      "total_stat_buffs": "HP +170, ATK +45"
+    }
+  ],
   "Beeswax": [
     {
       "base_talent": "While skill is not active, recover 4% Max HP every second",
@@ -354,6 +363,15 @@
       "total_stat_buffs": "ATK +42, DEF +35"
     }
   ],
+  "Chongyue": [
+    {
+      "base_talent": "If Chongyue's skill defeats at least 1 enemy, recover 3 SP",
+      "module_branch": "FGT-X",
+      "stage_2_talent_upgrade": "If Chongyue's skill defeats at least 1 enemy, recover **4** SP",
+      "stage_3_talent_upgrade": "If Chongyue's skill defeats at least 1 enemy, recover 4 SP. **if no enemy was defeated, recover 1 SP**",
+      "total_stat_buffs": "HP +260, ATK +45, DEF +30"
+    }
+  ],
   "Click": [
     {
       "base_talent": "Self and Float Unit gain Attack Speed +12",
@@ -424,6 +442,15 @@
       "stage_2_talent_upgrade": "When dealing damage, **30% (33%) chance** to recover 1 additional SP",
       "stage_3_talent_upgrade": "When dealing damage, **33% (36%) chance** to recover 1 additional SP",
       "total_stat_buffs": "HP +150, ATK +65"
+    }
+  ],
+  "Dagda": [
+    {
+      "base_talent": "When attacking, 30% chance to deal 150% damage. When deployed, for every enemy defeated within the 4 tiles adjacent to [Glasgow Group] operators, further increase the damage multiplier by 5% (up to 240%)",
+      "module_branch": "FGT-Y",
+      "stage_2_talent_upgrade": "When attacking, 30% chance to deal **156%** damage. When deployed, for every enemy defeated within the 4 tiles adjacent to [Glasgow Group] operators, further increase the damage multiplier by **6%** (up to 240%)",
+      "stage_3_talent_upgrade": "When attacking, 30% chance to deal **162%** damage. When deployed, for every enemy defeated within the 4 tiles adjacent to [Glasgow Group] operators, further increase the damage multiplier by 6%(up to 240%)",
+      "total_stat_buffs": "HP +200, ATK +50"
     }
   ],
   "Deepcolor": [
@@ -691,6 +718,15 @@
       "total_stat_buffs": "ATK +70, DEF +48"
     }
   ],
+  "Flint": [
+    {
+      "base_talent": "Increase damage dealt to enemies not blocked by self by 40% (45%)",
+      "module_branch": "FGT-Y",
+      "stage_2_talent_upgrade": "Increase damage dealt to enemies not blocked by self by **45% (50%)**",
+      "stage_3_talent_upgrade": "Increase damage dealt to enemies not blocked by self by **55% (60%)**",
+      "total_stat_buffs": "HP +185, ATK +55"
+    }
+  ],
   "Folinic": [
     {
       "base_talent": "Gain Resist. Additionally, damage taken from the natural environment -40% (50%)",
@@ -779,6 +815,15 @@
       "stage_2_talent_upgrade": "When skill is active, Float Units have 10% chance to self-destruct when attacking (will return to the operator's side), dealing **340% (355%)** Arts damage to enemies in a small area",
       "stage_3_talent_upgrade": "When skill is active, Float Units have 10% chance to self-destruct when attacking (will return to the operator's side), dealing **360% (375%)** Arts damage to enemies in a small area",
       "total_stat_buffs": "ATK +38, HP +125"
+    }
+  ],
+  "Grain Buds": [
+    {
+      "base_talent": "ASPD +10 (12). If the target is a [Wild Animal], extend the duration of the Slow effect from Trait (+0.6s)",
+      "module_branch": "DEC-X",
+      "stage_2_talent_upgrade": "**ASPD +12 (14)**. If the target is a [Wild Animal], extend the duration of the Slow effect from Trait (+0.6s)",
+      "stage_3_talent_upgrade": "**ASPD +14 (16)**. If the target is a [Wild Animal], **further** extend the duration of the Slow effect from Trait (+0.8s)",
+      "total_stat_buffs": "HP +120, ATK +41"
     }
   ],
   "Grani": [
@@ -966,6 +1011,15 @@
       "total_stat_buffs": "ATK +70, ASPD +4"
     }
   ],
+  "Indra": [
+    {
+      "base_talent": "Has 30% (33%) chance to evade melee Physical attacks. After a successful evasion, the next attack has ATK +100%",
+      "module_branch": "FGT-Y",
+      "stage_2_talent_upgrade": "Has 30% (33%) chance to evade melee Physical attacks. After a successful evasion, the next attack has **ATK +110%**",
+      "stage_3_talent_upgrade": "Has 30% (33%) chance to evade melee Physical attacks. After a successful evasion, the next attack has **ATK +120%**",
+      "total_stat_buffs": "HP +200, ATK +50"
+    }
+  ],
   "Insider": [
     {
       "base_talent": "After staying in the field for 20 seconds, self ammo capacity is increased by 3, and the ammo capacity of one other [Laterano] operator is increased by 1",
@@ -1000,6 +1054,15 @@
       "stage_2_talent_upgrade": "DEF -35%, however Attack Speed **+21 (24)**. **When skill is active, gain an additional 5 Attack Speed**",
       "stage_3_talent_upgrade": "DEF -35%, however Attack Speed +21 (24). When skill is active, gain an additional **10** Attack Speed",
       "total_stat_buffs": "HP +120, ASPD +5"
+    }
+  ],
+  "Jackie": [
+    {
+      "base_talent": "Gain 30% (33%) Physical Evasion. After a successful evasion, gain Attack Speed +12 for 5 seconds (cannot stack)",
+      "module_branch": "FGT-X",
+      "stage_2_talent_upgrade": "Gain **35% (38%)** Physical Evasion. After a successful evasion, gain Attack Speed +12 for 5 seconds (cannot stack)",
+      "stage_3_talent_upgrade": "Gain **37% (40%)** Physical Evasion. After a successful evasion, gain Attack Speed +12 for 5 seconds (cannot stack)",
+      "total_stat_buffs": "HP +140, ATK +30, DEF +20"
     }
   ],
   "Jaye": [
@@ -1061,6 +1124,15 @@
       "stage_2_talent_upgrade": "Upon appearing, <Substitute> deals **280% (285%)** Arts damage to all enemies within the 8 surrounding tiles",
       "stage_3_talent_upgrade": "Upon appearing, <Substitute> deals **285% (290%)** Arts damage to all enemies within the 8 surrounding tiles",
       "total_stat_buffs": "ATK +65, DEF +40"
+    }
+  ],
+  "Kestrel": [
+    {
+      "base_talent": "In [Tales Within The Sand], when skill is activated, resources carried by self are sent to the inventory",
+      "module_branch": "SOL-Y",
+      "stage_2_talent_upgrade": "In [Tales Within The Sand], **SP recovery speed +0.2 SP/s;** when skill is activated, resources carried by self are sent to the inventory",
+      "stage_3_talent_upgrade": "In [Tales Within The Sand], SP recovery speed **+0.3 SP/s;** when skill is activated, resources carried by self are sent to the inventory",
+      "total_stat_buffs": "HP +180, ATK +30, DEF +20"
     }
   ],
   "Kirara": [
@@ -1341,6 +1413,15 @@
       "stage_2_talent_upgrade": "Movement Speed of enemies within Attack Range **-25% (28%)**; **Movement Speed of enemies outside Attack Range -10% (unaffected by skill)**",
       "stage_3_talent_upgrade": "Movement Speed of enemies within Attack Range **-30% (33%)**; Movement Speed of enemies outside Attack Range **-18%** (unaffected by skill)",
       "total_stat_buffs": "ATK +82, ASPD +7"
+    }
+  ],
+  "Mountain": [
+    {
+      "base_talent": "When attacking, 20% chance to deal 160% (165%) damage and inflict -15% ATK to the enemy for 3 seconds (cannot stack)",
+      "module_branch": "FGT-Y",
+      "stage_2_talent_upgrade": "When attacking, **23%** chance to deal **165% (170%)** damage and inflict -15% ATK to the enemy for 3 seconds (cannot stack)",
+      "stage_3_talent_upgrade": "When attacking, **25%** chance to deal **170% (175%)** damage and inflict -15% ATK to the enemy for 3 seconds (cannot stack)",
+      "total_stat_buffs": "HP +200, ATK +60, DEF +20"
     }
   ],
   "Mr. Nothing": [
@@ -1856,6 +1937,15 @@
       "total_stat_buffs": "HP +160, ATK +30, ASPD +5"
     }
   ],
+  "Shu": [
+    {
+      "base_talent": "When healing allies, plant seeds on the ally's tile and the 4 adjacent tiles, granting the following effects: Recover 70 (75) HP every second and gain 10% (12%) Shelter",
+      "module_branch": "GUA-X",
+      "stage_2_talent_upgrade": "When healing allies, plant seeds on the ally's tile and the 4 adjacent tiles, granting the following effects: Recover **80 (85) HP** every second and gain 10% (12%) Shelter",
+      "stage_3_talent_upgrade": "When healing allies, plant seeds on the ally's tile and the 4 adjacent tiles, granting the following effects: Recover **80 (85) HP** every second and gain 15% (17%) Shelter. **Immediately plant seeds on the deployed tile upon deployment.",
+      "total_stat_buffs": "HP +270, ATK +50, DEF +50"
+    }
+  ],
   "Siege": [
     {
       "base_talent": "When deployed, all [Vanguard] operators gain ATK and DEF +8% (10%)",
@@ -2170,6 +2260,15 @@
       "total_stat_buffs": "HP +95, ATK +65"
     }
   ],
+  "Wanqing": [
+    {
+      "base_talent": "Max HP of operators in the surrounding 8 tiles +5% (6%). If they are facing the same direction as Wanqing, Max HP +9% (11%) instead",
+      "module_branch": "BEA-X",
+      "stage_2_talent_upgrade": "Max HP of operators in the surrounding 8 tiles **+7% (8%)**. If they are facing the same direction as Wanqing, **Max HP +11% (12%)** instead",
+      "stage_3_talent_upgrade": "Max HP of operators in the surrounding 8 tiles **+9% (10%)**. If they are facing the same direction as Wanqing, **Max HP +13% (14%)** instead",
+      "total_stat_buffs": "HP +135, DEF +60"
+    }
+  ],
   "Warfarin": [
     {
       "base_talent": "When an enemy dies within Attack Range, recover 2 SP to self and one random ally within Attack Range",
@@ -2238,6 +2337,15 @@
       "stage_2_talent_upgrade": "Deployment cost of all [Vanguard] operators in the same team -1, **and Zima's own Deployment Cost -1**",
       "stage_3_talent_upgrade": "Deployment cost of all [Vanguard] operators in the same team -1, **and all [Pioneer] operators' Deployment Costs -1**",
       "total_stat_buffs": "HP +260, DEF +37"
+    }
+  ],
+  "Zuo Le": [
+    {
+      "base_talent": "When deployed, gain Berserk effect of up to 50 ASPD and +2 SP/s (reaches the maximum effect at 70% HP lost)",
+      "module_branch": "MUS-X",
+      "stage_2_talent_upgrade": "When deployed, gain Berserk effect of up to **60 ASPD** and **+2.2 SP/s** (reaches the maximum effect at **60% HP lost**)",
+      "stage_3_talent_upgrade": "When deployed, gain Berserk effect of up to **70 ASPD** and **+2.3 SP/s** (reaches the maximum effect at **50% HP lost**)",
+      "total_stat_buffs": "ATK +90, DEF +60"
     }
   ]
 }

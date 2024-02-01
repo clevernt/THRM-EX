@@ -26,6 +26,8 @@
   "DRE-Y": "When defeated, do not retreat. HP restores to full, Max HP -60% and then gain +30 ASPD (Once per deployment)",
   "EXE-X": "Refund 80% of current DP Cost on retreat",
   "EXE-Y": "ATK +10% when there is no ally in the surrounding 4 tiles",
+  "FGT-X": "Gain 15% Physical Dodge",
+  "FGT-Y": "When HP is above 50%, ASPD +10",
   "FOR-X": "When attacking blocked enemies, ATK is increased to 110%",
   "FUN-X": "Drone starts at ~~20%~~ -> **35%** atk_scale, max stacks ~~6~~ -> **5**",
   "FUN-Y": "Drone damage increased when attacking the same enemy (Up to ~~110%~~ -> **120%** of the operator's Attack)",
