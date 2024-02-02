@@ -35,12 +35,12 @@ def get_branch_icon(branch_code):
     return branch_icon_url
 
 
-def get_operator_avatar(operator):
-    with open("./data/operators.json", "r", encoding="utf-8") as f:
-        data = json.load(f)
-        for operator_name, operator_data in data.items():
-            if operator_name.lower() == operator.lower():
-                operator_id = operator_data["id"]
-
-    avatar_url = f"https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avatars/{operator_id}.png"
-    return avatar_url
+# def get_operator_avatar(operator):
+#    with open("./data/operators.json", "r", encoding="utf-8") as f:
+#        data = json.load(f)
+#        for operator_name, operator_data in data.items():
+#            if operator_name.lower() == operator.lower():
+#                operator_id = operator_data["id"]
+#
+#    avatar_url = f"https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avatars/{operator_id}.png"
+#    return avatar_url

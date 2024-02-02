@@ -25,7 +25,7 @@ async def module(ctx):
             flags=hikari.MessageFlag.EPHEMERAL,
         )
         return
-    avatar_url = get_operator_avatar(requested_operator)
+    avatar_url = get_avatar(requested_operator)
     modules_list = get_modules(requested_operator)
     embeds = []
     for module in modules_list:
