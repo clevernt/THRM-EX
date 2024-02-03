@@ -927,6 +927,10 @@
     "id": "char_1030_noirc2",
     "name": "火龙S黑角"
   },
+  "Ray": {
+    "id": "char_4117_ray",
+    "name": "莱伊"
+  },
   "Reed": {
     "id": "char_261_sddrag",
     "name": "苇草"
@@ -1214,6 +1218,10 @@
   "Warfarin": {
     "id": "char_171_bldsk",
     "name": "华法琳"
+  },
+  "Warmy": {
+    "id": "char_4081_warmy",
+    "name": "温米"
   },
   "Weedy": {
     "id": "char_400_weedy",
