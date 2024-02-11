@@ -9,10 +9,7 @@ plugin = lightbulb.Plugin("servercount")
 @lightbulb.command("servercount", "Check Servers Count")
 @lightbulb.implements(lightbulb.SlashCommand)
 async def servercount(ctx):
-    embed = hikari.Embed(
-        description=f"Currently in {list(ctx.bot.cache.get_guilds_view().items())}"
-    )
-    await ctx.respond(embed)
+    await ctx.respond(list(ctx.bot.cache.get_guilds_view().items()))
 
 
 def load(bot):
