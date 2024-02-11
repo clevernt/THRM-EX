@@ -14,4 +14,3 @@ bot = lightbulb.BotApp(
 bot.load_extensions_from("extensions")
 
 bot.run()
-print(bot.cache.get_guilds_view().values())
