@@ -1942,7 +1942,7 @@
       "base_talent": "When healing allies, plant seeds on the ally's tile and the 4 adjacent tiles, granting the following effects: Recover 70 (75) HP every second and gain 10% (12%) Shelter",
       "module_branch": "GUA-X",
       "stage_2_talent_upgrade": "When healing allies, plant seeds on the ally's tile and the 4 adjacent tiles, granting the following effects: Recover **80 (85) HP** every second and gain 10% (12%) Shelter",
-      "stage_3_talent_upgrade": "When healing allies, plant seeds on the ally's tile and the 4 adjacent tiles, granting the following effects: Recover **80 (85) HP** every second and gain 15% (17%) Shelter. **Immediately plant seeds on the deployed tile upon deployment.",
+      "stage_3_talent_upgrade": "When healing allies, plant seeds on the ally's tile and the 4 adjacent tiles, granting the following effects: Recover **80 (85) HP** every second and gain 15% (17%) Shelter. **Immediately plant seeds on the deployed tile upon deployment.**",
       "total_stat_buffs": "HP +270, ATK +50, DEF +50"
     }
   ],
