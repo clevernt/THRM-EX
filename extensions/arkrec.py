@@ -93,7 +93,7 @@ async def arkrec(ctx):
                 title=f"{stage_code} | {'Challenge Mode' if operation_type == 'challenge' else 'Normal Mode'}",
                 description=sep.join(map(str, categories_en)),
                 timestamp=parsed_timestamp,
-                url=clear_link,
+                url=stage_page,
                 color=EMBED_COLOR,
             )
             embed.set_author(name=raider, icon=raider_image)
@@ -102,7 +102,7 @@ async def arkrec(ctx):
                 sep.join(map(str, operators_list_en)),
                 inline=True,
             )
-            embed.add_field("\u200b", f"[**Arkrec**]({stage_page})")
+            embed.add_field("Clear Link", clear_link)
             embeds.append(embed)
 
         else:
