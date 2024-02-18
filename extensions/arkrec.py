@@ -85,6 +85,7 @@ async def arkrec(ctx):
             operators_list = i["team"]
             raider = i["raider"]
             date_published = i["date_published"]
+            stage_page = f"https://en.arkrec.com/operation/{stage_code}+{stage_name}"
             parsed_timestamp = parser.isoparse(date_published).astimezone(pytz.UTC)
             operators_list_en = filter_and_translate(operators_list, operator_names)
             sep = ", "
@@ -101,6 +102,7 @@ async def arkrec(ctx):
                 sep.join(map(str, operators_list_en)),
                 inline=True,
             )
+            embed.add_field("\u200b", f"[**Arkrec**]({stage_page})")
             embeds.append(embed)
 
         else:
