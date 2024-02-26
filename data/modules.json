@@ -1752,7 +1752,7 @@
       "base_talent": "N/A",
       "module_branch": "TRP-Y",
       "stage_2_talent_upgrade": "When attacked, gain Camouflage for 4 seconds",
-      "stage_3_talent_upgrade": "When attacked, gain Camouflage for **6** seconds+",
+      "stage_3_talent_upgrade": "When attacked, gain Camouflage for **6** seconds",
       "total_stat_buffs": "HP +185, ATK +41"
     }
   ],
