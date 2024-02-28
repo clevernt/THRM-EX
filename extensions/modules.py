@@ -1,5 +1,6 @@
 import lightbulb
 import hikari
+import random
 
 from typing import Sequence, Union
 from lightbulb.utils import pag, nav
@@ -15,9 +16,6 @@ plugin = lightbulb.Plugin("modules")
 @lightbulb.command("module", "Get details about an operator's module", auto_defer=True)
 @lightbulb.implements(lightbulb.SlashCommand)
 async def module(ctx):
-    if ctx.author.id == 338247807620218880:
-        await ctx.respond("dest kys")
-        return
     paginator = pag.EmbedPaginator()
     requested_operator = ctx.options.operator.strip().lower()
     if requested_operator not in operators_with_modules:
