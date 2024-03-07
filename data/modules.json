@@ -250,6 +250,15 @@
       "total_stat_buffs": "HP +460, ATK +69"
     }
   ],
+  "Blitz": [
+    {
+      "base_talent": "Prioritize attacking Stunned enemies. When attacking Stunned enemies, deal 160% (165%) damage",
+      "module_branch": "SPT-X",
+      "stage_2_talent_upgrade": "Prioritize attacking Stunned enemies. When attacking Stunned enemies, deal **170% (175%)** damage",
+      "stage_3_talent_upgrade": "Prioritize attacking Stunned enemies. When attacking Stunned enemies, deal **180% (185%)** damage",
+      "total_stat_buffs": "HP +250, ATK +52"
+    }
+  ],
   "Blue Poison": [
     {
       "base_talent": "Attacks poison the target, dealing 75 (85) Arts damage every second for 3 seconds",
@@ -496,6 +505,15 @@
       "total_stat_buffs": "HP +80, ATK +53, ASPD +5"
     }
   ],
+  "Doc": [
+    {
+      "base_talent": "Max HP +12%. Attacks ignore 120 (140) DEF",
+      "module_branch": "INS-Y",
+      "stage_2_talent_upgrade": "Max HP **+15%**. Attacks ignore **150 (170)** DEF",
+      "stage_3_talent_upgrade": "Max HP **+18%**. Attacks ignore **180 (200)** DEF",
+      "total_stat_buffs": "HP +180, ATK +35, DEF +23"
+    }
+  ],
   "Dorothy": [
     {
       "base_talent": "After a Resonator activates, Dorothy gains +2% ATK, stacking up to 10 (12) layers",
@@ -551,6 +569,15 @@
       "stage_2_talent_upgrade": "If there are no enemies near the target, attacks deal additional Arts damage equal to **24% (26%) ATK**; **if the target is under Necrosis, deals additional Elemental damage equal to 20% ATK**",
       "stage_3_talent_upgrade": "If there are no enemies near the target, attacks deal additional Arts damage equal to **30% (32%) ATK**; if the target is under Necrosis, deals additional Elemental damage equal to **30% ATK**",
       "total_stat_buffs": "ATK +124, RES +5"
+    }
+  ],
+  "Ela": [
+    {
+      "base_talent": "Attacks have a 30%  chance to deal 150% (160%) Physical damage. This effect is guaranteed to trigger when attacking enemies affected by Grzmon Mines",
+      "module_branch": "TRP-D",
+      "stage_2_talent_upgrade": "Attacks have a 30%  chance to deal **160% (170%)** Physical damage. This effect is guaranteed to trigger when attacking enemies affected by Grzmon Mines",
+      "stage_3_talent_upgrade": "Attacks have a 30%  chance to deal **170% (180%)** Physical damage. This effect is guaranteed to trigger when attacking enemies affected by Grzmon Mines",
+      "total_stat_buffs": "ATK +60, DEF +30"
     }
   ],
   "Elysium": [
@@ -759,6 +786,15 @@
       "stage_2_talent_upgrade": "Can use 8 (10) Welcome Mats (can hold up to 10). The first enemy to step on each Welcome Mat will trigger it; **Self and Welcome Mats ignore 80 DEF**",
       "stage_3_talent_upgrade": "Can use 8 (10) Welcome Mats (can hold up to 10). The first enemy to step on each Welcome Mat will trigger it; Self and Welcome Mats ignore **120** DEF",
       "total_stat_buffs": "ATK +47, DEF +25"
+    }
+  ],
+  "Fuze": [
+    {
+      "base_talent": "Reduce 27% (30%) Physical damage taken from ranged attacks",
+      "module_branch": "CEN-Y",
+      "stage_2_talent_upgrade": "Reduce **30% (33%)** Physical Ranged damage taken. **DEF +3%**",
+      "stage_3_talent_upgrade": "Reduce **32% (35%)** Physical Ranged damage taken. DEF **+6%**",
+      "total_stat_buffs": "HP +180, ATK +70"
     }
   ],
   "Gavial": [
@@ -1000,6 +1036,15 @@
       "total_stat_buffs": "HP +330, DEF +45"
     }
   ],
+  "Iana": [
+    {
+      "base_talent": "Reduce 27% (30%) Physical damage taken from ranged attacks",
+      "module_branch": "PUM-X",
+      "stage_2_talent_upgrade": "Reduce **30% (33%)** Physical Ranged damage taken. **DEF +3%**",
+      "stage_3_talent_upgrade": "Reduce **32% (35%)** Physical Ranged damage taken. DEF **+6%**",
+      "total_stat_buffs": "HP +180, ATK +70"
+    }
+  ],
   "Ifrit": [
     {
       "base_talent": "Recover an additional 2 SP every 6 (5.5) seconds",
@@ -1088,6 +1133,15 @@
       "stage_2_talent_upgrade": "Attack Speed **+14**, **ATK +3%**",
       "stage_3_talent_upgrade": "Attack Speed **+16**, ATK **+6%**",
       "total_stat_buffs": "ATK +30, DEF +30"
+    }
+  ],
+  "Jessica the Liberated": [
+    {
+      "base_talent": "Can use a Mobile Personnel Shield that lasts for 50 seconds. The shield can only be deployed in the 4 tiles adjacent to Jessica. After the shield is deployed, Jessica immediately changes direction to face the shield and grants DEF +15% (18%) to herself and the unit behind her",
+      "module_branch": "SPT-X",
+      "stage_2_talent_upgrade": "Can use a **Stronger** Mobile Personnel Shield that lasts for **55** seconds. The shield can only be deployed in the 4 tiles adjacent to Jessica. After the shield is deployed, Jessica immediately changes direction to face the shield and grants DEF +15% (18%) to herself and the unit behind her\n**Shield Stats:\nHP +300, DEF +57**",
+      "stage_3_talent_upgrade": "Can use a **Stronger** Mobile Personnel Shield that lasts for **60** seconds. The shield can only be deployed in the 4 tiles adjacent to Jessica. After the shield is deployed, Jessica immediately changes direction to face the shield and grants DEF +15% (18%) to herself and the unit behind her\nShield Stats:\nHP **+380**, DEF **+79**",
+      "total_stat_buffs": "HP +250, ATK +65, DEF +37"
     }
   ],
   "Jieyun": [
@@ -1255,6 +1309,15 @@
       "stage_2_talent_upgrade": "Can use 5 summons (can only deploy **4** together). Summon functionality changes depending on selected skill",
       "stage_3_talent_upgrade": "Can use 5 summons with **higher stats** (can only deploy 4 together). Summon functionality changes depending on selected skill\n**S1: HP +150, ATK +42\nS2: HP +100, ATK +35\nS3: HP +250, ATK +60**",
       "total_stat_buffs": "HP +150, ATK +50"
+    }
+  ],
+  "Liskarm": [
+    {
+      "base_talent": "When attacked, recover 1 SP to self and a random nearby ally",
+      "module_branch": "SPT-X",
+      "stage_2_talent_upgrade": "When attacked, recover 1 SP to self and a random nearby ally; **with a 30% chance to restore 1 additional SP to self**",
+      "stage_3_talent_upgrade": "When attacked, recover 1 SP to self and a random nearby ally; with a **60%** chance to restore 1 additional SP to self",
+      "total_stat_buffs": "ATK +52, DEF +43"
     }
   ],
   "Lumen": [
@@ -2353,69 +2416,6 @@
       "stage_2_talent_upgrade": "When deployed, gain Berserk effect of up to **60 ASPD** and **+2.2 SP/s** (reaches the maximum effect at **60% HP lost**)",
       "stage_3_talent_upgrade": "When deployed, gain Berserk effect of up to **70 ASPD** and **+2.3 SP/s** (reaches the maximum effect at **50% HP lost**)",
       "total_stat_buffs": "ATK +90, DEF +60"
-    }
-  ],
-  "Ela": [
-    {
-      "base_talent": "Attacks have a 30%  chance to deal 150% (160%) Physical damage. This effect is guaranteed to trigger when attacking enemies affected by Grzmon Mines",
-      "module_branch": "TRP-D",
-      "stage_2_talent_upgrade": "Attacks have a 30%  chance to deal **160% (170%)** Physical damage. This effect is guaranteed to trigger when attacking enemies affected by Grzmon Mines",
-      "stage_3_talent_upgrade": "Attacks have a 30%  chance to deal **170% (180%)** Physical damage. This effect is guaranteed to trigger when attacking enemies affected by Grzmon Mines",
-      "total_stat_buffs": "ATK +60, DEF +30"
-    }
-  ],
-  "Fuze": [
-    {
-      "base_talent": "Reduce 27% (30%) Physical damage taken from ranged attacks",
-      "module_branch": "CEN-Y",
-      "stage_2_talent_upgrade": "Reduce **30% (33%)** Physical Ranged damage taken. **DEF +3%**",
-      "stage_3_talent_upgrade": "Reduce **32% (35%)** Physical Ranged damage taken. DEF **+6%**",
-      "total_stat_buffs": "HP +180, ATK +70"
-    }
-  ],
-  "Iana": [
-    {
-      "base_talent": "Reduce 27% (30%) Physical damage taken from ranged attacks",
-      "module_branch": "PUM-X",
-      "stage_2_talent_upgrade": "Reduce **30% (33%)** Physical Ranged damage taken. **DEF +3%**",
-      "stage_3_talent_upgrade": "Reduce **32% (35%)** Physical Ranged damage taken. DEF **+6%**",
-      "total_stat_buffs": "HP +180, ATK +70"
-    }
-  ],
-  "Doc": [
-    {
-      "base_talent": "Max HP +12%. Attacks ignore 120 (140) DEF",
-      "module_branch": "INS-Y",
-      "stage_2_talent_upgrade": "Max HP **+15%**. Attacks ignore **150 (170)** DEF",
-      "stage_3_talent_upgrade": "Max HP **+18%**. Attacks ignore **180 (200)** DEF",
-      "total_stat_buffs": "HP +180, ATK +35, DEF +23"
-    }
-  ],
-  "Jessica the Liberated": [
-    {
-      "base_talent": "Can use a Mobile Personnel Shield that lasts for 50 seconds. The shield can only be deployed in the 4 tiles adjacent to Jessica. After the shield is deployed, Jessica immediately changes direction to face the shield and grants DEF +15% (18%) to herself and the unit behind her",
-      "module_branch": "SPT-X",
-      "stage_2_talent_upgrade": "Can use a **Stronger** Mobile Personnel Shield that lasts for **55** seconds. The shield can only be deployed in the 4 tiles adjacent to Jessica. After the shield is deployed, Jessica immediately changes direction to face the shield and grants DEF +15% (18%) to herself and the unit behind her\n**Shield Stats:\nHP +300, DEF +57**",
-      "stage_3_talent_upgrade": "Can use a **Stronger** Mobile Personnel Shield that lasts for **60** seconds. The shield can only be deployed in the 4 tiles adjacent to Jessica. After the shield is deployed, Jessica immediately changes direction to face the shield and grants DEF +15% (18%) to herself and the unit behind her\nShield Stats:\nHP **+380**, DEF **+79**",
-      "total_stat_buffs": "HP +250, ATK +65, DEF +37"
-    }
-  ],
-  "Liskarm": [
-    {
-      "base_talent": "When attacked, recover 1 SP to self and a random nearby ally",
-      "module_branch": "SPT-X",
-      "stage_2_talent_upgrade": "When attacked, recover 1 SP to self and a random nearby ally; **with a 30% chance to restore 1 additional SP to self**",
-      "stage_3_talent_upgrade": "When attacked, recover 1 SP to self and a random nearby ally; with a **60%** chance to restore 1 additional SP to self",
-      "total_stat_buffs": "ATK +52, DEF +43"
-    }
-  ],
-  "Blitz": [
-    {
-      "base_talent": "Prioritize attacking Stunned enemies. When attacking Stunned enemies, deal 160% (165%) damage",
-      "module_branch": "SPT-X",
-      "stage_2_talent_upgrade": "Prioritize attacking Stunned enemies. When attacking Stunned enemies, deal **170% (175%)** damage",
-      "stage_3_talent_upgrade": "Prioritize attacking Stunned enemies. When attacking Stunned enemies, deal **180% (185%)** damage",
-      "total_stat_buffs": "HP +250, ATK +52"
     }
   ]
 }

@@ -291,6 +291,10 @@
     "id": "char_130_doberm",
     "name": "杜宾"
   },
+  "Doc": {
+    "id": "char_4125_rdoc",
+    "name": "医生"
+  },
   "Dorothy": {
     "id": "char_4048_doroth",
     "name": "多萝西"
@@ -314,6 +318,10 @@
   "Ebenholz": {
     "id": "char_4046_ebnhlz",
     "name": "黑键"
+  },
+  "Ela": {
+    "id": "char_4123_ela",
+    "name": "艾拉"
   },
   "Elysium": {
     "id": "char_401_elysm",
@@ -414,6 +422,10 @@
   "Frostleaf": {
     "id": "char_193_frostl",
     "name": "霜叶"
+  },
+  "Fuze": {
+    "id": "char_4126_fuze",
+    "name": "导火索"
   },
   "Gavial": {
     "id": "char_187_ccheal",
@@ -534,6 +546,10 @@
   "Hung": {
     "id": "char_226_hmau",
     "name": "吽"
+  },
+  "Iana": {
+    "id": "char_4124_iana",
+    "name": "双月"
   },
   "Ifrit": {
     "id": "char_134_ifrit",
@@ -1258,21 +1274,5 @@
   "Zuo Le": {
     "id": "char_4121_zuole",
     "name": "左乐"
-  },
-  "Ela": {
-    "id": "char_4123_ela",
-    "name": "艾拉"
-  },
-  "Fuze": {
-    "id": "char_4126_fuze",
-    "name": "导火索"
-  },
-  "Doc": {
-    "id": "char_4125_rdoc",
-    "name": "医生"
-  },
-  "Iana": {
-    "id": "char_4124_iana",
-    "name": "双月"
   }
 }
