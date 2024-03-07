@@ -1258,5 +1258,21 @@
   "Zuo Le": {
     "id": "char_4121_zuole",
     "name": "左乐"
+  },
+  "Ela": {
+    "id": "char_4123_ela",
+    "name": "艾拉"
+  },
+  "Fuze": {
+    "id": "char_4126_fuze",
+    "name": "导火索"
+  },
+  "Doc": {
+    "id": "char_4125_rdoc",
+    "name": "医生"
+  },
+  "Iana": {
+    "id": "char_4124_iana",
+    "name": "双月"
   }
 }
