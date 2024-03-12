@@ -4,3 +4,4 @@ __pycache__/
 test.py 
 .venv/
 /extensions/gacha.py
+/extensions/operator.py

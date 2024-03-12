@@ -566,17 +566,17 @@
     {
       "base_talent": "If there are no enemies near the target, attacks deal additional Arts damage equal to 15% (17%) ATK",
       "module_branch": "MSC-D",
-      "stage_2_talent_upgrade": "If there are no enemies near the target, attacks deal additional Arts damage equal to **24% (26%) ATK**; **if the target is under Necrosis, deals additional Elemental damage equal to 20% ATK**",
-      "stage_3_talent_upgrade": "If there are no enemies near the target, attacks deal additional Arts damage equal to **30% (32%) ATK**; if the target is under Necrosis, deals additional Elemental damage equal to **30% ATK**",
+      "stage_2_talent_upgrade": "If there are no enemies near the target, attacks deal additional Arts damage equal to **24% (26%) ATK**; **If Ebenholz targets an enemy that is inflicted with Necrosis, deal additional Elemental damage equal to 20% of ATK**",
+      "stage_3_talent_upgrade": "If there are no enemies near the target, attacks deal additional Arts damage equal to **30% (32%) ATK**; If Ebenholz targets an enemy that is inflicted with Necrosis, deal additional Elemental damage equal to **30% of ATK**",
       "total_stat_buffs": "ATK +124, RES +5"
     }
   ],
   "Ela": [
     {
-      "base_talent": "Attacks have a 30%  chance to deal 150% (160%) Physical damage. This effect is guaranteed to trigger when attacking enemies affected by Grzmon Mines",
+      "base_talent": "Attacks have a 30%  chance to deal 150% (160%) Physical damage. This effect is guaranteed to trigger when attacking enemies affected by Grzmot Mines",
       "module_branch": "TRP-D",
-      "stage_2_talent_upgrade": "Attacks have a 30%  chance to deal **160% (170%)** Physical damage. This effect is guaranteed to trigger when attacking enemies affected by Grzmon Mines",
-      "stage_3_talent_upgrade": "Attacks have a 30%  chance to deal **170% (180%)** Physical damage. This effect is guaranteed to trigger when attacking enemies affected by Grzmon Mines",
+      "stage_2_talent_upgrade": "Attacks have a 30%  chance to deal **160% (170%)** Physical damage. This effect is guaranteed to trigger when attacking enemies affected by Grzmot Mines",
+      "stage_3_talent_upgrade": "Attacks have a 30%  chance to deal **170% (180%)** Physical damage. This effect is guaranteed to trigger when attacking enemies affected by Grzmot Mines",
       "total_stat_buffs": "ATK +60, DEF +30"
     }
   ],
