@@ -101,7 +101,7 @@ def process_enemy_data(enemy):
     enemy_lvl = enemy["level"]
     enemy_hp = enemy["enemyData"]["attributes"]["maxHp"]["m_value"]
     enemy_atk = enemy["enemyData"]["attributes"]["atk"]["m_value"]
-    enemy_def = enemy["enemyData"]["attributes"]["atk"]["m_value"]
+    enemy_def = enemy["enemyData"]["attributes"]["def"]["m_value"]
     enemy_res = enemy["enemyData"]["attributes"]["magicResistance"]["m_value"]
     enemy_atk_intrvl = enemy["enemyData"]["attributes"]["baseAttackTime"]["m_value"]
     enemy_weight = enemy["enemyData"]["attributes"]["massLevel"]["m_value"]

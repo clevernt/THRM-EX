@@ -1,6 +1,5 @@
 import lightbulb
 import hikari
-import random
 
 from typing import Sequence, Union
 from lightbulb.utils import pag, nav
