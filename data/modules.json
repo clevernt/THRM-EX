@@ -1038,11 +1038,11 @@
   ],
   "Iana": [
     {
-      "base_talent": "Reduce 27% (30%) Physical damage taken from ranged attacks",
+      "base_talent": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, inflict 20% (22%) Fragile to the attacker for 8 seconds and remove their Stealth, then immediately swap to [Substitute]",
       "module_branch": "PUM-X",
-      "stage_2_talent_upgrade": "Reduce **30% (33%)** Physical Ranged damage taken. **DEF +3%**",
-      "stage_3_talent_upgrade": "Reduce **32% (35%)** Physical Ranged damage taken. DEF **+6%**",
-      "total_stat_buffs": "HP +180, ATK +70"
+      "stage_2_talent_upgrade": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, inflict 25% (27%) Fragile to the attacker for 10 seconds and remove their Stealth, then immediately swap to [Substitute]",
+      "stage_3_talent_upgrade": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, inflict 28% (30%) Fragile to the attacker for 10 seconds and remove their Stealth, then immediately swap to [Substitute]",
+      "total_stat_buffs": "ATK +65, DEF +40"
     }
   ],
   "Ifrit": [
