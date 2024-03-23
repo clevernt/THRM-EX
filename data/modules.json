@@ -1040,8 +1040,8 @@
     {
       "base_talent": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, inflict 20% (22%) Fragile to the attacker for 8 seconds and remove their Stealth, then immediately swap to [Substitute]",
       "module_branch": "PUM-X",
-      "stage_2_talent_upgrade": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, inflict 25% (27%) Fragile to the attacker for 10 seconds and remove their Stealth, then immediately swap to [Substitute]",
-      "stage_3_talent_upgrade": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, inflict 28% (30%) Fragile to the attacker for 10 seconds and remove their Stealth, then immediately swap to [Substitute]",
+      "stage_2_talent_upgrade": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, inflict **25% (27%) Fragile** to the attacker for **10 seconds** and remove their Stealth, then immediately swap to [Substitute]",
+      "stage_3_talent_upgrade": "When deployed, Iana places a hologram on the deployment tile. The hologram does not attack; When the hologram is attacked, inflict **28% (30%) Fragile** to the attacker for 10 seconds and remove their Stealth, then immediately swap to [Substitute]",
       "total_stat_buffs": "ATK +65, DEF +40"
     }
   ],
