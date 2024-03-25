@@ -245,8 +245,8 @@
     {
       "base_talent": "Can attack and will prioritize Slumbering enemies. When attacking Slumbering enemies, deal 140% (144%) damage",
       "module_branch": "GUA-X",
-      "stage_2_talent_upgrade": "Can attack and will prioritize Slumbering enemies. When attacking Slumbering enemies, deal **150% (154%) damage**. **When deployed, inflict Slumber for 5 seconds to all ground enemies within the tile**",
-      "stage_3_talent_upgrade": "Can attack and will prioritize Slumbering enemies. When attacking Slumbering enemies, deal **160% (164%) damage**. When deployed, inflict Slumber for a **8 seconds** to all ground enemies within the tile",
+      "stage_2_talent_upgrade": "Can attack and will prioritize Slumbering enemies. When attacking Slumbering enemies, deal **150% (154%) damage**. **When deployed, inflict Slumber for 5 seconds to all ground enemies in the deployment tile**",
+      "stage_3_talent_upgrade": "Can attack and will prioritize Slumbering enemies. When attacking Slumbering enemies, deal **160% (164%) damage**. When deployed, inflict Slumber for **8 seconds** to all ground enemies in the deployment tile",
       "total_stat_buffs": "HP +460, ATK +69"
     }
   ],
