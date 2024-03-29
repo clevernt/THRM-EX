@@ -2147,8 +2147,8 @@
     {
       "base_talent": "When enemies within Attack Range are Slowed, apply 20% (23%) Fragility effect for the duration of the Slow effect",
       "module_branch": "DEC-Y",
-      "stage_2_talent_upgrade": "When enemies within Attack Range are Slowed, apply 21% (24%) Fragility effect **and 5% Enfeeble** for the duration of the Slow effect",
-      "stage_3_talent_upgrade": "When enemies within Attack Range are Slowed, apply 22% (25%) Fragility effect and **8%** Enfeeble for the duration of the Slow effect",
+      "stage_2_talent_upgrade": "When enemies within Attack Range are Slowed, apply **21% (24%)** Fragility effect **and 5% Enfeeble** for the duration of the Slow effect",
+      "stage_3_talent_upgrade": "When enemies within Attack Range are Slowed, apply **22% (25%)** Fragility effect and **8%** Enfeeble for the duration of the Slow effect",
       "total_stat_buffs": "HP +120, ATK +46"
     }
   ],
