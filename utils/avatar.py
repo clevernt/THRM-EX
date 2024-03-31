@@ -21,7 +21,7 @@ def get_avatar(operator):
 
         img_link = soup.select_one(".fullImageLink a")["href"]
 
-        return f"https://prts.wiki{img_link}"
+        return img_link
 
     else:
         return None
