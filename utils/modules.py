@@ -1,3 +1,4 @@
+import requests
 import json
 
 range_mods = {
@@ -35,12 +36,25 @@ def get_branch_icon(branch_code):
     return branch_icon_url
 
 
-# def get_operator_avatar(operator):
-#    with open("./data/operators.json", "r", encoding="utf-8") as f:
-#        data = json.load(f)
-#        for operator_name, operator_data in data.items():
-#            if operator_name.lower() == operator.lower():
-#                operator_id = operator_data["id"]
-#
-#    avatar_url = f"https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avatars/{operator_id}.png"
-#    return avatar_url
+def get_mats(operator_id, branch_code):
+    uniequip_table = requests.get(
+        "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData/master/zh_CN/gamedata/excel/uniequip_table.json"
+    ).json()
+    item_name_to_id = requests.get(
+        "https://raw.githubusercontent.com/neeia/ak-roster/main/src/data/item-name-to-id.json"
+    ).json()
+
+    id_to_name_dict = {v: k for k, v in item_name_to_id.items()}
+
+    materials = [
+        (id_to_name_dict.get(item["id"], "Unknown"), item["count"])
+        for module in uniequip_table.get("equipDict", {}).values()
+        if module.get("charId") == operator_id
+        and module.get("typeIcon") == branch_code.lower()
+        for stage in module.get("itemCost", {}).values()
+        for item in stage
+        if item.get("type", "") == "MATERIAL"
+        and not item.get("id", "").startswith("mod")
+    ]
+
+    return materials

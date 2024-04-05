@@ -6,6 +6,9 @@ from lightbulb.utils import pag, nav
 
 from utils import *
 
+with open("./data/operators.json", encoding="utf-8") as f:
+    operators = json.load(f)
+
 bot = lightbulb.BotApp
 plugin = lightbulb.Plugin("modules")
 
@@ -29,6 +32,9 @@ async def module(ctx):
     modules_list = get_modules(requested_operator)
     embeds = []
     for module in modules_list:
+        materials = get_mats(
+            operators[requested_operator.title()]["id"], module["module_branch"]
+        )
         trait_upgrade = get_branch_trait(module["module_branch"])
 
         embed = hikari.Embed(
@@ -65,6 +71,12 @@ async def module(ctx):
             embed.set_image("https://uwu.so/neuvium/neyKuxn8jH")
         else:
             embed.add_field(module["total_stat_buffs"], "\u200b")
+
+        mats_string = "\n".join(
+            [f"Stage {i+1}: {mat[1]}x {mat[0]}" for i, mat in enumerate(materials)]
+        )
+
+        embed.add_field("Materials", mats_string)
 
         embed.set_footer("DM @clevernt for any errors/feedback")
         embeds.append(embed)
