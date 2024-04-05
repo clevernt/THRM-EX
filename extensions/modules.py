@@ -37,7 +37,7 @@ async def module(ctx):
         trait_upgrade = get_branch_trait(module["module_branch"])
 
         embed = hikari.Embed(
-            title=operator_name
+            title=operator_name,
             description=trait_upgrade,
             color=EMBED_COLOR,
         )
