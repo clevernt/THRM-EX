@@ -30,15 +30,14 @@ async def module(ctx):
         return
     avatar_url = get_avatar(requested_operator)
     modules_list = get_modules(requested_operator)
+    operator_name = operators_with_modules[requested_operator]
     embeds = []
     for module in modules_list:
-        materials = get_mats(
-            operators[requested_operator.title()]["id"], module["module_branch"]
-        )
+        materials = get_mats(operators[operator_name]["id"], module["module_branch"])
         trait_upgrade = get_branch_trait(module["module_branch"])
 
         embed = hikari.Embed(
-            title=operators_with_modules[requested_operator],
+            title=operator_name
             description=trait_upgrade,
             color=EMBED_COLOR,
         )
