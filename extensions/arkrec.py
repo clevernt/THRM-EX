@@ -5,13 +5,11 @@ import pytz
 
 from typing import Union
 from typing import Sequence
-from requests_html import HTMLSession
 from lightbulb.utils import nav
 from dateutil import parser
 
 from utils import *
 
-session = HTMLSession()
 plugin = lightbulb.Plugin("arkrec")
 
 
