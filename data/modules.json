@@ -2475,7 +2475,7 @@
       "base_talent": "N/A",
       "module_branch": "TAC-X",
       "stage_2_talent_upgrade": "When there are Sleeping enemies within Attack Range, Blacknight and her Hypnos gain 5% ATK",
-      "stage_3_talent_upgrade": "When there are Sleeping enemies within Attack Range, Blacknight and her Hypnos gain 10% ATK",
+      "stage_3_talent_upgrade": "When there are Sleeping enemies within Attack Range, Blacknight and her Hypnos gain **10% ATK**",
       "total_stat_buffs": "HP +150, ATK +20, DEF +20"
     }
   ],
