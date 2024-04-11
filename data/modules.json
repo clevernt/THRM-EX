@@ -991,6 +991,13 @@
       "stage_2_talent_upgrade": "When attacking Aerial units, ATK is increased to **130% (133%)** and inflict Silence for **4** seconds",
       "stage_3_talent_upgrade": "When attacking Aerial units, ATK is increased to **135% (138%)** and inflict Silence for **5** seconds",
       "total_stat_buffs": "HP +175, ATK +65"
+    },
+    {
+      "base_talent": "Inflict Weightless to enemies with 80% or more HP within Attack Range",
+      "module_branch": "CCR-Y",
+      "stage_2_talent_upgrade": "Inflict Weightless to enemies with **60% or more** HP within Attack Range, and Inflict 10% Arts Fragile to enemies with 50% or less HP within Attack Range.",
+      "stage_3_talent_upgrade": "Inflict Weightless to enemies with **50% or more** HP within Attack Range, and Inflict **20% Arts Fragile** to enemies with 50% or less HP within Attack Range.",
+      "total_stat_buffs": "HP +175, ATK +65"
     }
   ],
   "Horn": [
@@ -2416,6 +2423,69 @@
       "stage_2_talent_upgrade": "When deployed, gain Berserk effect of up to **60 ASPD** and **+2.2 SP/s** (reaches the maximum effect at **60% HP lost**)",
       "stage_3_talent_upgrade": "When deployed, gain Berserk effect of up to **70 ASPD** and **+2.3 SP/s** (reaches the maximum effect at **50% HP lost**)",
       "total_stat_buffs": "ATK +90, DEF +60"
+    }
+  ],
+  "Lutonada": [
+    {
+      "base_talent": "When an enemy blocked by Lutonada is defeated, restore 16% (18%) Max HP",
+      "module_branch": "UNY-X",
+      "stage_2_talent_upgrade": "When an enemy blocked by Lutonada is defeated, restore **18% (20%) Max HP**",
+      "stage_3_talent_upgrade": "When an enemy blocked by Lutonada is defeated, restore **20% (22%) Max HP**",
+      "total_stat_buffs": "HP +350, DEF +60"
+    }
+  ],
+  "Aroma": [
+    {
+      "base_talent": "The first attack against an enemy increases ATK to 110% (115%) and levitates the target for 2.5s",
+      "module_branch": "BLA-X",
+      "stage_2_talent_upgrade": "The first attack against an enemy **increases ATK to 115% (120%)** and levitates the target for 2.5s",
+      "stage_3_talent_upgrade": "The first attack against an enemy **increases ATK to 120% (125%)** and levitates the target for 2.5s",
+      "total_stat_buffs": "HP +190, ATK +60"
+    }
+  ],
+  "Ascalon": [
+    {
+      "base_talent": "Attacks inflict the following effects to enemies:\nReduce Movement Speed by 18%, receive Arts damage equal to 10%% of Ascalon's ATK every second\nLasts for 25s and can be stacked up to 3 times",
+      "module_branch": "AMB-X",
+      "stage_2_talent_upgrade": "Attacks inflict the following effects to enemies:\nReduce Movement Speed by 18%, receive Arts damage equal to **11%% of Ascalon's ATK** every second\nLasts for **27s** and can be stacked up to 3 times",
+      "stage_3_talent_upgrade": "Attacks inflict the following effects to enemies:\nReduce Movement Speed by 18%, receive Arts damage equal to 11%% of Ascalon's ATK every second\nLasts for **30s** and can be stacked up to 3 times",
+      "total_stat_buffs": "HP +270, ATK +53"
+    }
+  ],
+  "Muelsyse": [
+    {
+      "base_talent": "Can summon a Flowing Shape which can partially replicate the stats (90%) of an operator awaiting deployment (Max HP, ATK, DEF, RES, Block Count, Attack Interval, Attack Range, damage type, also gains special attributes based on Melee/Ranged type). The Flowing Shape will automatically respawn 25 seconds after being defeated",
+      "module_branch": "TAC-X",
+      "stage_2_talent_upgrade": "Can summon a Flowing Shape which can partially replicate the stats (90%) of an operator awaiting deployment (Max HP, ATK, DEF, RES, Block Count, Attack Interval, Attack Range, damage type, also gains special attributes based on Melee/Ranged type). The Flowing Shape will **gain 5 SP on the first deployment** and automatically respawn 25 seconds after being defeated",
+      "stage_3_talent_upgrade": "Can summon a Flowing Shape which can **fully replicate the stats** of an operator awaiting deployment (Max HP, ATK, DEF, RES, Block Count, Attack Interval, Attack Range, damage type, also gains special attributes based on Melee/Ranged type). The Flowing Shape will gain 5 SP on the first deployment and automatically respawn 25 seconds after being defeated",
+      "total_stat_buffs": "HP +190, ATK +25, DEF +30"
+    }
+  ],
+  "Vigil": [
+    {
+      "base_talent": "Can summon a Wolf Pack initially formed of 2 Wolf Shadows at the tactical point. The number of Wolf Shadows increases by 1 every 25 seconds (up to 3; each Wolf Shadow increases the Wolf Pack's Block Count by +1 and causes normal attacks to deal 1 additional hit)",
+      "module_branch": "TAC-X",
+      "stage_2_talent_upgrade": "Can summon a Wolf Pack **initially formed of 3 Wolf Shadows** at the tactical point. The number of Wolf Shadows increases by 1 every 25 seconds (up to 3; each Wolf Shadow increases the Wolf Pack's Block Count by +1 and causes normal attacks to deal 1 additional hit, **and when a Wolf Shadow is lost, Wolf Pack gains 30% Physical Dodge for 7 seconds**).",
+      "stage_3_talent_upgrade": "Can summon a Wolf Pack initially formed of 3 Wolf Shadows at the tactical point. The number of Wolf Shadows increases by 1 every 25 seconds (up to 3; each Wolf Shadow increases the Wolf Pack's Block Count by +1 and causes normal attacks to deal 1 additional hit, and when a Wolf Shadow is lost, Wolf Pack gains **50% Physical Dodge for 10 seconds**)",
+      "total_stat_buffs": "HP +180, ATK +30, DEF +25"
+    }
+  ],
+  "Blacknight": [
+    {
+      "base_talent": "N/A",
+      "module_branch": "TAC-X",
+      "stage_2_talent_upgrade": "When there are Sleeping enemies within Attack Range, Blacknight and her Hypnos gain 5% ATK",
+      "stage_3_talent_upgrade": "When there are Sleeping enemies within Attack Range, Blacknight and her Hypnos gain 10% ATK",
+      "total_stat_buffs": "HP +150, ATK +20, DEF +20"
+    }
+  ],
+  "Beanstalk": [
+    {
+      "base_talent": "Can summon a Metal Crab at the tactical point. The Metal Crab will automatically respawn 15 seconds after being defeated",
+      "module_branch": "TAC-Y",
+      "stage_2_talent_upgrade": "Can summon a Metal Crab at the tactical point. **When blocking enemies, Metal Crab gains 10% DEF.** The Metal Crab will automatically respawn 15 seconds after being defeated",
+      "stage_3_talent_upgrade": "Can summon a Metal Crab at the tactical point. When blocking enemies, Metal Crab gains **15% DEF.** The Metal Crab will automatically respawn 15 seconds after being defeated",
+      "total_stat_buffs": "HP +140, ATK +25"
     }
   ]
 }
