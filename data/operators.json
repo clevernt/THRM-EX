@@ -1274,5 +1274,21 @@
   "Zuo Le": {
     "id": "char_4121_zuole",
     "name": "左乐"
+  },
+  "Lutonada": {
+    "id": "char_4130_luton",
+    "name": "露托"
+  },
+  "Ascalon": {
+    "id": "char_4132_ascln",
+    "name": "阿斯卡纶"
+  },
+  "Odda": {
+    "id": "char_4131_odda",
+    "name": "奥达"
+  },
+  "Aroma": {
+    "id": "char_446_aroma",
+    "name": "阿罗玛"
   }
 }

@@ -76,8 +76,6 @@ async def module(ctx):
         )
 
         embed.add_field("Materials", mats_string)
-
-        embed.set_footer("DM @clevernt for any errors/feedback")
         embeds.append(embed)
 
         paginator.add_line(embed)
