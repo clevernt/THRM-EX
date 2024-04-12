@@ -1,0 +1,186 @@
+{
+  "30013": {
+    "name": "Orirock Cluster",
+    "id": "MTL_SL_G3",
+    "emojiId": "1228364563938938910"
+  },
+  "30014": {
+    "name": "Orirock Concentration",
+    "id": "MTL_SL_G4",
+    "emojiId": "1228364570968457369"
+  },
+  "30023": {
+    "name": "Sugar Pack",
+    "id": "MTL_SL_STRG3",
+    "emojiId": "1228364636399861954"
+  },
+  "30024": {
+    "name": "Sugar Lump",
+    "id": "MTL_SL_STRG4",
+    "emojiId": "1228364638513664092"
+  },
+  "30033": {
+    "name": "Polyester Pack",
+    "id": "MTL_SL_RUSH3",
+    "emojiId": "1228364623418359848"
+  },
+  "30034": {
+    "name": "Polyester Lump",
+    "id": "MTL_SL_RUSH4",
+    "emojiId": "1228364625733615757"
+  },
+  "30043": {
+    "name": "Oriron Cluster",
+    "id": "MTL_SL_IRON3",
+    "emojiId": "1228364578866331708"
+  },
+  "30044": {
+    "name": "Oriron Block",
+    "id": "MTL_SL_IRON4",
+    "emojiId": "1228364581538369698"
+  },
+  "30053": {
+    "name": "Aketon",
+    "id": "MTL_SL_KETONE3",
+    "emojiId": "1228364584277250088"
+  },
+  "30054": {
+    "name": "Keton Colloid",
+    "id": "MTL_SL_KETONE4",
+    "emojiId": "1228364586499964938"
+  },
+  "30063": {
+    "name": "Integrated Device",
+    "id": "MTL_SL_BOSS3",
+    "emojiId": "1228364551821721631"
+  },
+  "30064": {
+    "name": "Optimized Device",
+    "id": "MTL_SL_BOSS4",
+    "emojiId": "1228364554069872690"
+  },
+  "30073": {
+    "name": "Loxic Kohl",
+    "id": "MTL_SL_ALCOHOL1",
+    "emojiId": "1228364543680315484"
+  },
+  "30074": {
+    "name": "White Horse Kohl",
+    "id": "MTL_SL_ALCOHOL2",
+    "emojiId": "1228364546377388072"
+  },
+  "30083": {
+    "name": "Manganese Ore",
+    "id": "MTL_SL_MANGANESE1",
+    "emojiId": "1228364588953895078"
+  },
+  "30084": {
+    "name": "Manganese Trihydrate",
+    "id": "MTL_SL_MANGANESE2",
+    "emojiId": "1228364591831187637"
+  },
+  "30093": {
+    "name": "Grindstone",
+    "id": "MTL_SL_PG1",
+    "emojiId": "1228364599783329923"
+  },
+  "30094": {
+    "name": "Grindstone Pentahydrate",
+    "id": "MTL_SL_PG2",
+    "emojiId": "1228364602027540631"
+  },
+  "30103": {
+    "name": "RMA70-12",
+    "id": "MTL_SL_RMA7012",
+    "emojiId": "1228364615893778442"
+  },
+  "30104": {
+    "name": "RMA70-24",
+    "id": "MTL_SL_RMA7024",
+    "emojiId": "1228364618464886807"
+  },
+  "30115": {
+    "name": "Polymerization Preparation",
+    "id": "MTL_SL_PP",
+    "emojiId": "1228364612664164423"
+  },
+  "30125": {
+    "name": "Bipolar Nanoflake",
+    "id": "MTL_SL_BN",
+    "emojiId": "1228364549288362114"
+  },
+  "30135": {
+    "name": "D32 Steel",
+    "id": "MTL_SL_DS",
+    "emojiId": "1228364561149857873"
+  },
+  "30145": {
+    "name": "Crystalline Electronic Unit",
+    "id": "MTL_SL_OEU",
+    "emojiId": "1228364597497692290"
+  },
+  "30155": {
+    "name": "Nucleic Crystal Sinter",
+    "id": "MTL_SL_SHJ",
+    "emojiId": "1228364631634870292"
+  },
+  "31013": {
+    "name": "Coagulating Gel",
+    "id": "MTL_SL_PGEL3",
+    "emojiId": "1228364604711633006"
+  },
+  "31014": {
+    "name": "Polymerized Gel",
+    "id": "MTL_SL_PGEL4",
+    "emojiId": "1228364606880354405"
+  },
+  "31023": {
+    "name": "Incandescent Alloy",
+    "id": "MTL_SL_IAM3",
+    "emojiId": "1228364573757800528"
+  },
+  "31024": {
+    "name": "Incandescent Alloy Block",
+    "id": "MTL_SL_IAM4",
+    "emojiId": "1228364576509399150"
+  },
+  "31033": {
+    "name": "Crystalline Component",
+    "id": "MTL_SL_OC3",
+    "emojiId": "1228364942529400923"
+  },
+  "31034": {
+    "name": "Crystalline Circuit",
+    "id": "MTL_SL_OC4",
+    "emojiId": "1228364594993434714"
+  },
+  "31043": {
+    "name": "Semi-Synthetic Solvent",
+    "id": "MTL_SL_SS",
+    "emojiId": "1228364634138869802"
+  },
+  "31044": {
+    "name": "Refined Solvent",
+    "id": "MTL_SL_RS"
+  },
+  "31053": {
+    "name": "Compound Cutting Fluid",
+    "id": "MTL_SL_CCF",
+    "emojiId": "1228364556959744031"
+  },
+  "31054": {
+    "name": "Cutting Fluid Solution",
+    "id": "MTL_SL_PLCF",
+    "emojiId": "1228364609203867719"
+  },
+  "31063": {
+    "name": "Transmuted Salt",
+    "id": "MTL_SL_ZY",
+    "emojiId": "1228364750547714149"
+  },
+  "31064": {
+    "name": "Transmuted Salt Agglomerate",
+    "id": "MTL_SL_ZYK",
+    "emojiId": "1228364643786035280"
+  }
+}

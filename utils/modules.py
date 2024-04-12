@@ -40,20 +40,22 @@ def get_mats(operator_id, branch_code):
     uniequip_table = requests.get(
         "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData/master/zh_CN/gamedata/excel/uniequip_table.json"
     ).json()
-    item_name_to_id = requests.get(
-        "https://raw.githubusercontent.com/neeia/ak-roster/main/src/data/item-name-to-id.json"
-    ).json()
 
-    id_to_name_dict = {v: k for k, v in item_name_to_id.items()}
+    with open("./data/materials.json") as f:
+        materials_data = json.load(f)
 
     materials = [
-        (id_to_name_dict.get(item["id"], "Unknown"), item["count"])
+        (
+            f"{item['count']}x <:{materials_data[item['id']]['id']}:{materials_data[item['id']]['emojiId']}>"
+        )
         for module in uniequip_table.get("equipDict", {}).values()
-        if module.get("charId") == operator_id
+        if isinstance(module, dict)
+        and module.get("charId") == operator_id
         and module.get("typeIcon") == branch_code.lower()
         for stage in module.get("itemCost", {}).values()
         for item in stage
-        if item.get("type", "") == "MATERIAL"
+        if isinstance(item, dict)
+        and item.get("type", "") == "MATERIAL"
         and not item.get("id", "").startswith("mod")
     ]
 

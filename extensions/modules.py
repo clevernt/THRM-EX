@@ -71,11 +71,7 @@ async def module(ctx):
         else:
             embed.add_field(module["total_stat_buffs"], "\u200b")
 
-        mats_string = "\n".join(
-            [f"Stage {i+1}: {mat[1]}x {mat[0]}" for i, mat in enumerate(materials)]
-        )
-
-        embed.add_field("Materials", mats_string)
+        embed.add_field("Materials", " | ".join(materials))
         embeds.append(embed)
 
         paginator.add_line(embed)
