@@ -161,7 +161,8 @@
   },
   "31044": {
     "name": "Refined Solvent",
-    "id": "MTL_SL_RS"
+    "id": "MTL_SL_RS",
+    "emojiId": "1229409684071383140"
   },
   "31053": {
     "name": "Compound Cutting Fluid",
