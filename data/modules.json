@@ -491,7 +491,7 @@
     {
       "base_talent": "When attacking an enemy with more than 80% HP, increase damage dealt by 18% (20%)",
       "module_branch": "MSC-Y",
-      "stage_2_talent_upgrade": "When attacking an enemy with more than **80% HP**, increase damage dealt by **21% (23%)**",
+      "stage_2_talent_upgrade": "When attacking an enemy with more than 80% HP, increase damage dealt by **21% (23%)**",
       "stage_3_talent_upgrade": "When attacking an enemy with more than 80% HP, increase damage dealt by **23% (25%)**",
       "total_stat_buffs": "HP +120, ATK +92"
     }
