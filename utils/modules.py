@@ -30,12 +30,6 @@ def get_branch_trait(branch_code):
         return branches_data[branch_code.upper()]
 
 
-def get_branch_icon(branch_code):
-    branch_icon_url = f"https://raw.githubusercontent.com/Aceship/Arknight-Images/main/equip/type/{branch_code}.png"
-
-    return branch_icon_url
-
-
 def get_mats(operator_id, branch_code):
     uniequip_table = requests.get(
         "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData/master/zh_CN/gamedata/excel/uniequip_table.json"

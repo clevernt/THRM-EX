@@ -41,10 +41,7 @@ async def module(ctx):
             description=trait_upgrade,
             color=EMBED_COLOR,
         )
-        embed.set_author(
-            name=module["module_branch"],
-            icon=f"https://raw.githubusercontent.com/Aceship/Arknight-Images/main/equip/type/{module['module_branch'].lower()}.png",
-        )
+        embed.set_author(name=module["module_branch"])
 
         if module["base_talent"] != "N/A":
             embed.add_field("Base Talent", module["base_talent"])
