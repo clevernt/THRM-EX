@@ -5,7 +5,7 @@ plugin = lightbulb.Plugin("ping")
 
 
 @plugin.command
-@lightbulb.command("ping", "Check bot's ping")
+@lightbulb.command("ping", "Check bot's ping", auto_defer=True)
 @lightbulb.implements(lightbulb.SlashCommand)
 async def ping(ctx):
     embed = hikari.Embed(

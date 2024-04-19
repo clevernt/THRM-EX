@@ -121,7 +121,7 @@ def process_enemy_data(enemy):
 
 @plugin.command
 @lightbulb.option("enemy", "Enemy's name", required=True, autocomplete=True)
-@lightbulb.command("enemy", "Get an enemy's details")
+@lightbulb.command("enemy", "Get an enemy's details", auto_defer=True)
 @lightbulb.implements(lightbulb.SlashCommand)
 async def enemy(ctx):
     enemy_levels = find_enemy(ctx, enemy_db)
