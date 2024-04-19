@@ -138,7 +138,6 @@ async def enemy(ctx):
             title=(basic_info["name"] if index == 0 else ""),
             description=(formatted_abilities if index == 0 else ""),
             color=(enemy_colors.get(basic_info["level"])),
-            url=get_prts_link(basic_info["id"]) if index == 0 else "",
         )
 
         embed.set_thumbnail(
