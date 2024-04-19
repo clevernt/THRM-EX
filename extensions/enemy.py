@@ -14,18 +14,6 @@ enemy_colors = {"NORMAL": "#62759d", "ELITE": "#c58b3a", "BOSS": "#ce3131"}
 regex_pattern = re.compile(r"<(\$[a-z]+\.[a-z]+\.[a-z]+)>(.*?)</>")
 
 
-def get_prts_link(enemy_id):
-    enemy_cn_name = None
-    with open("./data/enemy_database_cn.json", encoding="utf-8") as cn_db:
-        enemy_db_cn = json.load(cn_db)
-        for enemy in enemy_db_cn["enemies"]:
-            if enemy["Value"][0]["enemyData"]["prefabKey"]["m_value"] == enemy_id:
-                enemy_cn_name = enemy["Value"][0]["enemyData"]["name"]["m_value"]
-                break
-
-    return f"https://prts.wiki/w/{enemy_cn_name}"
-
-
 def get_abilities(enemy_id):
     with open("./data/enemy_handbook_table.json", encoding="utf-8") as handbook:
         handbook_data = json.load(handbook)
