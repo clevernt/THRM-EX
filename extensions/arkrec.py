@@ -16,7 +16,7 @@ plugin = lightbulb.Plugin("arkrec")
 @lightbulb.option(
     "mode",
     "Mode",
-    choices=["Normal Mode", "Challenge Mode"],
+    choices=["normal", "challenge"],
     required=False,
     default=None,
 )
