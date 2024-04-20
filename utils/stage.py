@@ -1,5 +1,6 @@
 import asyncio
 import aiohttp
+from aiohttp import ContentTypeError
 
 
 async def fetch_json(session, url):
@@ -9,13 +10,22 @@ async def fetch_json(session, url):
 
 async def fetch_enemy_data(session, enemy_id, enemy_level):
     url = f"https://hellabotapi.cyclic.app/enemy/{enemy_id}"
-    data = await fetch_json(session, url)
-    level_stats = next(
-        level["enemyData"]["attributes"]
-        for level in data["value"]["levels"]["Value"]
-        if level.get("level") == enemy_level
-    )
-    enemy_data = {
+    try:
+        data = await fetch_json(session, url)
+    except ContentTypeError:
+        return None
+    return parse_enemy_data(data, enemy_level)
+
+
+def parse_enemy_data(data, enemy_level):
+    for level in data["value"]["levels"]["Value"]:
+        if level.get("level") == enemy_level:
+            level_stats = level["enemyData"]["attributes"]
+            break
+    else:
+        return None
+
+    return {
         "name": data["value"]["excel"]["name"],
         "status": data["value"]["excel"]["enemyLevel"],
         "level": enemy_level,
@@ -25,30 +35,33 @@ async def fetch_enemy_data(session, enemy_id, enemy_level):
             "RES": level_stats["magicResistance"]["m_value"],
         },
     }
-    return enemy_data
+
+
+async def fetch_enemies_data(session, stage, mode):
+    stage_mode = "toughstage" if mode.lower() == "challenge" else "stage"
+    url = f"https://hellabotapi.cyclic.app/{stage_mode}/{stage}?include=levels.enemyDbRefs"
+
+    async with session.get(url) as response:
+        if response.status != 200:
+            return None
+        data = await response.json()
+
+    enemy_data = [
+        (enemy["id"], enemy["level"])
+        for enemy in data["value"][0]["levels"]["enemyDbRefs"]
+    ]
+    tasks = [
+        fetch_enemy_data(session, enemy_id, enemy_level)
+        for enemy_id, enemy_level in enemy_data
+    ]
+    return await asyncio.gather(*tasks)
 
 
 async def get_enemies(stage, mode):
-    stage_mode = "toughstage" if mode.lower() == "challenge" else "stage"
-
-    connector = aiohttp.TCPConnector(limit=30)
-    async with aiohttp.ClientSession(connector=connector) as session:
-        async with session.get(
-            f"https://hellabotapi.cyclic.app/{stage_mode}/{stage}?include=levels.enemyDbRefs"
-        ) as response:
-            if response.status == 200:
-                data = await response.json()
-            else:
-                return None
-
-        enemy_data = {
-            (enemy["id"], enemy["level"])
-            for enemy in data["value"][0]["levels"]["enemyDbRefs"]
-        }
-
-        tasks = [
-            fetch_enemy_data(session, enemy_id, enemy_level)
-            for enemy_id, enemy_level in enemy_data
-        ]
-        enemy_names = await asyncio.gather(*tasks)
-        return sorted(enemy_names, key=lambda x: x["name"])
+    async with aiohttp.ClientSession(
+        connector=aiohttp.TCPConnector(limit=100)
+    ) as session:
+        enemies = await fetch_enemies_data(session, stage, mode)
+        return sorted(
+            [enemy for enemy in enemies if enemy is not None], key=lambda x: x["name"]
+        )

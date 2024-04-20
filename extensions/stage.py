@@ -13,7 +13,6 @@ def get_stage_image(stage_code, mode):
         f"https://hellabotapi.cyclic.app/{stage_mode}/{stage_code}?include=excel.stageId"
     )
     data = resp.json()
-    print(data)
     stage_id = data["value"][0]["excel"]["stageId"].rstrip("#f#")
 
     return f"https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/map/{stage_id}.png"
