@@ -2,7 +2,6 @@ import json
 
 EMBED_COLOR = 16448250
 ARKREC_URL = "https://arkrec.com/api/records"
-mode_mapping = {"Normal Mode": "normal", "Challenge Mode": "challenge"}
 
 with open("./data/stage_table.json", encoding="utf-8") as f:
     stage_table = json.load(f)["stages"]
