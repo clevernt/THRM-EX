@@ -34,7 +34,7 @@ def get_branch_trait(branch_code):
 
 def get_branch_icon(branch_code):
     # for some reason TRP-D is the only capitalized one in the repo
-    if branch_code == "TRP-D":
+    if branch_code != "TRP-D":
         branch_code = branch_code.lower()
     return f"{GITHUB_REPO}/equipt/{branch_code}.png"
 
