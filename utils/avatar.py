@@ -1,6 +1,5 @@
 import json
-
-url = "https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/avatar"
+from utils import GITHUB_REPO
 
 
 def get_avatar(operator):
@@ -10,4 +9,4 @@ def get_avatar(operator):
             if operator_name.lower() == operator.lower():
                 operator_id = operator_data["id"]
 
-    return f"{url}/{operator_id}_2.png"
+    return f"{GITHUB_REPO}/avatar/ASSISTANT/{operator_id}_2.png"

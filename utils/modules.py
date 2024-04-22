@@ -1,6 +1,8 @@
 import requests
 import json
 
+from utils import GITHUB_REPO
+
 range_mods = {
     "SPC-X": "https://uwu.so/neuvium/new5soyo92",
     "RIN-X": "https://uwu.so/neuvium/nesDf7uFTC",
@@ -28,6 +30,13 @@ def get_branch_trait(branch_code):
         branches_data = json.load(f)
 
         return branches_data[branch_code.upper()]
+
+
+def get_branch_icon(branch_code):
+    # for some reason TRP-D is the only capitalized one in the repo
+    if branch_code == "TRP-D":
+        branch_code = branch_code.lower()
+    return f"{GITHUB_REPO}/equipt/{branch_code}.png"
 
 
 def get_mats(operator_id, branch_code):

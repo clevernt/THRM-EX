@@ -3,6 +3,7 @@ import lightbulb
 import requests
 
 from utils import get_enemies
+from utils import GITHUB_REPO
 
 plugin = lightbulb.Plugin("stage")
 
@@ -15,7 +16,7 @@ def get_stage_image(stage_code, mode):
     data = resp.json()
     stage_id = data["value"][0]["excel"]["stageId"].rstrip("#f#")
 
-    return f"https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/map/{stage_id}.png"
+    return f"{GITHUB_REPO}/mapreview/{stage_id}.png"
 
 
 @plugin.command

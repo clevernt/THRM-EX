@@ -2,6 +2,7 @@ import json
 
 EMBED_COLOR = 16448250
 ARKREC_URL = "https://arkrec.com/api/records"
+GITHUB_REPO = "https://raw.githubusercontent.com/fexli/ArknightsResource/main/"
 
 with open("./data/stage_table.json", encoding="utf-8") as f:
     stage_table = json.load(f)["stages"]

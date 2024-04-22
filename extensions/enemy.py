@@ -2,8 +2,10 @@ import hikari
 import lightbulb
 import json
 import re
+import requests
 
 from typing import Union, Sequence
+from utils import GITHUB_REPO
 
 plugin = lightbulb.Plugin("enemy")
 
@@ -85,6 +87,20 @@ def process_immunities(enemy):
         return "None"
 
 
+def get_prts_link(enemy_id):
+    enemy_cn_name = None
+    resp = requests.get(
+        "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData/master/zh_CN/gamedata/levels/enemydata/enemy_database.json"
+    )
+    data = resp.json()
+    for enemy in data["enemies"]:
+        if enemy["Value"][0]["enemyData"]["prefabKey"]["m_value"] == enemy_id:
+            enemy_cn_name = enemy["Value"][0]["enemyData"]["name"]["m_value"]
+            break
+
+    return f"https://prts.wiki/w/{enemy_cn_name}"
+
+
 def process_enemy_data(enemy):
     enemy_lvl = enemy["level"]
     enemy_hp = enemy["enemyData"]["attributes"]["maxHp"]["m_value"]
@@ -140,9 +156,7 @@ async def enemy(ctx):
             color=(enemy_colors.get(basic_info["level"])),
         )
 
-        embed.set_thumbnail(
-            f"https://raw.githubusercontent.com/Aceship/Arknight-Images/main/enemy/{basic_info['id']}.png"
-        )
+        embed.set_thumbnail(f"{GITHUB_REPO}/enemy/{basic_info['id']}.png")
 
         if index == 0:
             embed.set_author(name=get_enemy_code(basic_info["id"]))
