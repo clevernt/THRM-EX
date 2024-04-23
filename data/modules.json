@@ -1261,8 +1261,8 @@
     {
       "base_talent": "When DP is consumed by Trait effect, if there is sufficient DP, consume 5 DP instead to block the next Stun/Freeze inflicted on Lee and Stun the attacker for 3 seconds",
       "module_branch": "MER-X",
-      "stage_2_talent_upgrade": "When DP is consumed by Trait effect, if there is sufficient DP, consume 5 DP instead to block the next Stun/Freeze inflicted on Lee and Stun the attacker for **4** seconds",
-      "stage_3_talent_upgrade": "When DP is consumed by Trait effect, if there is sufficient DP, consume 4 DP instead to block the next Stun/Freeze inflicted on Lee and Stun the attacker for **4** seconds",
+      "stage_2_talent_upgrade": "When DP is consumed by Trait effect, if there is sufficient DP, consume 5 DP instead to block the next Stun/Freeze inflicted on Lee and Stun the attacker for **4 seconds**",
+      "stage_3_talent_upgrade": "When DP is consumed by Trait effect, if there is sufficient DP, consume **4 DP** instead to block the next Stun/Freeze inflicted on Lee and Stun the attacker for 4 seconds",
       "total_stat_buffs": "HP +300, ATK +74"
     },
     {
