@@ -1,7 +1,6 @@
-__pycache__/
-.vscode/
+__pycache__
+.vscode
 .env
 test.py 
-.venv/
-/extensions/gacha.py
-/extensions/operator.py
+.venv
+.mypy_cache
