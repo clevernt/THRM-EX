@@ -1,14 +1,19 @@
+from typing import Union, Sequence
+
 import requests
 import pytz
 import hikari
 import lightbulb
 
-from typing import Union, Sequence
 from dateutil import parser
 from lightbulb.utils import nav
 from utils import *
 
 plugin = lightbulb.Plugin("arkrec")
+
+stage_table = requests.get(
+    "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData/master/zh_CN/gamedata/excel/stage_table.json"
+).json()["stages"]
 
 
 @plugin.command()
