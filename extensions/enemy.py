@@ -43,7 +43,7 @@ async def enemy(ctx):
         )
 
         embed.set_author(name=enemy_code)
-        embed.set_thumbnail(f"{GITHUB_REPO}/enemy/{enemy_data["excel"]["enemyId"]}.png")
+        embed.set_thumbnail(f"{GITHUB_REPO}/enemy/{enemy_data['excel']['enemyId']}.png")
 
         add_embed_fields(embed, idx, level, enemy_immunities)
 
