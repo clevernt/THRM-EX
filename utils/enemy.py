@@ -1,4 +1,5 @@
 import re
+from typing import Union
 import requests
 
 API_URL = "https://hellabotapi.cyclic.app/enemy"
@@ -26,7 +27,7 @@ def get_enemy_abilities(enemy_data: dict) -> list:
     return "\n".join(abilities_list)
 
 
-def get_enemy_code(enemy_data: dict) -> str | int:
+def get_enemy_code(enemy_data: dict) -> Union[str, int]:
     return enemy_data["excel"]["enemyIndex"]
 
 
