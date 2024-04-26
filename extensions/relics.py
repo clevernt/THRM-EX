@@ -52,7 +52,7 @@ async def enemy_autocomplete(
     for rogue_key, _ in rogue_mapping.items():
         items = relics_data.get("details", {}).get(rogue_key, {}).get("items", {})
         for _, relic_details in items.items():
-            if relic_details.get("name", "").strip("'").lower().startswith(user_input):
+            if user_input in relic_details.get("name", "").strip("'").lower():
                 matching_relics.append(relic_details.get("name"))
 
     matching_relics = matching_relics[:25]
