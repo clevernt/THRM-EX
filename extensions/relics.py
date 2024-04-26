@@ -31,7 +31,9 @@ async def relic(ctx):
         embed.set_thumbnail(relic_icon)
         embed.set_footer(relic["description"])
         embed.add_field("Usage", relic["usage"])
-        embed.add_field("Unlock Condition", relic["unlockCond"])
+
+        if relic["unlockCond"]:
+            embed.add_field("Unlock Condition", relic["unlockCond"])
 
         embeds.append(embed)
 
