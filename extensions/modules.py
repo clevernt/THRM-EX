@@ -33,42 +33,36 @@ async def module(ctx):
     operator_name = operators_with_modules[requested_operator]
     embeds = []
     for module in modules_list:
-        materials = get_mats(operators[operator_name]["id"], module["module_branch"])
-        trait_upgrade = get_branch_trait(module["module_branch"])
+        materials = get_mats(operators[operator_name]["id"], module["moduleBranch"])
+        trait_upgrade = get_branch_trait(module["moduleBranch"])
 
         embed = hikari.Embed(
             title=operator_name,
             description=trait_upgrade,
             color=EMBED_COLOR,
         )
+
         embed.set_author(
-            name=module["module_branch"], icon=get_branch_icon(module["module_branch"])
+            name=module["moduleBranch"], icon=get_branch_icon(module["moduleBranch"])
         )
-
-        if module["base_talent"] != "N/A":
-            embed.add_field("Base Talent", module["base_talent"])
-            embed.add_field(
-                "Stage 2 - Talent Upgrade", module["stage_2_talent_upgrade"]
-            )
-            embed.add_field(
-                "Stage 3 - Talent Upgrade", module["stage_3_talent_upgrade"]
-            )
-        else:
-            embed.add_field("Stage 2 - New Talent", module["stage_2_talent_upgrade"])
-            embed.add_field(
-                "Stage 3 - Talent Upgrade", module["stage_3_talent_upgrade"]
-            )
-
         embed.set_thumbnail(avatar_url)
 
-        if module["module_branch"] in range_mods:
-            embed.add_field(module["total_stat_buffs"], "New Attack Range:")
-            embed.set_image(range_mods[module["module_branch"]])
+        if module["baseTalent"] != "N/A":
+            embed.add_field("Base Talent", module["baseTalent"])
+            embed.add_field("Stage 2 - Talent Upgrade", module["stage2TalentUpgrade"])
+        else:
+            embed.add_field("Stage 2 - New Talent", module["stage2TalentUpgrade"])
+
+        embed.add_field("Stage 3 - Talent Upgrade", module["stage3TalentUpgrade"])
+
+        if module["moduleBranch"] in range_mods:
+            embed.add_field(module["totalStats"], "New Attack Range:")
+            embed.set_image(range_mods[module["moduleBranch"]])
         elif requested_operator.lower() == "tomimi":
-            embed.add_field(module["total_stat_buffs"], "New Attack Range:")
+            embed.add_field(module["totalStats"], "New Attack Range:")
             embed.set_image("https://uwu.so/neuvium/neyKuxn8jH")
         else:
-            embed.add_field(module["total_stat_buffs"], "\u200b")
+            embed.add_field(module["totalStats"], "\u200b")
 
         embed.add_field("Materials", " | ".join(materials))
         embeds.append(embed)

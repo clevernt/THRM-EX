@@ -71,9 +71,17 @@
     "id": "char_271_spikes",
     "name": "芳汀"
   },
+  "Aroma": {
+    "id": "char_446_aroma",
+    "name": "阿罗玛"
+  },
   "Asbestos": {
     "id": "char_378_asbest",
     "name": "石棉"
+  },
+  "Ascalon": {
+    "id": "char_4132_ascln",
+    "name": "阿斯卡纶"
   },
   "Ash": {
     "id": "char_456_ash",
@@ -703,6 +711,10 @@
     "id": "char_4067_lolxh",
     "name": "罗小黑"
   },
+  "Lutonada": {
+    "id": "char_4130_luton",
+    "name": "露托"
+  },
   "Magallan": {
     "id": "char_248_mgllan",
     "name": "麦哲伦"
@@ -830,6 +842,10 @@
   "Noir Corne": {
     "id": "char_500_noirc",
     "name": "黑角"
+  },
+  "Odda": {
+    "id": "char_4131_odda",
+    "name": "奥达"
   },
   "Orchid": {
     "id": "char_278_orchid",
@@ -1274,21 +1290,5 @@
   "Zuo Le": {
     "id": "char_4121_zuole",
     "name": "左乐"
-  },
-  "Lutonada": {
-    "id": "char_4130_luton",
-    "name": "露托"
-  },
-  "Ascalon": {
-    "id": "char_4132_ascln",
-    "name": "阿斯卡纶"
-  },
-  "Odda": {
-    "id": "char_4131_odda",
-    "name": "奥达"
-  },
-  "Aroma": {
-    "id": "char_446_aroma",
-    "name": "阿罗玛"
   }
 }

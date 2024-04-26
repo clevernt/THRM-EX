@@ -72,12 +72,12 @@
   "SUM-Y": "Maximum summon limit +3\nSummon deploy cost reduced\n",
   "SWO-X": "Skill damage increased by 10%",
   "SWO-Y": "Attacks ignore 70 DEF",
+  "TAC-X": "Tactical Point reduce damage taken from enemies blocked by self by 15%",
+  "TAC-Y": "Enemies blocked by Tactical Point have increased Taunt\nDamage increased to ~~150%~~ -> **165%** when attacking enemies blocked by Tactical Point",
   "TRP-D": "Self can be deployed on ground tiles\nTraps can be deployed on ranged tiles",
   "TRP-Y": "20% chance to deploy a trap that deals 2x damage",
   "UMD-X": "Attacks inflict 10% Enfeeble for 2 seconds",
   "UNY-X": "Reduce damage taken from enemies blocked by self by 15%",
   "WAH-X": "Less likely to be targeted\nGrants [Resist] to self",
-  "WAH-Y": "Remove the healing reduction on farther targets",
-  "TAC-X": "Tactical Point reduce damage taken from enemies blocked by self by 15%",
-  "TAC-Y": "Enemies blocked by Tactical Point have increased Taunt\nDamage increased to ~~150%~~ -> **165%** when attacking enemies blocked by Tactical Point"
+  "WAH-Y": "Remove the healing reduction on farther targets"
 }
