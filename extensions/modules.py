@@ -55,6 +55,8 @@ async def module(ctx):
 
         embed.add_field("Stage 3 - Talent Upgrade", module["stage3TalentUpgrade"])
 
+        embed.add_field("Materials", " | ".join(materials))
+
         if module["moduleBranch"] in range_mods:
             embed.add_field(module["totalStats"], "New Attack Range:")
             embed.set_image(range_mods[module["moduleBranch"]])
@@ -64,7 +66,6 @@ async def module(ctx):
         else:
             embed.add_field(module["totalStats"], "\u200b")
 
-        embed.add_field("Materials", " | ".join(materials))
         embeds.append(embed)
 
         paginator.add_line(embed)
