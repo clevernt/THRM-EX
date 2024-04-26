@@ -23,7 +23,8 @@ async def enemy(ctx):
         await ctx.respond(
             hikari.Embed(
                 title="Enemy not found!",
-                description=f"Enemy `{ctx.options.enemy}` was not found, try waiting for auto-complete!",
+                description=f"Enemy `{ctx.options.enemy}` was not found. "
+                "Try waiting for auto-complete!",
             )
         )
         return
