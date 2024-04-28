@@ -10,7 +10,7 @@ async def fetch_json(session, url):
 
 
 async def fetch_enemy_data(session, enemy_id, enemy_level):
-    url = f"https://hellabotapi.cyclic.app/enemy/{enemy_id}"
+    url = f"https://awedtan.ca/api/enemy/{enemy_id}"
     try:
         data = await fetch_json(session, url)
     except ContentTypeError:
@@ -40,7 +40,7 @@ def parse_enemy_data(data, enemy_level):
 
 async def fetch_enemies_data(session, stage, mode):
     stage_mode = "toughstage" if mode.lower() == "challenge" else "stage"
-    url = f"https://hellabotapi.cyclic.app/{stage_mode}/{stage}?include=levels.enemyDbRefs"
+    url = f"https://awedtan.ca/api/{stage_mode}/{stage}?include=levels.enemyDbRefs"
 
     async with session.get(url) as response:
         if response.status != 200:

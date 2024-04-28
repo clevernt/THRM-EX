@@ -11,7 +11,7 @@ plugin = lightbulb.Plugin("stage")
 def get_stage_image(stage_code, mode):
     stage_mode = "toughstage" if mode.lower() == "challenge" else "stage"
     resp = requests.get(
-        f"https://hellabotapi.cyclic.app/{stage_mode}/{stage_code}?include=excel.stageId"
+        f"https://awedtan.ca/api/{stage_mode}/{stage_code}?include=excel.stageId"
     )
     data = resp.json()
     stage_id = data["value"][0]["excel"]["stageId"].rstrip("#f#")

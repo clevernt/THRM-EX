@@ -2,7 +2,7 @@ import re
 from typing import Union
 import requests
 
-API_URL = "https://hellabotapi.cyclic.app/enemy"
+API_URL = "https://awedtan.ca/api/enemy"
 EMBED_COLORS = {"NORMAL": "#62759d", "ELITE": "#c58b3a", "BOSS": "#ce3131"}
 REGEX_PATTERN = re.compile(r"<[^>]+>")
 
