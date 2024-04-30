@@ -586,10 +586,10 @@
   ],
   "Ebenholz": [
     {
-      "baseTalent": "Stored attack energy deals 135% damage. Can store one additional charge of attack energy that is only expended when attacking elite or boss enemies",
+      "baseTalent": "Stored attack energy deals 135% damage. Can store one additional charge of attack energy that is only expended when attacking Elite or Leader enemies",
       "moduleBranch": "MSC-X",
-      "stage2TalentUpgrade": "Stored attack energy deals **140% damage**. Can store one additional charge of attack energy that is only expended when attacking elite or boss enemies",
-      "stage3TalentUpgrade": "Stored attack energy deals **143% damage**. Can store one additional charge of attack energy that is only expended when attacking elite or boss enemies",
+      "stage2TalentUpgrade": "Stored attack energy deals **140% damage**. Can store one additional charge of attack energy that is only expended when attacking Elite or Leader enemies",
+      "stage3TalentUpgrade": "Stored attack energy deals **143% damage**. Can store one additional charge of attack energy that is only expended when attacking Elite or Leader enemies",
       "totalStats": "ATK +90, ASPD +5"
     },
     {
@@ -1004,10 +1004,10 @@
   ],
   "Hibiscus the Purifier": [
     {
-      "baseTalent": "Attacks inflict 12% (14%) Arts Fragility effect to enemies for 5 seconds",
+      "baseTalent": "Attacks inflict 12% (14%) Arts Fragile effect to enemies for 5 seconds",
       "moduleBranch": "INC-X",
-      "stage2TalentUpgrade": "Attacks inflict **17% (19%)** Arts Fragility effect to enemies for 5 seconds",
-      "stage3TalentUpgrade": "Attacks inflict **20% (22%)** Arts Fragility effect to enemies for 5 seconds",
+      "stage2TalentUpgrade": "Attacks inflict **17% (19%)** Arts Fragile effect to enemies for 5 seconds",
+      "stage3TalentUpgrade": "Attacks inflict **20% (22%)** Arts Fragile effect to enemies for 5 seconds",
       "totalStats": "HP +140, ATK +40"
     }
   ],
@@ -1826,10 +1826,10 @@
   ],
   "Qanipalaat": [
     {
-      "baseTalent": "Apply 20% (22%) Arts Fragility effect to all aerial enemies within Attack Range",
+      "baseTalent": "Apply 20% (22%) Arts Fragile effect to all aerial enemies within Attack Range",
       "moduleBranch": "CCR-Y",
-      "stage2TalentUpgrade": "Apply **25% (27%)** Arts Fragility effect to all aerial enemies within Attack Range",
-      "stage3TalentUpgrade": "Apply **28% (30%)** Arts Fragility effect to all aerial enemies within Attack Range",
+      "stage2TalentUpgrade": "Apply **25% (27%)** Arts Fragile effect to all aerial enemies within Attack Range",
+      "stage3TalentUpgrade": "Apply **28% (30%)** Arts Fragile effect to all aerial enemies within Attack Range",
       "totalStats": "HP +150, ATK +50"
     }
   ],
@@ -2206,10 +2206,10 @@
       "totalStats": "HP +180, ASPD +6"
     },
     {
-      "baseTalent": "When enemies within Attack Range are Slowed, apply 20% (23%) Fragility effect for the duration of the Slow effect",
+      "baseTalent": "When enemies within Attack Range are Slowed, apply 20% (23%) Fragile effect for the duration of the Slow effect",
       "moduleBranch": "DEC-Y",
-      "stage2TalentUpgrade": "When enemies within Attack Range are Slowed, apply **21% (24%)** Fragility effect **and 5% Enfeeble** for the duration of the Slow effect",
-      "stage3TalentUpgrade": "When enemies within Attack Range are Slowed, apply **22% (25%)** Fragility effect and **8%** Enfeeble for the duration of the Slow effect",
+      "stage2TalentUpgrade": "When enemies within Attack Range are Slowed, apply **21% (24%)** Fragile effect **and 5% Enfeeble** for the duration of the Slow effect",
+      "stage3TalentUpgrade": "When enemies within Attack Range are Slowed, apply **22% (25%)** Fragile effect and **8%** Enfeeble for the duration of the Slow effect",
       "totalStats": "HP +120, ATK +46"
     }
   ],
@@ -2486,6 +2486,114 @@
       "stage2TalentUpgrade": "When deployed, gain Berserk effect of up to **60 ASPD** and **+2.2 SP/s** (reaches the maximum effect at **60% HP lost**)",
       "stage3TalentUpgrade": "When deployed, gain Berserk effect of up to **70 ASPD** and **+2.3 SP/s** (reaches the maximum effect at **50% HP lost**)",
       "totalStats": "ATK +90, DEF +60"
+    }
+  ],
+  "Silverash": [
+    {
+      "baseTalent": "ATK +10% (12%). When in team, all operators' redeployment time -10% (12%)",
+      "moduleBranch": "LOR-X",
+      "stage2TalentUpgrade": "**ATK +**, **when attacking Elite or Leader enemies, further gain ATK**. When in team, all operators' redeployment time -10%",
+      "stage3TalentUpgrade": "**ATK ++**, when attacking Elite or Leader enemies, further gain **ATK+**. When in team, all operators' redeployment time -10%, **Silverash and allies in the surrounding 8 tiles gain further reduced redeployment time**",
+      "totalStats": "HP, ATK"
+    }
+  ],
+  "Thorns": [
+    {
+      "baseTalent": "Attacks poison the target, dealing 125 (140) Arts damage every second for 3 seconds (doubled damage against enemies possessing ranged attacks)",
+      "moduleBranch": "LOR-X",
+      "stage2TalentUpgrade": "Attacks poison the target, dealing 125 (140) Arts damage every second for 3 seconds (**can stack up to a certain amount of layers**, doubled damage against enemies possessing ranged attacks)",
+      "stage3TalentUpgrade": "Attacks poison the target, dealing ? Arts damage every second for 3 seconds (can stack up to a **certain+** amount of layers, doubled damage against enemies possessing ranged attacks)",
+      "totalStats": "HP, ATK, ASPD"
+    }
+  ],
+  "Qiubai": [
+    {
+      "baseTalent": "When attacking Slowed or Bound enemies, deal an additional hit of Arts damage equal to 40% (43%) ATK",
+      "moduleBranch": "LOR-X",
+      "stage2TalentUpgrade": "When attacking Slowed or Bound enemies, deal an additional hit of Arts damage equal to ? ATK; **If the target is both Slowed and Bound, deal increased damage**",
+      "stage3TalentUpgrade": "When attacking Slowed or Bound enemies, deal an additional hit of Arts damage equal to ? ATK; If the target is both Slowed and Bound, deal **increased+** damage",
+      "totalStats": "ATK, DEF, ASPD"
+    }
+  ],
+  "Lappland": [
+    {
+      "baseTalent": "Attacks Silence the target for 5 (6) seconds",
+      "moduleBranch": "LOR-Y",
+      "stage2TalentUpgrade": "Attacks Silence the target **and applies ?% Fragile** for **? seconds**",
+      "stage3TalentUpgrade": "Attacks Silence the target and applies **?%+ Fragile** for ? seconds",
+      "totalStats": "HP, ATK, ASPD"
+    }
+  ],
+  "Ayerscarpe": [
+    {
+      "baseTalent": "Self and allies in the 8 surrounding tiles gain ASPD +8 (10)",
+      "moduleBranch": "LOR-X",
+      "stage2TalentUpgrade": "Self and allies in the 8 surrounding tiles gain ASPD +8 (10); **allies blocking enemies gain ? more ASPD**",
+      "stage3TalentUpgrade": "Self and allies in the 8 surrounding tiles gain ASPD +; allies blocking enemies gain ? more ASPD",
+      "totalStats": "HP, ATK"
+    }
+  ],
+  "Leto": [
+    {
+      "baseTalent": "When skill is active, all [Ursus Student Council] operators gain ASPD +21 (24)",
+      "moduleBranch": "LOR-Y",
+      "stage2TalentUpgrade": "When skill is active, all [Ursus Student Council] operators gain **ASPD + **",
+      "stage3TalentUpgrade": "When skill is active, all [Ursus Student Council] operators gain **ASPD ++**",
+      "totalStats": "ATK, DEF"
+    }
+  ],
+  "Arene": [
+    {
+      "baseTalent": "Prioritize attacking [Drones]. Deal 140% (143%) damage when attacking [Drones]",
+      "moduleBranch": "LOR-Y",
+      "stage2TalentUpgrade": "Prioritize attacking [Drones]. **Deal + damage** when attacking [Drones]",
+      "stage3TalentUpgrade": "Prioritize attacking [Drones]. **Deal ++ damage** when attacking [Drones]",
+      "totalStats": "HP, ATK"
+    }
+  ],
+  "Frostleaf": [
+    {
+      "baseTalent": "Expand Attack Range, however slightly increase Attack Interval (+0.15 seconds)",
+      "moduleBranch": "LOR-X",
+      "stage2TalentUpgrade": "Expand Attack Range, **attacks have a ?% chance to inflict Chill for ? seconds**, however slightly increase Attack Interval (+0.15 seconds)",
+      "stage3TalentUpgrade": "Expand Attack Range, attacks have a **?% chance** to inflict Chill for ? seconds, however slightly increase Attack Interval (+0.15 seconds)",
+      "totalStats": "ATK, DEF"
+    }
+  ],
+  "Luo Xiaohei": [
+    {
+      "baseTalent": "When dealing lethal damage, leave the enemy with 1 HP and inflict [Critically Wounded] (Reduce movement speed and become unable to be blocked; Will die after 10 seconds; If killed, grant +2 SP to the attacker). Luo Xiaohei will not attack [Critically Wounded] targets",
+      "moduleBranch": "LOR-Y",
+      "stage2TalentUpgrade": "**When attacking enemies with less than 50% HP, increase damage dealt by ?%**; When dealing lethal damage, leave the enemy with 1 HP and inflict [Critically Wounded] (Reduce movement speed and become unable to be blocked; Will die after 10 seconds; If killed, grant +2 SP to the attacker). Luo Xiaohei will not attack [Critically Wounded] targets",
+      "stage3TalentUpgrade": "When attacking enemies with less than 50% HP, increase damage dealt by **?%**; When dealing lethal damage, leave the enemy with 1 HP and inflict [Critically Wounded] (Reduce movement speed and become unable to be blocked; Will die after 10 seconds; If killed, grant +2 SP to the attacker). Luo Xiaohei will not attack [Critically Wounded] targets",
+      "totalStats": "HP, ATK, DEF"
+    }
+  ],
+  "Wis'adel": [
+    {
+      "baseTalent": "When attacking, deal 115% damage to the main target and attach an Afterimage. When the Afterimage is hit by Wis'adel's aftershocks, there is a 15% chance to explode and deal 150% Physical damage to all nearby enemies and Stun them for 1 second",
+      "moduleBranch": "LOR-Y",
+      "stage2TalentUpgrade": "When attacking, deal **+% damage** to the main target and attach an Afterimage. When the Afterimage is hit by Wis'adel's aftershocks, there is a 15% chance to explode and deal **+% Physical damage** to all nearby enemies and Stun them for 1 second",
+      "stage3TalentUpgrade": "When attacking, deal **++% damage** to the main target and attach an Afterimage. When the Afterimage is hit by Wis'adel's aftershocks, there is a 15% chance to explode and deal **++% Physical damage** to all nearby enemies and Stun them for 1 second",
+      "totalStats": "ATK, ASPD"
+    }
+  ],
+  "Logos": [
+    {
+      "baseTalent": "When attacking a target, there is a 40% chance to attack another random target within Attack Range, dealing 60% Arts damage and Slowing them for 0.8 seconds",
+      "moduleBranch": "COR-D",
+      "stage2TalentUpgrade": "When attacking a target, there is a **+% chance** to attack another random target within Attack Range, dealing 60% Arts damage and Slowing them for 0.8 seconds; **If the random target is under the active effects of Necrosis, deal ?% Elemental damage**",
+      "stage3TalentUpgrade": "When attacking a target, there is a **++% chance** to attack another random target within Attack Range, dealing 60% Arts damage and Slowing them for 0.8 seconds; If the random target is under the active effects of Necrosis, deal **?% Elemental damage**",
+      "totalStats": "HP, ATK"
+    }
+  ],
+  "Fang the Fire-Sharpened": [
+    {
+      "baseTalent": "The first deployment has -3 DP cost. Upon retreat, reduce the DP cost of the next deployed operator by 1.",
+      "moduleBranch": "CHG-X",
+      "stage2TalentUpgrade": "The first deployment has **-? DP cost**. Upon retreat, reduce the DP cost of the next deployed operator by 1.",
+      "stage3TalentUpgrade": "The first deployment has -? DP cost. Upon retreat, reduce the DP cost of the next deployed operator **by -?.**",
+      "totalStats": "ATK, ASPD"
     }
   ]
 }
