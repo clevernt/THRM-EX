@@ -4,7 +4,7 @@ import requests
 
 API_URL = "https://awedtan.ca/api/enemy"
 EMBED_COLORS = {"NORMAL": "#62759d", "ELITE": "#c58b3a", "BOSS": "#ce3131"}
-REGEX_PATTERN = re.compile(r"<[^>]+>")
+REGEX_PATTERN = re.compile(r"<\$ba\.[^>]*>(.*?)</>")
 
 
 def get_enemy_data(enemy: str) -> dict:
@@ -18,9 +18,9 @@ def get_enemy_data(enemy: str) -> dict:
 def get_enemy_abilities(enemy_data: dict) -> list:
     abilities_list = [
         (
-            f"**{re.sub(REGEX_PATTERN, '', ability['text'])}**"
+            f"**{re.sub(REGEX_PATTERN, lambda match: match.group(1), ability['text'])}**"
             if ability["textFormat"] == "TITLE"
-            else f"• {re.sub(REGEX_PATTERN, '', ability['text'])}"
+            else f"• {re.sub(REGEX_PATTERN, lambda match: match.group(1), ability['text'])}"
         )
         for ability in enemy_data["excel"]["abilityList"]
     ]
