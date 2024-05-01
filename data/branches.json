@@ -44,7 +44,7 @@
   "MAR-Y": "ASPD +8 when there is a ground enemy within range",
   "MER-X": "While deployed, ~~3~~ -> **2** DP are consumed every 3 seconds (automatically retreats without sufficient DP)",
   "MER-Y": "Gain 4% ATK each time DP is consumed, up to 5 stacks",
-  "MSC-D": "Deals Necrosis damage equal to 8% of the damage dealt",
+  "MSC-D": "Attacks inflict Necrosis damage equal to 8% of the damage dealt",
   "MSC-X": "When there's no targets within range, can store the attack energy (up to ~~3~~ -> **4** times) and fire it off in a burst",
   "MSC-Y": "When holding a charge of stored energy, ASPD +30",
   "PHY-X": "When healing units with less than 50% HP, healing effectiveness is increased by 15%",
@@ -81,5 +81,6 @@
   "WAH-X": "Less likely to be targeted\nGrants [Resist] to self",
   "WAH-Y": "Remove the healing reduction on farther targets",
   "LOR-X": "Attacks deal 10% of ATK as Arts damage",
-  "LOR-Y": "When there are 2 or more enemies within Attack Range, ASPD +12"
+  "LOR-Y": "When there are 2 or more enemies within Attack Range, ASPD +12",
+  "COR-D": "Attacks inflict Necrosis damage equal to 8% of the damage dealt"
 }
