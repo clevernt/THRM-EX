@@ -2,7 +2,7 @@ import hikari
 import requests
 import re
 
-REGEX_PATTERN = re.compile(r"<(@\w+\.[^>]+|\$[^>]+)>(.*?)<\/>")
+REGEX_PATTERN = re.compile(r"<\$cc[^>]*>|<@cc[^>]*>|<\/>")
 
 
 # Should really be in another file (maybe data.py)
@@ -34,7 +34,7 @@ def extract_base_skills(operator_data):
                 "reqLevel": req_level,
                 "name": name,
                 "roomType": room_type,
-                "description": f"{re.sub(REGEX_PATTERN, lambda match: match.group(1), description)}",
+                "description": f"{re.sub(REGEX_PATTERN, '', description)}",
             }
         )
     return base_skills
