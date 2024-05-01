@@ -20,8 +20,12 @@ REGEX_PATTERN = re.compile(r"<\$cc[^>]*>|<@cc[^>]*>|<\/>")
 @lightbulb.implements(lightbulb.SlashCommand)
 async def define(ctx):
     term = ctx.options.term
-    definition = requests.get(f"https://awedtan.ca/api/define/{term.lower()}").json()
+    resp = requests.get(f"https://awedtan.ca/api/define/{term.lower()}")
+    if resp.status_code != 200:
+        await ctx.respond(hikari.Embed(description=f"Term `{term}` not found."))
+        return
 
+    definition = resp.json()
     em = hikari.Embed(
         title=definition.get("value").get("termName"),
         description=f"{re.sub(REGEX_PATTERN, '**', definition.get('value').get('description'))}",
