@@ -46,21 +46,19 @@ def get_mats(operator_id, branch_code):
 
     with open("./data/materials.json") as f:
         materials_data = json.load(f)
-    try:
-        materials = [
-            (
-                f"{item['count']}x <:{materials_data[item['id']]['id']}:{materials_data[item['id']]['emojiId']}>"
-            )
-            for module in uniequip_table.get("equipDict", {}).values()
-            if isinstance(module, dict)
-            and module.get("charId") == operator_id
-            and module.get("typeIcon") == branch_code.lower()
-            for stage in module.get("itemCost", {}).values()
-            for item in stage
-            if isinstance(item, dict)
-            and item.get("type", "") == "MATERIAL"
-            and not item.get("id", "").startswith("mod")
-        ]
-        return materials
-    except KeyError:
-        return None
+
+    materials = [
+        (
+            f"{item['count']}x <:{materials_data[item['id']]['id']}:{materials_data[item['id']]['emojiId']}>"
+        )
+        for module in uniequip_table.get("equipDict", {}).values()
+        if isinstance(module, dict)
+        and module.get("charId") == operator_id
+        and module.get("typeIcon") == branch_code.lower()
+        for stage in module.get("itemCost", {}).values()
+        for item in stage
+        if isinstance(item, dict)
+        and item.get("type", "") == "MATERIAL"
+        and not item.get("id", "").startswith("mod")
+    ]
+    return materials

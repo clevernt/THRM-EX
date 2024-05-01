@@ -33,7 +33,7 @@ async def module(ctx):
     operator_name = operators_with_modules[requested_operator]
     embeds = []
     for module in modules_list:
-        # materials = get_mats(operators[operator_name]["id"], module["moduleBranch"])
+        materials = get_mats(operators[operator_name]["id"], module["moduleBranch"])
         trait_upgrade = get_branch_trait(module["moduleBranch"])
 
         embed = hikari.Embed(
@@ -55,7 +55,7 @@ async def module(ctx):
 
         embed.add_field("Stage 3 - Talent Upgrade", module["stage3TalentUpgrade"])
 
-        # embed.add_field("Materials", " | ".join(materials))
+        embed.add_field("Materials", " | ".join(materials))
 
         if module["moduleBranch"] in range_mods:
             embed.add_field(module["totalStats"], "New Attack Range:")
