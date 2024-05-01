@@ -2518,7 +2518,7 @@
   "Lappland": [
     {
       "baseTalent": "Attacks Silence the target for 5 (6) seconds",
-      "moduleBranch": "LOR-Y",
+      "moduleBranch": "LOR-X",
       "stage2TalentUpgrade": "Attacks Silence the target **and apply 4% Fragile** for **6 (7) seconds**",
       "stage3TalentUpgrade": "Attacks Silence the target and apply **8% Fragile** for 6 (7) seconds",
       "totalStats": "HP +175, ATK +40, ASPD +6"
