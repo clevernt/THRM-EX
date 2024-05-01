@@ -28,7 +28,7 @@ async def define(ctx):
     definition = resp.json()
     em = hikari.Embed(
         title=definition.get("value").get("termName"),
-        description=f"{re.sub(REGEX_PATTERN, '**', definition.get('value').get('description'))}",
+        description=f"{re.sub(REGEX_PATTERN, ' **', definition.get('value').get('description'))}",
     )
 
     await ctx.respond(em)
