@@ -34,7 +34,7 @@ def extract_base_skills(operator_data):
                 "reqLevel": req_level,
                 "name": name,
                 "roomType": room_type,
-                "description": f"{re.sub(REGEX_PATTERN, "**", description)}",
+                "description": f"{re.sub(REGEX_PATTERN, '**', description)}",
                 "terms": re.findall(r"<\$cc[^>]*>", description),
             }
         )
