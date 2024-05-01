@@ -9,7 +9,7 @@ bot = lightbulb.BotApp
 plugin = lightbulb.Plugin("define")
 
 terms = requests.get("https://awedtan.ca/api/define").json()
-REGEX_PATTERN = re.compile(r"<\$cc[^>]*>|<@cc[^>]*>|<\/>")
+REGEX_PATTERN = re.compile(r"<\$cc[^>]*>|<@cc[^>]*>|<\$ba[^>]*>|<\/>")
 
 
 @plugin.command
