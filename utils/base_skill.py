@@ -45,7 +45,8 @@ def create_embeds(operator, base_skills):
             title=(operator.title() if not idx else base_skill["name"]),
             description=f"**E{base_skill['reqElite'][-1]} Lv{base_skill['reqLevel']}**\n{base_skill['description']}" if idx else None,
             color=base_skill["color"]
-        ).set_thumbnail(f"https://raw.githubusercontent.com/KrisTheNewest/MayerBotPics/master/riic/{base_skill["skillIcon"]}.webp")
+        )
+        embed.set_thumbnail(f"https://raw.githubusercontent.com/KrisTheNewest/MayerBotPics/master/riic/{base_skill["skillIcon"]}.webp")
         if not idx:
             embed.add_field(
                 f"{base_skill["name"]}",
