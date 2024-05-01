@@ -2,7 +2,7 @@ import hikari
 import requests
 import re
 
-REGEX_PATTERN = re.compile(r"<@\w+\.[^>]+>(.*?)<\/>")
+REGEX_PATTERN = re.compile(r"<(@\w+\.[^>]+|\$[^>]+)>(.*?)<\/>")
 
 
 # Should really be in another file (maybe data.py)
