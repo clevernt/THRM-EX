@@ -34,7 +34,8 @@ def extract_base_skills(operator_data):
                 "reqLevel": req_level,
                 "name": name,
                 "roomType": room_type,
-                "description": f"{re.sub(REGEX_PATTERN, '', description)}",
+                "description": f"{re.sub(REGEX_PATTERN, "**", description)}",
+                "terms": re.findall(r"<\$cc[^>]*>", description),
             }
         )
     return base_skills
@@ -61,5 +62,15 @@ def create_embeds(operator, base_skills):
                 f"{base_skill['name']}",
                 f"**E{base_skill['reqElite'][-1]} Lv{base_skill['reqLevel']}**\n{base_skill['description']}",
             )
+
+        if terms := base_skill["terms"]:
+            for term in terms:
+                dictionary = requests.get(
+                    f"https://awedtan.ca/api/define/{term[2:-1]}"
+                ).json()
+                term_name = dictionary["value"].get("termName")
+                term_description = dictionary["value"].get("description")
+                embed.add_field(term_name, term_description)
+
         embeds.append(embed)
     return embeds
