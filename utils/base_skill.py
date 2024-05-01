@@ -43,7 +43,7 @@ def create_embeds(operator, base_skills):
     for idx, base_skill in enumerate(base_skills):
         embed = hikari.Embed(
             title=(operator.title() if not idx else base_skill["name"]),
-            description=f"**E{base_skill["reqElite"][-1]} Lv{base_skill["reqLevel"]}**\n{base_skill["description"]}" if idx else None,
+            description=f"**E{base_skill['reqElite'][-1]} Lv{base_skill['reqLevel']}**\n{base_skill['description']}" if idx else None,
             color=base_skill["color"]
         ).set_thumbnail(f"https://raw.githubusercontent.com/KrisTheNewest/MayerBotPics/master/riic/{base_skill["skillIcon"]}.webp")
         if not idx:
