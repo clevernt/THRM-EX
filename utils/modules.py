@@ -1,7 +1,7 @@
 import json
 import requests
 
-from utils import GITHUB_REPO
+from utils.data import GITHUB_REPO
 
 range_mods = {
     "SPC-X": "https://uwu.so/neuvium/new5soyo92",

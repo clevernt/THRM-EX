@@ -21,5 +21,15 @@ async def on_error(event: lightbulb.CommandErrorEvent) -> None:
         raise event.exception
 
 
+@bot.command()
+@lightbulb.command("ping", "Check bot's ping", auto_defer=True)
+@lightbulb.implements(lightbulb.SlashCommand)
+async def ping(ctx):
+    embed = hikari.Embed(
+        title="Pong!", description=f"**{bot.heartbeat_latency * 1_000:.0f}ms**"
+    )
+    await ctx.respond(embed)
+
+
 bot.load_extensions_from("extensions")
 bot.run()

@@ -4,7 +4,15 @@ import requests
 
 from typing import Union, Sequence
 from utils.data import GITHUB_REPO
-from utils.enemy import *
+from utils.enemy import (
+    get_enemy_abilities,
+    get_enemy_code,
+    get_enemy_data,
+    get_enemy_levels,
+    get_immunities,
+    get_prts_link,
+    add_embed_fields,
+)
 
 plugin = lightbulb.Plugin("enemy")
 

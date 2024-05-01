@@ -14,15 +14,15 @@ unskilled_operators = [
 ]
 
 
-def filter_and_translate(operators_list, operator_names):
+def filter_and_translate(operators_list, operators_chinese_names):
     return [
         (
-            operator_names[operator]
+            operators_chinese_names[operator]
             if operator in unskilled_operators
             else (
-                f"{operator_names[operator.rstrip(operator[-1])]} S{operator[-1]}"
+                f"{operators_chinese_names[operator.rstrip(operator[-1])]} S{operator[-1]}"
                 if operator[-1].isdigit()
-                else operator_names.get(operator)
+                else operators_chinese_names.get(operator)
             )
         )
         for operator in operators_list

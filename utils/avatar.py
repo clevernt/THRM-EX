@@ -1,5 +1,5 @@
 import json
-from utils import GITHUB_REPO
+from utils.data import GITHUB_REPO
 
 
 def get_avatar(operator):

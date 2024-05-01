@@ -7,7 +7,14 @@ import lightbulb
 
 from dateutil import parser
 from lightbulb.utils import nav
-from utils import *
+from utils.data import (
+    EMBED_COLOR,
+    ARKREC_URL,
+    categories,
+    operators_chinese_names,
+    categories_en,
+)
+from utils.operators_list import filter_and_translate
 
 plugin = lightbulb.Plugin("arkrec")
 
@@ -74,7 +81,9 @@ async def arkrec(ctx):
             operators_list = i["team"]
             raider = i["raider"]
             date_published = parser.isoparse(i["date_published"]).astimezone(pytz.UTC)
-            operators_list_en = filter_and_translate(operators_list, operator_names)
+            operators_list_en = filter_and_translate(
+                operators_list, operators_chinese_names
+            )
             embed = hikari.Embed(
                 title=f"{stage_code} | {'Challenge Mode' if operation_type == 'challenge' else 'Normal Mode'}",
                 description=", ".join(map(str, categories_en)),

@@ -4,10 +4,16 @@ import hikari
 from typing import Sequence, Union
 from lightbulb.utils import pag, nav
 
-from utils import *
-
-with open("./data/operators.json", encoding="utf-8") as f:
-    operators = json.load(f)
+from utils.modules import (
+    get_modules,
+    get_branch_trait,
+    get_branch_icon,
+    get_mats,
+    range_mods,
+    operators_with_modules,
+)
+from utils.data import operators, EMBED_COLOR
+from utils.avatar import get_avatar
 
 bot = lightbulb.BotApp
 plugin = lightbulb.Plugin("modules")

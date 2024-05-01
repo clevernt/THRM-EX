@@ -2,8 +2,8 @@ import hikari
 import lightbulb
 import requests
 
-from utils import get_enemies
-from utils import GITHUB_REPO
+from utils.stage import get_enemies
+from utils.data import GITHUB_REPO
 
 plugin = lightbulb.Plugin("stage")
 
