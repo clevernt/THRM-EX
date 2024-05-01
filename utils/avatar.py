@@ -9,4 +9,7 @@ def get_avatar(operator):
             if operator_name.lower() == operator.lower():
                 operator_id = operator_data["id"]
 
+    if operator_id == "char_172_svrash":
+        return f"{GITHUB_REPO}/avatar/ASSISTANT/{operator_id}.png"
+
     return f"{GITHUB_REPO}/avatar/ASSISTANT/{operator_id}_2.png"
