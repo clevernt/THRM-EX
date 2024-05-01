@@ -2511,7 +2511,7 @@
       "baseTalent": "When attacking Slowed or Bound enemies, deal an additional hit of Arts damage equal to 40% (43%) ATK",
       "moduleBranch": "LOR-X",
       "stage2TalentUpgrade": "When attacking Slowed or Bound enemies, deal an additional hit of Arts damage equal to 45% (48%) ATK; **If the target is both Slowed and Bound, this damage is increased to 1.1x the original amount**",
-      "stage3TalentUpgrade": "When attacking Slowed or Bound enemies, deal an additional hit of Arts damage equal to 45% (48%) ATK; If the target is both Slowed and Bound, this damage is increased to **1.2x** the original amount**",
+      "stage3TalentUpgrade": "When attacking Slowed or Bound enemies, deal an additional hit of Arts damage equal to 45% (48%) ATK; If the target is both Slowed and Bound, this damage is increased to **1.2x** the original amount",
       "totalStats": "ATK +55, DEF +45, ASPD +7"
     }
   ],
