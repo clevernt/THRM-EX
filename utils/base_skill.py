@@ -70,7 +70,9 @@ def create_embeds(operator, base_skills):
                 ).json()
                 term_name = dictionary["value"].get("termName")
                 term_description = dictionary["value"].get("description")
-                embed.add_field(term_name, term_description)
+                embed.add_field(
+                    term_name, f"{re.sub(REGEX_PATTERN, '**', term_description)}"
+                )
 
         embeds.append(embed)
     return embeds
