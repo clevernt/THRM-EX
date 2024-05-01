@@ -7,7 +7,9 @@ REGEX_PATTERN = re.compile(r"<@\w+\.[^>]+>(.*?)<\/>")
 
 # Should really be in another file (maybe data.py)
 def get_operator_data(operator: str):
-    response = requests.get(f"https://awedtan.ca/api/operator/{operator.lower()}?include=bases")
+    response = requests.get(
+        f"https://awedtan.ca/api/operator/{operator.lower()}?include=bases"
+    )
     if response.status_code == 200:
         return response.json()
     return None
@@ -43,14 +45,21 @@ def create_embeds(operator, base_skills):
     for idx, base_skill in enumerate(base_skills):
         embed = hikari.Embed(
             title=(operator.title() if not idx else base_skill["name"]),
-            description=f"**E{base_skill['reqElite'][-1]} Lv{base_skill['reqLevel']}**\n{base_skill['description']}" if idx else None,
-            color=base_skill["color"]
+            description=(
+                f"**E{base_skill['reqElite'][-1]} Lv{base_skill['reqLevel']}**\n{base_skill['description']}"
+                if idx
+                else None
+            ),
+            color=base_skill["color"],
         )
-        embed.set_thumbnail(f"https://raw.githubusercontent.com/KrisTheNewest/MayerBotPics/master/riic/{base_skill["skillIcon"]}.webp")
+        embed.set_thumbnail(
+            f"https://raw.githubusercontent.com/KrisTheNewest/MayerBotPics/master/riic/{base_skill['skillIcon']}.webp"
+        )
+
         if not idx:
             embed.add_field(
-                f"{base_skill["name"]}",
-                f"**E{base_skill["reqElite"][-1]} Lv{base_skill["reqLevel"]}**\n{base_skill["description"]}",
+                f"{base_skill['name']}",
+                f"**E{base_skill['reqElite'][-1]} Lv{base_skill['reqLevel']}**\n{base_skill['description']}",
             )
         embeds.append(embed)
     return embeds
