@@ -2581,7 +2581,7 @@
   "Logos": [
     {
       "baseTalent": "When attacking a target, there is a 40% chance to attack another random target within Attack Range, dealing 60% (65%) Arts damage and Slowing them for 0.8 seconds",
-      "moduleBranch": "COR-D",
+      "moduleBranch": "CCR-D",
       "stage2TalentUpgrade": "When attacking a target, there is a **50% chance** to attack another random target within Attack Range, dealing 60% (65%) Arts damage and Slowing them for 0.8 seconds; **If the random target is under the active effects of Necrosis, deal 40% of ATK as Elemental damage**",
       "stage3TalentUpgrade": "hen attacking a target, there is a **60% chance** to attack another random target within Attack Range, dealing 60% Arts damage and Slowing them for 0.8 seconds; If the random target is under the active effects of Necrosis, deal **60% of ATK** as Elemental damag",
       "totalStats": "HP +170, ATK +67"
