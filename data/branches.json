@@ -82,5 +82,5 @@
   "WAH-Y": "Remove the healing reduction on farther targets",
   "LOR-X": "Attacks deal 10% of ATK as Arts damage",
   "LOR-Y": "When there are 2 or more enemies within Attack Range, ASPD +12",
-  "COR-D": "Attacks inflict Necrosis damage equal to 8% of the damage dealt"
+  "CCR-D": "Attacks inflict Necrosis damage equal to 8% of the damage dealt"
 }
