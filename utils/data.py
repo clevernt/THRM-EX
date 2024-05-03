@@ -11,3 +11,6 @@ with open("./data/operators.json", encoding="utf-8") as f:
 with open("./data/categories.json", encoding="utf-8") as f:
     categories = json.load(f)
     categories_en = [value.lower() for value in categories.values()]
+
+with open("./data/terms.json", encoding="utf-8") as f:
+    terms_dict = json.load(f)

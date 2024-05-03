@@ -2,6 +2,8 @@ import hikari
 import requests
 import re
 
+from utils.data import terms_dict
+
 REGEX_PATTERN = re.compile(r"<\$cc[^>]*>|<@cc[^>]*>|<\/>")
 
 
@@ -65,14 +67,10 @@ def create_embeds(operator, base_skills):
 
         if terms := base_skill["terms"]:
             for term in terms:
-                dictionary = requests.get(
-                    f"https://awedtan.ca/api/define/{term[2:-1]}"
-                ).json()
-                term_name = dictionary["value"].get("termName")
-                term_description = dictionary["value"].get("description")
-                embed.add_field(
-                    term_name, f"{re.sub(REGEX_PATTERN, '**', term_description)}"
-                )
+                dict = terms_dict.get(term)
+                name = dict.get("termName")
+                description = dict.get("description")
+                embed.add_field(name, f"{re.sub(REGEX_PATTERN, '**', description)}")
 
         embeds.append(embed)
     return embeds
