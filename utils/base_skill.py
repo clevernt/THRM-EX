@@ -66,8 +66,10 @@ def create_embeds(operator, base_skills):
             )
 
         if terms := base_skill["terms"]:
+            print(terms)
             for term in terms:
-                dict = terms_dict.get(term)
+                print(term)
+                dict = terms_dict.get(term[2:-1])
                 name = dict.get("termName")
                 description = dict.get("description")
                 embed.add_field(name, f"{re.sub(REGEX_PATTERN, '**', description)}")
