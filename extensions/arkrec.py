@@ -1,11 +1,9 @@
 from typing import Union, Sequence
 
 import requests
-import pytz
 import hikari
 import lightbulb
 
-from dateutil import parser
 from lightbulb.utils import nav
 from utils.data import (
     EMBED_COLOR,
@@ -21,6 +19,7 @@ plugin = lightbulb.Plugin("arkrec")
 stage_table = requests.get(
     "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData/master/zh_CN/gamedata/excel/stage_table.json"
 ).json()["stages"]
+stage_types = {"challenge": "Challenge Mode", "normal": "Normal Mode"}
 
 
 @plugin.command()
@@ -64,42 +63,46 @@ async def arkrec(ctx):
         return await ctx.respond(
             hikari.Embed(description=f"Request error: ```{e}```", color=EMBED_COLOR)
         )
+    clears = response.json()
 
-    data = response.json()
     embeds = []
-
-    for i in data:
-        operation_type = i["operationType"]
-        categories_cn = i["category"]
+    embed = None
+    per_page = 4
+    clear_count = 0
+    for clear in clears:
+        operation_type = clear["operationType"]
+        categories_cn = clear["category"]
         categories_en = [categories.get(category) for category in categories_cn]
 
         if (category.title() in categories_en) and (mode in (operation_type, None)):
-            raider_image = i["raiderImage"]
-            stage_code = i["operation"]
-            clear_link = i["url"]
-            operator_count = len(i["team"])
-            operators_list = i["team"]
-            raider = i["raider"]
-            date_published = parser.isoparse(i["date_published"]).astimezone(pytz.UTC)
+            stage_code = clear["operation"]
+            clear_link = clear["url"]
+            operator_count = len(clear["team"])
+            operators_list = clear["team"]
             operators_list_en = filter_and_translate(
                 operators_list, operators_chinese_names
             )
-            embed = hikari.Embed(
-                title=f"{stage_code} | {'Challenge Mode' if operation_type == 'challenge' else 'Normal Mode'}",
-                description=", ".join(map(str, categories_en)),
-                timestamp=date_published,
-                url=f"https://en.arkrec.com/operation/{stage_code}+{stage_name}",
-                color=EMBED_COLOR,
-            )
-            embed.set_author(name=raider, icon=raider_image)
-            embed.add_field(
-                f"Squad - {operator_count} Operators",
-                ", ".join(map(str, operators_list_en)),
-                inline=True,
-            )
-            embed.add_field("Clear Link", clear_link)
-            embeds.append(embed)
 
+            if clear_count % per_page == 0:
+                embed = hikari.Embed(
+                    title=f"{stage_code} {category.title()} Clears",
+                    description=f"[Arkrec Page](https://en.arkrec.com/operation/{stage_code}+{stage_name})",
+                    color=EMBED_COLOR,
+                )
+                embeds.append(embed)
+
+            embed.add_field(
+                name=f"{stage_types.get(operation_type)} | {operator_count} Operators",
+                value=f"{', '.join(operators_list_en)}\n[Video Link]({clear_link})\n",
+            )
+
+            clear_count += 1
+
+            if clear_count % per_page == 0:
+                embed = None
+
+    if embed is not None:
+        embeds.append(embed)
     if not embeds:
         return await ctx.respond(
             hikari.Embed(
