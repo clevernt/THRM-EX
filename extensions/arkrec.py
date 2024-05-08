@@ -38,7 +38,7 @@ async def arkrec(ctx):
     category = ctx.options.category
     stage = ctx.options.stage
     mode = ctx.options.mode
-
+    print(stage)
     stage_name = next(
         (
             value["name"]
@@ -47,7 +47,7 @@ async def arkrec(ctx):
         ),
         None,
     )
-
+    print(stage_name)
     if not stage_name:
         return await ctx.respond(
             hikari.Embed(description=f"Stage {stage} not found.", color=EMBED_COLOR)
