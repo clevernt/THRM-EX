@@ -25,7 +25,7 @@ async def base_skill(ctx):
     embeds = create_embeds(base_skills)
 
     char_id = (
-        requests.get(f"https://awedtan.ca/api/operator/{operator}?include=id")
+        requests.get(f"https://awedtan.ca/api/operator/{operator.lower()}?include=id")
         .json()
         .get("value")
         .get("id")

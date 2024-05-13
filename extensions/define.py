@@ -1,7 +1,6 @@
 import lightbulb
 import hikari
 import re
-import json
 
 from utils.data import terms_dict
 from typing import Sequence, Union
