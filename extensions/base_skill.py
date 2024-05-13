@@ -1,8 +1,9 @@
 import lightbulb
 import hikari
+import requests
 
 from typing import Sequence, Union
-from utils.data import operators
+from utils.data import EMBED_COLOR, operators, GITHUB_REPO
 from utils.base_skill import get_operator_data, extract_base_skills, create_embeds
 
 bot = lightbulb.BotApp
@@ -14,15 +15,26 @@ plugin = lightbulb.Plugin("base_skill")
 @lightbulb.command("baseskill", "Get an operator's base skill(s)", auto_defer=True)
 @lightbulb.implements(lightbulb.SlashCommand)
 async def base_skill(ctx):
-    operator_data = get_operator_data(ctx.options.operator)
+    operator = ctx.options.operator
+    operator_data = get_operator_data(operator)
     if not operator_data:
-        await ctx.respond(
-            hikari.Embed(description=f"Operator `{ctx.options.operator}` not found.")
-        )
+        await ctx.respond(hikari.Embed(description=f"Operator `{operator}` not found."))
         return
 
     base_skills = extract_base_skills(operator_data)
-    embeds = create_embeds(ctx.options.operator, base_skills)
+    embeds = create_embeds(base_skills)
+
+    char_id = (
+        requests.get(f"https://awedtan.ca/api/operator/{operator}?include=id")
+        .json()
+        .get("value")
+        .get("id")
+    )
+    char_av = f"{GITHUB_REPO}/avatar/ASSISTANT/{char_id}_2.png"
+    char_embed = hikari.Embed(title=operator.title(), color=EMBED_COLOR).set_thumbnail(
+        char_av
+    )
+    embeds.insert(0, char_embed)
     await ctx.respond(embeds=embeds)
 
 

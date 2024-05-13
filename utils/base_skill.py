@@ -43,27 +43,20 @@ def extract_base_skills(operator_data):
     return base_skills
 
 
-def create_embeds(operator, base_skills):
+def create_embeds(base_skills):
     embeds = []
-    for idx, base_skill in enumerate(base_skills):
+    for base_skill in base_skills:
         embed = hikari.Embed(
-            title=(operator.title() if not idx else base_skill["name"]),
+            title=base_skill["name"],
             description=(
                 f"**E{base_skill['reqElite'][-1]} Lv{base_skill['reqLevel']}**\n{base_skill['description']}"
-                if idx
-                else None
             ),
             color=base_skill["color"],
         )
+
         embed.set_thumbnail(
             f"https://raw.githubusercontent.com/KrisTheNewest/MayerBotPics/master/riic/{base_skill['skillIcon']}.webp"
         )
-
-        if not idx:
-            embed.add_field(
-                f"{base_skill['name']}",
-                f"**E{base_skill['reqElite'][-1]} Lv{base_skill['reqLevel']}**\n{base_skill['description']}",
-            )
 
         if terms := base_skill["terms"]:
             for term in terms:
