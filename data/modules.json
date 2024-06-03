@@ -611,8 +611,8 @@
     {
       "baseTalent": "Attacks have a 30%  chance to deal 150% (160%) Physical damage. This effect is guaranteed to trigger when attacking enemies affected by Grzmot Mines",
       "moduleBranch": "TRP-D",
-      "stage2TalentUpgrade": "Attacks have a 30%  chance to deal **160% (170%)** Physical damage. This effect is guaranteed to trigger when attacking enemies affected by Grzmot Mines",
-      "stage3TalentUpgrade": "Attacks have a 30%  chance to deal **170% (180%)** Physical damage. This effect is guaranteed to trigger when attacking enemies affected by Grzmot Mines",
+      "stage2TalentUpgrade": "Attacks have a **40%  chance** to deal **160% (170%)** Physical damage. This effect is guaranteed to trigger when attacking enemies affected by Grzmot Mines",
+      "stage3TalentUpgrade": "Attacks have a **50%  chance** to deal **170% (180%)** Physical damage. This effect is guaranteed to trigger when attacking enemies affected by Grzmot Mines",
       "totalStats": "ATK +60, DEF +30"
     }
   ],
@@ -867,6 +867,13 @@
       "stage2TalentUpgrade": "When deployed, all [Abyssal Hunters] operators recover **3%** Max HP every second and receive **28% less Physical and Arts damage**",
       "stage3TalentUpgrade": "When deployed, all [Abyssal Hunters] operators recover **3.5%** Max HP every second and receive **30%** less Physical and Arts damage",
       "totalStats": "HP +210, ATK +70"
+    },
+    {
+      "baseTalent": "When attacking enemies with weight <= 3, deal 130% (136%) damage",
+      "moduleBranch": "HOK-Y",
+      "stage2TalentUpgrade": "When attacking enemies with weight <= 3, deal + damage",
+      "stage3TalentUpgrade": "When attacking enemies with weight <= 3, deal ++ damage",
+      "totalStats": "ATK, DEF"
     }
   ],
   "Glaucus": [
@@ -1095,6 +1102,13 @@
       "stage2TalentUpgrade": "Recover an additional 2 SP every 6 (5.5) seconds, **with a 20% chance to recover 5 additional SP**",
       "stage3TalentUpgrade": "Recover an additional 2 SP every 6 (5.5) seconds, with a **30%** chance to recover 5 additional SP",
       "totalStats": "ATK +72, ASPD +7"
+    },
+    {
+      "baseTalent": "Inflict RES -40% (44%) to all enemies within Attack Range",
+      "moduleBranch": "BLA-D",
+      "stage2TalentUpgrade": "Inflict RES -40% (44%) to all enemies within Attack Range; **if the target is under the active effect of Burn damage, deal a certain amount of additional Elemental damage**",
+      "stage3TalentUpgrade": "Inflict RES -40% (44%) to all enemies within Attack Range; **if the target is under the active effect of Burn damage, deal a certain amount+ of additional Elemental damage**",
+      "totalStats": "HP, ATK"
     }
   ],
   "Indigo": [
@@ -1698,6 +1712,13 @@
       "stage2TalentUpgrade": "After deployment, immediately gain Barrier equal to **60% (65%)** Max HP. When defeating an enemy, gain Barrier equal to **11%** Max HP (caps at 300% Max HP)",
       "stage3TalentUpgrade": "After deployment, immediately gain Barrier equal to **70% (75%)** Max HP. When defeating an enemy, gain Barrier equal to **12%** Max HP (caps at 300% Max HP)",
       "totalStats": "HP +300, ATK +50, DEF +33"
+    },
+    {
+      "baseTalent": "When attacked while possessing Barrier granted by herself, Penance deals Arts damage equal to 50% (53%) of her ATK to the attacker",
+      "moduleBranch": "UNY-Y",
+      "stage2TalentUpgrade": "When attacked while possessing Barrier granted by herself, Penance deals Arts damage equal to + of her ATK to the attacker",
+      "stage3TalentUpgrade": "When attacked while possessing Barrier granted by herself, Penance deals Arts damage equal to ++ of her ATK to the attacker",
+      "totalStats": "ATK, DEF"
     }
   ],
   "Perfumer": [
@@ -2594,6 +2615,51 @@
       "stage2TalentUpgrade": "The first deployment has **-4 DP cost**. Upon retreat, reduce the DP cost of the next deployed operator by 1.",
       "stage3TalentUpgrade": "The first deployment has -4 DP cost. Upon retreat, reduce the DP cost of the next deployed operator **by 2.**",
       "totalStats": "ATK +65, ASPD +5"
+    }
+  ],
+  "Ray": [
+    {
+      "baseTalent": "Can deploy a Sandbeast to scout an area within Attack Range for 25 seconds. The Sandbeast extends Ray's Attack Range. Additionally, Ray will prioritize targets within the scouting area and enemies within receive 15% more Physical damage from Ray",
+      "moduleBranch": "HUN-X",
+      "stage2TalentUpgrade": "Can deploy a Sandbeast to scout an area within Attack Range for 25 seconds. The Sandbeast extends Ray's Attack Range. Additionally, Ray will prioritize targets within the scouting area and enemies within receive + more Physical damage from Ray. **Sandbeast's redeployment time is reduced.**",
+      "stage3TalentUpgrade": "Can deploy a Sandbeast to scout an area within Attack Range for 25 seconds. The Sandbeast extends Ray's Attack Range. Additionally, Ray will prioritize targets within the scouting area and enemies within receive ++ more Physical damage from Ray. Sandbeast's redeployment time is **further reduced**",
+      "totalStats": "HP, ATK, DEF"
+    }
+  ],
+  "Coldshot": [
+    {
+      "baseTalent": "After not attacking for 2 seconds, the next attack will deal 130% (133%) damage",
+      "moduleBranch": "HUN-X",
+      "stage2TalentUpgrade": "After not attacking for 2 seconds, the next attack will deal + (+) damage",
+      "stage3TalentUpgrade": "After not attacking for 2 seconds, the next attack will deal ++ (++) damage",
+      "totalStats": "HP, ATK"
+    }
+  ],
+  "Amiya (Medic)": [
+    {
+      "baseTalent": "When deployed, all allies gain Max HP +8%. When skill is active, all allies recover 2.5% Max HP every second",
+      "moduleBranch": "INC-X",
+      "stage2TalentUpgrade": "When deployed, all allies gain Max HP +. When skill is active, all allies recover + Max HP every second",
+      "stage3TalentUpgrade": "When deployed, all allies gain Max HP ++. When skill is active, all allies recover ++ Max HP every second",
+      "totalStats": "HP, ATK"
+    }
+  ],
+  "Lucilla": [
+    {
+      "baseTalent": "Inflict 16% Fragile to Common and Elite enemies within Attack Range",
+      "moduleBranch": "UMD-X",
+      "stage2TalentUpgrade": "Inflict + Fragile to Common and Elite enemies within Attack Range",
+      "stage3TalentUpgrade": "Inflict ++ Fragile to Common and Elite enemies within Attack Range",
+      "totalStats": "ATK, DEF"
+    }
+  ],
+  "Underflow": [
+    {
+      "baseTalent": "Attacks cause the target to receive 80 Arts damage every second for 3 seconds (doubled against [Seaborn] enemies)",
+      "moduleBranch": "SPT-X",
+      "stage2TalentUpgrade": "Attacks cause the target to receive + Arts damage every second for 3 seconds (doubled against [Seaborn] enemies)",
+      "stage3TalentUpgrade": "Attacks cause the target to receive ++ Arts damage every second for 3 seconds (doubled against [Seaborn] enemies)",
+      "totalStats": "ATK, DEF"
     }
   ]
 }
