@@ -61,7 +61,8 @@ async def module(ctx):
 
         embed.add_field("Stage 3 - Talent Upgrade", module["stage3TalentUpgrade"])
 
-        embed.add_field("Materials", " | ".join(materials))
+        if materials:
+            embed.add_field("Materials", " | ".join(materials))
 
         if module["moduleBranch"] in range_mods:
             embed.add_field(module["totalStats"], "New Attack Range:")
