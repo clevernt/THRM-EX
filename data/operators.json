@@ -1302,5 +1302,21 @@
   "Fang the Fire-Sharpened": {
     "id": "char_1036_fang2",
     "name": "历阵锐枪芬"
+  },
+  "Amiya (Medic)": {
+    "id": "char_1001_amiya3",
+    "name": "阿米娅（医疗）"
+  },
+  "Ulpianus": {
+    "id": "char_4145_ulpia",
+    "name": "乌尔比安"
+  },
+  "Underflow": {
+    "id": "char_4137_udflow",
+    "name": "深巡"
+  },
+  "Lucilla": {
+    "id": "char_4079_haini",
+    "name": "海霓"
   }
 }

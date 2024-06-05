@@ -871,9 +871,9 @@
     {
       "baseTalent": "When attacking enemies with weight <= 3, deal 130% (136%) damage",
       "moduleBranch": "HOK-Y",
-      "stage2TalentUpgrade": "When attacking enemies with weight <= 3, deal + damage",
-      "stage3TalentUpgrade": "When attacking enemies with weight <= 3, deal ++ damage",
-      "totalStats": "ATK, DEF"
+      "stage2TalentUpgrade": "When attacking enemies with weight <= 3, deal **140% (146%) damage**",
+      "stage3TalentUpgrade": "When attacking enemies with weight <= 3, deal **145% (151%) damage**",
+      "totalStats": "ATK +74, DEF +45"
     }
   ],
   "Glaucus": [
@@ -1106,9 +1106,9 @@
     {
       "baseTalent": "Inflict RES -40% (44%) to all enemies within Attack Range",
       "moduleBranch": "BLA-D",
-      "stage2TalentUpgrade": "Inflict RES -40% (44%) to all enemies within Attack Range; **if the target is under the active effect of Burn damage, deal a certain amount of additional Elemental damage**",
-      "stage3TalentUpgrade": "Inflict RES -40% (44%) to all enemies within Attack Range; **if the target is under the active effect of Burn damage, deal a certain amount+ of additional Elemental damage**",
-      "totalStats": "HP, ATK"
+      "stage2TalentUpgrade": "Inflict RES -40% (44%) to all enemies within Attack Range; **if the target is under the active effect of Burn damage, deal 40% of ATK as additional Elemental damage**",
+      "stage3TalentUpgrade": "Inflict RES -40% (44%) to all enemies within Attack Range; if the target is under the active effect of Burn damage, deal **50% of ATK** as additional Elemental damage",
+      "totalStats": "HP +200, ATK +70"
     }
   ],
   "Indigo": [
@@ -1716,9 +1716,9 @@
     {
       "baseTalent": "When attacked while possessing Barrier granted by herself, Penance deals Arts damage equal to 50% (53%) of her ATK to the attacker",
       "moduleBranch": "UNY-Y",
-      "stage2TalentUpgrade": "When attacked while possessing Barrier granted by herself, Penance deals Arts damage equal to + of her ATK to the attacker",
-      "stage3TalentUpgrade": "When attacked while possessing Barrier granted by herself, Penance deals Arts damage equal to ++ of her ATK to the attacker",
-      "totalStats": "ATK, DEF"
+      "stage2TalentUpgrade": "When attacked while possessing Barrier granted by herself, Penance deals Arts damage **equal to 55% (58%)** of her ATK to the attacker",
+      "stage3TalentUpgrade": "When attacked while possessing Barrier granted by herself, Penance deals Arts damage **equal to 58% (61%)** of her ATK to the attacker",
+      "totalStats": "ATK +85, DEF +70"
     }
   ],
   "Perfumer": [
@@ -2604,7 +2604,7 @@
       "baseTalent": "When attacking a target, there is a 40% chance to attack another random target within Attack Range, dealing 60% (65%) Arts damage and Slowing them for 0.8 seconds",
       "moduleBranch": "CCR-D",
       "stage2TalentUpgrade": "When attacking a target, there is a **50% chance** to attack another random target within Attack Range, dealing 60% (65%) Arts damage and Slowing them for 0.8 seconds; **If the random target is under the active effects of Necrosis, deal 40% of ATK as Elemental damage**",
-      "stage3TalentUpgrade": "When attacking a target, there is a **60% chance** to attack another random target within Attack Range, dealing 60% Arts damage and Slowing them for 0.8 seconds; If the random target is under the active effects of Necrosis, deal **60% of ATK** as Elemental damag",
+      "stage3TalentUpgrade": "When attacking a target, there is a **60% chance** to attack another random target within Attack Range, dealing 60% Arts damage and Slowing them for 0.8 seconds; If the random target is under the active effects of Necrosis, deal **60% of ATK** as Elemental damage",
       "totalStats": "HP +170, ATK +67"
     }
   ],
@@ -2621,45 +2621,45 @@
     {
       "baseTalent": "Can deploy a Sandbeast to scout an area within Attack Range for 25 seconds. The Sandbeast extends Ray's Attack Range. Additionally, Ray will prioritize targets within the scouting area and enemies within receive 15% more Physical damage from Ray",
       "moduleBranch": "HUN-X",
-      "stage2TalentUpgrade": "Can deploy a Sandbeast to scout an area within Attack Range for 25 seconds. The Sandbeast extends Ray's Attack Range. Additionally, Ray will prioritize targets within the scouting area and enemies within receive + more Physical damage from Ray. **Sandbeast's redeployment time is reduced.**",
-      "stage3TalentUpgrade": "Can deploy a Sandbeast to scout an area within Attack Range for 25 seconds. The Sandbeast extends Ray's Attack Range. Additionally, Ray will prioritize targets within the scouting area and enemies within receive ++ more Physical damage from Ray. Sandbeast's redeployment time is **further reduced**",
-      "totalStats": "HP, ATK, DEF"
+      "stage2TalentUpgrade": "Can deploy a Sandbeast to scout an area within Attack Range for 25 seconds. The Sandbeast extends Ray's Attack Range. Additionally, Ray will prioritize targets within the scouting area and enemies within receive **18% more** Physical damage from Ray. **Sandbeast's redeployment time is reduced by 5s**",
+      "stage3TalentUpgrade": "Can deploy a Sandbeast to scout an area within Attack Range for 25 seconds. The Sandbeast extends Ray's Attack Range. Additionally, Ray will prioritize targets within the scouting area and enemies within receive **20% more** Physical damage from Ray. Sandbeast's redeployment time is **reduced by 10s**",
+      "totalStats": "HP +150, ATK +50, DEF +15"
     }
   ],
   "Coldshot": [
     {
       "baseTalent": "After not attacking for 2 seconds, the next attack will deal 130% (133%) damage",
       "moduleBranch": "HUN-X",
-      "stage2TalentUpgrade": "After not attacking for 2 seconds, the next attack will deal + (+) damage",
-      "stage3TalentUpgrade": "After not attacking for 2 seconds, the next attack will deal ++ (++) damage",
-      "totalStats": "HP, ATK"
+      "stage2TalentUpgrade": "After not attacking for 2 seconds, the next attack will deal **135% (138%) damage**",
+      "stage3TalentUpgrade": "After not attacking for 2 seconds, the next attack will deal **138% (141%) damage**",
+      "totalStats": "HP +205, ATK +75"
     }
   ],
   "Amiya (Medic)": [
     {
       "baseTalent": "When deployed, all allies gain Max HP +8%. When skill is active, all allies recover 2.5% Max HP every second",
       "moduleBranch": "INC-X",
-      "stage2TalentUpgrade": "When deployed, all allies gain Max HP +. When skill is active, all allies recover + Max HP every second",
-      "stage3TalentUpgrade": "When deployed, all allies gain Max HP ++. When skill is active, all allies recover ++ Max HP every second",
-      "totalStats": "HP, ATK"
+      "stage2TalentUpgrade": "When deployed, all allies gain **Max HP +9%**. When skill is active, all allies recover **3% Max HP** every second",
+      "stage3TalentUpgrade": "When deployed, all allies gain **Max HP +10%**. When skill is active, all allies recover **3.5% Max HP** every second",
+      "totalStats": "HP +100, ATK +40"
     }
   ],
   "Lucilla": [
     {
-      "baseTalent": "Inflict 16% Fragile to Common and Elite enemies within Attack Range",
+      "baseTalent": "Inflict 16% Fragile to enemies (except Elites and Bosses) within Attack Range",
       "moduleBranch": "UMD-X",
-      "stage2TalentUpgrade": "Inflict + Fragile to Common and Elite enemies within Attack Range",
-      "stage3TalentUpgrade": "Inflict ++ Fragile to Common and Elite enemies within Attack Range",
-      "totalStats": "ATK, DEF"
+      "stage2TalentUpgrade": "Inflict **20% Fragile** to enemies (except Elites and Bosses) within Attack Range",
+      "stage3TalentUpgrade": "Inflict **23% Fragile** to enemies (except Elites and Bosses) within Attack Range",
+      "totalStats": "ATK +33, DEF +33"
     }
   ],
   "Underflow": [
     {
-      "baseTalent": "Attacks cause the target to receive 80 Arts damage every second for 3 seconds (doubled against [Seaborn] enemies)",
+      "baseTalent": "Attacks cause the target to receive 80 (90) Arts damage every second for 3 seconds (doubled against [Seaborn] enemies)",
       "moduleBranch": "SPT-X",
-      "stage2TalentUpgrade": "Attacks cause the target to receive + Arts damage every second for 3 seconds (doubled against [Seaborn] enemies)",
-      "stage3TalentUpgrade": "Attacks cause the target to receive ++ Arts damage every second for 3 seconds (doubled against [Seaborn] enemies)",
-      "totalStats": "ATK, DEF"
+      "stage2TalentUpgrade": "Attacks cause the target to receive **90 (100) Arts damage** every second for 3 seconds (doubled against [Seaborn] enemies)",
+      "stage3TalentUpgrade": "Attacks cause the target to receive **100 (110) Arts damage** every second for 3 seconds (doubled against [Seaborn] enemies)",
+      "totalStats": "ATK +52, DEF +43"
     }
   ]
 }

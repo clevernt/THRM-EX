@@ -84,6 +84,6 @@
   "LOR-Y": "When there are 2 or more enemies within Attack Range, ASPD +12",
   "CCR-D": "Attacks inflict Necrosis damage equal to 8% of the damage dealt",
   "HUN-X": "When there is no ammo remaining, reload 1 additional ammo on the next reload",
-  "HOK-Y": "When pulling faraway enemies, increase force by 1 level",
+  "HOK-Y": "Increase force by 1 level when pulling faraway enemies (>= 2.5 tiles)",
   "BLA-D": "Attacks inflict Burn damage equal to 8% of the damage dealt"
 }
