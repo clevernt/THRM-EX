@@ -183,5 +183,25 @@
     "name": "Transmuted Salt Agglomerate",
     "id": "MTL_SL_ZYK",
     "emojiId": "1228364643786035280"
+  },
+  "31083": {
+    "name": "Aggregate Cyclicene",
+    "id": "MTL_SL_HT",
+    "emojiId": "1248820594753933423"
+  },
+  "31073": {
+    "name": "Fuscous Fiber",
+    "id": "MTL_SL_XW",
+    "emojiId": "1248820591914651759"
+  },
+  "31074": {
+    "name": "Solidified Fiber Board",
+    "id": "MTL_SL_XWB",
+    "emojiId": "1248820589871763607"
+  },
+  "31084": {
+    "name": "Cyclicene Prefab",
+    "id": "MTL_SL_HTT",
+    "emojiId": "1248820597161463890"
   }
 }
