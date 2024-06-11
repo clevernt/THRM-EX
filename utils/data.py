@@ -1,7 +1,7 @@
 import json
 
 EMBED_COLOR = 16448250
-ARKREC_URL = "http://118.193.34.223/"  # temp until old domain is back
+ARKREC_URL = "http://118.193.34.223/api/records"  # temp until old domain is back
 GITHUB_REPO = "https://raw.githubusercontent.com/fexli/ArknightsResource/main/"
 
 with open("./data/operators.json", encoding="utf-8") as f:
