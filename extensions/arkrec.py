@@ -9,10 +9,9 @@ from utils.data import (
     EMBED_COLOR,
     ARKREC_URL,
     categories,
-    operators_chinese_names,
     categories_en,
 )
-from utils.operators_list import filter_and_translate
+from utils.team import translate_operators
 
 plugin = lightbulb.Plugin("arkrec")
 
@@ -78,10 +77,8 @@ async def arkrec(ctx):
             stage_code = clear["operation"]
             clear_link = clear["url"]
             operator_count = len(clear["team"])
-            operators_list = clear["team"]
-            operators_list_en = filter_and_translate(
-                operators_list, operators_chinese_names
-            )
+            team = clear["team"]
+            translated_team = translate_operators(team)
 
             if clear_count % per_page == 0:
                 embed = hikari.Embed(
@@ -93,7 +90,7 @@ async def arkrec(ctx):
 
             embed.add_field(
                 name=f"{stage_types.get(operation_type)} | {operator_count} Operators",
-                value=f"{', '.join(operators_list_en)}\n[Video Link]({clear_link})\n",
+                value=f"{', '.join(translated_team)}\n[Video Link]({clear_link})\n",
             )
 
             clear_count += 1

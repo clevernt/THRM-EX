@@ -4,3 +4,5 @@ __pycache__
 test.py 
 .venv
 .mypy_cache
+./data/modulesLegacy.json
+./data/operatorsLegacy.json

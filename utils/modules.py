@@ -9,19 +9,22 @@ range_mods = {
 }
 
 operators_with_modules = {}
-with open("./data/modules.json", "r") as f:
+with open("./data/operators.json", "r", encoding="utf-8") as f:
     data = json.load(f)
-    for operator in data:
-        operators_with_modules[operator.lower()] = operator
+    for operator_key, operator_data in data.items():
+        if operator_data.get("modules", {}):
+            operators_with_modules[operator_data["nameEn"].lower()] = operator_data[
+                "nameEn"
+            ]
 
 
 def get_modules(operator_name):
     modules_list = []
-    with open("./data/modules.json") as f:
+    with open("./data/operators.json", encoding="utf-8") as f:
         modules_data = json.load(f)
-        for operator, modules in modules_data.items():
-            if operator.lower() == operator_name.lower():
-                modules_list.extend(modules)
+        for _, operator_data in modules_data.items():
+            if operator_data["nameEn"].lower() == operator_name.lower():
+                modules_list.extend(operator_data.get("modules"))
     return modules_list
 
 

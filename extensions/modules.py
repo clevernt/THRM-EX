@@ -12,7 +12,7 @@ from utils.modules import (
     range_mods,
     operators_with_modules,
 )
-from utils.data import operators, EMBED_COLOR
+from utils.data import EMBED_COLOR, get_operator_id
 from utils.avatar import get_avatar
 
 bot = lightbulb.BotApp
@@ -37,9 +37,10 @@ async def module(ctx):
     avatar_url = get_avatar(requested_operator)
     modules_list = get_modules(requested_operator)
     operator_name = operators_with_modules[requested_operator]
+    operator_id = get_operator_id(operator_name)
     embeds = []
     for module in modules_list:
-        materials = get_mats(operators[operator_name]["id"], module["moduleBranch"])
+        materials = get_mats(operator_id, module["moduleBranch"])
         trait_upgrade = get_branch_trait(module["moduleBranch"])
 
         embed = hikari.Embed(
