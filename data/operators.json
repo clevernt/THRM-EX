@@ -151,7 +151,15 @@
     "char_346_aosta": {
         "nameEn": "Aosta",
         "nameCn": "奥斯塔",
-        "modules": []
+        "modules": [
+            {
+                "baseTalent": "Attacks inflict bleed to unblocked enemies, dealing 18% (20%) Arts damage (unaffected by trait) every second for 3 seconds",
+                "moduleBranch": "RPR-X",
+                "stage2TalentUpgrade": "Attacks inflict bleed to unblocked enemies, dealing **23% (25%) Arts damage** (unaffected by trait) every second for **4 seconds**",
+                "stage3TalentUpgrade": "Attacks inflict bleed to unblocked enemies, dealing **25% (27%) Arts damage** (unaffected by trait) every second for **5 seconds**",
+                "totalStats": "ATK +50, HP +200"
+            }
+        ]
     },
     "char_365_aprl": {
         "nameEn": "April",
@@ -661,7 +669,15 @@
     "char_1013_chen2": {
         "nameEn": "Ch'en the Holungday",
         "nameCn": "假日威龙陈",
-        "modules": []
+        "modules": [
+            {
+                "baseTalent": "When deployed, Ch'en's ammo-type skills have 20% (22%) chance to consume no ammo; Other [Sniper] operators' ammo-type skills have 20% chance to consume no ammo (strongest effect takes precedence)",
+                "moduleBranch": "RPR-X",
+                "stage2TalentUpgrade": "When deployed, Ch'en's ammo-type skills have **23% (25%) chance** to consume no ammo. Other [Sniper] operators' ammo-type skills have 20% chance to consume no ammo. **Other Ranged operators' ammo-type skills have 8% chance to consume no ammo** (strongest effect takes precedence)",
+                "stage3TalentUpgrade": "When deployed, Ch'en's ammo-type skills have **25% (27%) chance** to consume no ammo. Other [Sniper] operators' ammo-type skills have 20% chance to consume no ammo. Other Ranged operators' ammo-type skills have **12% chance** to consume no ammo (strongest effect takes precedence)",
+                "totalStats": "ATK +60, DEF +45"
+            }
+        ]
     },
     "char_4041_chnut": {
         "nameEn": "Chestnut",
@@ -1083,7 +1099,15 @@
     "char_279_excu": {
         "nameEn": "Executor",
         "nameCn": "送葬人",
-        "modules": []
+        "modules": [
+            {
+                "baseTalent": "When attacking, ignore 160 (175) DEF",
+                "moduleBranch": "RPR-X",
+                "stage2TalentUpgrade": "When attacking, ignore **190 (205) DEF**",
+                "stage3TalentUpgrade": "When attacking, ignore **210 (225) DEF**",
+                "totalStats": "ATK +52, ASPD +5"
+            }
+        ]
     },
     "char_1032_excu2": {
         "nameEn": "Executor the Ex Foedere",
@@ -2423,6 +2447,13 @@
                 "stage2TalentUpgrade": "Movement Speed of enemies within Attack Range **-25% (28%)**; **Movement Speed of enemies outside Attack Range -10% (unaffected by skill)**",
                 "stage3TalentUpgrade": "Movement Speed of enemies within Attack Range **-30% (33%)**; Movement Speed of enemies outside Attack Range **-18%** (unaffected by skill)",
                 "totalStats": "ATK +82, ASPD +7"
+            },
+            {
+                "baseTalent": "When deployed, all ally [Caster] operators' SP recovery speed +0.4 SP/sec (does not stack with similar effects)",
+                "moduleBranch": "SPC-X",
+                "stage2TalentUpgrade": "When deployed, all ally [Caster] operators' SP recovery speed **+0.5 SP/sec**, **and Mostima's skills have +0.7 SP/s** (does not stack with similar effects)",
+                "stage3TalentUpgrade": "When deployed, all ally [Caster] operators' SP recovery speed **+0.6 SP/sec**, and Mostima's skills have **+0.9 SP/s** (does not stack with similar effects)",
+                "totalStats": "ATK +80, HP +190"
             }
         ]
     },
@@ -2722,7 +2753,15 @@
     "char_440_pinecn": {
         "nameEn": "Pinecone",
         "nameCn": "松果",
-        "modules": []
+        "modules": [
+            {
+                "baseTalent": "For 60 seconds after deployment, self SP recovery speed +0.45 (0.5) SP/sec",
+                "moduleBranch": "RPR-X",
+                "stage2TalentUpgrade": "For **70 seconds** after deployment, self SP recovery speed **+0.5 (0.55) SP/sec**",
+                "stage3TalentUpgrade": "For **75 seconds** after deployment, self SP recovery speed **+0.55 (0.6) SP/sec**",
+                "totalStats": "ATK +40, DEF +30"
+            }
+        ]
     },
     "char_204_platnm": {
         "nameEn": "Platinum",
@@ -3526,6 +3565,13 @@
                 "stage2TalentUpgrade": "Gains 1 Coin on skill activation (used for skill effects). During skill activation, gain 1 Coin whenever DP is consumed by trait and increase ATK by **5%** (stacks up to 8 times)",
                 "stage3TalentUpgrade": "Gains **2** Coin on skill activation (used for skill effects). During skill activation, gain 1 Coin whenever DP is consumed by trait and increase ATK by 5% (stacks up to 8 times)",
                 "totalStats": "HP +200, ATK +40, DEF +50"
+            },
+            {
+                "baseTalent": "When receiving lethal damage, if there is sufficient DP, consume 5 DP instead and recover HP to 70% (80%). DP cost doubles every time this Talent is triggered",
+                "moduleBranch": "MER-Y",
+                "stage2TalentUpgrade": "When receiving lethal damage, if there is sufficient DP, consume 5 DP instead and recover HP to 70% (80%). DP cost **increases by 3** every time this Talent is triggered",
+                "stage3TalentUpgrade": "When receiving lethal damage, if there is sufficient DP, consume **3 DP** instead and recover HP to 80% (90%). DP cost **increases by 3** every time this Talent is triggered",
+                "totalStats": "ATK +81, DEF +60"
             }
         ]
     },
@@ -4037,6 +4083,24 @@
                 "stage2TalentUpgrade": "Inflict **20% Fragile** to enemies (except Elites and Bosses) within Attack Range",
                 "stage3TalentUpgrade": "Inflict **23% Fragile** to enemies (except Elites and Bosses) within Attack Range",
                 "totalStats": "ATK +33, DEF +33"
+            }
+        ]
+    },
+    "char_4146_nymph": {
+        "nameEn": "Nymph",
+        "nameCn": "妮芙",
+        "modules": []
+    },
+    "char_4147_mitm": {
+        "nameEn": "Nymph",
+        "nameCn": "渡桥",
+        "modules": [
+            {
+                "baseTalent": "Can summon Cherry-3 at the tactical point. Cherry-3 will automatically respawn 15 seconds after being defeated and generate debris in the surrounding four tiles that inherits 50% of Cherry-3's Max HP",
+                "moduleBranch": "TAC-Y",
+                "stage2TalentUpgrade": "Can summon Cherry-3 at the tactical point. Cherry-3 will automatically respawn 15 seconds after being defeated and generate debris in the surrounding four tiles that inherits **65%% of Cherry-3's Max HP**",
+                "stage3TalentUpgrade": "Can summon Cherry-3 at the tactical point. Cherry-3 will automatically respawn 15 seconds after being defeated and generate debris in the surrounding four tiles that inherits **70%% of Cherry-3's Max HP**",
+                "totalStats": "ATK +40, HP +150"
             }
         ]
     }

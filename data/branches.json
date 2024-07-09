@@ -86,5 +86,6 @@
   "HUN-X": "When there is no ammo remaining, reload 1 additional ammo on the next reload",
   "HOK-Y": "Increase force by 1 level when pulling faraway enemies (>= 2.5 tiles)",
   "BLA-D": "Attacks inflict Burn damage equal to 8% of the damage dealt",
-  "UNY-Y": "ATK and DEF +8% when there are no allies within the 8 surrounding tiles"
+  "UNY-Y": "ATK and DEF +8% when there are no allies within the 8 surrounding tiles",
+  "RPR-X": "Increases ATK to ~~150%~~ -> **160%** against enemies in the row ahead of self"
 }
