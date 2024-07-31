@@ -6,10 +6,7 @@ rogue_mapping = {
     "rogue_3": "IS4: Expeditioner's Jǫklumarkar",
 }
 
-relics_data = requests.get(
-    "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData_YoStar"
-    "/main/en_US/gamedata/excel/roguelike_topic_table.json"
-).json()
+relics_data = requests.get("https://raw.githubusercontent.com/ArknightsAssets/ArknightsGamedata/master/en/gamedata/excel/roguelike_topic_table.json").json()
 
 
 def get_relic_details(relic: str) -> dict:
