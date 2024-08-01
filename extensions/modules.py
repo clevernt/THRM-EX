@@ -40,8 +40,8 @@ async def module(ctx):
     operator_id = get_operator_id(operator_name)
     embeds = []
     for module in modules_list:
-        materials = get_mats(operator_id, module["moduleBranch"])
-        trait_upgrade = get_branch_trait(module["moduleBranch"])
+        materials = get_mats(operator_id, module["module_branch"])
+        trait_upgrade = get_branch_trait(module["module_branch"], operator_name)
 
         embed = hikari.Embed(
             title=operator_name,
@@ -50,29 +50,29 @@ async def module(ctx):
         )
 
         embed.set_author(
-            name=module["moduleBranch"], icon=get_branch_icon(module["moduleBranch"])
+            name=module["module_branch"], icon=get_branch_icon(module["module_branch"])
         )
         embed.set_thumbnail(avatar_url)
 
-        if module["baseTalent"] != "N/A":
-            embed.add_field("Base Talent", module["baseTalent"])
-            embed.add_field("Stage 2 - Talent Upgrade", module["stage2TalentUpgrade"])
+        if module["base_talent"] != "N/A":
+            embed.add_field("Base Talent", module["base_talent"])
+            embed.add_field("Stage 2 - Talent Upgrade", module["s2_talent_upg"])
         else:
-            embed.add_field("Stage 2 - New Talent", module["stage2TalentUpgrade"])
+            embed.add_field("Stage 2 - New Talent", module["s2_talent_upg"])
 
-        embed.add_field("Stage 3 - Talent Upgrade", module["stage3TalentUpgrade"])
+        embed.add_field("Stage 3 - Talent Upgrade", module["s3_talent_upg"])
 
         if materials:
             embed.add_field("Materials", " | ".join(materials))
 
-        if module["moduleBranch"] in range_mods:
-            embed.add_field(module["totalStats"], "New Attack Range:")
-            embed.set_image(range_mods[module["moduleBranch"]])
+        if module["module_branch"] in range_mods:
+            embed.add_field(module["total_stats"], "New Attack Range:")
+            embed.set_image(range_mods[module["module_branch"]])
         elif requested_operator.lower() == "tomimi":
-            embed.add_field(module["totalStats"], "New Attack Range:")
+            embed.add_field(module["total_stats"], "New Attack Range:")
             embed.set_image("https://uwu.so/neuvium/neyKuxn8jH")
         else:
-            embed.add_field(module["totalStats"], "\u200b")
+            embed.add_field(module["total_stats"], "\u200b")
 
         embeds.append(embed)
 

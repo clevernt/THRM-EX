@@ -44,9 +44,9 @@ async def module_autocomplete(
 ) -> Union[str, Sequence[hikari.CommandChoice]]:
     user_input = opt.value.lower()
     matching_operators = [
-        operator["nameEn"]
+        operator["name_en"]
         for operator in operators
-        if user_input in operator["nameEn"].lower()
+        if user_input in operator["name_en"].lower()
     ]
     matching_operators = matching_operators[:25]
     return [

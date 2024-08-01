@@ -25,15 +25,15 @@ def translate_operators(team):
 
         if operator in bad_operators:
             operator_name = next(
-                (op["nameEn"] for op in operators.values() if op["nameCn"] == operator),
+                (op["name_en"] for op in operators.values() if op["name_cn"] == operator),
                 None,
             )
         else:
             operator_name = next(
                 (
-                    op["nameEn"]
+                    op["name_en"]
                     for op in operators.values()
-                    if op["nameCn"] == operator.rstrip("123")
+                    if op["name_cn"] == operator.rstrip("123")
                 ),
                 None,
             )

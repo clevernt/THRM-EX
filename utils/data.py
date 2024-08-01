@@ -17,5 +17,5 @@ with open("./data/terms.json", encoding="utf-8") as f:
 
 def get_operator_id(operator_name):
     for operator_key, operator_data in operators.items():
-        if operator_data["nameEn"].lower() == operator_name.lower():
+        if operator_data["name_en"].lower() == operator_name.lower():
             return operator_key

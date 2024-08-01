@@ -13,8 +13,8 @@ with open("./data/operators.json", "r", encoding="utf-8") as f:
     data = json.load(f)
     for operator_key, operator_data in data.items():
         if operator_data.get("modules", {}):
-            operators_with_modules[operator_data["nameEn"].lower()] = operator_data[
-                "nameEn"
+            operators_with_modules[operator_data["name_en"].lower()] = operator_data[
+                "name_en"
             ]
 
 
@@ -23,17 +23,18 @@ def get_modules(operator_name):
     with open("./data/operators.json", encoding="utf-8") as f:
         modules_data = json.load(f)
         for _, operator_data in modules_data.items():
-            if operator_data["nameEn"].lower() == operator_name.lower():
+            if operator_data["name_en"].lower() == operator_name.lower():
                 modules_list.extend(operator_data.get("modules"))
     return modules_list
 
 
-def get_branch_trait(branch_code):
+def get_branch_trait(branch_code, operator_name):
     with open("./data/branches.json") as f:
         branches_data = json.load(f)
-
-        return branches_data[branch_code.upper()]
-
+        if operator_name.lower() in ["kal'tsit", "phantom"] and branch_code.upper() == "ISW-A":
+            return branches_data[branch_code.upper()][operator_name]
+        else:
+            return branches_data[branch_code.upper()]
 
 def get_branch_icon(branch_code):
     # for some reason TRP-D is the only capitalized one in the repo
