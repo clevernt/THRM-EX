@@ -3930,7 +3930,7 @@
         "name_cn": "万顷",
         "modules": [
             {
-                "base_talent": "Max HP of operators in the surrounding 8 tiles +5% (6%). If they are facing the same direction as Wanqing, Max HP +9% (11%) instead",
+                "base_talent": "Max HP of operators in the surrounding 8 tiles +5% (6%). If they are facing the same direction as Wanqing, Max HP +9% (10%) instead",
                 "module_branch": "BEA-X",
                 "s2_talent_upg": "Max HP of operators in the surrounding 8 tiles **+7% (8%)**. If they are facing the same direction as Wanqing, **Max HP +11% (12%)** instead",
                 "s3_talent_upg": "Max HP of operators in the surrounding 8 tiles **+9% (10%)**. If they are facing the same direction as Wanqing, **Max HP +13% (14%)** instead",
