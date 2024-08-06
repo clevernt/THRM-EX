@@ -2659,8 +2659,8 @@
             {
                 "base_talent": "Can summon Phantoms. Phantoms cannot attack or block enemies, but have 75 RES and 30% Physical Dodge and are more likely to be targeted by enemies. Phantoms lose 3% Max HP per second",
                 "module_branch": "RIN-Y",
-                "s2_talent_upg": "Can summon Phantoms. Phantoms cannot attack or block enemies, but have 75 RES and 30% Physical Dodge and are more likely to be targeted by enemies. Phantoms lose 3% Max HP per second**; Nightingale gains ~~2~~ > **3** Phantoms when deployed**",
-                "s3_talent_upg": "Can summon Phantoms. Phantoms cannot attack or block enemies, but have 75 RES and **40% Physical Dodge** and are more likely to be targeted by enemies. Phantoms lose 3% Max HP per second; Nightingale gains ~~2~~ > **3** Phantoms when deployed",
+                "s2_talent_upg": "Can summon Phantoms. Phantoms cannot attack or block enemies, but have 75 RES and 30% Physical Dodge and are more likely to be targeted by enemies. Phantoms lose 3% Max HP per second**; Nightingale gains ~~2~~ > 3 Phantoms when deployed**",
+                "s3_talent_upg": "Can summon Phantoms. Phantoms cannot attack or block enemies, but have 75 RES and **40% Physical Dodge** and are more likely to be targeted by enemies. Phantoms lose 3% Max HP per second; Nightingale gains 3 Phantoms when deployed",
                 "total_stats": "HP +220, ASPD +7"
             }
         ]
