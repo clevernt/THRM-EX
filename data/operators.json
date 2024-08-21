@@ -1361,10 +1361,10 @@
     "name_cn": "导火索",
     "modules": [
       {
-        "base_talent": "Reduce 27% (30%) Physical damage taken from ranged attacks",
+        "base_talent": "27% (30%) chance to resist Physical ranged damage",
         "module_branch": "CEN-Y",
-        "s2_talent_upg": "Reduce **30% (33%)** Physical Ranged damage taken. **DEF +3%**",
-        "s3_talent_upg": "Reduce **32% (35%)** Physical Ranged damage taken. DEF **+6%**",
+        "s2_talent_upg": "**30% (33%) chance** to resist Physical ranged damage. **DEF +3%**",
+        "s3_talent_upg": "**32% (35%) chance** to resist Physical ranged damage. DEF **+6%**",
         "total_stats": "HP +180, ATK +70"
       }
     ]
