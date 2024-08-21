@@ -4177,20 +4177,5 @@
         "total_stats": "HP +120, ATK +40"
       }
     ]
-  },
-  "char_4058_pepe": {
-    "name_en": "Pepe",
-    "name_cn": "佩佩",
-    "modules": []
-  },
-  "char_4138_narant": {
-    "name_en": "Narantuya",
-    "name_cn": "娜仁图亚",
-    "modules": []
-  },
-  "char_4139_papyrs": {
-    "name_en": "Papyrus",
-    "name_cn": "莎草",
-    "modules": []
   }
 }
