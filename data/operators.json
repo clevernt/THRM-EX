@@ -1681,7 +1681,15 @@
   "char_4088_hodrer": {
     "name_en": "Hoederer",
     "name_cn": "赫德雷",
-    "modules": []
+    "modules": [
+      {
+        "base_talent": "Grant 18% (21%) Shelter to self and an ally on the tile behind",
+        "module_branch": "CRU-X",
+        "s2_talent_upg": "Grant **24% (27%) Shelter and increase Physical damage dealt by 6%** to self and an ally on the tile behind",
+        "s3_talent_upg": "Grant **28% (31%) Shelter and increase Physical damage dealt by 10%** to self and an ally on the tile behind",
+        "total_stats": "HP +450, ATK +130"
+      }
+    ]
   },
   "char_449_glider": {
     "name_en": "Honeyberry",
@@ -1842,6 +1850,13 @@
         "s2_talent_upg": "Attack Speed +18 (21), **ATK +3%**. Effect is doubled when there are [Sea Monster] enemies present",
         "s3_talent_upg": "Attack Speed +18 (21), ATK **+5%**. Effect is doubled when there are [Sea Monster] enemies present",
         "total_stats": "ATK +65, DEF +50"
+      },
+      {
+        "base_talent": "When dealing Physical damage, has a 50% chance to ignore 50% DEF. Increase chance to 100% against aerial units",
+        "module_branch": "SWO-X",
+        "s2_talent_upg": "When dealing Physical damage, has a 50% chance to ignore 50% DEF. Increase chance to 100% against aerial units. **If an aerial unit is defeated during the skill, gain 4 SP at the end of the skill.**",
+        "s3_talent_upg": "When dealing Physical damage, has a 50% chance to ignore **55% DEF**. Increase chance to 100% against aerial units. If an aerial unit is defeated during the skill, gain **6 SP** at the end of the skill.",
+        "total_stats": "ATK +80, ASPD +7"
       }
     ]
   },
@@ -3011,7 +3026,15 @@
   "char_4063_quartz": {
     "name_en": "Quartz",
     "name_cn": "石英",
-    "modules": []
+    "modules": [
+      {
+        "base_talent": "Max HP +8% (9%), ATK +8% (9%)",
+        "module_branch": "CRU-X",
+        "s2_talent_upg": "Max HP +12% (13%), ATK +12% (13%)",
+        "s3_talent_upg": "Max HP +14% (15%), ATK +14% (15%)",
+        "total_stats": "HP +300, ATK +90"
+      }
+    ]
   },
   "char_492_quercu": {
     "name_en": "Quercus",
@@ -4018,7 +4041,15 @@
   "char_4083_chimes": {
     "name_en": "Wind Chimes",
     "name_cn": "铎铃",
-    "modules": []
+    "modules": [
+      {
+        "base_talent": "Max HP +5%, When HP is above 50%, gain 20% (22%) ATK",
+        "module_branch": "",
+        "s2_talent_upg": "**Max HP +7%**, When HP is above 50%, gain **28% (30%) ATK**",
+        "s3_talent_upg": "**Max HP +8%**, When HP is above 50%, gain **33% (35%) ATK**",
+        "total_stats": "HP +350, ATK +100"
+      }
+    ]
   },
   "char_433_windft": {
     "name_en": "Windflit",
@@ -4119,7 +4150,15 @@
   "char_4145_ulpia": {
     "name_en": "Ulpianus",
     "name_cn": "乌尔比安",
-    "modules": []
+    "modules": [
+      {
+        "base_talent": "Restore 100 HP when receiving damage; restore 160 HP instead when HP is below 50%",
+        "module_branch": "CRU-X",
+        "s2_talent_upg": "Restore **120 HP** when receiving damage; restore **170** HP instead when HP is below 50%",
+        "s3_talent_upg": "Restore **130 HP** when receiving damage; restore **175** HP instead when HP is **below 60%**",
+        "total_stats": "HP +510, ATK +120"
+      }
+    ]
   },
   "char_4137_udflow": {
     "name_en": "Underflow",
@@ -4192,5 +4231,57 @@
     "name_en": "Papyrus",
     "name_cn": "莎草",
     "modules": []
+  },
+  "char_4144_chilc": {
+    "name_en": "Chilchuck",
+    "name_cn": "齐尔查克",
+    "modules": [
+      {
+        "base_talent": "After deployment, Chilchuck and allies within attack range will be immune to environmental and elemental damage for 45 (50) seconds",
+        "module_branch": "AGE-X",
+        "s2_talent_upg": "After deployment, Chilchuck and allies within attack range will be immune to environmental and elemental damage for **53 (58) seconds**",
+        "s3_talent_upg": "After deployment, Chilchuck and allies within attack range will be immune to environmental and elemental damage for **60 (65) seconds**",
+        "total_stats": "HP +300, DEF +25, ASPD +7"
+      }
+    ]
+  },
+  "char_4142_laios": {
+    "name_en": "Laios",
+    "name_cn": "莱欧斯",
+    "modules": [
+      {
+        "base_talent": "After defeating an enemy, Laos will ignore 40% DEF when attacking enemies with the same name.",
+        "module_branch": "DRE-Y",
+        "s2_talent_upg": "After defeating an enemy, Laos will ignore **45% DEF** when attacking enemies with the same name.",
+        "s3_talent_upg": "After defeating an enemy, Laos will ignore **50% DEF** when attacking enemies with the same name.",
+        "total_stats": "HP +220, ATK +55, DEF +40"
+      }
+    ]
+  },
+  "char_4143_sensi": {
+    "name_en": "Senshi",
+    "name_cn": "森西",
+    "modules": [
+      {
+        "base_talent": "DEF +10%, self-healing +10%",
+        "module_branch": "GUA-Y",
+        "s2_talent_upg": "DEF +13%, self-healing +13%",
+        "s3_talent_upg": "DEF +15%, self-healing +15%",
+        "total_stats": "HP +300, DEF +60"
+      }
+    ]
+  },
+  "char_4141_marcil": {
+    "name_en": "Marcille",
+    "name_cn": "玛露西尔",
+    "modules": [
+      {
+        "base_talent": "Initial Mana +20. When there are 4 [Dungeon Meshi] operators in the squad, all [Dungeon Meshi] operators gain ASPD +25 and DEF +35%",
+        "module_branch": "SPC-Y",
+        "s2_talent_upg": "**Initial Mana +35**. When there are 4 [Dungeon Meshi] operators in the squad, all [Dungeon Meshi] operators gain ASPD +25 and DEF +35%",
+        "s3_talent_upg": "**Initial Mana +40**. When there are 4 [Dungeon Meshi] operators in the squad, all [Dungeon Meshi] operators gain ASPD +25 and DEF +35%",
+        "total_stats": "ATK +82, ASPD +7"
+      }
+    ]
   }
 }

@@ -92,5 +92,7 @@
   "ISW-A": {
     "Kal'tsit": "In Integrated Strategies, can heal up to 2 allies at once.",
     "Phantom": "In Integrated Strategies, when attacking, reduce Phantom's and clone's next redeployment's time by 1s, clone also has this effect."
-  }
+  },
+  "CRU-X": "Healing received is increased by 20%",
+  "AGE-X": "Reduce Taunt level (-1)"
 }
