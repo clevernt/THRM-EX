@@ -118,12 +118,12 @@ def create_embed(api_resp):
 
     skills = []
     for skill in op_data["skills"]:
+        skill_id = skill["skillId"]
         last_level = skill["levels"][-1]
         skill_name = last_level["name"]
         skill_desc = parse_skill_description(
             last_level["description"], last_level["blackboard"]
         )
-        skill_id = last_level["prefabId"]
         skills.append(
             {
                 "name": skill_name,
