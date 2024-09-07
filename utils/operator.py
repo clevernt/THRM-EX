@@ -123,51 +123,68 @@ def create_embed(api_resp):
         skill_desc = parse_skill_description(
             last_level["description"], last_level["blackboard"]
         )
+        skill_id = last_level["prefabId"]
         skills.append(
             {
                 "name": skill_name,
                 "description": skill_desc,
                 "skillType": last_level["skillType"].title(),
-                "spType": sp_types.get(last_level["spData"]["spType"], ""),
+                "spType": sp_types.get(last_level["spData"]["spType"]),
                 "spCost": last_level["spData"]["spCost"],
                 "initSp": last_level["spData"]["initSp"],
+                "skillId": skill_id,
             }
         )
 
-    em = hikari.Embed(
+    main_embed = hikari.Embed(
         title=f"{rarity[-1]}-Star {professions.get(profession)} // {sub_professions.get(sub_profession, sub_profession.title())}",
         description=f"{re.sub(r'<[@\$]ba\.[^>]+>|</>', '', trait)}\n__Values Shown At Max Potential & Skill Level__",
         color=colors.get(rarity),
     )
-    em.set_author(
+    main_embed.set_author(
         name=name,
-        icon=f"https://raw.githubusercontent.com/akgcc/arkdata/main/assets/torappu/dynamicassets/arts/charavatars/{op_id}.png",
+        icon=f"https://raw.githubusercontent.com/Aceship/Arknight-Images/main/classes/class_{professions.get(profession).lower()}.png",
     )
-    em.set_thumbnail(
-        f"https://raw.githubusercontent.com/fexli/ArknightsResource/main/charpor/{op_id}_1.png"
+    main_embed.set_thumbnail(
+        f"https://raw.githubusercontent.com/akgcc/arkdata/main/assets/torappu/dynamicassets/arts/charavatars/{op_id}.png"
     )
-    em.set_footer(description)
 
     for talent_name, talent_desc in talents:
-        em.add_field(
+        main_embed.add_field(
             name=talent_name,
             value=re.sub(r"<[@\$]ba\.[^>]+>|</>", "", talent_desc),
             inline=True,
         )
 
+    skill_embeds = []
     for skill in skills:
+        skill_embed = hikari.Embed(
+            title=skill.get("name"),
+            color=colors.get(rarity),
+        )
+
+        skill_embed.set_thumbnail(
+            f"https://raw.githubusercontent.com/fexli/ArknightsResource/main/skills/skill_icon_{skill.get('skillId')}.png"
+        )
+
         skill_type = skill.get("skillType")
-        sp_type = sp_types.get(skill.get("spType"), "")
+        sp_type = skill.get("spType")
         sp_cost = skill.get("spCost")
         init_sp = skill.get("initSp")
 
-        sp_type_str = f"{sp_type} | " if sp_type else ""
+        if skill_type == "Passive":
+            skill_embed.add_field(
+                name=(f"{skill_type}"),
+                value=skill.get("description"),
+            )
+        else:
+            skill_embed.add_field(
+                name=(
+                    f"{skill_type} | {sp_type} | Cost: {sp_cost} | Initial: {init_sp}"
+                ),
+                value=skill.get("description"),
+            )
 
-        em.add_field(
-            name=skill.get("name"),
-            value=(
-                f"**{skill_type} | {sp_type_str}Cost: {sp_cost} | Initial: {init_sp}**\n{skill.get('description')}"
-            ),
-        )
+        skill_embeds.append(skill_embed)
 
-    return em
+    return [main_embed] + skill_embeds

@@ -16,10 +16,10 @@ operators = requests.get("https://awedtan.ca/api/operator?include=keys").json()
 @lightbulb.option("operator", "Operator", required=True, autocomplete=True)
 @lightbulb.command("operator", "operator info", auto_defer=True)
 @lightbulb.implements(lightbulb.SlashCommand)
-async def operator(ctx):
+async def operator(ctx: lightbulb.SlashContext):
     api_resp = fetch_operator_data(ctx.options.operator)
-    embed = create_embed(api_resp)
-    await ctx.respond(embed)
+    embeds = create_embed(api_resp)
+    await ctx.respond(embeds=embeds)
 
 
 @operator.autocomplete("operator")
