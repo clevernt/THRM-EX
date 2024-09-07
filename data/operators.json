@@ -230,10 +230,10 @@
     "name_cn": "阿斯卡纶",
     "modules": [
       {
-        "base_talent": "Attacks inflict the following effects to enemies:\nReduce Movement Speed by 18%, receive Arts damage equal to 10%% of Ascalon's ATK every second\nLasts for 25s and can be stacked up to 3 times",
+        "base_talent": "Attacks inflict the following effects to enemies:\nReduce Movement Speed by 18%, receive Arts damage equal to 10% of Ascalon's ATK every second\nLasts for 25s and can be stacked up to 3 times",
         "module_branch": "AMB-X",
-        "s2_talent_upg": "Attacks inflict the following effects to enemies:\nReduce Movement Speed by 18%, receive Arts damage equal to **11%% of Ascalon's ATK** every second\nLasts for **27s** and can be stacked up to 3 times",
-        "s3_talent_upg": "Attacks inflict the following effects to enemies:\nReduce Movement Speed by 18%, receive Arts damage equal to 11%% of Ascalon's ATK every second\nLasts for **30s** and can be stacked up to 3 times",
+        "s2_talent_upg": "Attacks inflict the following effects to enemies:\nReduce Movement Speed by 18%, receive Arts damage equal to **11% of Ascalon's ATK** every second\nLasts for **27s** and can be stacked up to 3 times",
+        "s3_talent_upg": "Attacks inflict the following effects to enemies:\nReduce Movement Speed by 18%, receive Arts damage equal to 11% of Ascalon's ATK every second\nLasts for **30s** and can be stacked up to 3 times",
         "total_stats": "HP +270, ATK +53"
       }
     ]
