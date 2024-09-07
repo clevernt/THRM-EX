@@ -128,7 +128,7 @@ def create_embed(api_resp):
                 "name": skill_name,
                 "description": skill_desc,
                 "skillType": last_level["skillType"].title(),
-                "spType": sp_types.get(last_level["spData"]["spType"]),
+                "spType": sp_types.get(last_level["spData"]["spType"], ""),
                 "spCost": last_level["spData"]["spCost"],
                 "initSp": last_level["spData"]["initSp"],
             }
@@ -156,9 +156,18 @@ def create_embed(api_resp):
         )
 
     for skill in skills:
+        skill_type = skill.get("skillType")
+        sp_type = sp_types.get(skill.get("spType"), "")
+        sp_cost = skill.get("spCost")
+        init_sp = skill.get("initSp")
+
+        sp_type_str = f"{sp_type} | " if sp_type else ""
+
         em.add_field(
             name=skill.get("name"),
-            value=f"**{skill.get('skillType')} | {skill.get('spType')} | Cost: {skill.get('spCost')} | Initial: {skill.get('initSp')}**\n{skill.get('description')}",
+            value=(
+                f"**{skill_type} | {sp_type_str}Cost: {sp_cost} | Initial: {init_sp}**\n{skill.get('description')}"
+            ),
         )
 
     return em
