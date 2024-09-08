@@ -136,9 +136,20 @@ def create_embed(api_resp):
             }
         )
 
+    stats_dict = op_data["data"]["phases"][-1]["attributesKeyFrames"][-1]["data"]
+    trust_stats = op_data["data"]["favorKeyFrames"][-1]["data"]
+    stats = {
+        "Max HP": stats_dict["maxHp"] + trust_stats["maxHp"],
+        "ATK": stats_dict["atk"] + trust_stats["atk"],
+        "DEF": stats_dict["def"] + trust_stats["def"],
+        "RES": stats_dict["magicResistance"] + trust_stats["magicResistance"],
+        "DP Cost": stats_dict["cost"],
+        "Attack Interval": stats_dict["baseAttackTime"]
+    }
+
     main_embed = hikari.Embed(
         title=f"{rarity[-1]}-Star {professions.get(profession)} // {sub_professions.get(sub_profession, sub_profession.title())}",
-        description=f"{re.sub(r'<[@\$]ba\.[^>]+>|</>', '', trait)}\n__Values Shown At Max Potential & Skill Level__",
+        description=f"{re.sub(r'<[@\$]ba\.[^>]+>|</>', '', trait)}\n**{" | ".join([f"{key}: {value}" for key, value in stats.items()])}**",
         color=colors.get(rarity),
     )
     main_embed.set_author(
