@@ -144,7 +144,7 @@ def create_embed(api_resp):
         "DEF": stats_dict["def"] + trust_stats["def"],
         "RES": stats_dict["magicResistance"] + trust_stats["magicResistance"],
         "DP Cost": stats_dict["cost"],
-        "Attack Interval": stats_dict["baseAttackTime"]
+        "Attack Interval": f"{stats_dict["baseAttackTime"]}s"
     }
 
     main_embed = hikari.Embed(
