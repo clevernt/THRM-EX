@@ -31,10 +31,14 @@ def get_modules(operator_name):
 def get_branch_trait(branch_code, operator_name):
     with open("./data/branches.json") as f:
         branches_data = json.load(f)
-        if operator_name.lower() in ["kal'tsit", "phantom"] and branch_code.upper() == "ISW-A":
+        if (
+            operator_name.lower() in ["kal'tsit", "phantom"]
+            and branch_code.upper() == "ISW-A"
+        ):
             return branches_data[branch_code.upper()][operator_name]
         else:
             return branches_data[branch_code.upper()]
+
 
 def get_branch_icon(branch_code):
     # for some reason TRP-D is the only capitalized one in the repo

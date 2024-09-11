@@ -1,6 +1,7 @@
 import lightbulb
 import hikari
 import os
+import miru
 
 from dotenv import load_dotenv
 
@@ -10,6 +11,7 @@ bot = lightbulb.BotApp(
     token=os.getenv("TOKEN"),
     help_slash_command=True,
 )
+bot.d.miru = miru.Client(bot)
 
 
 @bot.listen(lightbulb.CommandErrorEvent)

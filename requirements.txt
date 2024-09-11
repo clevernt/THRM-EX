@@ -5,3 +5,4 @@ python-dotenv==1.0.1
 requests-html==0.10.0
 python-dateutil==2.9.0.post0
 pytz==2024.1
+hikari-miru==4.1.1

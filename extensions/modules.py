@@ -1,8 +1,8 @@
 import lightbulb
 import hikari
+import miru
 
 from typing import Sequence, Union
-from lightbulb.utils import pag, nav
 
 from utils.modules import (
     get_modules,
@@ -19,12 +19,44 @@ bot = lightbulb.BotApp
 plugin = lightbulb.Plugin("modules")
 
 
+class SelectMenu(miru.TextSelect):
+    def __init__(self, modules, options) -> None:
+        self.modules = modules
+        super().__init__(options=options, placeholder="Change Branch")
+
+    async def callback(self, ctx: miru.ViewContext) -> None:
+        selected_index = int(self.values[0])
+        selected_module = self.modules[selected_index]
+
+        await ctx.edit_response(selected_module)
+
+
+class ModuleSelector(miru.View):
+    def __init__(self, modules: list, *args, **kwargs) -> None:
+        super().__init__(*args, **kwargs)
+        self.modules = modules
+
+        options = [
+            miru.SelectOption(
+                label=module.author.name,
+                value=str(i),
+                description=module.description,
+                emoji=None,
+                is_default=False,
+            )
+            for i, module in enumerate(modules)
+        ]
+        selector = SelectMenu(modules=self.modules, options=options)
+        self.add_item(selector)
+
+
 @plugin.command
 @lightbulb.option("operator", "Operator", required=True, autocomplete=True)
-@lightbulb.command("module", "Get details about an operator's module", auto_defer=True)
+@lightbulb.command(
+    "module", "Get details about an operator's module(s)", auto_defer=True
+)
 @lightbulb.implements(lightbulb.SlashCommand)
 async def module(ctx):
-    paginator = pag.EmbedPaginator()
     requested_operator = ctx.options.operator.strip().lower()
     if requested_operator not in operators_with_modules:
         await ctx.respond(
@@ -73,12 +105,11 @@ async def module(ctx):
             embed.set_image("https://uwu.so/neuvium/neyKuxn8jH")
         else:
             embed.add_field(module["total_stats"], "\u200b")
-
         embeds.append(embed)
 
-        paginator.add_line(embed)
-    navigator = nav.ButtonNavigator(embeds)
-    await navigator.run(ctx)
+    view = ModuleSelector(embeds)
+    await ctx.respond(embeds[0], components=view)
+    plugin.app.d.miru.start_view(view)
 
 
 @module.autocomplete("operator")
