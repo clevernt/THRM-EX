@@ -1,6 +1,7 @@
 import lightbulb
 import hikari
 import miru
+import re
 
 from typing import Sequence, Union
 
@@ -39,7 +40,7 @@ class ModuleSelector(miru.View):
             miru.SelectOption(
                 label=module.author.name,
                 value=str(i),
-                description=module.description[:100],
+                description=re.sub(r"[*~]", "", module.description)[:100],
                 emoji=None,
                 is_default=False,
             )
