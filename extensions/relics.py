@@ -1,5 +1,6 @@
 import lightbulb
 import hikari
+import miru
 
 from typing import Sequence, Union
 from lightbulb.utils import pag, nav
@@ -7,8 +8,38 @@ from lightbulb.utils import pag, nav
 from utils.relics import get_relic_details, get_relic_icon, relics_data, rogue_mapping
 from utils.data import EMBED_COLOR
 
-bot = lightbulb.BotApp
 plugin = lightbulb.Plugin("relic")
+
+
+class SelectMenu(miru.TextSelect):
+    def __init__(self, relics, options) -> None:
+        self.relics = relics
+        super().__init__(options=options, placeholder="Choose IS Season")
+
+    async def callback(self, ctx: miru.ViewContext) -> None:
+        selected_index = int(self.values[0])
+        selected_relic = self.relics[selected_index]
+
+        await ctx.edit_response(selected_relic)
+
+
+class ISSelector(miru.View):
+    def __init__(self, relics: list, *args, **kwargs) -> None:
+        super().__init__(*args, **kwargs)
+        self.relics = relics
+
+        options = [
+            miru.SelectOption(
+                label=relic.author.name,
+                value=str(i),
+                description=None,
+                emoji=None,
+                is_default=False,
+            )
+            for i, relic in enumerate(relics)
+        ]
+        selector = SelectMenu(relics=self.relics, options=options)
+        self.add_item(selector)
 
 
 @plugin.command
@@ -16,7 +47,6 @@ plugin = lightbulb.Plugin("relic")
 @lightbulb.command("relic", "Get details about a relic or a foldartal", auto_defer=True)
 @lightbulb.implements(lightbulb.SlashCommand)
 async def relic(ctx):
-    paginator = pag.EmbedPaginator()
     relics_list = get_relic_details(ctx.options.relic)
     embeds = []
     for relic in relics_list:
@@ -37,9 +67,9 @@ async def relic(ctx):
 
         embeds.append(embed)
 
-        paginator.add_line(embed)
-    navigator = nav.ButtonNavigator(embeds)
-    await navigator.run(ctx)
+    view = ISSelector(embeds)
+    await ctx.respond(embeds[0], components=view)
+    plugin.app.d.miru.start_view(view)
 
 
 @relic.autocomplete("relic")

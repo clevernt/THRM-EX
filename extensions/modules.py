@@ -15,7 +15,6 @@ from utils.modules import (
 from utils.data import EMBED_COLOR, get_operator_id
 from utils.avatar import get_avatar
 
-bot = lightbulb.BotApp
 plugin = lightbulb.Plugin("modules")
 
 
@@ -40,7 +39,7 @@ class ModuleSelector(miru.View):
             miru.SelectOption(
                 label=module.author.name,
                 value=str(i),
-                description=module.description,
+                description=module.description[:100],
                 emoji=None,
                 is_default=False,
             )

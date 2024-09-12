@@ -5,7 +5,6 @@ import re
 from utils.data import terms_dict
 from typing import Sequence, Union
 
-bot = lightbulb.BotApp
 plugin = lightbulb.Plugin("define")
 
 REGEX_PATTERN = re.compile(r"<\$cc[^>]*>|<@cc[^>]*>|<\$ba[^>]*>|<\/>")

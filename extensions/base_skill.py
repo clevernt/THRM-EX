@@ -6,7 +6,6 @@ from typing import Sequence, Union
 from utils.data import EMBED_COLOR, operators, GITHUB_REPO
 from utils.base_skill import get_operator_data, extract_base_skills, create_embeds
 
-bot = lightbulb.BotApp
 plugin = lightbulb.Plugin("base_skill")
 
 
