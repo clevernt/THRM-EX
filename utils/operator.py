@@ -106,7 +106,6 @@ def create_embed(api_resp):
     rarity = op_data["data"]["rarity"]
     profession = op_data["data"]["profession"]
     sub_profession = op_data["data"]["subProfessionId"]
-    description = op_data["data"]["itemDesc"]
 
     talent_names = [
         talent["candidates"][-1]["name"] for talent in op_data["data"]["talents"]
@@ -120,18 +119,18 @@ def create_embed(api_resp):
     for skill in op_data["skills"]:
         skill_id = skill["skillId"]
         last_level = skill["levels"][-1]
-        skill_name = last_level["name"]
         skill_desc = parse_skill_description(
             last_level["description"], last_level["blackboard"]
         )
         skills.append(
             {
-                "name": skill_name,
+                "name": last_level["name"],
                 "description": skill_desc,
                 "skillType": last_level["skillType"].title(),
                 "spType": sp_types.get(last_level["spData"]["spType"]),
                 "spCost": last_level["spData"]["spCost"],
                 "initSp": last_level["spData"]["initSp"],
+                "duration": last_level["duration"],
                 "skillId": skill_id,
             }
         )
@@ -182,6 +181,11 @@ def create_embed(api_resp):
         sp_type = skill.get("spType")
         sp_cost = skill.get("spCost")
         init_sp = skill.get("initSp")
+        duration = skill.get("duration")
+        if duration == 0:
+            duration = "Instant"
+        elif duration == -1:
+            duration = "Ammo"
 
         if skill_type == "Passive":
             skill_embed.add_field(
@@ -191,7 +195,7 @@ def create_embed(api_resp):
         else:
             skill_embed.add_field(
                 name=(
-                    f"{skill_type} | {sp_type} | Cost: {sp_cost} | Initial: {init_sp}"
+                    f"{skill_type} | {sp_type} | Cost: {sp_cost} | Initial: {init_sp} | Duration: {duration}"
                 ),
                 value=skill.get("description"),
             )
