@@ -20,11 +20,13 @@ plugin = lightbulb.Plugin("modules")
 
 
 class DeleteButton(miru.Button):
-    def __init__(self) -> None:
+    def __init__(self, user_id: int) -> None:
         super().__init__(style=hikari.ButtonStyle.DANGER, label="Delete")
+        self.user_id = user_id
 
     async def callback(self, ctx: miru.ViewContext) -> None:
-        await ctx.message.delete()
+        if ctx.user.id == self.user_id:
+            await ctx.message.delete()
 
 
 class SelectMenu(miru.TextSelect):
@@ -40,7 +42,7 @@ class SelectMenu(miru.TextSelect):
 
 
 class ModuleSelector(miru.View):
-    def __init__(self, modules: list, *args, **kwargs) -> None:
+    def __init__(self, modules: list, user_id: int, *args, **kwargs) -> None:
         super().__init__(*args, **kwargs)
         self.modules = modules
 
@@ -57,7 +59,7 @@ class ModuleSelector(miru.View):
         selector = SelectMenu(modules=self.modules, options=options)
         self.add_item(selector)
 
-        delete_button = DeleteButton()
+        delete_button = DeleteButton(user_id)
         self.add_item(delete_button)
 
 
@@ -118,7 +120,7 @@ async def module(ctx):
             embed.add_field(module["total_stats"], "\u200b")
         embeds.append(embed)
 
-    view = ModuleSelector(embeds)
+    view = ModuleSelector(embeds, user_id=ctx.user.id)
     await ctx.respond(embeds[0], components=view)
     plugin.app.d.miru.start_view(view)
 
