@@ -19,6 +19,14 @@ from utils.avatar import get_avatar
 plugin = lightbulb.Plugin("modules")
 
 
+class DeleteButton(miru.Button):
+    def __init__(self) -> None:
+        super().__init__(style=hikari.ButtonStyle.DANGER, label="Delete")
+
+    async def callback(self, ctx: miru.ViewContext) -> None:
+        await ctx.message.delete()
+
+
 class SelectMenu(miru.TextSelect):
     def __init__(self, modules, options) -> None:
         self.modules = modules
@@ -48,6 +56,9 @@ class ModuleSelector(miru.View):
         ]
         selector = SelectMenu(modules=self.modules, options=options)
         self.add_item(selector)
+
+        delete_button = DeleteButton()
+        self.add_item(delete_button)
 
 
 @plugin.command
