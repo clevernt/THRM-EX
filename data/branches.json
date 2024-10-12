@@ -94,5 +94,8 @@
     "Phantom": "In Integrated Strategies, when attacking, reduce Phantom's and clone's next redeployment's time by 1s, clone also has this effect."
   },
   "CRU-X": "Healing received is increased by 20%",
-  "AGE-X": "Reduce Taunt level (-1)"
+  "AGE-X": "Reduce Taunt level (-1)",
+  "BAR-X": "When there are 2 or more other operators within Attack Range, ATK +8% (unaffected by skills)",
+  "CAR-Y": "Support Devices have reduced redeployment time",
+  "FOR-Y": "ASPD +10"
 }

@@ -1605,7 +1605,15 @@
   "char_4045_heidi": {
     "name_en": "Heidi",
     "name_cn": "海蒂",
-    "modules": []
+    "modules": [
+      {
+        "base_talent": "When equipping Skill 1, all allies within Attack Range gain ATK +5% (6%). When equipping Skill 2, all allies within Attack Range gain DEF +5% (6%)",
+        "module_branch": "BAR-X",
+        "s2_talent_upg": "When equipping Skill 1, all allies within Attack Range gain **ATK +7% (8%)**. When equipping Skill 2, all allies within Attack Range gain **DEF +7% (8%)**",
+        "s3_talent_upg": "When equipping Skill 1, all allies within Attack Range gain **ATK +8% (9%)**. When equipping Skill 2, all allies within Attack Range gain **DEF +8% (9%)**",
+        "total_stats": "HP +100, ATK +21, DEF +19"
+      }
+    ]
   },
   "char_188_helage": {
     "name_en": "Hellagur",
@@ -1714,6 +1722,13 @@
         "s2_talent_upg": "When deployed, all ally [Defender] operators gain ATK **+25% (28%)**",
         "s3_talent_upg": "When deployed, all ally [Defender] operators gain ATK **+28% (31%)**",
         "total_stats": "ATK +100, DEF +70"
+      },
+      {
+        "base_talent": "After receiving fatal damage, does not retreat and recover all HP. Additionally, gain Max HP -50%, Attack Speed +18 (21) and DEF +18% (21%) (Can only trigger once per deployment)",
+        "module_branch": "FOR-Y",
+        "s2_talent_upg": "**ASPD +5, DEF +5%.** After receiving fatal damage, does not retreat and recover all HP. Additionally, gain Max HP -50%, **Attack Speed +20 (23) and DEF +18% (23%)** (Can only trigger once per deployment)",
+        "s3_talent_upg": "**ASPD +8**, **DEF +8%.** After receiving fatal damage, does not retreat and recover all HP. Additionally, gain Max HP -50%, **Attack Speed +22 (25)** and **DEF +22% (25%)** (Can only trigger once per deployment)",
+        "total_stats": "HP +350, ATK +120"
       }
     ]
   },
@@ -3475,7 +3490,7 @@
         "total_stats": "HP +320, ATK +105"
       },
       {
-        "base_talent": " When in team, all [Abyssal Hunters] operators gain ATK +14% (18%)",
+        "base_talent": "When in team, all [Abyssal Hunters] operators gain ATK +14% (18%)",
         "module_branch": "DRE-Y",
         "s2_talent_upg": "When in the team, all [Abyssal Hunters] operators gain ATK **+18% (20%) and Max HP +10%**",
         "s3_talent_upg": "When in the team, all [Abyssal Hunters] operators gain ATK **+22% (24%)** and Max HP **+20%**",
@@ -3486,7 +3501,15 @@
   "char_1012_skadi2": {
     "name_en": "Skadi the Corrupting Heart",
     "name_cn": "浊心斯卡蒂",
-    "modules": []
+    "modules": [
+      {
+        "base_talent": "Can summon a Seaborn that lasts for 25 seconds. The Seaborn's Attack Range is treated as an extension of Skadi's Attack Range",
+        "module_branch": "BAR-X",
+        "s2_talent_upg": "Can summon a Seaborn that lasts for **28 seconds**. The Seaborn's Attack Range is treated as an extension of Skadi's Attack Range. **Seaborn's redeployment time -3 seconds.**",
+        "s3_talent_upg": "Can summon a Seaborn that lasts for **30 seconds**. The Seaborn's Attack Range is treated as an extension of Skadi's Attack Range. Seaborn's redeployment time **-5 seconds.**",
+        "total_stats": "HP +130, ATK +35, DEF +17"
+      }
+    ]
   },
   "char_166_skfire": {
     "name_en": "Skyfire",
@@ -3517,7 +3540,15 @@
   "char_101_sora": {
     "name_en": "Sora",
     "name_cn": "空",
-    "modules": []
+    "modules": [
+      {
+        "base_talent": "When the skill ends, 50% chance to immediately recover 50% maximum SP",
+        "module_branch": "BAR-X",
+        "s2_talent_upg": "When the skill ends, **60% chance** to immediately recover 50% maximum SP",
+        "s3_talent_upg": "When the skill ends, 60% chance to immediately recover **60% maximum SP**",
+        "total_stats": "HP +200, ATK +22"
+      }
+    ]
   },
   "char_143_ghost": {
     "name_en": "Specter",
@@ -3580,6 +3611,13 @@
         "s2_talent_upg": "**When there is a Support Device within the 8 surrounding tiles of Stainless, gains +0.1 SP/s.** When a Support Device within the 8 surrounding tiles is destroyed, there is an **80% (90%)** chance to recycle it and grant Stainless 1 Support Device",
         "s3_talent_upg": "When there is a Support Device within the 8 surrounding tiles of Stainless, gains **+0.2** SP/s. When a Support Device within the 8 surrounding tiles is destroyed, there is a **90% (100%)** chance to recycle it and grant Stainless 1 Support Device",
         "total_stats": "ATK +45, DEF +45, ASPD +5"
+      },
+      {
+        "base_talent": "Carries 3 Support Devices (can only deploy 2 together). The Support Devices' functionality changes depending on selected skill",
+        "module_branch": "CRA-Y",
+        "s2_talent_upg": "Carries 3 Support Devices (can only deploy 2 together). The Support Devices' functionality changes depending on selected skill. **Operators affected by Stainless's Devices gain +4 ASPD.**",
+        "s3_talent_upg": "Carries 3 Support Devices (can only deploy 2 together). The Support Devices' functionality changes depending on selected skill. Operators affected by Stainless's Devices gain **+6 ASPD.**",
+        "total_stats": "HP +400, DEF +60"
       }
     ]
   },
@@ -4281,6 +4319,42 @@
         "s2_talent_upg": "**Initial Mana +35**. When there are 4 [Dungeon Meshi] operators in the squad, all [Dungeon Meshi] operators gain ASPD +25 and DEF +35%",
         "s3_talent_upg": "**Initial Mana +40**. When there are 4 [Dungeon Meshi] operators in the squad, all [Dungeon Meshi] operators gain ASPD +25 and DEF +35%",
         "total_stats": "ATK +82, ASPD +7"
+      }
+    ]
+  },
+  "char_4162_cathy": {
+    "name_en": "Catherine",
+    "name_cn": "凯瑟琳",
+    "modules": [
+      {
+        "base_talent": "Carries 3 <Support Devices> (can only deploy 2 together), each Device grants Barrier equal to 20% (22%) of Catherine's Max HP to an operator (if the target has not been attacked in the last 5 seconds, restore Barrier equal to 6% of Catherine's Max HP every second, this cannot exceed the original amount). Device effects do not stack.",
+        "module_branch": "CRA-X",
+        "s2_talent_upg": "Carries 3 <Support Devices> (can only deploy 2 together), each Device grants Barrier equal to **25% (27%) of Catherine's Max HP** to an operator (if the target has not been attacked in the last 5 seconds, restore Barrier equal to 6% of Catherine's Max HP every second, this cannot exceed the original amount). Device effects do not stack.",
+        "s3_talent_upg": "Carries 3 <Support Devices> (can only deploy 2 together), each Device grants Barrier equal to **28% (30%) of Catherine's Max HP** to an operator (if the target has not been attacked in the last 5 seconds, restore Barrier equal to 6% of Catherine's Max HP every second, this cannot exceed the original amount). Device effects do not stack.",
+        "total_stats": "HP +200, ATK +300, DEF +30"
+      }
+    ]
+  },
+  "char_487_bobb": {
+    "name_en": "Bobbing",
+    "name_cn": "波卜",
+    "modules": []
+  },
+  "char_1019_siege2": {
+    "name_en": "Vina Victoria",
+    "name_cn": "维娜·维多利亚",
+    "modules": []
+  },
+  "char_4134_cetsyr": {
+    "name_en": "Civilight Eterna",
+    "name_cn": "魔王",
+    "modules": [
+      {
+        "base_talent": "3 Dust Motes constantly revolve around Civilight Eterna. When Dust Motes hit an ally, they disappear and increase the Trait effect received by that operator from Civilight Eterna by 1.5x for 6 seconds. Disappeared Dust Motes will reappear after 6 seconds. **When an operator receives the effect of Dust Mote, immediately recover HP equal to 20% of Civilight Eterna's ATK**",
+        "module_branch": "BAR-X",
+        "s2_talent_upg": "3 Dust Motes constantly revolve around Civilight Eterna. When Dust Motes hit an ally, they disappear and increase the Trait effect received by that operator from Civilight Eterna **by 1.6x** for 6 seconds. Disappeared Dust Motes will reappear after 6 seconds. **When an operator receives the effect of Dust Mote, immediately recover HP equal to 20% of Civilight Eterna's ATK**",
+        "s3_talent_upg": "3 Dust Motes constantly revolve around Civilight Eterna. When Dust Motes hit an ally, they disappear and increase the Trait effect received by that operator from Civilight Eterna **by 1.6x** for 6 seconds. Disappeared Dust Motes will reappear after 6 seconds. When an operator receives the effect of Dust Mote, immediately recover HP equal to **30% of Civilight Eterna's ATK**",
+        "total_stats": "HP +280, ATK +27"
       }
     ]
   }
