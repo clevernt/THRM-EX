@@ -47,6 +47,14 @@ def get_branch_icon(branch_code):
     return f"{GITHUB_REPO}/equipt/{branch_code}.png"
 
 
+def get_release_event(branch_code):
+    with open("./data/release_events.json") as f:
+        data = json.load(f)
+        return next(
+            (event for event, modules in data.items() if branch_code in modules), None
+        )
+
+
 def get_mats(operator_id, branch_code):
     uniequip_table = requests.get(
         "https://raw.githubusercontent.com/Kengxxiao/ArknightsGameData/master/zh_CN/gamedata/excel/uniequip_table.json"

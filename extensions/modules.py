@@ -10,6 +10,7 @@ from utils.modules import (
     get_branch_trait,
     get_branch_icon,
     get_mats,
+    get_release_event,
     range_mods,
     operators_with_modules,
 )
@@ -85,8 +86,10 @@ async def module(ctx):
     operator_id = get_operator_id(operator_name)
     embeds = []
     for module in modules_list:
-        materials = get_mats(operator_id, module["module_branch"])
-        trait_upgrade = get_branch_trait(module["module_branch"], operator_name)
+        branch_code = module["module_branch"]
+        materials = get_mats(operator_id, branch_code)
+        release_event = get_release_event(branch_code)
+        trait_upgrade = get_branch_trait(branch_code, operator_name)
 
         embed = hikari.Embed(
             title=operator_name,
@@ -94,9 +97,7 @@ async def module(ctx):
             color=EMBED_COLOR,
         )
 
-        embed.set_author(
-            name=module["module_branch"], icon=get_branch_icon(module["module_branch"])
-        )
+        embed.set_author(name=branch_code, icon=get_branch_icon(branch_code))
         embed.set_thumbnail(avatar_url)
 
         if module["base_talent"] != "N/A":
@@ -110,14 +111,17 @@ async def module(ctx):
         if materials:
             embed.add_field("Materials", " | ".join(materials))
 
-        if module["module_branch"] in range_mods:
+        if branch_code in range_mods:
             embed.add_field(module["total_stats"], "New Attack Range:")
-            embed.set_image(range_mods[module["module_branch"]])
+            embed.set_image(range_mods[branch_code])
         elif requested_operator.lower() == "tomimi":
             embed.add_field(module["total_stats"], "New Attack Range:")
             embed.set_image("https://uwu.so/neuvium/neyKuxn8jH")
         else:
-            embed.add_field(module["total_stats"], "\u200b")
+            embed.add_field(
+                module["total_stats"],
+                f"Release in EN with: **{release_event if release_event else 'Already released!'}**",
+            )
         embeds.append(embed)
 
     view = ModuleSelector(embeds, user_id=ctx.user.id)
