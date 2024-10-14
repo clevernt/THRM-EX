@@ -120,7 +120,7 @@ async def module(ctx):
         else:
             embed.add_field(
                 module["total_stats"],
-                f"Release in EN with: **{release_event if release_event else 'Already released!'}**",
+                f"Will release with: **{release_event if release_event else 'Already released!'}**",
             )
         embeds.append(embed)
 
