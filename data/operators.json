@@ -140,6 +140,13 @@
         "s2_talent_upg": "All allies' Attack Speed +7 (8). **Allies in range gain 3 additional Attack Speed**",
         "s3_talent_upg": "All allies' Attack Speed +7 (8). Allies in range gain **5 additional Attack Speed**",
         "total_stats": "HP +100, ATK +20, ASPD +6"
+      },
+      {
+        "base_talent": "All allies' Attack Speed +7 (8)",
+        "module_branch": "ISW-A",
+        "s2_talent_upg": "All allies' Attack Speed +7 (8). **In Integrated Strategies, enemies who are Weightless or Levitated take 40% of Angelina's ATK as Arts damage every 0.5s**",
+        "s3_talent_upg": "All allies' Attack Speed +7 (8). In Integrated Strategies, enemies who are Weightless or Levitated take **60% of Angelina's ATK** as Arts damage every 0.5s; **Angelina's attacks during skill levitate the target for 3s, attacking an enemy who is levitating refreshes the duration.**",
+        "total_stats": "ATK +65, ASPD +7"
       }
     ]
   },
@@ -2194,6 +2201,13 @@
         "s2_talent_upg": "ATK **+17% (21%)** for 15 seconds after taking damage (can't stack)",
         "s3_talent_upg": "ATK **+20% (24%)** for 15 seconds after taking damage (can't stack)",
         "total_stats": "HP +400, ATK +30, DEF +30"
+      },
+      {
+        "base_talent": "When blocking enemies, Physical and Arts damage received from enemies not blocked by self reduced by 35%",
+        "module_branch": "DRE-Y",
+        "s2_talent_upg": "When blocking enemies, Physical and Arts damage received from enemies not blocked by self reduced by 35%; **when attacking enemies blocked by self, ignore 8% DEF**",
+        "s3_talent_upg": "When blocking enemies, Physical and Arts damage received from enemies not blocked by self **reduced by 40%**; when attacking enemies blocked by self, **ignore 12% DEF**",
+        "total_stats": "HP +450, ATK +80"
       }
     ]
   },
@@ -3196,6 +3210,13 @@
         "s2_talent_upg": "Attacks ignore **190 (205)** DEF",
         "s3_talent_upg": "Attacks ignore **220 (235)** DEF",
         "total_stats": "HP +275, ATK +75"
+      },
+      {
+        "base_talent": "When deployed, grant ATK +8% to self and a random deployed [Caster] operator",
+        "module_branch": "ISW-A",
+        "s2_talent_upg": "When deployed, grant ATK +8% to self and a random deployed [Caster] operator; **in Integrated Strategies, Rosmontis can benefit from [Caster] relics, and when deploying a [Caster] or [Sniper] operator, summon 1 Tactical Gear within their attack range.**",
+        "s3_talent_upg": "When deployed, grant ATK +8% to self and a random deployed [Caster] operator; in Integrated Strategies, Rosmontis can benefit from [Caster] relics, and when deploying a [Caster] or [Sniper] operator, summon 1 Tactical Gear **with a special effect and stronger stats** within their attack range.",
+        "total_stats": "HP +275, ATK +75"
       }
     ]
   },
@@ -3922,7 +3943,7 @@
     "name_cn": "红豆",
     "modules": [
       {
-        "base_talent": " When attacking, 10% chance to increase ATK by 100% (110%). Chance is increased to 30% while skill is active",
+        "base_talent": "When attacking, 10% chance to increase ATK by 100% (110%). Chance is increased to 30% while skill is active",
         "module_branch": "CHG-Y",
         "s2_talent_upg": "When attacking, **15%** chance to increase ATK by 100% (110%). Chance is increased to **35%** while skill is active",
         "s3_talent_upg": "When attacking, **20%** chance to increase ATK by 100% (110%). Chance is increased to **40%** while skill is active",
@@ -3933,7 +3954,15 @@
   "char_245_cello": {
     "name_en": "Virtuosa",
     "name_cn": "塑心",
-    "modules": []
+    "modules": [
+      {
+        "base_talent": "Enemies within Attack Range receive 20% (22%) more Necrosis damage.",
+        "module_branch": "RIT-X",
+        "s2_talent_upg": "Enemies within Attack Range receive **28% (30%) more Necrosis damage**, **and an additional 3% Elemental Fragility when under the active effects of Necrosis.**",
+        "s3_talent_upg": "Enemies within Attack Range receive **33% (35%) more Necrosis damage**, and an additional **5% Elemental Fragility** when under the active effects of Necrosis.",
+        "total_stats": "HP +210, ATK +40"
+      }
+    ]
   },
   "char_4098_vvana": {
     "name_en": "Viviana",
@@ -4338,7 +4367,15 @@
   "char_487_bobb": {
     "name_en": "Bobbing",
     "name_cn": "波卜",
-    "modules": []
+    "modules": [
+      {
+        "base_talent": "The first attack against every enemy causes them to take 16% (18%) Burn damage every second for 5 seconds",
+        "module_branch": "RIT-X",
+        "s2_talent_upg": "The first attack against every enemy causes them to take 17% (19%) Burn damage every second for 5 seconds",
+        "s3_talent_upg": "The first attack against every enemy causes them to take 18% (20%) Burn damage every second for 5 seconds",
+        "total_stats": "ATK +35, DEF +30"
+      }
+    ]
   },
   "char_1019_siege2": {
     "name_en": "Vina Victoria",
@@ -4355,6 +4392,71 @@
         "s2_talent_upg": "3 Dust Motes constantly revolve around Civilight Eterna. When Dust Motes hit an ally, they disappear and increase the Trait effect received by that operator from Civilight Eterna **by 1.6x** for 6 seconds. Disappeared Dust Motes will reappear after 6 seconds. **When an operator receives the effect of Dust Mote, immediately recover HP equal to 20% of Civilight Eterna's ATK**",
         "s3_talent_upg": "3 Dust Motes constantly revolve around Civilight Eterna. When Dust Motes hit an ally, they disappear and increase the Trait effect received by that operator from Civilight Eterna **by 1.6x** for 6 seconds. Disappeared Dust Motes will reappear after 6 seconds. When an operator receives the effect of Dust Mote, immediately recover HP equal to **30% of Civilight Eterna's ATK**",
         "total_stats": "HP +280, ATK +27"
+      }
+    ]
+  },
+  "char_4102_threye": {
+    "name_en": "Valarqvin",
+    "name_cn": "凛视",
+    "modules": [
+      {
+        "base_talent": "ATK +6% (7%), ASPD +6 (7)",
+        "module_branch": "RIT-X",
+        "s2_talent_upg": "**ATK +9% (10%)**, ASPD +6 (7), **attacking enemies who are under the active effects of Necrosis Slows them for 0.8s**",
+        "s3_talent_upg": "**ATK +11% (12%)**, ASPD +6 (7), attacking enemies who are under the active effects of Necrosis Slows them **for 1.2s**",
+        "total_stats": "HP +145, ATK +32"
+      }
+    ]
+  },
+  "char_1038_whitw2": {
+    "name_en": "Lappland the Decadenza",
+    "name_cn": "荒芜拉普兰德",
+    "modules": [
+      {
+        "base_talent": "When in squad, all [Siracusa] operators have +5 Initial SP",
+        "module_branch": "FUN-X",
+        "s2_talent_upg": "When in squad, all [Siracusa] operators have +5 Initial SP, **and when they use skill for the first time, ASPD +6**",
+        "s3_talent_upg": "When in squad, all [Siracusa] operators have +5 Initial SP, and when they use skill for the first time, **ASPD +10**",
+        "total_stats": "HP +160, ATK +33"
+      }
+    ]
+  },
+  "char_4026_vulpis": {
+    "name_en": "Vulpisfoglia",
+    "name_cn": "忍冬",
+    "modules": [
+      {
+        "base_talent": "After dealing damage for the first time to each enemy, for the next 10s Vulpisfoglia deals an additional 30% of ATK as Arts damage when attacking that enemy",
+        "module_branch": "SOL-X",
+        "s2_talent_upg": "After dealing damage for the first time to each enemy, for the next 10s Vulpisfoglia deals an additional **35% of ATK** as Arts damage when attacking that enemy",
+        "s3_talent_upg": "After dealing damage for the first time to each enemy, for the next 10s Vulpisfoglia deals an additional **40% of ATK** as Arts damage when attacking that enemy",
+        "total_stats": "HP +300, ATK +45"
+      }
+    ]
+  },
+  "char_1502_crosly": {
+    "name_en": "Crownslayer",
+    "name_cn": "弑君者",
+    "modules": [
+      {
+        "base_talent": "When skill is active, generate a smokescreen around Crownslayer, reducing the Physical and Arts Accuracy of ground enemies within by 20%",
+        "module_branch": "EXE-X",
+        "s2_talent_upg": "When skill is active, generate a smokescreen around Crownslayer, reducing the Physical and Arts Accuracy of ground enemies within **by 23%**",
+        "s3_talent_upg": "When skill is active, generate a smokescreen around Crownslayer, reducing the Physical and Arts Accuracy of ground enemies within **by 25%**",
+        "total_stats": "HP +130, ATK +45, DEF +30"
+      }
+    ]
+  },
+  "char_4155_talr": {
+    "name_en": "Figurino",
+    "name_cn": "裁度",
+    "modules": [
+      {
+        "base_talent": "Increase damage by 20% (25%) when attacking enemies not blocked by self",
+        "module_branch": "MER-X",
+        "s2_talent_upg": "Increase damage **by 27% (32%)** when attacking enemies not blocked by self",
+        "s3_talent_upg": "Increase damage **by 30% (35%)** when attacking enemies not blocked by self",
+        "total_stats": "HP +220, ATK +70"
       }
     ]
   }

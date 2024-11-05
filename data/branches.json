@@ -91,11 +91,14 @@
   "WDM-X": "Restores the HP of allied units and recovers Elemental Damage by ~~50%~~ -> **60%** of ATK (can recover Elemental Damage of unhurt allied units)",
   "ISW-A": {
     "Kal'tsit": "In Integrated Strategies, can heal up to 2 allies at once.",
-    "Phantom": "In Integrated Strategies, when attacking, reduce Phantom's and clone's next redeployment's time by 1s, clone also has this effect."
+    "Phantom": "In Integrated Strategies, when attacking, reduce Phantom's and clone's next redeployment's time by 1s, clone also has this effect.",
+    "Rosmontis": "In Integrated Strategies, attacks deal an additional instance of 100% of ATK as Arts damage",
+    "Angelina": "In Integreated Strategies, when deployed, all enemies have -1 weight."
   },
   "CRU-X": "Healing received is increased by 20%",
   "AGE-X": "Reduce Taunt level (-1)",
   "BAR-X": "When there are 2 or more other operators within Attack Range, ATK +8% (unaffected by skills)",
   "CRA-Y": "Support Devices have reduced redeployment time",
-  "FOR-Y": "ASPD +10"
+  "FOR-Y": "ASPD +10",
+  "RIT-X": "Elemental damage dealt increased by 18% when attacking Elite or Boss enemies"
 }
