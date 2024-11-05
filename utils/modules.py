@@ -31,13 +31,11 @@ def get_modules(operator_name):
 def get_branch_trait(branch_code, operator_name):
     with open("./data/branches.json") as f:
         branches_data = json.load(f)
-        if (
-            operator_name.lower() in ["kal'tsit", "phantom"]
-            and branch_code.upper() == "ISW-A"
-        ):
-            return branches_data[branch_code.upper()][operator_name]
+        branch_data = branches_data.get(branch_code.upper(), {})
+        if isinstance(branch_data, dict):
+            return branch_data[operator_name]
         else:
-            return branches_data[branch_code.upper()]
+            return branch_data
 
 
 def get_branch_icon(branch_code):
