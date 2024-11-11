@@ -68,7 +68,7 @@ def get_mats(operator_id, branch_code):
         for module in uniequip_table.get("equipDict", {}).values()
         if isinstance(module, dict)
         and module.get("charId") == operator_id
-        and module.get("typeIcon") == branch_code.lower()
+        and module.get("typeIcon").lower() == branch_code.lower()
         for stage in module.get("itemCost", {}).values()
         for item in stage
         if isinstance(item, dict)
