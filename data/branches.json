@@ -100,5 +100,8 @@
   "BAR-X": "When there are 2 or more other operators within Attack Range, ATK +8% (unaffected by skills)",
   "CRA-Y": "Support Devices have reduced redeployment time",
   "FOR-Y": "ASPD +10",
-  "RIT-X": "Elemental damage dealt increased by 18% when attacking Elite or Boss enemies"
+  "RIT-X": "Elemental damage dealt increased by 18% when attacking Elite or Boss enemies",
+  "AFT-X": "ASPD +8 when not blocking enemies",
+  "AFT-Y": "When attacking blocked enemies, inflict 10% Arts Fragile",
+  "AFT-D": "When attacking enemies under Burn Burst, deal 15% of ATK as Elemental damage"
 }

@@ -108,7 +108,15 @@
   "char_1001_amiya2": {
     "name_en": "Amiya (Guard)",
     "name_cn": "阿米娅（近卫）",
-    "modules": []
+    "modules": [
+      {
+        "base_talent": "When deployed, all allied units gain ATK and DEF +7%. Effect is doubled when skill is active",
+        "module_branch": "AFT-X",
+        "s2_talent_upg": "When deployed, all allied units gain **ATK and DEF +8%.** Effect is doubled when skill is active",
+        "s3_talent_upg": "When deployed, all allied units gain **ATK and DEF +9%.** Effect is doubled when skill is active",
+        "total_stats": "ATK +45, RES +4"
+      }
+    ]
   },
   "char_218_cuttle": {
     "name_en": "Andreana",
@@ -281,7 +289,15 @@
   "char_274_astesi": {
     "name_en": "Astesia",
     "name_cn": "星极",
-    "modules": []
+    "modules": [
+      {
+        "base_talent": "Every 20 seconds after deployment, Attack Speed +5, stacks up to 5 layers",
+        "module_branch": "AFT-Y",
+        "s2_talent_upg": "Every 20 seconds after deployment, **Attack Speed +6 and DEF +3%**, stacks up to 5 layers",
+        "s3_talent_upg": "Every 20 seconds after deployment, **Attack Speed +7** and **DEF +4%**, stacks up to 5 layers",
+        "total_stats": "ATK +42, DEF +42"
+      }
+    ]
   },
   "char_135_halo": {
     "name_en": "Astgenne",
@@ -1147,6 +1163,13 @@
         "s2_talent_upg": "ATK +6% (8%), Max HP +10% (13%). When deployed, grant the same effect to **two random allies**",
         "s3_talent_upg": "**ATK +8% (10%)**, **Max HP +14% (17%)**. When deployed, grant the same effect to two random allies",
         "total_stats": "HP +190, ATK +41"
+      },
+      {
+        "base_talent": "Attack Speed +12 (15)",
+        "module_branch": "MAR-Y",
+        "s2_talent_upg": "Attack Speed +12 (15). **When continuously dealing damage, gradually ignore enemy DEF, up to 150 (increases by 6 points every hit). After not attacking for 5s, this effect is lost.**",
+        "s3_talent_upg": "Attack Speed +12 (15). **When continuously dealing damage, gradually ignore enemy DEF, **up to 250** (increases **by 10 points** every hit). After not attacking for 5s, this effect is lost.**",
+        "total_stats": "ATK +43, DEF +43"
       }
     ]
   },
@@ -2556,7 +2579,15 @@
   "char_185_frncat": {
     "name_en": "Mousse",
     "name_cn": "慕斯",
-    "modules": []
+    "modules": [
+      {
+        "base_talent": "When attacking, 20% (23%) chance to attack twice",
+        "module_branch": "AFT-X",
+        "s2_talent_upg": "When attacking, **23% (26%) chance** to attack twice",
+        "s3_talent_upg": "When attacking, **25% (28%) chance** to attack twice",
+        "total_stats": "HP +220, ATK +35"
+      }
+    ]
   },
   "char_455_nothin": {
     "name_en": "Mr. Nothing",
@@ -3438,7 +3469,15 @@
   "char_333_sidero": {
     "name_en": "Sideroca",
     "name_cn": "铸铁",
-    "modules": []
+    "modules": [
+      {
+        "base_talent": "After killing 7 (5) enemies, Attack Speed +15 and gain Resist",
+        "module_branch": "AFT-Y",
+        "s2_talent_upg": "After killing **6 (4) enemies**, **Attack Speed +20** and gain Resist",
+        "s3_talent_upg": "After killing **5 (3) enemies**, **Attack Speed +23** and gain Resist",
+        "total_stats": "HP +320, ATK +40"
+      }
+    ]
   },
   "char_112_siege": {
     "name_en": "Siege",
@@ -3650,7 +3689,15 @@
   "char_350_surtr": {
     "name_en": "Surtr",
     "name_cn": "史尔特尔",
-    "modules": []
+    "modules": [
+      {
+        "base_talent": "When attacking, ignore 20 (22) RES",
+        "module_branch": "AFT-X",
+        "s2_talent_upg": "When attacking, ignore **24 (26) RES**",
+        "s3_talent_upg": "When attacking, ignore **26 (28) RES**",
+        "total_stats": "ATK +60, RES +5"
+      }
+    ]
   },
   "char_298_susuro": {
     "name_en": "Sussurro",
@@ -3967,7 +4014,15 @@
   "char_4098_vvana": {
     "name_en": "Viviana",
     "name_cn": "薇薇安娜",
-    "modules": []
+    "modules": [
+      {
+        "base_talent": "Arts damage dealt +8% (9%), Physical and Arts damage taken -8% (9%). If there are elite or boss enemies within Attack Range, this effect is doubled",
+        "module_branch": "AFT-D",
+        "s2_talent_upg": "Arts damage dealt +8% (9%), Physical and Arts damage taken -8% (9%). **Attacks inflict Burn damage equal to 5% of damage dealt.** If there are elite or boss enemies within Attack Range, this effect is doubled",
+        "s3_talent_upg": "Arts damage dealt +8% (9%), Physical and Arts damage taken -8% (9%). Attacks inflict Burn damage equal to **8% of damage dealt.** If there are elite or boss enemies within Attack Range, this effect is doubled",
+        "total_stats": "HP +420, ATK +60"
+      }
+    ]
   },
   "char_163_hpsts": {
     "name_en": "Vulcan",
@@ -4380,7 +4435,15 @@
   "char_1019_siege2": {
     "name_en": "Vina Victoria",
     "name_cn": "维娜·维多利亚",
-    "modules": []
+    "modules": [
+      {
+        "base_talent": "Vina and allies within the 8 surrounding tiles receive 20% (22%) less Physical damage. Additionally, Vina gains ATK +5% (6%) for every ally within this range",
+        "module_branch": "AFT-X",
+        "s2_talent_upg": "Vina and allies within the 8 surrounding tiles receive **24% (26%) less Physical damage**. Additionally, Vina **gains ATK +6% (7%)** for every ally within this range",
+        "s3_talent_upg": "Vina and allies within the 8 surrounding tiles receive **26% (28%) less Physical damage**. Additionally, Vina **gains ATK +7% (8%)** for every ally within this range",
+        "total_stats": "HP +440, ATK +56"
+      }
+    ]
   },
   "char_4134_cetsyr": {
     "name_en": "Civilight Eterna",
@@ -4457,6 +4520,19 @@
         "s2_talent_upg": "Increase damage **by 27% (32%)** when attacking enemies not blocked by self",
         "s3_talent_upg": "Increase damage **by 30% (35%)** when attacking enemies not blocked by self",
         "total_stats": "HP +220, ATK +70"
+      }
+    ]
+  }
+  "char_4163_rosesa": {
+    "name_en": "Rose Salt",
+    "name_cn": "瑰盐",
+    "modules": [
+      {
+        "base_talent": "ATK -5%, but friendly units in attack range gain healing effectivness +15% (17%)",
+        "module_branch": "RIN-X",
+        "s2_talent_upg": "ATK -5%, but friendly units in attack range gain **healing effectivness +18% (20%)**",
+        "s3_talent_upg": "ATK -5%, but friendly units in attack range gain **healing effectivness +20% (22%)**",
+        "total_stats": "HP +100, ATK +47"
       }
     ]
   }
