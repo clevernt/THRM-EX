@@ -93,8 +93,12 @@
     "Kal'tsit": "In Integrated Strategies, can heal up to 2 allies at once.",
     "Phantom": "In Integrated Strategies, when attacking, reduce Phantom's and clone's next redeployment's time by 1s, clone also has this effect.",
     "Rosmontis": "In Integrated Strategies, attacks deal an additional instance of 100% of ATK as Arts damage",
-    "Angelina": "In Integreated Strategies, when deployed, all enemies have -1 weight."
+    "Angelina": "In Integreated Strategies, when deployed, all enemies have -1 weight.",
+    "Dusk": "In Integrated Strategies, attack 1 additional target"
   },
+  "RA-A" {
+    "Eunectes": "In Reclamation Algorithm, restore +0.4 SP/s when food effect is active, while skill is active, attract all nearby enemies and animals within 5.0 radius to this unit's location."
+  }
   "CRU-X": "Healing received is increased by 20%",
   "AGE-X": "Reduce Taunt level (-1)",
   "BAR-X": "When there are 2 or more other operators within Attack Range, ATK +8% (unaffected by skills)",
@@ -103,5 +107,6 @@
   "RIT-X": "Elemental damage dealt increased by 18% when attacking Elite or Boss enemies",
   "AFT-X": "ASPD +8 when not blocking enemies",
   "AFT-Y": "When attacking blocked enemies, inflict 10% Arts Fragile",
-  "AFT-D": "When attacking enemies under Burn Burst, deal 15% of ATK as Elemental damage"
+  "AFT-D": "When attacking enemies under Burn Burst, deal 15% of ATK as Elemental damage",
+  "HAM-X": "When there are 3 or more enemies within attacks' splash area, ATK is increased to 115%"
 }
