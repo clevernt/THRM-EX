@@ -4587,5 +4587,18 @@
         "total_stats": "HP +100, ATK +47"
       }
     ]
+  },
+  "char_4172_xingzh": {
+    "name_en": "Xingzhu",
+    "name_cn": "行箸",
+    "modules": [
+      {
+        "base_talent": "Grant 10% (12%) Sanctuary to 2 other allies within Attack Range",
+        "module_branch": "BLS-X",
+        "s2_talent_upg": "Grant **12% (14%) Sanctuary** to 2 other allies within Attack Range",
+        "s3_talent_upg": "Grant **15% (17%) Sanctuary** to 2 other allies within Attack Range",
+        "total_stats": "HP +175, ATK +40"
+      }
+    ]
   }
 }
