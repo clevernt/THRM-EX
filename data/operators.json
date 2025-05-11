@@ -738,6 +738,13 @@
         "s2_talent_upg": "If Chongyue's skill defeats at least 1 enemy, recover **4** SP",
         "s3_talent_upg": "If Chongyue's skill defeats at least 1 enemy, recover 4 SP. **if no enemy was defeated, recover 1 SP**",
         "total_stats": "HP +260, ATK +45, DEF +30"
+      },
+      {
+        "base_talent": "23% (25%) chance for normal attacks to increase the damage Chongyue deals to the target by 65% (70%) for 2.5s",
+        "module_branch": "FGT-Y",
+        "s2_talent_upg": "23% (25%) chance for normal attacks to increase the damage Chongyue deals to the target **by 70% (75%)** for 2.5s",
+        "s3_talent_upg": "23% (25%) chance for normal attacks to increase the damage Chongyue deals to the target **by 75% (80%)** for 2.5s",
+        "total_stats": "ATK +75, DEF +35"
       }
     ]
   },
@@ -974,18 +981,25 @@
     "name_cn": "夕",
     "modules": [
       {
-        "base_talent": "Increase ATK by 2% for every enemy killed by Dusk or Little Instinct, stacks up to 15 (18) layers",
+        "base_talent": "Increase ATK by 2% for every enemy killed by Dusk or Freeling, stacks up to 15 (18) layers",
         "module_branch": "SPC-X",
-        "s2_talent_upg": "Increase ATK by 2% for every enemy killed by Dusk or Little Instinct, stacks up to **20 (23) layers**",
-        "s3_talent_upg": "Increase ATK by 2% for every enemy killed by Dusk or Little Instinct, stacks up to **21 (24) layers**",
+        "s2_talent_upg": "Increase ATK by 2% for every enemy killed by Dusk or Freeling, stacks up to **20 (23) layers**",
+        "s3_talent_upg": "Increase ATK by 2% for every enemy killed by Dusk or Freeling, stacks up to **21 (24) layers**",
         "total_stats": "HP +190, ATK +80"
       },
       {
-        "base_talent": "The first attack after deployment will summon a 'Little Instinct' at the target's location (only on deployable ground tiles) that lasts for 25 seconds",
+        "base_talent": "The first attack after deployment will summon a 'Freeling' at the target's location (only on deployable ground tiles) that lasts for 25 seconds",
         "module_branch": "SPC-Y",
-        "s2_talent_upg": "The first attack after deployment will summon **2 'Little Instincts'** at the target's location **and the surrounding 4 tiles** (only on deployable ground tiles) that lasts for 25 seconds, **All 'Little Instincts' have increased attributes and restore 1 SP for Dusk every 2.5 seconds\n'Little Instincts': Max HP +250, ATK +15, DEF +15**",
-        "s3_talent_upg": "The first attack after deployment will summon 2 'Little Instincts' at the target's location and the surrounding 4 tiles (only on deployable ground tiles) that lasts for 25 seconds, All 'Little Instincts' have more increased attributes and restore 1 SP for Dusk every **1.5 seconds**\n'Little Instincts': **Max HP +400, ATK +25, DEF +25**",
+        "s2_talent_upg": "The first attack after deployment will summon **2 'Freelings'** at the target's location **and the surrounding 4 tiles** (only on deployable ground tiles) that lasts for 25 seconds, **All 'Freelings' have increased attributes and restore 1 SP for Dusk every 2.5 seconds\n'Freelings': Max HP +250, ATK +15, DEF +15**",
+        "s3_talent_upg": "The first attack after deployment will summon 2 'Freelings' at the target's location and the surrounding 4 tiles (only on deployable ground tiles) that lasts for 25 seconds, All 'Freelings' have more increased attributes and restore 1 SP for Dusk every **1.5 seconds**\n'Freelings': **Max HP +400, ATK +25, DEF +25**",
         "total_stats": "ATK +82, ASPD +7"
+      },
+      {
+        "base_talent": "The first attack after deployment will summon a 'Freeling' (lasts for 25 seconds) at the target's location (only on deployable ground tiles)",
+        "module_branch": "ISW-A",
+        "s2_talent_upg": "The first attack after deployment will summon a 'Freeling' (lasts for 25 seconds) at the target's location (only on deployable ground tiles); **In Integrated Strategies, 'Freeling' gain 1 Shield layer when summoned, 'Freeling' deal 100% Dusk's ATK as Arts damage**",
+        "s3_talent_upg": "The first attack after deployment will summon a 'Freeling' (lasts for 25 seconds) at the target's location (only on deployable ground tiles); In Integrated Strategies, 'Freeling' gain 1 Shield layer when summoned, 'Freeling' deal 100% Dusk's ATK as Arts damage. **When Dusk in squad, the first attack of all operators after deployment will summon a 'Freeling' at the target's location**",
+        "total_stats": "ATK +74, ASPD +10"
       }
     ]
   },
@@ -1124,6 +1138,13 @@
         "s2_talent_upg": "When HP is higher than 50%, attacks deal **120% (122%) damage**; When HP is lower than 50%, gain **25% (27%) Shelter effect**",
         "s3_talent_upg": "When HP is higher than 50%, attacks deal **123% (125%) damage**; When HP is lower than 50%, gain **28% (30%) Shelter effect**",
         "total_stats": "ATK +85, DEF +110"
+      },
+      {
+        "base_talent": "Increases this unit's SP recovery by 0.2/sec when blocking enemies",
+        "module_branch": "RA-A",
+        "s2_talent_upg": "Increases this unit's SP recovery by 0.2/sec when blocking enemies; **In Reclamation Algorithm, increases this unit's SP recovery by 0.4/sec when blocking enemies, when skill is active Block +1, attacks all blocked enemies and inflict 20% Physical Fragility**",
+        "s3_talent_upg": "Increases this unit's SP recovery by 0.2/sec when blocking enemies; In Reclamation Algorithm, increases this unit's SP recovery by 0.4/sec when blocking enemies, when skill is active Block +1, attacks all blocked enemies and **inflict 40% Physical Fragility**",
+        "total_stats": "HP +380, ATK +130"
       }
     ]
   },
@@ -2257,6 +2278,13 @@
         "s2_talent_upg": "When attacked, has 50% (55%) chance to recover **2** SP",
         "s3_talent_upg": "When attacked, has **75% (80%)** chance to recover 2 SP",
         "total_stats": "ATK +77, DEF +53"
+      },
+      {
+        "base_talent": "A Crystal Barrier blocks all damage, shattering when 200 or more damage is taken from a single source, dealing 100% (110%) of Lin's ATK as Arts damage to all nearby enemies and stunning them for 1s; reforms after 8s",
+        "module_branch": "PLX-Y",
+        "s2_talent_upg": "A Crystal Barrier blocks all damage, shattering when 200 or more damage is taken from a single source, **dealing 105% (115%) of Lin's ATK** as Arts damage to all nearby enemies and stunning them for 1s; **reforms after 7s**",
+        "s3_talent_upg": "A Crystal Barrier blocks all damage, shattering when 200 or more damage is taken from a single source, **dealing 110% (120%) of Lin's ATK** as Arts damage to all nearby enemies and stunning them for 1s; **reforms after 6s**",
+        "total_stats": "ATK +73, DEF +40"
       }
     ]
   },
@@ -2774,7 +2802,15 @@
   "char_4131_odda": {
     "name_en": "Odda",
     "name_cn": "奥达",
-    "modules": []
+    "modules": [
+      {
+        "base_talent": "ATK +15% (18%) after this unit deals Physical damage 30 times.",
+        "module_branch": "HAM-X",
+        "s2_talent_upg": "**ATK +20% (23%)** after this unit deals Physical damage 30 times.",
+        "s3_talent_upg": "ATK +20% (23%) after this unit deals Physical damage **20 times.**",
+        "total_stats": "HP +250, ATK +85"
+      }
+		]
   },
   "char_278_orchid": {
     "name_en": "Orchid",
@@ -4214,6 +4250,13 @@
         "s2_talent_upg": "When deployed, gain Berserk effect of up to **60 ASPD** and **+2.2 SP/s** (reaches the maximum effect at **60% HP lost**)",
         "s3_talent_upg": "When deployed, gain Berserk effect of up to **70 ASPD** and **+2.3 SP/s** (reaches the maximum effect at **50% HP lost**)",
         "total_stats": "ATK +90, DEF +60"
+      },
+      {
+        "base_talent": "Attacks have a 20% (23%) chance to restore 1 SP, increased to a 70% (75%) chance if below 50% HP",
+        "module_branch": "SBL-Y",
+        "s2_talent_upg": "Attacks have a **23% (26%) chance** to restore 1 SP **and increase ATK to 110%**, increased to a **75% (80%) chance** if below 50% HP",
+        "s3_talent_upg": "Attacks have a 23% (26%) chance to restore 1 SP **and increase ATK to 120%**, increased to a **80% (85%) chance** if below 50% HP",
+        "total_stats": "HP +380, ATK +84"
       }
     ]
   },
@@ -4335,14 +4378,23 @@
         "module_branch": "SUM-X",
         "s2_talent_upg": "Can use 5 summons. Sand Reckoner and the summons deal 20% increased damage to [Mechanical] enemies. **Summons gain +5 Attack Speed**",
         "s3_talent_upg": "Can use 5 summons. Sand Reckoner and the summons deal 20% increased damage to [Mechanical] enemies. Summons gain **+8 Attack Speed**",
-        "total_stats": "HP +120, ATK +40"
+        "total_stats": "HP +300, ATK +40"
       }
     ]
   },
   "char_4058_pepe": {
     "name_en": "Pepe",
     "name_cn": "佩佩",
-    "modules": []
+    "modules": [
+      {
+        "base_talent": "Every enemy defeated while her skill is active grants Pepe 1 SP when the skill ends; restores up to 14 (17) SP",
+        "module_branch": "HAM-X",
+        "s2_talent_upg": "Every enemy defeated while her skill is active grants Pepe **2 SP** when the skill ends; restores up to 14 (17) SP",
+        "s3_talent_upg": "Every enemy defeated while her skill is active grants Pepe 2 SP when the skill ends; restores **up to 17 (20) SP**",
+        "total_stats": "HP +300, ATK +113"
+      }
+
+    ]
   },
   "char_4138_narant": {
     "name_en": "Narantuya",
