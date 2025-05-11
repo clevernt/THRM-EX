@@ -96,7 +96,7 @@
     "Angelina": "In Integreated Strategies, when deployed, all enemies have -1 weight.",
     "Dusk": "In Integrated Strategies, attack 1 additional target"
   },
-  "RA-A" {
+  "RA-A": {
     "Eunectes": "In Reclamation Algorithm, restore +0.4 SP/s when food effect is active, while skill is active, attract all nearby enemies and animals within 5.0 radius to this unit's location."
   }
   "CRU-X": "Healing received is increased by 20%",
