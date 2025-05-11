@@ -98,7 +98,7 @@
   },
   "RA-A": {
     "Eunectes": "In Reclamation Algorithm, restore +0.4 SP/s when food effect is active, while skill is active, attract all nearby enemies and animals within 5.0 radius to this unit's location."
-  }
+  },
   "CRU-X": "Healing received is increased by 20%",
   "AGE-X": "Reduce Taunt level (-1)",
   "BAR-X": "When there are 2 or more other operators within Attack Range, ATK +8% (unaffected by skills)",
